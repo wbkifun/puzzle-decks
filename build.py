@@ -69,17 +69,20 @@ DECK_CSS = """
 }
 .slide-foot b { color: var(--phase-accent-ink); font-weight: 700; }
 .slide-foot .foot-num { color: var(--phase-accent-ink); font-weight: 700; }
-/* 문제 ↔ 풀이 점프 링크 (우상단 끝 알약 버튼 — 32주 일관 위치) */
-.slide-link {
-  position: absolute; right: 24px; top: 22px; z-index: 6;
+/* 문제 ↔ 풀이 점프 링크 (우상단 끝 알약 버튼 — 32주 일관 위치)
+   ※ reveal.css의 `.reveal a{position:relative}`(0,1,1)보다 우선하도록
+     `.reveal .slide-link`(0,2,0)로 선택자 특이도를 높임. 안 그러면 absolute가
+     무시되어 흐름에 남아 좌하단으로 떨어진다. */
+.reveal .slide-link {
+  position: absolute !important; right: 24px; top: 22px; z-index: 6;
   display: inline-flex; align-items: center; gap: .4em;
   font-family: var(--font-mono); font-size: .5em; font-weight: 700;
   letter-spacing: .04em; padding: .5em .9em; border-radius: 999px;
   text-decoration: none; color: #fff; background: var(--phase-accent);
   box-shadow: var(--shadow);
 }
-.slide-link:hover { filter: brightness(1.08); }
-.slide-link .ar { font-size: 1.15em; line-height: 1; }
+.reveal .slide-link:hover { filter: brightness(1.08); }
+.reveal .slide-link .ar { font-size: 1.15em; line-height: 1; }
 /* KaTeX 가 슬라이드 폰트 위계와 충돌하지 않게 */
 .reveal .katex { font-size: 1.05em; }
 """
