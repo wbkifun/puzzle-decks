@@ -22,6 +22,57 @@ KATEX = ROOT / "node_modules" / "katex" / "dist"
 DS = ROOT / "design-system"
 PHASE_NAME = {1: "논리와 추론", 2: "변수와 방정식", 3: "함수와 그래프", 4: "고급 개념의 씨앗"}
 
+# 랜딩 페이지용 — Phase 메타, 32주 커리큘럼, 수업 날짜
+PHASES = [
+    {"n": 1, "name": "논리와 추론의 언어", "rng": "1–8주",
+     "pa": "#4338ca", "soft": "#eceefc", "ink": "#2c248f"},
+    {"n": 2, "name": "변수와 방정식", "rng": "9–16주",
+     "pa": "#0f766e", "soft": "#d6f0ec", "ink": "#0a544e"},
+    {"n": 3, "name": "함수와 그래프", "rng": "17–24주",
+     "pa": "#b45309", "soft": "#fcecd2", "ink": "#8a3f07"},
+    {"n": 4, "name": "고급 개념의 씨앗", "rng": "25–32주",
+     "pa": "#6d28d9", "soft": "#ece4fb", "ink": "#561db0"},
+]
+
+# (주차, Phase, 제목, 목표 개념)
+CURRICULUM = [
+    (1, 1, "기사와 건달의 섬", "귀류법 · 진술의 부정 · 자기지시"),
+    (2, 1, "세 명의 문지기", "드모르간 · 진리표 · 경우 나누기"),
+    (3, 1, "이마에 묻은 진흙", "지식에 대한 추론 (공통 지식)"),
+    (4, 1, "악수와 비둘기집", "비둘기집 원리 · 최악의 경우"),
+    (5, 1, "덮을 수 있을까", "불변량(invariant)"),
+    (6, 1, "스무고개의 과학", "정보량 · 이진/3진 탐색"),
+    (7, 1, "숨은 가정 깨기", "숨은 전제 식별 · 발상 전환"),
+    (8, 1, "Phase 1 정리", "자작 논리퍼즐 출제 대회"),
+    (9, 2, "비율 직관의 함정", "비율과 기준량"),
+    (10, 2, "변수 도입의 힘", "변수 · 식 세우기"),
+    (11, 2, "일차방정식 모델링", "일차방정식"),
+    (12, 2, "연립방정식의 필요성", "연립방정식 · 미지수 여러 개"),
+    (13, 2, "정수해 방정식", "디오판토스 방정식 · 정수해"),
+    (14, 2, "자릿수의 대수", "10진법 전개 · 복면산"),
+    (15, 2, "약수와 소인수분해", "약수 · 소인수분해 · 제곱수"),
+    (16, 2, "Phase 2 정리", "모델링 프로젝트"),
+    (17, 3, "그래프 읽기", "그래프 해석"),
+    (18, 3, "직선의 교점 = 사건", "일차함수 · 두 직선의 교점"),
+    (19, 3, "계단함수와 경계 조건", "불연속 함수 · 경계 조건"),
+    (20, 3, "변수 선택의 미학", "변수 선택 · 거꾸로 사고"),
+    (21, 3, "지수 성장", "지수함수 · 성장 비교"),
+    (22, 3, "이차함수 입구", "이차함수 · 최댓값"),
+    (23, 3, "기하 확률", "기하 확률 (넓이 = 확률)"),
+    (24, 3, "Phase 3 정리", "그래프 자작문제 발표회"),
+    (25, 4, "가중치와 선형결합", "가중합 · 내적 · 선형결합"),
+    (26, 4, "패리티와 mod 2", "mod 2 · 패리티 · 벡터공간"),
+    (27, 4, "상태 공간 탐색", "상태 공간 · 그래프 탐색"),
+    (28, 4, "좌표계와 거리", "좌표계 · 거리 함수"),
+    (29, 4, "함수 합성과 암호", "함수 · 역함수 · 합성 · 공개키"),
+    (30, 4, "무한과 극한", "무한급수 · 극한"),
+    (31, 4, "넓이와 변화율", "적분 · 미분의 씨앗"),
+    (32, 4, "최종 발표회", "퍼즐→일반화→수학 미니 강의"),
+]
+
+# 실제 수업 날짜 (확정된 것만 기록)
+DATES = {1: "6.11 (목)", 2: "6.18 (목)"}
+
 
 def read(p: Path) -> str:
     return p.read_text(encoding="utf-8")
@@ -348,28 +399,68 @@ Reveal.initialize({hash:true, slideNumber:false, width:1280, height:720,
 
 
 def write_index():
-    weeks = []
-    for wj in sorted((ROOT / "content").glob("week*.json")):
-        d = json.loads(read(wj))
-        weeks.append((d["week"], d["phase"], d["title"]))
-    items = "".join(
-        f'<li><a href="week{w:02d}/" data-phase="{p}"><b>{w}주차</b> {esc(t)}</a></li>'
-        for w, p, t in weeks
-    )
+    built = {int(p.stem[4:]) for p in (ROOT / "content").glob("week*.json")}
+
+    phases_html = ""
+    for ph in PHASES:
+        cards = ""
+        for w, p, title, concept in CURRICULUM:
+            if p != ph["n"]:
+                continue
+            date = DATES.get(w, "")
+            date_html = f'<span class="date">{esc(date)}</span>' if date else "<span></span>"
+            top = f'<div class="top"><span>{w}주차</span>{date_html}</div>'
+            mid = f'<div class="title">{esc(title)}</div><div class="concept">{esc(concept)}</div>'
+            if w in built:
+                cards += (f'<a class="card" href="week{w:02d}/">{top}{mid}'
+                          f'<div class="go">▶ 슬라이드 열기</div></a>')
+            else:
+                cards += (f'<div class="card todo">{top}{mid}'
+                          f'<div class="tagtodo">준비 중</div></div>')
+        phases_html += (
+            f'<section class="phase" style="--pa:{ph["pa"]};--soft:{ph["soft"]};--pink:{ph["ink"]}">'
+            f'<div class="phead">PHASE {ph["n"]} · {esc(ph["name"])}'
+            f'<span class="rng">{esc(ph["rng"])}</span></div>'
+            f'<div class="weeks">{cards}</div></section>'
+        )
+
+    css = """
+@font-face{font-family:"Pretendard";font-weight:400;font-display:swap;src:url("_assets/fonts/Pretendard-Regular.woff2") format("woff2")}
+@font-face{font-family:"Pretendard";font-weight:700;font-display:swap;src:url("_assets/fonts/Pretendard-Bold.woff2") format("woff2")}
+@font-face{font-family:"Pretendard";font-weight:800;font-display:swap;src:url("_assets/fonts/Pretendard-ExtraBold.woff2") format("woff2")}
+*{box-sizing:border-box}
+body{font-family:"Pretendard","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;color:#15171e;background:#fcfcfd;margin:0;padding:44px 20px;line-height:1.5}
+.wrap{max-width:940px;margin:0 auto}
+h1{font-size:2rem;letter-spacing:-.02em;margin:0 0 .15em}
+.sub{color:#565d6b;margin:0 0 1.8rem}
+.phase{margin:1.4rem 0}
+.phead{display:flex;align-items:baseline;gap:.55em;padding:.5em .85em;border-radius:10px;background:var(--pa);color:#fff;font-weight:800;font-size:1.05rem}
+.phead .rng{font-size:.78em;font-weight:600;opacity:.85}
+.weeks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.card{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid #e2e5ea;border-left:5px solid var(--pa);border-radius:10px;padding:.7em .9em;transition:.12s}
+a.card:hover{background:var(--soft);transform:translateY(-1px);box-shadow:0 4px 14px rgba(21,23,30,.07)}
+.card .top{display:flex;justify-content:space-between;align-items:baseline;font-size:.76rem;font-weight:800;color:var(--pink)}
+.card .date{color:#565d6b;font-weight:700;font-feature-settings:"tnum"}
+.card .title{font-weight:800;font-size:1.02rem;margin:.18em 0 .12em}
+.card .concept{font-size:.82rem;color:#565d6b}
+.card .go{font-size:.72rem;color:var(--pink);font-weight:800;margin-top:.45em}
+.card.todo{opacity:.55;background:#f8fafc}
+.card .tagtodo{font-size:.72rem;color:#565d6b;font-weight:700;margin-top:.45em}
+.legend{font-size:.82rem;color:#565d6b;margin:.2rem 0 0}
+@media(max-width:640px){.weeks{grid-template-columns:1fr}}
+"""
     doc = f"""<!doctype html><html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>논리퍼즐 수업</title><style>
-body{{font-family:"Pretendard",system-ui,"Noto Sans KR",sans-serif;max-width:720px;margin:3rem auto;padding:0 1rem;color:#15171e}}
-h1{{letter-spacing:-.02em}} ul{{list-style:none;padding:0}}
-li a{{display:block;padding:.9rem 1.1rem;margin:.4rem 0;border:1px solid #e2e5ea;border-radius:12px;text-decoration:none;color:inherit;border-left:6px solid #4338ca}}
-li a[data-phase="2"]{{border-left-color:#0f766e}} li a[data-phase="3"]{{border-left-color:#b45309}} li a[data-phase="4"]{{border-left-color:#6d28d9}}
-li a:hover{{background:#f3f4f7}}
-</style></head><body><h1>논리퍼즐 수업 — 슬라이드</h1>
-<p>각 주차를 열고 <kbd>F</kbd> 전체화면, <kbd>S</kbd> 발표자 노트, 방향키로 넘김.</p>
-<ul>{items}</ul></body></html>"""
+<title>논리퍼즐 수업 — 32주</title><style>{css}</style></head>
+<body><div class="wrap">
+<h1>논리퍼즐 수업</h1>
+<p class="sub">중학생 토론 수업 · 주 1회 90분 · 32주 (퍼즐 → 일반화 → 수학 개념)</p>
+<p class="legend">완성된 주차의 카드를 누르면 슬라이드가 열립니다. 발표: <kbd>F</kbd> 전체화면 · <kbd>S</kbd> 발표자 노트 · 방향키로 넘김.</p>
+{phases_html}
+</div></body></html>"""
     (ROOT / "docs").mkdir(exist_ok=True)
     (ROOT / "docs" / "index.html").write_text(doc, encoding="utf-8")
-    print(f"built docs/index.html  ({len(weeks)} weeks)")
+    print(f"built docs/index.html  (32주 구조, 완성 {len(built)}주)")
 
 
 if __name__ == "__main__":
