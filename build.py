@@ -68,9 +68,9 @@ DECK_CSS = """
   color: var(--ink-soft); text-transform: uppercase;
 }
 .slide-foot b { color: var(--phase-accent-ink); font-weight: 700; }
-/* 문제 ↔ 풀이 점프 링크 (우하단 알약 버튼) */
+/* 문제 ↔ 풀이 점프 링크 (우상단 끝 알약 버튼 — 32주 일관 위치) */
 .slide-link {
-  position: absolute; right: 24px; bottom: 18px; z-index: 6;
+  position: absolute; right: 24px; top: 22px; z-index: 6;
   display: inline-flex; align-items: center; gap: .4em;
   font-family: var(--font-mono); font-size: .5em; font-weight: 700;
   letter-spacing: .04em; padding: .5em .9em; border-radius: 999px;
@@ -260,8 +260,20 @@ def build(week_json: Path):
     scripts = "\n".join(f"<script>{lib}</script>" for lib in libs)
 
     init = """
+// 슬라이드 내용이 캔버스(720px)를 넘치면 그 슬라이드만 폰트를 줄여 맞춤.
+// 내용이 적은 슬라이드는 기준(34px) 유지 → "넘칠 때만 축소" 동적 조절.
+function fitSection(sec){
+  if(!sec) return;
+  sec.style.fontSize='';                       // 기준 크기로 리셋 후 측정
+  var guard=0;
+  while(sec.scrollHeight > sec.clientHeight + 1 && guard++ < 12){
+    var cur = parseFloat(getComputedStyle(sec).fontSize) || 34;
+    sec.style.fontSize = (cur * Math.max(0.94, sec.clientHeight/sec.scrollHeight)).toFixed(2)+'px';
+  }
+}
 Reveal.initialize({hash:true, slideNumber:'c/t', width:1280, height:720,
-  center:false, margin:0.04, transition:'slide', plugins:[RevealNotes]})
+  center:false, margin:0.04, transition:'slide', viewDistance:5,
+  plugins:[RevealNotes]})
 .then(function(){
   renderMathInElement(document.body, {delimiters:[
     {left:'$$',right:'$$',display:true},
@@ -269,6 +281,11 @@ Reveal.initialize({hash:true, slideNumber:'c/t', width:1280, height:720,
     {left:'\\\\(',right:'\\\\)',display:false},
     {left:'\\\\[',right:'\\\\]',display:true}
   ], throwOnError:false});
+  var fitCur = function(){ fitSection(Reveal.getCurrentSlide()); };
+  Reveal.on('slidechanged', function(e){ fitSection(e.currentSlide); });
+  Reveal.on('resize', fitCur);
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(fitCur); }
+  fitCur();
   Reveal.layout();
 });
 """
