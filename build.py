@@ -454,7 +454,7 @@ a.card:hover{background:var(--soft);transform:translateY(-1px);box-shadow:0 4px 
 <title>논리퍼즐 수업 — 32주</title><style>{css}</style></head>
 <body><div class="wrap">
 <h1>논리퍼즐 수업</h1>
-<p class="sub">중학생 토론 수업 · 주 1회 90분 · 32주 (퍼즐 → 일반화 → 수학 개념)</p>
+<p class="sub">토론 수업 · 주 1회 90분 · 32주 (퍼즐 → 일반화 → 수학 개념)</p>
 <p class="legend">완성된 주차의 카드를 누르면 슬라이드가 열립니다. 발표: <kbd>F</kbd> 전체화면 · <kbd>S</kbd> 발표자 노트 · 방향키로 넘김.</p>
 {phases_html}
 </div></body></html>"""
