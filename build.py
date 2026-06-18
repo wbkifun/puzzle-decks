@@ -47,10 +47,15 @@ def katex_css_inlined() -> str:
 
 DECK_CSS = """
 /* 실제 덱 레이아웃 (_frame.css 는 미리보기 전용이라 제외, 여기서 재현) */
+/* 화면용 기준 폰트 크기 — reveal 테마를 안 쓰므로 여기서 명시.
+   교실 TV 가시성을 위해 디자인 의도(30px)보다 키움. 슬라이드별 내용이
+   많아 넘칠 때만 해당 슬라이드에서 줄인다(.dense). 한 값으로 전체 조절. */
+.reveal { font-size: 34px; }
+.reveal .slides > section.dense { font-size: 28px; }   /* 내용 많은 슬라이드용 */
 .reveal .slides { height: 100%; }
 .reveal .slides > section {
   box-sizing: border-box; width: 100%; height: 720px;
-  padding: 60px 72px 56px;
+  padding: 58px 72px 54px;
   display: flex; flex-direction: column;
 }
 .reveal .slides > section.center-v { justify-content: center; }
@@ -58,11 +63,22 @@ DECK_CSS = """
 .spacer { flex: 1 1 auto; }
 /* 좌하단 풋노트 — 32주 내내 같은 자리 */
 .slide-foot {
-  position: absolute; left: 72px; bottom: 22px;
+  position: absolute; left: 72px; bottom: 20px;
   font-family: var(--font-mono); font-size: .42em; letter-spacing: .1em;
   color: var(--ink-soft); text-transform: uppercase;
 }
 .slide-foot b { color: var(--phase-accent-ink); font-weight: 700; }
+/* 문제 ↔ 풀이 점프 링크 (우하단 알약 버튼) */
+.slide-link {
+  position: absolute; right: 24px; bottom: 18px; z-index: 6;
+  display: inline-flex; align-items: center; gap: .4em;
+  font-family: var(--font-mono); font-size: .5em; font-weight: 700;
+  letter-spacing: .04em; padding: .5em .9em; border-radius: 999px;
+  text-decoration: none; color: #fff; background: var(--phase-accent);
+  box-shadow: var(--shadow);
+}
+.slide-link:hover { filter: brightness(1.08); }
+.slide-link .ar { font-size: 1.15em; line-height: 1; }
 /* KaTeX 가 슬라이드 폰트 위계와 충돌하지 않게 */
 .reveal .katex { font-size: 1.05em; }
 """
@@ -103,6 +119,16 @@ def trapbox(s):
         return ""
     label = f'<span class="trap-label">{esc(t.get("label","흔한 함정"))}</span>'
     return f'<div class="trapbox">{label}{esc(t["text"])}</div>'
+
+
+def jump_link(j):
+    """문제↔풀이 점프 링크. dir 'prev'면 ← 왼쪽, 그 외 → 오른쪽."""
+    label = esc(j.get("label", ""))
+    if j.get("dir") == "prev":
+        inner = f'<span class="ar">←</span>{label}'
+    else:
+        inner = f'{label}<span class="ar">→</span>'
+    return f'<a class="slide-link" href="#/{j["to"]}">{inner}</a>'
 
 
 # ---------- 아키타입 렌더러 ----------
@@ -204,7 +230,16 @@ def build(week_json: Path):
         fn = RENDER.get(s["type"])
         if not fn:
             sys.exit(f"unknown slide type: {s['type']}")
-        sections.append(fn(s, meta))
+        sec = fn(s, meta)
+        if s.get("id"):                      # 점프 대상이 되도록 #/<id> 부여
+            sec = sec.replace("<section", f'<section id="{s["id"]}"', 1)
+        if s.get("dense"):                   # 내용 많은 슬라이드는 폰트 축소
+            sec = sec.replace("<section", '<section class="dense"', 1) \
+                if 'class="' not in sec.split(">", 1)[0] else \
+                sec.replace('class="', 'class="dense ', 1)
+        if s.get("jump"):                    # 문제↔풀이 링크 삽입(절대배치라 위치 무관)
+            sec = sec[:sec.rfind("</section>")] + jump_link(s["jump"]) + "</section>"
+        sections.append(sec)
 
     tokens = read(DS / "tokens.css").replace('url("fonts/', 'url("../_assets/fonts/')
     css = "\n".join([
