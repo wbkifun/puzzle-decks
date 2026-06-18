@@ -92,9 +92,9 @@ DECK_CSS = """
 /* 섹션 구분 슬라이드 큰 제목 */
 .divider-h { color: var(--phase-accent-ink); font-size: 2.6em; }
 /* 드모르간 2×2 격자 그림 */
-.dm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: 320px; max-width: 100%; }
-.dm-cell { border: 2px solid var(--line); border-radius: 10px; min-height: 80px;
-  display: grid; place-items: center; text-align: center;
+.dm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: 440px; max-width: 100%; }
+.dm-cell { border: 2px solid var(--line); border-radius: 10px; min-height: 76px;
+  display: grid; place-items: center; text-align: center; white-space: nowrap;
   font-family: var(--font-mono); font-size: .78em; line-height: 1.3;
   background: var(--bg-panel); color: var(--ink-soft); }
 .dm-cell.dm-on { background: var(--phase-accent-soft); border-color: var(--phase-accent);
