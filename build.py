@@ -91,6 +91,14 @@ DECK_CSS = """
 .reveal .slide-link .ar { font-size: 1.15em; line-height: 1; }
 /* 섹션 구분 슬라이드 큰 제목 */
 .divider-h { color: var(--phase-accent-ink); font-size: 2.6em; }
+/* 드모르간 2×2 격자 그림 */
+.dm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: 320px; max-width: 100%; }
+.dm-cell { border: 2px solid var(--line); border-radius: 10px; min-height: 80px;
+  display: grid; place-items: center; text-align: center;
+  font-family: var(--font-mono); font-size: .78em; line-height: 1.3;
+  background: var(--bg-panel); color: var(--ink-soft); }
+.dm-cell.dm-on { background: var(--phase-accent-soft); border-color: var(--phase-accent);
+  color: var(--phase-accent-ink); font-weight: 800; }
 /* KaTeX 가 슬라이드 폰트 위계와 충돌하지 않게 */
 .reveal .katex { font-size: 1.05em; }
 """
@@ -223,6 +231,13 @@ def r_divider(s, meta):
     return shell(meta, s, inner, center=True)
 
 
+def r_raw(s, meta):
+    # 커스텀 그림/레이아웃용: html 필드를 (이스케이프 없이) 그대로 삽입.
+    # 콘텐츠는 내가 작성하는 신뢰 입력이므로 raw HTML 허용. 속성은 ' 사용 권장.
+    inner = kh(s) + s.get("html", "")
+    return shell(meta, s, inner, center=s.get("center", False))
+
+
 def r_end(s, meta):
     return shell(meta, s, f'<h1>{esc(s.get("h","끝"))}</h1>', center=True)
 
@@ -231,7 +246,7 @@ RENDER = {
     "title": r_title, "warmup": r_basic, "problem": r_basic, "setup": r_basic,
     "solution": r_basic, "practice": r_basic, "reason": r_reason,
     "proof-flow": r_proof, "truth-table": r_truth, "concept-reveal": r_concept,
-    "divider": r_divider, "end": r_end,
+    "divider": r_divider, "raw": r_raw, "end": r_end,
 }
 
 
