@@ -52,18 +52,24 @@ DECK_CSS = """
    많아 넘칠 때만 해당 슬라이드에서 줄인다(.dense). 한 값으로 전체 조절. */
 .reveal { font-size: 34px; }
 .reveal .slides > section.dense { font-size: 28px; }   /* 내용 많은 슬라이드용 */
-.reveal .slides { height: 100%; }
-.reveal .slides > section {
-  box-sizing: border-box; width: 100%; height: 720px;
-  padding: 58px 72px 54px;
+.reveal .slides > section { padding: 0 !important; }
+/* 모든 슬라이드의 실제 캔버스: 내가 100% 제어하는 고정 720 높이 박스
+   (reveal의 섹션 높이 간섭을 받지 않음). 이 안에서
+   band(top 고정) · smain(flex:1로 남는 공간 채움) · foot(흐름의 마지막=바닥)
+   → 풋노트가 내용 많고 적음에 상관없이 항상 좌하단, 본문과 안 겹침. */
+.canvas {
+  position: relative; box-sizing: border-box;
+  width: 100%; height: 720px;
+  padding: 50px 64px 52px;          /* 하단 52px = 풋노트 자리 예약 */
   display: flex; flex-direction: column;
 }
-.reveal .slides > section.center-v { justify-content: center; }
+.smain { flex: 0 0 auto; display: flex; flex-direction: column; }
+.center-v .canvas { justify-content: center; }   /* 타이틀/리빌/끝은 수직 중앙 */
 .reveal .subtitle { color: var(--ink-soft); font-size: 1.1em; margin-top: .2em; }
-.spacer { flex: 1 1 auto; }
-/* 좌하단 풋노트 — 32주 내내 같은 자리 */
+/* 좌하단 풋노트 — 캔버스(고정720) 기준 하단 띠에 absolute 고정.
+   본문은 fitSection이 이 띠 위로 들어맞게 축소 → 항상 같은 위치, 겹침 없음. */
 .slide-foot {
-  position: absolute; left: 72px; bottom: 20px;
+  position: absolute; left: 64px; bottom: 18px;
   font-family: var(--font-mono); font-size: .42em; letter-spacing: .1em;
   color: var(--ink-soft); text-transform: uppercase;
 }
@@ -102,14 +108,23 @@ def foot(meta):
             f'{esc(PHASE_NAME.get(meta["phase"], ""))}{num}</div>')
 
 
-def head_bits(s, meta, center=False):
-    cls = ' class="center-v"' if center else ""
-    kicker = (f'<span class="kicker">{esc(s["kicker"])}</span>'
-              if s.get("kicker") else "")
-    h = ""
-    if s.get("h"):
-        h = f'<h2>{esc(s["h"])}</h2>'
-    return cls, kicker, h
+def kh(s):
+    k = (f'<span class="kicker">{esc(s["kicker"])}</span>'
+         if s.get("kicker") else "")
+    h = f'<h2>{esc(s["h"])}</h2>' if s.get("h") else ""
+    return k + h
+
+
+def shell(meta, s, inner, center=False):
+    # band(absolute) + smain(flex:1, 내용) + foot(흐름의 마지막 = 본문 아래) + notes
+    # 풋노트가 absolute가 아니라 흐름 요소라, reveal가 섹션 높이를 어떻게 잡든
+    # 본문 밑에 와서 절대 겹치지 않는다.
+    cls = "slide center-v" if center else "slide"
+    return (f'<section class="{cls}"><div class="canvas">'
+            f'<div class="slide-band"></div>'
+            f'<div class="smain">{inner}</div>'
+            f'{foot(meta)}'
+            f'</div>{notes(s)}</section>')
 
 
 def paras(body):
@@ -138,56 +153,45 @@ def jump_link(j):
     return f'<a class="slide-link" href="#/{j["to"]}">{inner}</a>'
 
 
-# ---------- 아키타입 렌더러 ----------
+# ---------- 아키타입 렌더러 (모두 shell 사용) ----------
 def r_title(s, meta):
-    return f"""<section class="center-v">
-<div class="slide-band"></div>
-<span class="kicker">{esc(f'Phase {meta["phase"]} · {meta["week"]}주차')}</span>
-<h1>{esc(meta['title'])}</h1>
-<p class="subtitle">{esc(meta.get('subtitle',''))}</p>
-{foot(meta)}{notes(s)}</section>"""
+    kicker = f'Phase {meta["phase"]} · {meta["week"]}주차'
+    inner = (f'<span class="kicker">{esc(kicker)}</span>'
+             f'<h1>{esc(meta["title"])}</h1>'
+             f'<p class="subtitle">{esc(meta.get("subtitle",""))}</p>')
+    return shell(meta, s, inner, center=True)
 
 
 def r_basic(s, meta):
-    cls, kicker, h = head_bits(s, meta)
-    return f"""<section{cls}>
-<div class="slide-band"></div>{kicker}{h}
-<div class="stack">{paras(s.get('body',[]))}{leadq(s)}{trapbox(s)}</div>
-{foot(meta)}{notes(s)}</section>"""
+    inner = kh(s) + (f'<div class="stack">{paras(s.get("body",[]))}'
+                     f'{leadq(s)}{trapbox(s)}</div>')
+    return shell(meta, s, inner)
 
 
 def r_reason(s, meta):
-    cls, kicker, h = head_bits(s, meta)
     lis = "".join(
         f'<li class="{"key" if it.get("key") else ""}">{esc(it["t"])}</li>'
-        for it in s["items"]
-    )
-    return f"""<section{cls}>
-<div class="slide-band"></div>{kicker}{h}
-<ol class="reason">{lis}</ol>{leadq(s)}
-{foot(meta)}{notes(s)}</section>"""
+        for it in s["items"])
+    inner = kh(s) + f'<ol class="reason">{lis}</ol>' + leadq(s)
+    return shell(meta, s, inner)
 
 
 def r_proof(s, meta):
-    cls, kicker, h = head_bits(s, meta)
     parts = []
     for i, st in enumerate(s["steps"]):
         if i:
             parts.append('<div class="arrow"></div>')
-        k = st.get("kind", "")
-        sc = f"step {k}".strip()
-        lead = f'<span class="lead">{esc(st["lead"])}</span> ' if st.get("lead") else ""
+        sc = ("step " + st.get("kind", "")).strip()
+        lead = (f'<span class="lead">{esc(st["lead"])}</span> '
+                if st.get("lead") else "")
         parts.append(f'<div class="{sc}">{lead}{esc(st["t"])}</div>')
-    lq = (f'<p class="lead-q" style="margin-bottom:.6em">{esc(s["q"])}</p>'
+    lq = (f'<p class="lead-q" style="margin-bottom:.5em">{esc(s["q"])}</p>'
           if s.get("q") else "")
-    return f"""<section{cls}>
-<div class="slide-band"></div>{kicker}{h}{lq}
-<div class="proof-flow">{''.join(parts)}</div>
-{foot(meta)}{notes(s)}</section>"""
+    inner = kh(s) + lq + f'<div class="proof-flow">{"".join(parts)}</div>'
+    return shell(meta, s, inner)
 
 
 def r_truth(s, meta):
-    cls, kicker, h = head_bits(s, meta)
     rows = [f'<tr>{"".join(f"<th>{esc(x)}</th>" for x in s["head"])}</tr>']
     for row in s["rows"]:
         marks = row.get("marks", [""] * len(row["cells"]))
@@ -195,28 +199,23 @@ def r_truth(s, meta):
                       for c, m in zip(row["cells"], marks))
         rows.append(f'<tr class="{"win" if row.get("win") else ""}">{tds}</tr>')
     cap = f'<p class="figcap">{esc(s["caption"])}</p>' if s.get("caption") else ""
-    return f"""<section{cls}>
-<div class="slide-band"></div>{kicker}{h}
-<table class="truth">{''.join(rows)}</table>{cap}
-{foot(meta)}{notes(s)}</section>"""
+    inner = kh(s) + f'<table class="truth">{"".join(rows)}</table>' + cap
+    return shell(meta, s, inner)
 
 
 def r_concept(s, meta):
-    cls, kicker, h = head_bits(s, meta, center=True)
     rk = (f'<span class="reveal-kicker">{esc(s["revealKicker"])}</span>'
           if s.get("revealKicker") else "")
     sub = f'<span class="sub">{esc(s["sub"])}</span>' if s.get("sub") else ""
-    body = f'<div class="stack" style="margin-top:1em">{paras(s["body"])}</div>' \
-        if s.get("body") else ""
-    return f"""<section{cls}>
-<div class="slide-band"></div>{kicker}{h}
-<div class="reveal-box">{rk}<span class="concept">{esc(s['concept'])}</span>{sub}</div>
-{body}{foot(meta)}{notes(s)}</section>"""
+    body = (f'<div class="stack" style="margin-top:1em">{paras(s["body"])}</div>'
+            if s.get("body") else "")
+    inner = (kh(s) + f'<div class="reveal-box">{rk}'
+             f'<span class="concept">{esc(s["concept"])}</span>{sub}</div>' + body)
+    return shell(meta, s, inner, center=True)
 
 
 def r_end(s, meta):
-    return (f'<section class="center-v"><div class="slide-band"></div>'
-            f'<h1>{esc(s.get("h","끝"))}</h1>{foot(meta)}{notes(s)}</section>')
+    return shell(meta, s, f'<h1>{esc(s.get("h","끝"))}</h1>', center=True)
 
 
 RENDER = {
@@ -246,8 +245,9 @@ def build(week_json: Path):
             sec = sec.replace("<section", '<section class="dense"', 1) \
                 if 'class="' not in sec.split(">", 1)[0] else \
                 sec.replace('class="', 'class="dense ', 1)
-        if s.get("jump"):                    # 문제↔풀이 링크 삽입(절대배치라 위치 무관)
-            sec = sec[:sec.rfind("</section>")] + jump_link(s["jump"]) + "</section>"
+        if s.get("jump"):                    # 점프 링크를 캔버스 안(band 뒤)에 삽입 → 캔버스 기준 우상단
+            sec = sec.replace('<div class="slide-band"></div>',
+                              '<div class="slide-band"></div>' + jump_link(s["jump"]), 1)
         sections.append(sec)
 
     tokens = read(DS / "tokens.css").replace('url("fonts/', 'url("../_assets/fonts/')
@@ -273,11 +273,16 @@ def build(week_json: Path):
 // 내용이 적은 슬라이드는 기준(34px) 유지 → "넘칠 때만 축소" 동적 조절.
 function fitSection(sec){
   if(!sec) return;
+  var c = sec.querySelector('.canvas'), m = sec.querySelector('.smain');
+  if(!c || !m) return;
   sec.style.fontSize='';                       // 기준 크기로 리셋 후 측정
+  var cs = getComputedStyle(c);
+  // 풋노트 띠(하단 패딩) 위로 본문이 들어갈 실제 가용 높이(레이아웃 px, transform 무관)
+  var avail = c.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
   var guard=0;
-  while(sec.scrollHeight > sec.clientHeight + 1 && guard++ < 12){
+  while(m.scrollHeight > avail + 1 && guard++ < 16){
     var cur = parseFloat(getComputedStyle(sec).fontSize) || 34;
-    sec.style.fontSize = (cur * Math.max(0.94, sec.clientHeight/sec.scrollHeight)).toFixed(2)+'px';
+    sec.style.fontSize = (cur * Math.max(0.92, avail/m.scrollHeight)).toFixed(2)+'px';
   }
 }
 Reveal.initialize({hash:true, slideNumber:false, width:1280, height:720,
@@ -293,8 +298,9 @@ Reveal.initialize({hash:true, slideNumber:false, width:1280, height:720,
   var fitCur = function(){ fitSection(Reveal.getCurrentSlide()); };
   Reveal.on('slidechanged', function(e){ fitSection(e.currentSlide); });
   Reveal.on('resize', fitCur);
-  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(fitCur); }
   fitCur();
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(fitCur); }
+  setTimeout(fitCur, 250);    // KaTeX/웹폰트 레이아웃 안정 후 최종 보정
   Reveal.layout();
 });
 """
