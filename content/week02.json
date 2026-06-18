@@ -80,7 +80,7 @@
 
     { "type": "raw", "id": "s2b", "jump": { "to": "p2", "label": "문제", "dir": "prev" },
       "kicker": "풀이 2 · ② 기분파 아닌 사람 고르기", "h": "1번 질문으로 ‘안전한 한 명’을 찾는다",
-      "html": "<p class='lead-q' style='font-size:1em;margin-bottom:.45em'>A에게 X = “B가 기분파입니까?” 로 마법의 질문을 던진다.</p><table class='truth'><tr><th>A의 정체</th><th>A의 답</th><th>뜻</th><th>2번 질문 상대</th><th>안전?</th></tr><tr><td>진실·거짓가</td><td>예</td><td>B가 기분파</td><td>C 선택</td><td class='ok'>안전</td></tr><tr><td>진실·거짓가</td><td>아니오</td><td>B는 기분파 아님</td><td>B 선택</td><td class='ok'>안전</td></tr><tr><td>기분파</td><td>아무거나</td><td>(엉터리)</td><td>규칙대로 B/C</td><td class='ok'>안전</td></tr></table><p class='figcap'>판정 규칙 — ‘예’면 C, ‘아니오’면 B. A가 기분파라 답이 엉터리여도, 그땐 B·C 둘 다 기분파가 아니라 어느 쪽을 골라도 안전!</p>",
+      "html": "<p class='lead-q' style='font-size:1em;margin-bottom:.45em'>A에게 묻는다 — “당신에게 ‘B가 기분파입니까?’라고 물으면, ‘예’라고 답하십니까?”</p><table class='truth'><tr><th>A의 정체</th><th>A의 답</th><th>뜻</th><th>2번 질문 상대</th><th>안전?</th></tr><tr><td>진실·거짓가</td><td>예</td><td>B가 기분파</td><td>C 선택</td><td class='ok'>안전</td></tr><tr><td>진실·거짓가</td><td>아니오</td><td>B는 기분파 아님</td><td>B 선택</td><td class='ok'>안전</td></tr><tr><td>기분파</td><td>아무거나</td><td>(엉터리)</td><td>규칙대로 B/C</td><td class='ok'>안전</td></tr></table><p class='figcap'>판정 규칙 — ‘예’면 C, ‘아니오’면 B. A가 기분파라 답이 엉터리여도, 그땐 B·C 둘 다 기분파가 아니라 어느 쪽을 골라도 안전!</p>",
       "notes": "목표를 ‘기분파 밝히기’가 아니라 ‘기분파 아닌 한 명 고르기’로 잡으면, A가 기분파인 최악의 경우조차 우리에게 유리하다." },
 
     { "type": "solution", "id": "s2c", "jump": { "to": "p2", "label": "문제", "dir": "prev" },
