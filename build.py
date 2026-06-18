@@ -89,6 +89,8 @@ DECK_CSS = """
 }
 .reveal .slide-link:hover { filter: brightness(1.08); }
 .reveal .slide-link .ar { font-size: 1.15em; line-height: 1; }
+/* 섹션 구분 슬라이드 큰 제목 */
+.divider-h { color: var(--phase-accent-ink); font-size: 2.6em; }
 /* KaTeX 가 슬라이드 폰트 위계와 충돌하지 않게 */
 .reveal .katex { font-size: 1.05em; }
 """
@@ -214,6 +216,13 @@ def r_concept(s, meta):
     return shell(meta, s, inner, center=True)
 
 
+def r_divider(s, meta):
+    # 섹션 구분(예: "풀이") — 큰 제목 + 안내 부제
+    sub = f'<p class="subtitle">{esc(s["sub"])}</p>' if s.get("sub") else ""
+    inner = f'<h1 class="divider-h">{esc(s.get("h","풀이"))}</h1>{sub}'
+    return shell(meta, s, inner, center=True)
+
+
 def r_end(s, meta):
     return shell(meta, s, f'<h1>{esc(s.get("h","끝"))}</h1>', center=True)
 
@@ -222,7 +231,7 @@ RENDER = {
     "title": r_title, "warmup": r_basic, "problem": r_basic, "setup": r_basic,
     "solution": r_basic, "practice": r_basic, "reason": r_reason,
     "proof-flow": r_proof, "truth-table": r_truth, "concept-reveal": r_concept,
-    "end": r_end,
+    "divider": r_divider, "end": r_end,
 }
 
 
