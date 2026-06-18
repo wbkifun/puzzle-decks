@@ -1,64 +1,151 @@
 /* =====================================================================
-   논리퍼즐 수업 — 디자인 토큰 (PLACEHOLDER)
+   논리퍼즐 수업 — 디자인 토큰
    ---------------------------------------------------------------------
-   ⚠ 이 파일은 임시 자리표시자다. 최종 디자인은 Claude Design(claude.ai/design)
-     에서 만들어 DesignSync로 이 경로에 덮어쓴다. 구조(변수 이름)는 유지하고
-     값만 바뀌도록 설계되어, 룩을 갈아끼워도 build.py를 고칠 필요가 없다.
+   계약(변수/클래스 이름)은 유지, 값만 디자인으로 교체했다.
+   build.py가 <body data-phase="N">를 주입하면 단계 색만 바뀌고
+   베이스·의미색·타이포는 1~32주 내내 불변이다(= 시각 문법의 일관성).
    ===================================================================== */
 
+/* --- 브랜드 폰트: Pretendard 자체 호스팅(오프라인 단일 파일 대응) ---------
+   교육적 이유와 무관한 인프라. woff2 9웨이트를 한 패밀리로 묶어, 어느 두께를
+   써도 정확한 글리프가 나오고 CDN fetch 없이 더블클릭으로 열린다. */
+@font-face { font-family:"Pretendard"; font-weight:100; font-style:normal; font-display:swap; src:url("fonts/Pretendard-Thin.woff2") format("woff2"); }
+@font-face { font-family:"Pretendard"; font-weight:200; font-style:normal; font-display:swap; src:url("fonts/Pretendard-ExtraLight.woff2") format("woff2"); }
+@font-face { font-family:"Pretendard"; font-weight:300; font-style:normal; font-display:swap; src:url("fonts/Pretendard-Light.woff2") format("woff2"); }
+@font-face { font-family:"Pretendard"; font-weight:400; font-style:normal; font-display:swap; src:url("fonts/Pretendard-Regular.woff2") format("woff2"); }
+@font-face { font-family:"Pretendard"; font-weight:500; font-style:normal; font-display:swap; src:url("fonts/Pretendard-Medium.woff2") format("woff2"); }
+@font-face { font-family:"Pretendard"; font-weight:600; font-style:normal; font-display:swap; src:url("fonts/Pretendard-SemiBold.woff2") format("woff2"); }
+@font-face { font-family:"Pretendard"; font-weight:700; font-style:normal; font-display:swap; src:url("fonts/Pretendard-Bold.woff2") format("woff2"); }
+@font-face { font-family:"Pretendard"; font-weight:800; font-style:normal; font-display:swap; src:url("fonts/Pretendard-ExtraBold.woff2") format("woff2"); }
+@font-face { font-family:"Pretendard"; font-weight:900; font-style:normal; font-display:swap; src:url("fonts/Pretendard-Black.woff2") format("woff2"); }
+
+/* --- 브랜드 폰트: JetBrains Mono 자체 호스팅(식·숫자·코드) -----------------
+   (build.py가 _assets로 매핑. 미배치 두께는 자동으로 폴백) */
+@font-face { font-family:"JetBrains Mono"; font-weight:400; font-style:normal; font-display:swap; src:url("fonts/JetBrainsMono-Regular.woff2") format("woff2"); }
+@font-face { font-family:"JetBrains Mono"; font-weight:700; font-style:normal; font-display:swap; src:url("fonts/JetBrainsMono-Bold.woff2") format("woff2"); }
+
 :root {
-  /* --- Phase accent (단계별 색. body[data-phase]로 전환) --- */
-  --phase-accent: #4f46e5;          /* 기본 = Phase 1 */
-  --phase-accent-soft: #e0e7ff;
+  /* --- Phase accent (단계별 색. body[data-phase]로 전환) -----------------
+     교육적 이유: 8주마다 한 가지 큰 수학 줄기로 넘어간다. 색이 바뀌면
+     "이제 새로운 땅에 들어왔다"는 신호가 말 없이 전달된다. 기본=Phase 1. */
+  --phase-accent:      #4338ca;     /* 인디고 */
+  --phase-accent-soft: #eceefc;
+  --phase-accent-ink:  #2c248f;     /* soft 배경 위에서도 AA 나오는 진한 톤 */
 
-  /* --- 의미 기반 색상 시스템 (1~32주 불변의 시각 문법) --- */
-  --c-assumption: #2563eb;  /* 가정    □ */
-  --c-contra:     #dc2626;  /* 모순    ⚡ */
-  --c-conclude:   #16a34a;  /* 결론/정답 ✓ */
-  --c-trap:       #d97706;  /* 함정/오답 ⚠ */
+  /* --- 의미 기반 색상 시스템 (1~32주 불변) ------------------------------
+     교육적 이유: 색을 '의미'로 고정한다. 파랑=가정, 빨강=모순,
+     초록=결론, 주황=함정. 32주 동안 같은 색이 같은 뜻이라 학생은
+     색만 보고도 추론의 어느 국면인지 즉시 안다. 색맹 대응을 위해
+     아래 .tag/.sym 은 항상 도형 아이콘과 함께 출력된다. */
+  --c-assumption: #1d4ed8;   /* 가정      □ */
+  --c-contra:     #c81e1e;   /* 모순      ⚡ */
+  --c-conclude:   #15803d;   /* 결론/정답 ✓ */
+  --c-trap:       #c2410c;   /* 함정/오답 ⚠ */
 
-  /* --- 베이스 (4단계 공통) --- */
-  --bg:        #ffffff;
-  --bg-soft:   #f8fafc;
-  --ink:       #0f172a;
-  --ink-soft:  #475569;
-  --line:      #e2e8f0;
+  --c-assumption-soft: #e7edfd;
+  --c-contra-soft:     #fbe7e7;
+  --c-conclude-soft:   #e3f4e9;
+  --c-trap-soft:       #fcebe1;
 
-  /* --- 타이포 --- */
+  /* --- 베이스 (4단계 공통) ----------------------------------------------
+     교육적 이유: 교실 프로젝터 + 맨 뒷자리 가독성. 순백 대신 아주 옅게
+     차가운 종이톤으로 눈부심을 낮추고, 본문은 거의-검정으로 명도대비
+     WCAG AA 이상(약 16:1)을 확보한다. */
+  --bg:        #fcfcfd;
+  --bg-soft:   #f3f4f7;
+  --bg-panel:  #ffffff;
+  --ink:       #15171e;
+  --ink-soft:  #565d6b;
+  --line:      #e2e5ea;
+  --line-soft: #eef0f4;
+
+  /* --- 타이포 -----------------------------------------------------------
+     교육적 이유: 본문은 인간적인 산세리프(Pretendard)로 빠르게 읽고,
+     숫자·식·좌표·코드는 고정폭(JetBrains Mono)으로 정렬해 '계산하는 손'을
+     시각적으로 분리한다. 글과 식이 섞이지 않아 사고가 또렷해진다. */
   --font-sans: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR",
                "Malgun Gothic", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", "D2Coding", ui-monospace, monospace;
+
+  /* --- 형태 토큰 --------------------------------------------------------- */
+  --radius:    14px;
+  --radius-sm: 8px;
+  --band-h:    12px;                  /* 상단 Phase 띠 두께 */
+  --shadow:    0 1px 2px rgba(21,23,30,.04), 0 8px 28px rgba(21,23,30,.06);
 }
 
-/* 단계별 accent 스위치 — build.py가 <body data-phase="N">로 주입 */
-body[data-phase="1"] { --phase-accent: #4f46e5; --phase-accent-soft: #e0e7ff; }
-body[data-phase="2"] { --phase-accent: #0d9488; --phase-accent-soft: #ccfbf1; }
-body[data-phase="3"] { --phase-accent: #d97706; --phase-accent-soft: #fef3c7; }
-body[data-phase="4"] { --phase-accent: #7c3aed; --phase-accent-soft: #ede9fe; }
+/* 단계별 accent 스위치 — build.py가 <body data-phase="N">로 주입.
+   각 단계: 진한 accent(텍스트/띠/테두리용) + soft(스포트라이트 배경용)
+            + accent-ink(soft 위 텍스트가 AA를 넘도록 한 단계 더 진한 톤). */
+body[data-phase="1"]{ --phase-accent:#4338ca; --phase-accent-soft:#eceefc; --phase-accent-ink:#2c248f; } /* 논리와 추론  · 인디고 */
+body[data-phase="2"]{ --phase-accent:#0f766e; --phase-accent-soft:#d6f0ec; --phase-accent-ink:#0a544e; } /* 변수와 방정식 · 틸    */
+body[data-phase="3"]{ --phase-accent:#b45309; --phase-accent-soft:#fcecd2; --phase-accent-ink:#8a3f07; } /* 함수와 그래프 · 앰버  */
+body[data-phase="4"]{ --phase-accent:#6d28d9; --phase-accent-soft:#ece4fb; --phase-accent-ink:#561db0; } /* 고급 개념의 씨앗 · 바이올렛 */
 
 /* =====================================================================
-   reveal.js 위에 얹는 기본 슬라이드 룩 (placeholder)
+   reveal.js 위에 얹는 기본 슬라이드 룩
+   한 슬라이드 = 한 생각. 좌측 정렬 본문 + 넉넉한 여백 + 강한 위계.
    ===================================================================== */
-.reveal { font-family: var(--font-sans); color: var(--ink); }
-.reveal .slides section { text-align: left; }
+.reveal { font-family: var(--font-sans); color: var(--ink); background: var(--bg); }
+.reveal .slides section {
+  text-align: left;
+  line-height: 1.4;
+}
 
-.reveal h1, .reveal h2 { color: var(--ink); font-weight: 800; letter-spacing: -0.02em; }
-.reveal h1 { font-size: 1.9em; }
-.reveal h2 { font-size: 1.4em; }
+.reveal h1, .reveal h2, .reveal h3 {
+  color: var(--ink); font-weight: 800; letter-spacing: -0.02em;
+  line-height: 1.12; margin: 0 0 .35em; text-wrap: balance;
+}
+.reveal h1 { font-size: 2.0em; }
+.reveal h2 { font-size: 1.42em; }
+.reveal h3 { font-size: 1.05em; color: var(--ink-soft); font-weight: 700; }
+.reveal p, .reveal li { font-size: 1em; }
+.reveal strong { color: var(--ink); font-weight: 800; }
+.reveal code, .reveal .mono, .reveal .num { font-family: var(--font-mono); }
+.reveal em { font-style: normal; color: var(--phase-accent-ink); font-weight: 700; }
 
-/* 슬라이드 상단 색 띠 = 현재 Phase */
+/* 슬라이드 상단 색 띠 = 현재 Phase. 매 화면 같은 자리에서 단계를 각인. */
 .slide-band {
-  position: absolute; top: 0; left: 0; right: 0; height: 14px;
+  position: absolute; top: 0; left: 0; right: 0; height: var(--band-h);
   background: var(--phase-accent);
 }
+
+/* 상단 라벨(키커): 주차/단계/유형을 작게. 본문 위계를 방해하지 않는다. */
 .kicker {
-  display: inline-block; font-size: 0.5em; font-weight: 700;
-  color: var(--phase-accent); letter-spacing: 0.08em; margin-bottom: 0.4em;
+  display: inline-flex; align-items: center; gap: .5em;
+  font-family: var(--font-mono);
+  font-size: .46em; font-weight: 700; letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--phase-accent-ink); margin-bottom: .8em;
+}
+.kicker::before {                      /* 단계 색 점 = 색 코딩 재확인 */
+  content: ""; width: .7em; height: .7em; border-radius: 50%;
+  background: var(--phase-accent);
 }
 
-/* 의미 토큰 유틸리티 (아이콘과 항상 페어링 → 색맹 대응) */
-.tag { font-weight: 700; }
-.tag.assume  { color: var(--c-assumption); }
-.tag.contra  { color: var(--c-contra); }
-.tag.conclude{ color: var(--c-conclude); }
-.tag.trap    { color: var(--c-trap); }
+/* =====================================================================
+   의미 토큰 유틸리티 — 색은 반드시 도형 아이콘과 페어링(색맹 대응)
+   .tag = 인라인 라벨,  .sym = 아이콘 단독
+   ===================================================================== */
+.tag {
+  display: inline-flex; align-items: center; gap: .35em;
+  font-weight: 800; font-size: .9em;
+  padding: .12em .5em; border-radius: var(--radius-sm);
+  line-height: 1.2;
+}
+.tag::before { font-family: var(--font-mono); font-weight: 700; }
+
+.tag.assume   { color: var(--c-assumption); background: var(--c-assumption-soft); }
+.tag.assume::before   { content: "□"; }
+.tag.contra   { color: var(--c-contra);     background: var(--c-contra-soft); }
+.tag.contra::before   { content: "⚡"; }
+.tag.conclude { color: var(--c-conclude);   background: var(--c-conclude-soft); }
+.tag.conclude::before { content: "✓"; }
+.tag.trap     { color: var(--c-trap);       background: var(--c-trap-soft); }
+.tag.trap::before     { content: "⚠"; }
+
+/* 텍스트 안에서 색만 쓰고 싶을 때(배경 없는 변형) */
+.ink-assume  { color: var(--c-assumption); font-weight: 700; }
+.ink-contra  { color: var(--c-contra);     font-weight: 700; }
+.ink-conclude{ color: var(--c-conclude);   font-weight: 700; }
+.ink-trap    { color: var(--c-trap);       font-weight: 700; }

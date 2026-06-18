@@ -1,40 +1,267 @@
 /* =====================================================================
-   수학 시각 컴포넌트 라이브러리 (PLACEHOLDER)
-   Claude Design이 최종본으로 교체. build.py가 쓰는 클래스 이름은 계약(contract).
+   수학 시각 컴포넌트 라이브러리
+   ---------------------------------------------------------------------
+   build.py가 의존하는 클래스 이름은 계약(contract) → 유지.
+   각 컴포넌트는 '장식'이 아니라 추론의 한 국면을 눈에 보이게 만든다.
    ===================================================================== */
 
-/* --- 진리표 / 경우 검사 표 --- */
-table.truth { border-collapse: collapse; font-size: 0.8em; width: 100%; }
-table.truth th, table.truth td {
-  border: 1px solid var(--line); padding: 0.35em 0.6em; text-align: center;
+/* ─────────────────────────────────────────────────────────────────────
+   ① table.truth — 진리표 / 경우 검사 표
+   교육적 이유: 모든 경우를 빠짐없이 나열했음을 표 한 장으로 증명한다.
+   ✓/✗ 는 색 + 글자로 이중 인코딩, 살아남은 경우(.win)는 행을 통째로
+   강조해 "결국 이것만 가능"을 한눈에 보여준다.
+   ──────────────────────────────────────────────────────────────────── */
+table.truth {
+  border-collapse: separate; border-spacing: 0;
+  font-family: var(--font-mono); font-size: .82em; width: 100%;
+  border: 1px solid var(--line); border-radius: var(--radius-sm);
+  overflow: hidden;
 }
-table.truth th { background: var(--phase-accent-soft); color: var(--ink); }
-table.truth td.ok   { color: var(--c-conclude); font-weight: 700; }  /* ✓ */
-table.truth td.no   { color: var(--c-contra);   font-weight: 700; }  /* ✗ */
-table.truth tr.win  { background: #f0fdf4; }                          /* 생존 경우 */
+table.truth th, table.truth td {
+  border-bottom: 1px solid var(--line); border-right: 1px solid var(--line);
+  padding: .5em .7em; text-align: center;
+}
+table.truth th:last-child, table.truth td:last-child { border-right: 0; }
+table.truth tr:last-child td { border-bottom: 0; }
+table.truth th {
+  background: var(--phase-accent-soft); color: var(--phase-accent-ink);
+  font-weight: 700; letter-spacing: .02em;
+}
+table.truth td.ok { color: var(--c-conclude); font-weight: 800; }   /* ✓ */
+table.truth td.no { color: var(--c-contra);   font-weight: 800; }   /* ✗ */
+table.truth td.ok::after { content: " ✓"; }
+table.truth td.no::after { content: " ✗"; }
+table.truth tr.win td {
+  background: var(--c-conclude-soft);
+  box-shadow: inset 3px 0 0 var(--c-conclude);
+}
 
-/* --- 가정 → 모순 흐름도 --- */
-.proof-flow { display: flex; flex-direction: column; gap: 0.35em; font-size: 0.85em; }
+/* ─────────────────────────────────────────────────────────────────────
+   ② .proof-flow .step — 가정 → 모순 흐름도
+   교육적 이유: 귀류법의 골격(가정에서 출발 → 따라가다 → 펑 모순)을
+   세로 사슬로 시각화. 왼쪽 색 띠가 파랑(가정)으로 흐르다 빨강(모순)에서
+   끊긴다. 색의 단절이 곧 논리의 단절.
+   ──────────────────────────────────────────────────────────────────── */
+.proof-flow { display: flex; flex-direction: column; gap: .45em; font-size: .9em; }
 .proof-flow .step {
-  padding: 0.4em 0.7em; border-left: 4px solid var(--c-assumption);
+  position: relative;
+  padding: .55em .85em; border-radius: var(--radius-sm);
+  border-left: 5px solid var(--c-assumption);
   background: var(--bg-soft);
 }
-.proof-flow .step.contra { border-left-color: var(--c-contra); font-weight: 700; }
-.proof-flow .arrow { color: var(--ink-soft); padding-left: 0.7em; }
+.proof-flow .step .lead {            /* 단계 머리표 (가정/그러면/…) */
+  font-family: var(--font-mono); font-weight: 700; font-size: .82em;
+  color: var(--c-assumption); letter-spacing: .03em; margin-right: .5em;
+}
+.proof-flow .arrow {
+  align-self: flex-start; margin-left: 1.1em;
+  color: var(--ink-soft); line-height: .6; font-size: 1.2em;
+}
+.proof-flow .arrow::before { content: "↓"; }
+.proof-flow .step.contra {
+  border-left-color: var(--c-contra);
+  background: var(--c-contra-soft); font-weight: 700;
+}
+.proof-flow .step.contra .lead { color: var(--c-contra); }
+.proof-flow .step.conclude {
+  border-left-color: var(--c-conclude);
+  background: var(--c-conclude-soft);
+}
+.proof-flow .step.conclude .lead { color: var(--c-conclude); }
 
-/* --- 번호 매긴 추론 단계 --- */
-ol.reason { font-size: 0.9em; line-height: 1.5; }
-ol.reason li { margin-bottom: 0.4em; }
+/* ∎ (증명 끝) 표식 */
+.qed { font-family: var(--font-mono); color: var(--c-conclude); font-weight: 800; }
+.qed::before { content: "∎ "; }
 
-/* --- 함정/오답 박스 --- */
+/* ─────────────────────────────────────────────────────────────────────
+   ③ ol.reason — 번호 매긴 추론 단계
+   교육적 이유: 직접 추론은 '한 줄 한 칸씩'. 번호가 사고의 보폭이 되어
+   학생이 "지금 몇 번째 생각"인지 길을 잃지 않는다.
+   ──────────────────────────────────────────────────────────────────── */
+ol.reason { font-size: .95em; line-height: 1.5; counter-reset: r; list-style: none; padding: 0; }
+ol.reason li {
+  position: relative; padding: .15em 0 .15em 2.1em; margin-bottom: .55em;
+  counter-increment: r;
+}
+ol.reason li::before {
+  content: counter(r); position: absolute; left: 0; top: .1em;
+  width: 1.5em; height: 1.5em; border-radius: 50%;
+  display: grid; place-items: center;
+  font-family: var(--font-mono); font-size: .72em; font-weight: 700;
+  background: var(--phase-accent-soft); color: var(--phase-accent-ink);
+}
+ol.reason li.key::before {           /* 핵심 단계는 채워서 강조 */
+  background: var(--phase-accent); color: #fff;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   ④ .trapbox — 함정 / 흔한 오답
+   교육적 이유: '틀리는 길'을 일부러 보여준다. 점선 + ⚠ 로 "이건 함정"을
+   명시해, 오답을 비난이 아니라 학습의 재료로 다룬다.
+   ──────────────────────────────────────────────────────────────────── */
 .trapbox {
-  border: 2px dashed var(--c-trap); border-radius: 10px;
-  padding: 0.6em 0.9em; background: #fffbeb; font-size: 0.85em;
+  position: relative;
+  border: 2px dashed var(--c-trap); border-radius: var(--radius);
+  padding: .7em 1em .7em 2.6em; background: var(--c-trap-soft);
+  font-size: .9em; color: var(--ink);
+}
+.trapbox::before {
+  content: "⚠"; position: absolute; left: .85em; top: .62em;
+  font-family: var(--font-mono); font-weight: 700; font-size: 1.15em;
+  color: var(--c-trap);
+}
+.trapbox .trap-label {
+  display: block; font-weight: 800; color: var(--c-trap);
+  font-size: .82em; letter-spacing: .04em; margin-bottom: .2em;
+  text-transform: uppercase; font-family: var(--font-mono);
 }
 
-/* --- 개념 등장(리빌) 스포트라이트 --- */
+/* ─────────────────────────────────────────────────────────────────────
+   ⑤ .reveal-box .concept — 개념 등장(리빌) 스포트라이트  ★가장 중요
+   교육적 이유: 퍼즐의 '아하!'가 수학 개념으로 승격되는 순간.
+   Phase 색으로 빛나는 무대를 만들어, 이 한 줄이 오늘 배운 것임을 각인.
+   ──────────────────────────────────────────────────────────────────── */
 .reveal-box {
-  border-radius: 14px; padding: 0.8em 1em; text-align: center;
-  background: var(--phase-accent-soft); border: 2px solid var(--phase-accent);
+  border-radius: var(--radius); padding: 1.1em 1.3em; text-align: center;
+  background: var(--phase-accent-soft);
+  border: 2px solid var(--phase-accent);
+  box-shadow: var(--shadow);
 }
-.reveal-box .concept { font-size: 1.3em; font-weight: 800; color: var(--phase-accent); }
+.reveal-box .reveal-kicker {
+  display: block; font-family: var(--font-mono); font-size: .62em;
+  font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--phase-accent-ink); margin-bottom: .35em;
+}
+.reveal-box .concept {
+  display: block;
+  font-size: 1.45em; font-weight: 800; color: var(--phase-accent-ink);
+  letter-spacing: -.01em; line-height: 1.2;
+}
+.reveal-box .concept .mono { color: var(--phase-accent); }
+.reveal-box .sub { display: block; margin-top: .4em; color: var(--ink-soft); font-size: .82em; }
+
+/* =====================================================================
+   추가 수학 시각 컴포넌트 (이름 자유 · 문서화)
+   원칙: 색은 의미색 토큰을 재사용, 형태는 단순 도형(원/선/격자)만.
+   ===================================================================== */
+
+/* ─── ⑥ .plane — 좌표평면 / 그래프 (시침·분침 교점, 약속시간 넓이확률 등)
+   교육적 이유: 대수(식)와 기하(자리)를 한 평면에서 잇는다. 점·선·영역을
+   같은 의미색으로 칠해 "이 식 = 이 그림"을 묶어 보여준다. ─────────── */
+.plane {
+  position: relative; aspect-ratio: 1 / 1; width: 100%;
+  background:
+    linear-gradient(var(--line-soft) 1px, transparent 1px) 0 0 / 10% 10%,
+    linear-gradient(90deg, var(--line-soft) 1px, transparent 1px) 0 0 / 10% 10%,
+    var(--bg-panel);
+  border: 1px solid var(--line); border-radius: var(--radius-sm);
+}
+.plane .axis-x, .plane .axis-y { position: absolute; background: var(--ink-soft); }
+.plane .axis-x { left: 0; right: 0; bottom: 0; height: 2px; }
+.plane .axis-y { top: 0; bottom: 0; left: 0; width: 2px; }
+/* 점/선/영역은 인라인 left/top/width/height(%) 로 배치 */
+.plane .pt {
+  position: absolute; width: 14px; height: 14px; border-radius: 50%;
+  background: var(--phase-accent); transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 4px var(--phase-accent-soft);
+}
+.plane .pt.cross { background: var(--c-conclude); box-shadow: 0 0 0 4px var(--c-conclude-soft); } /* 교점=정답 */
+.plane .region {                     /* 넓이확률용 영역 */
+  position: absolute; background: var(--phase-accent-soft);
+  border: 1.5px solid var(--phase-accent); opacity: .8;
+}
+.plane .line {                       /* 직선/그래프 선 (회전으로 기울기) */
+  position: absolute; height: 3px; background: var(--c-assumption);
+  transform-origin: left center;
+}
+
+/* ─── ⑦ .state-graph — 상태공간 노드·엣지 (강 건너기 등 탐색 문제)
+   교육적 이유: "한 수씩 두는 것 = 상태 사이를 이동하는 것". 가능한 상태를
+   노드로, 합법적 이동을 엣지로 그려 탐색·그래프 사고를 심는다. ──────── */
+.state-graph { position: relative; width: 100%; min-height: 180px; }
+.state-graph .node {
+  position: absolute; transform: translate(-50%, -50%);
+  min-width: 2.4em; padding: .4em .6em; border-radius: 999px;
+  display: grid; place-items: center; text-align: center;
+  font-family: var(--font-mono); font-size: .8em; font-weight: 700;
+  background: var(--bg-panel); color: var(--ink);
+  border: 2px solid var(--line); box-shadow: var(--shadow);
+}
+.state-graph .node.start { border-color: var(--c-assumption); color: var(--c-assumption); }
+.state-graph .node.goal  { border-color: var(--c-conclude); background: var(--c-conclude-soft); color: var(--c-conclude); }
+.state-graph .node.dead  { border-color: var(--c-contra); background: var(--c-contra-soft); color: var(--c-contra); } /* 막힌 상태 */
+.state-graph .edge {
+  position: absolute; height: 2.5px; background: var(--ink-soft);
+  transform-origin: left center; opacity: .55; z-index: -1;
+}
+.state-graph .edge.path { background: var(--c-conclude); opacity: 1; height: 3.5px; } /* 해답 경로 */
+
+/* ─── ⑧ .grid01 — 0/1 격자 · 벡터 / 내적 (mod 2, 가중치, 패리티)
+   교육적 이유: 켜짐/꺼짐을 칸으로 만들면 선형대수(벡터·내적·mod 2)가
+   '눈으로 세는 것'이 된다. 1은 채움, 0은 비움 — 형태로도 구분. ──────── */
+.grid01 { display: inline-grid; gap: 4px; }
+.grid01 .cell {
+  width: 2em; height: 2em; border-radius: var(--radius-sm);
+  display: grid; place-items: center;
+  font-family: var(--font-mono); font-weight: 700; font-size: .9em;
+  border: 1.5px solid var(--line);
+}
+.grid01 .cell.on  { background: var(--phase-accent); color: #fff; border-color: var(--phase-accent); }
+.grid01 .cell.off { background: var(--bg-panel); color: var(--ink-soft); }
+.grid01 .cell.flip { outline: 3px solid var(--c-contra); outline-offset: 1px; } /* 토글된 칸 */
+
+/* 가로 벡터(행벡터) 표기 */
+.vec { display: inline-flex; gap: 4px; align-items: center; vertical-align: middle; }
+.vec .cell { width: 1.8em; height: 1.8em; }
+
+/* ─── ⑨ .numline — 수직선 (범위·부등식·정수해)
+   교육적 이유: 부등식의 해와 정수해를 직관적 '선 위의 자리'로. 닫힌/열린
+   점, 칠한 구간으로 ≤ 와 < 의 차이를 형태로 가르친다. ──────────────── */
+.numline { position: relative; height: 64px; width: 100%; }
+.numline .track {
+  position: absolute; left: 0; right: 0; top: 50%; height: 2px;
+  background: var(--ink-soft);
+}
+.numline .track::after {             /* 화살촉 */
+  content: "▸"; position: absolute; right: -2px; top: -.62em;
+  color: var(--ink-soft); font-size: .9em;
+}
+.numline .tick {
+  position: absolute; top: 50%; transform: translate(-50%, -50%);
+  text-align: center; font-family: var(--font-mono); font-size: .72em; color: var(--ink-soft);
+}
+.numline .tick::before {
+  content: ""; display: block; width: 2px; height: 12px;
+  background: var(--ink-soft); margin: 0 auto 2.2em;
+}
+.numline .seg {                      /* 해 구간 */
+  position: absolute; top: 50%; height: 6px; transform: translateY(-50%);
+  background: var(--phase-accent); border-radius: 999px;
+}
+.numline .dot {                      /* 끝점: filled=닫힘(≤), open=열림(<) */
+  position: absolute; top: 50%; width: 16px; height: 16px; border-radius: 50%;
+  transform: translate(-50%, -50%); border: 3px solid var(--phase-accent);
+  background: var(--phase-accent);
+}
+.numline .dot.open { background: var(--bg-panel); }
+
+/* =====================================================================
+   레이아웃 헬퍼 — '한 슬라이드 = 한 생각'을 받쳐주는 단순 그리드
+   ===================================================================== */
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4em; align-items: start; }
+.cols.wide-left  { grid-template-columns: 1.4fr 1fr; }
+.cols.wide-right { grid-template-columns: 1fr 1.4fr; }
+.stack { display: flex; flex-direction: column; gap: .9em; }
+
+.panel {                              /* 중립 카드 */
+  background: var(--bg-panel); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 1em 1.2em; box-shadow: var(--shadow);
+}
+.figcap {                             /* 그림 설명 캡션 */
+  font-family: var(--font-mono); font-size: .7em; color: var(--ink-soft);
+  letter-spacing: .02em; margin-top: .5em;
+}
+.lead-q {                             /* 토론 발문 — 수업의 심장 */
+  font-size: 1.15em; font-weight: 700; color: var(--ink);
+  border-left: 5px solid var(--phase-accent); padding-left: .7em; text-wrap: pretty;
+}
