@@ -1,0 +1,40 @@
+/* =====================================================================
+   수학 시각 컴포넌트 라이브러리 (PLACEHOLDER)
+   Claude Design이 최종본으로 교체. build.py가 쓰는 클래스 이름은 계약(contract).
+   ===================================================================== */
+
+/* --- 진리표 / 경우 검사 표 --- */
+table.truth { border-collapse: collapse; font-size: 0.8em; width: 100%; }
+table.truth th, table.truth td {
+  border: 1px solid var(--line); padding: 0.35em 0.6em; text-align: center;
+}
+table.truth th { background: var(--phase-accent-soft); color: var(--ink); }
+table.truth td.ok   { color: var(--c-conclude); font-weight: 700; }  /* ✓ */
+table.truth td.no   { color: var(--c-contra);   font-weight: 700; }  /* ✗ */
+table.truth tr.win  { background: #f0fdf4; }                          /* 생존 경우 */
+
+/* --- 가정 → 모순 흐름도 --- */
+.proof-flow { display: flex; flex-direction: column; gap: 0.35em; font-size: 0.85em; }
+.proof-flow .step {
+  padding: 0.4em 0.7em; border-left: 4px solid var(--c-assumption);
+  background: var(--bg-soft);
+}
+.proof-flow .step.contra { border-left-color: var(--c-contra); font-weight: 700; }
+.proof-flow .arrow { color: var(--ink-soft); padding-left: 0.7em; }
+
+/* --- 번호 매긴 추론 단계 --- */
+ol.reason { font-size: 0.9em; line-height: 1.5; }
+ol.reason li { margin-bottom: 0.4em; }
+
+/* --- 함정/오답 박스 --- */
+.trapbox {
+  border: 2px dashed var(--c-trap); border-radius: 10px;
+  padding: 0.6em 0.9em; background: #fffbeb; font-size: 0.85em;
+}
+
+/* --- 개념 등장(리빌) 스포트라이트 --- */
+.reveal-box {
+  border-radius: 14px; padding: 0.8em 1em; text-align: center;
+  background: var(--phase-accent-soft); border: 2px solid var(--phase-accent);
+}
+.reveal-box .concept { font-size: 1.3em; font-weight: 800; color: var(--phase-accent); }

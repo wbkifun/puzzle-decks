@@ -1,0 +1,64 @@
+/* =====================================================================
+   논리퍼즐 수업 — 디자인 토큰 (PLACEHOLDER)
+   ---------------------------------------------------------------------
+   ⚠ 이 파일은 임시 자리표시자다. 최종 디자인은 Claude Design(claude.ai/design)
+     에서 만들어 DesignSync로 이 경로에 덮어쓴다. 구조(변수 이름)는 유지하고
+     값만 바뀌도록 설계되어, 룩을 갈아끼워도 build.py를 고칠 필요가 없다.
+   ===================================================================== */
+
+:root {
+  /* --- Phase accent (단계별 색. body[data-phase]로 전환) --- */
+  --phase-accent: #4f46e5;          /* 기본 = Phase 1 */
+  --phase-accent-soft: #e0e7ff;
+
+  /* --- 의미 기반 색상 시스템 (1~32주 불변의 시각 문법) --- */
+  --c-assumption: #2563eb;  /* 가정    □ */
+  --c-contra:     #dc2626;  /* 모순    ⚡ */
+  --c-conclude:   #16a34a;  /* 결론/정답 ✓ */
+  --c-trap:       #d97706;  /* 함정/오답 ⚠ */
+
+  /* --- 베이스 (4단계 공통) --- */
+  --bg:        #ffffff;
+  --bg-soft:   #f8fafc;
+  --ink:       #0f172a;
+  --ink-soft:  #475569;
+  --line:      #e2e8f0;
+
+  /* --- 타이포 --- */
+  --font-sans: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR",
+               "Malgun Gothic", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "D2Coding", ui-monospace, monospace;
+}
+
+/* 단계별 accent 스위치 — build.py가 <body data-phase="N">로 주입 */
+body[data-phase="1"] { --phase-accent: #4f46e5; --phase-accent-soft: #e0e7ff; }
+body[data-phase="2"] { --phase-accent: #0d9488; --phase-accent-soft: #ccfbf1; }
+body[data-phase="3"] { --phase-accent: #d97706; --phase-accent-soft: #fef3c7; }
+body[data-phase="4"] { --phase-accent: #7c3aed; --phase-accent-soft: #ede9fe; }
+
+/* =====================================================================
+   reveal.js 위에 얹는 기본 슬라이드 룩 (placeholder)
+   ===================================================================== */
+.reveal { font-family: var(--font-sans); color: var(--ink); }
+.reveal .slides section { text-align: left; }
+
+.reveal h1, .reveal h2 { color: var(--ink); font-weight: 800; letter-spacing: -0.02em; }
+.reveal h1 { font-size: 1.9em; }
+.reveal h2 { font-size: 1.4em; }
+
+/* 슬라이드 상단 색 띠 = 현재 Phase */
+.slide-band {
+  position: absolute; top: 0; left: 0; right: 0; height: 14px;
+  background: var(--phase-accent);
+}
+.kicker {
+  display: inline-block; font-size: 0.5em; font-weight: 700;
+  color: var(--phase-accent); letter-spacing: 0.08em; margin-bottom: 0.4em;
+}
+
+/* 의미 토큰 유틸리티 (아이콘과 항상 페어링 → 색맹 대응) */
+.tag { font-weight: 700; }
+.tag.assume  { color: var(--c-assumption); }
+.tag.contra  { color: var(--c-contra); }
+.tag.conclude{ color: var(--c-conclude); }
+.tag.trap    { color: var(--c-trap); }
