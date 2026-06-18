@@ -68,6 +68,7 @@ DECK_CSS = """
   color: var(--ink-soft); text-transform: uppercase;
 }
 .slide-foot b { color: var(--phase-accent-ink); font-weight: 700; }
+.slide-foot .foot-num { color: var(--phase-accent-ink); font-weight: 700; }
 /* 문제 ↔ 풀이 점프 링크 (우상단 끝 알약 버튼 — 32주 일관 위치) */
 .slide-link {
   position: absolute; right: 24px; top: 22px; z-index: 6;
@@ -91,8 +92,11 @@ def notes(s):
 
 
 def foot(meta):
+    # 좌하단 한 줄: 주차 · 단계 · 현재/전체 (슬라이드 번호를 풋노트에 통합)
+    num = (f' · <span class="foot-num">{meta["idx"]} / {meta["n"]}</span>'
+           if meta.get("n") else "")
     return (f'<div class="slide-foot"><b>W{meta["week"]:02d}</b> · '
-            f'{esc(PHASE_NAME.get(meta["phase"], ""))}</div>')
+            f'{esc(PHASE_NAME.get(meta["phase"], ""))}{num}</div>')
 
 
 def head_bits(s, meta, center=False):
@@ -226,7 +230,9 @@ def build(week_json: Path):
             "title": data["title"], "subtitle": data.get("subtitle", "")}
 
     sections = []
-    for s in data["slides"]:
+    total = len(data["slides"])
+    for i, s in enumerate(data["slides"]):
+        meta["idx"], meta["n"] = i + 1, total
         fn = RENDER.get(s["type"])
         if not fn:
             sys.exit(f"unknown slide type: {s['type']}")
@@ -271,7 +277,7 @@ function fitSection(sec){
     sec.style.fontSize = (cur * Math.max(0.94, sec.clientHeight/sec.scrollHeight)).toFixed(2)+'px';
   }
 }
-Reveal.initialize({hash:true, slideNumber:'c/t', width:1280, height:720,
+Reveal.initialize({hash:true, slideNumber:false, width:1280, height:720,
   center:false, margin:0.04, transition:'slide', viewDistance:5,
   plugins:[RevealNotes]})
 .then(function(){

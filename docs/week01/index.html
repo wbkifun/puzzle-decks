@@ -485,6 +485,7 @@ ol.reason li.key::before {           /* 핵심 단계는 채워서 강조 */
   color: var(--ink-soft); text-transform: uppercase;
 }
 .slide-foot b { color: var(--phase-accent-ink); font-weight: 700; }
+.slide-foot .foot-num { color: var(--phase-accent-ink); font-weight: 700; }
 /* 문제 ↔ 풀이 점프 링크 (우상단 끝 알약 버튼 — 32주 일관 위치) */
 .slide-link {
   position: absolute; right: 24px; top: 22px; z-index: 6;
@@ -506,32 +507,32 @@ ol.reason li.key::before {           /* 핵심 단계는 채워서 강조 */
 <span class="kicker">Phase 1 · 1주차</span>
 <h1>수업 1주차) 기사와 건달의 섬</h1>
 <p class="subtitle">워밍업 · 둘 다 건달 · 세 주민 · √2 증명 · 귀류법</p>
-<div class="slide-foot"><b>W01</b> · 논리와 추론</div></section>
+<div class="slide-foot"><b>W01</b> · 논리와 추론 · <span class="foot-num">1 / 8</span></div></section>
 <section>
 <div class="slide-band"></div><span class="kicker">워밍업 · 선입관 깨기</span><h2>달리기 경주</h2>
 <div class="stack"><p>마라톤 결승선 직전, 당신은 2등 선수를 극적으로 추월했다!</p><p class="lead-q">지금 당신은 몇 등인가?</p><div class="trapbox"><span class="trap-label">흔한 함정</span>‘추월 = 한 계단 위로’라는 자동 연상부터 의심하자.</div></div>
-<div class="slide-foot"><b>W01</b> · 논리와 추론</div><aside class="notes">즉답으로 직관 수집(5명 전원). 오답: 1등. 발문: 2등을 추월하면 그 자리에 들어갈 뿐, 1등은 그대로다 → 여전히 2등.</aside></section>
+<div class="slide-foot"><b>W01</b> · 논리와 추론 · <span class="foot-num">2 / 8</span></div><aside class="notes">즉답으로 직관 수집(5명 전원). 오답: 1등. 발문: 2등을 추월하면 그 자리에 들어갈 뿐, 1등은 그대로다 → 여전히 2등.</aside></section>
 <section id="p-knaves">
 <div class="slide-band"></div><span class="kicker">문제 · 메인</span><h2>둘 다 건달이라고?</h2>
 <div class="stack"><p>섬에는 늘 진실만 말하는 기사와, 늘 거짓만 말하는 건달이 산다.</p><p>주민 A와 B를 만났다. A가 말했다 — “우리는 둘 다 건달입니다.”</p><p class="lead-q">A와 B는 각각 기사일까, 건달일까?</p></div>
-<div class="slide-foot"><b>W01</b> · 논리와 추론</div><aside class="notes">막힘: 건달이 ‘둘 다 건달’이라 말해도 되나? → 거짓의 기준은 문장 전체. B가 기사라 전체가 거짓이므로 건달이 말할 수 있다.</aside><a class="slide-link" href="#/s-knaves">풀이<span class="ar">→</span></a></section>
+<div class="slide-foot"><b>W01</b> · 논리와 추론 · <span class="foot-num">3 / 8</span></div><aside class="notes">막힘: 건달이 ‘둘 다 건달’이라 말해도 되나? → 거짓의 기준은 문장 전체. B가 기사라 전체가 거짓이므로 건달이 말할 수 있다.</aside><a class="slide-link" href="#/s-knaves">풀이<span class="ar">→</span></a></section>
 <section id="s-knaves">
 <div class="slide-band"></div><span class="kicker">풀이 · 가정하고 따라가기</span><h2>가정 → 모순으로 푼다</h2><p class="lead-q" style="margin-bottom:.6em">A가 기사라고 ‘가정’하면 무슨 일이 벌어질까?</p>
 <div class="proof-flow"><div class="step"><span class="lead">가정.</span> A가 기사다 (참말만 한다)</div><div class="arrow"></div><div class="step"><span class="lead">그러면.</span> ‘우리 둘 다 건달’이 참이어야 함 → A도 건달</div><div class="arrow"></div><div class="step contra"><span class="lead">모순!</span> 기사라고 가정했는데 건달이 되어 충돌</div><div class="arrow"></div><div class="step conclude"><span class="lead">결론.</span> A는 건달 → 그 말은 거짓 → B는 기사</div></div>
-<div class="slide-foot"><b>W01</b> · 논리와 추론</div><aside class="notes">‘둘 다 건달’의 부정 = ‘적어도 한 명은 기사’. 다음 주(부정·드모르간) 예고.</aside><a class="slide-link" href="#/p-knaves"><span class="ar">←</span>문제</a></section>
+<div class="slide-foot"><b>W01</b> · 논리와 추론 · <span class="foot-num">4 / 8</span></div><aside class="notes">‘둘 다 건달’의 부정 = ‘적어도 한 명은 기사’. 다음 주(부정·드모르간) 예고.</aside><a class="slide-link" href="#/p-knaves"><span class="ar">←</span>문제</a></section>
 <section>
 <div class="slide-band"></div><span class="kicker">확장 · 세 주민</span><h2>C부터 가정해 모든 경우 검사</h2>
 <table class="truth"><tr><th>가정: C의 정체</th><th>검사 결과</th><th>모순?</th></tr><tr class=""><td class="">기사</td><td class="">건달인 A가 참말을 하게 됨</td><td class="no">모순</td></tr><tr class="win"><td class="">건달</td><td class="">B=기사 · A=건달, 모두 앞뒤가 맞음</td><td class="ok">없음</td></tr></table><p class="figcap">초록 행 = 모순 없이 살아남은 유일한 경우 → A 건달, B 기사, C 건달</p>
-<div class="slide-foot"><b>W01</b> · 논리와 추론</div><aside class="notes">A:‘B는 건달’, B:‘C는 건달’, C:‘A와 B 둘 다 건달’. 어느 주민부터 가정해도 답은 같지만 C부터가 가장 빠르다.</aside></section>
+<div class="slide-foot"><b>W01</b> · 논리와 추론 · <span class="foot-num">5 / 8</span></div><aside class="notes">A:‘B는 건달’, B:‘C는 건달’, C:‘A와 B 둘 다 건달’. 어느 주민부터 가정해도 답은 같지만 C부터가 가장 빠르다.</aside></section>
 <section>
 <div class="slide-band"></div><span class="kicker">증명 사례 · 귀류법으로 못 박기</span><h2>$\sqrt{2}$ 는 분수로 쓸 수 없다</h2><p class="lead-q" style="margin-bottom:.6em">“분수로 쓸 수 있다”고 가정하면, 끝까지 따라가 어디서 펑 터질까?</p>
 <div class="proof-flow"><div class="step"><span class="lead">가정.</span> $\sqrt{2} = \dfrac{p}{q}$  (더 이상 약분 안 되는 분수)</div><div class="arrow"></div><div class="step"><span class="lead">그러면.</span> $p^2 = 2q^2$ 이므로 $p$ 는 짝수</div><div class="arrow"></div><div class="step"><span class="lead">또.</span> $p = 2k$ 를 넣으면 $q$ 도 짝수</div><div class="arrow"></div><div class="step contra"><span class="lead">모순!</span> $p,\ q$ 가 둘 다 짝수 → 약분이 가능 → 처음 가정과 충돌</div><div class="arrow"></div><div class="step conclude"><span class="lead">결론.</span> $\sqrt{2}$ 는 분수로 쓸 수 없다  ∎</div></div>
-<div class="slide-foot"><b>W01</b> · 논리와 추론</div><aside class="notes">‘$p^2$ 이 짝수면 $p$ 도 짝수’ 자체가 작은 귀류법: $p$ 가 홀수면 $p^2$ 도 홀수라 모순. 제곱근 미학습이면 ‘제곱해서 2가 되는 수’로 소개.</aside></section>
+<div class="slide-foot"><b>W01</b> · 논리와 추론 · <span class="foot-num">6 / 8</span></div><aside class="notes">‘$p^2$ 이 짝수면 $p$ 도 짝수’ 자체가 작은 귀류법: $p$ 가 홀수면 $p^2$ 도 홀수라 모순. 제곱근 미학습이면 ‘제곱해서 2가 되는 수’로 소개.</aside></section>
 <section class="center-v">
 <div class="slide-band"></div><span class="kicker">개념 등장 · 이게 오늘의 수학</span><h2>오늘 우리가 쓴 무기의 이름은…</h2>
 <div class="reveal-box"><span class="reveal-kicker">개념 연결</span><span class="concept">귀류법</span><span class="sub">— 가정하고, 모순을 끌어내, 가정을 깨뜨린다</span></div>
-<div class="stack" style="margin-top:1em"><p>“가정하자 → 모순! → 그러므로 가정이 틀렸다”</p><p>$\sqrt{2}$ 가 무리수임도, 소수가 무한히 많음도 바로 이 방법으로 증명된다.</p></div><div class="slide-foot"><b>W01</b> · 논리와 추론</div><aside class="notes">이 라벨은 학생들이 패턴을 스스로 말한 ‘뒤에’ 붙일 것.</aside></section>
-<section class="center-v"><div class="slide-band"></div><h1>끝</h1><div class="slide-foot"><b>W01</b> · 논리와 추론</div><aside class="notes">확장 과제: 진술 한 문장으로 두 주민의 정체가 유일하게 결정되는 문제를 만들어 오기(표로 유일성 검증).</aside></section>
+<div class="stack" style="margin-top:1em"><p>“가정하자 → 모순! → 그러므로 가정이 틀렸다”</p><p>$\sqrt{2}$ 가 무리수임도, 소수가 무한히 많음도 바로 이 방법으로 증명된다.</p></div><div class="slide-foot"><b>W01</b> · 논리와 추론 · <span class="foot-num">7 / 8</span></div><aside class="notes">이 라벨은 학생들이 패턴을 스스로 말한 ‘뒤에’ 붙일 것.</aside></section>
+<section class="center-v"><div class="slide-band"></div><h1>끝</h1><div class="slide-foot"><b>W01</b> · 논리와 추론 · <span class="foot-num">8 / 8</span></div><aside class="notes">확장 과제: 진술 한 문장으로 두 주민의 정체가 유일하게 결정되는 문제를 만들어 오기(표로 유일성 검증).</aside></section>
 </div></div>
 <script>/*!
  * reveal.js 5.2.0
@@ -559,7 +560,7 @@ function fitSection(sec){
     sec.style.fontSize = (cur * Math.max(0.94, sec.clientHeight/sec.scrollHeight)).toFixed(2)+'px';
   }
 }
-Reveal.initialize({hash:true, slideNumber:'c/t', width:1280, height:720,
+Reveal.initialize({hash:true, slideNumber:false, width:1280, height:720,
   center:false, margin:0.04, transition:'slide', viewDistance:5,
   plugins:[RevealNotes]})
 .then(function(){
