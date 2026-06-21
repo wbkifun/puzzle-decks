@@ -5,7 +5,7 @@ content/weekNN.json + design-system/ → docs/weekNN/index.html
 · 디자인: design-system/(Claude Design + DesignSync) 의 tokens.css·components.css
 · 콘텐츠: content/weekNN.json (디자인과 분리)
 · 수식: KaTeX (CSS·JS·woff2 폰트까지 인라인 → 단일 파일에서도 안 깨짐)
-· 브랜드 폰트(Pretendard·JetBrains): docs/_assets/fonts/ 공유 자산으로 상대 참조
+· 브랜드 폰트(Pretendard·JetBrains): docs/_assets/fonts/ (→ ~/shared/webfonts 심링크) 공유 자산으로 상대 참조
   (Pages·오프라인 폴더에서 작동, 단일 파일 단독 복사 시엔 시스템 한글로 폴백)
 콘텐츠의 수식은 $...$ (인라인) 또는 $$...$$ (디스플레이) 로 쓴다.
 """
