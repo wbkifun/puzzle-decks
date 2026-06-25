@@ -5,14 +5,15 @@ content/weekNN.json + design-system/ → docs/weekNN/index.html
 · 디자인: design-system/(Claude Design + DesignSync) 의 tokens.css·components.css
 · 콘텐츠: content/weekNN.json (디자인과 분리)
 · 수식: KaTeX (CSS·JS·woff2 폰트까지 인라인 → 단일 파일에서도 안 깨짐)
-· 브랜드 폰트(Pretendard·JetBrains): docs/_assets/fonts/ (→ ~/shared/webfonts 심링크) 공유 자산으로 상대 참조
-  (Pages·오프라인 폴더에서 작동, 단일 파일 단독 복사 시엔 시스템 한글로 폴백)
+· 브랜드 폰트(Pretendard·JetBrains): 원본은 ~/shared/webfonts(단일 출처), 빌드 때 docs/_assets/fonts/로 실파일 복사
+  (GitHub Pages는 리포 밖 절대 심링크를 아티팩트로 못 올리므로 실파일이어야 함. 단일 파일 단독 복사 시엔 시스템 한글로 폴백)
 콘텐츠의 수식은 $...$ (인라인) 또는 $$...$$ (디스플레이) 로 쓴다.
 """
 import base64
 import html
 import json
 import re
+import shutil
 import sys
 from pathlib import Path
 
@@ -463,7 +464,27 @@ a.card:hover{background:var(--soft);transform:translateY(-1px);box-shadow:0 4px 
     print(f"built docs/index.html  (32주 구조, 완성 {len(built)}주)")
 
 
+def sync_fonts():
+    """원본(~/shared/webfonts)의 .woff2를 docs/_assets/fonts/로 실파일 복사.
+    GitHub Pages는 리포 밖을 가리키는 절대 심링크를 못 올려 빌드가 실패하므로,
+    배포본에는 반드시 실파일이 있어야 한다. 원본이 없는 환경(CI 등)에서는
+    이미 커밋된 실파일을 그대로 둔다. 내용이 같으면 복사하지 않아 git diff를 만들지 않는다."""
+    dst = ROOT / "docs" / "_assets" / "fonts"
+    if dst.is_symlink():            # 과거 심링크 잔재 제거 (Pages 빌드 실패 원인)
+        dst.unlink()
+    dst.mkdir(parents=True, exist_ok=True)
+    src = Path.home() / "shared" / "webfonts"
+    if not src.is_dir():
+        return
+    for f in sorted(src.glob("*.woff2")):
+        target = dst / f.name
+        if not target.exists() or target.read_bytes() != f.read_bytes():
+            shutil.copy2(f, target)
+            print(f"  font synced: {f.name}")
+
+
 if __name__ == "__main__":
+    sync_fonts()
     targets = sys.argv[1:] or sorted((ROOT / "content").glob("week*.json"))
     for t in targets:
         out, n = build(Path(t))
