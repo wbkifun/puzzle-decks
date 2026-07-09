@@ -39,7 +39,7 @@
       "q": "천국으로 가는 문을 확실하게 찾아내라.",
       "notes": "힌트 ① 2번째 질문이 ‘마법의 질문’이 되려면 상대가 누구면 안 되지? ② 1번 질문의 목표는 ‘기분파 밝히기’가 아니라 ‘기분파 아닌 한 명 고르기’. 회상: 지난번 천국/지옥 문의 마법의 질문." },
 
-    { "type": "problem", "id": "p3", "jump": { "to": "s3", "label": "풀이", "dir": "next" },
+    { "type": "problem", "id": "p3", "jump": [{ "to": "s3", "label": "풀이", "dir": "next" }, { "to": "concept", "label": "개념", "dir": "next" }],
       "kicker": "문제 3", "h": "범인 찾기 — 참말 2명",
       "body": ["용의자 A, B, C, D 중 범인은 한 명. 이번엔 정확히 2명이 참말, 2명이 거짓말!",
                "A: “범인은 B입니다.”",
@@ -102,7 +102,7 @@
       "caption": "조건은 ‘참말 정확히 2명’ → D만 일치. 범인은 D, 참말을 한 사람은 B·C",
       "notes": "조건이 복잡할수록 가정 검사보다 표가 강력하다. 학생들이 표를 직접 채운 뒤 이 슬라이드로 확인." },
 
-    { "type": "concept-reveal", "kicker": "개념 등장 · 이게 오늘의 수학",
+    { "type": "concept-reveal", "id": "concept", "kicker": "개념 등장 · 이게 오늘의 수학",
       "h": "오늘 우리가 쓴 두 도구",
       "revealKicker": "개념 연결", "concept": "드모르간 · 진리표",
       "sub": "— ‘그리고/또는’의 부정 규칙, 그리고 모든 경우를 표로",
@@ -114,7 +114,7 @@
       "html": "<div class='cols' style='align-items:center;margin-top:.3em'><div class='dm-grid'><div class='dm-cell dm-on'>비 O · 바람 O</div><div class='dm-cell'>비 O · 바람 X</div><div class='dm-cell'>비 X · 바람 O</div><div class='dm-cell'>비 X · 바람 X</div></div><div class='stack'><p>“비가 오고 바람이 분다”가 <span class='ink-assume'>참</span>인 경우는 <b>단 한 칸</b>뿐.</p><p>그 <span class='ink-contra'>부정</span>(참이 아닌 경우)은 <b>나머지 세 칸</b> = “비가 안 오거나 바람이 안 분다”.</p><div class='reveal-box' style='padding:.7em 1em'><span class='concept' style='font-size:1.02em'>‘그리고’의 부정 = ‘또는’<br>‘또는’의 부정 = ‘그리고’</span></div></div></div><p class='figcap' style='margin-top:.9em;text-align:center'>파란 1칸 = “비 그리고 바람” (참)<br>나머지 3칸 = 그 부정</p>",
       "notes": "한 칸(둘 다 참)을 뺀 나머지가 부정 → 자연스럽게 ‘또는’이 나온다. 손으로 칸을 칠하며 확인시키기." },
 
-    { "type": "practice", "kicker": "확장 과제 · 열린 도전 (정답은 여럿)", "h": "직접 만들고, 끝까지 따져보자",
+    { "type": "practice", "kicker": "열린 도전 (정답은 여럿)", "h": "직접 만들고, 끝까지 따져보자",
       "body": ["도전 1 — ‘참말 정확히 3명’ 조건으로 범인이 딱 하나로 정해지는 4인 진술 퍼즐을 만들어라. (만들 수 있는 퍼즐은 무수히 많다!)",
                "도전 2 — 세 번째 문지기에서 질문이 ‘딱 1번’뿐이라면 천국 문을 확실히 찾을 수 있을까? 없다면 왜인지 설명하라."],
       "notes": "정답이 하나가 아니라 여러 갈래인 열린 과제. 발표 때 서로의 퍼즐을 풀어주게 하면 토론이 풍부해진다. 막히는 학생은 다음 두 장의 예시 풀이를 참고시키되 베끼지 말고 아이디어만." },

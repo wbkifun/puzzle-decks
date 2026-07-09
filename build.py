@@ -141,6 +141,20 @@ DECK_CSS = """
 }
 .reveal .slide-link:hover { filter: brightness(1.08); }
 .reveal .slide-link .ar { font-size: 1.15em; line-height: 1; }
+/* 여러 버튼(예: 마지막 문제의 "풀이 →" + "개념 →")은 우상단에 세로로 쌓는다. */
+.reveal .slide-links {
+  position: absolute !important; right: 24px; top: 22px; z-index: 6;
+  display: flex; flex-direction: column; align-items: flex-end; gap: 8px;
+}
+.reveal .slide-links .slide-link { position: static !important; right: auto; top: auto; }
+/* 풀이 페이지 좌상단 배지 "풀이 N-Y / M" — 몇 번째/총 몇 장인지 각인(우상단 점프버튼과 대칭) */
+.reveal .soln-step {
+  position: absolute !important; left: 64px; top: 20px; z-index: 6;
+  font-family: var(--font-mono); font-size: .46em; font-weight: 800;
+  letter-spacing: .06em; padding: .38em .8em; border-radius: 999px;
+  color: var(--phase-accent-ink); background: var(--phase-accent-soft);
+  border: 1px solid var(--phase-accent);
+}
 /* 섹션 구분 슬라이드 큰 제목 */
 .divider-h { color: var(--phase-accent-ink); font-size: 2.6em; }
 /* 드모르간 2×2 격자 그림 */
@@ -213,6 +227,47 @@ def jump_link(j):
     else:
         inner = f'{label}<span class="ar">→</span>'
     return f'<a class="slide-link" href="#/{j["to"]}">{inner}</a>'
+
+
+def jump_links(j):
+    """jump 필드가 dict 하나면 링크 하나, list면 여러 개를 우상단에 세로로 쌓는다."""
+    if isinstance(j, list):
+        inner = "".join(jump_link(x) for x in j)
+        return f'<div class="slide-links">{inner}</div>'
+    return jump_link(j)
+
+
+def _is_soln(s):
+    """문제로 되돌아가는(←문제) 풀이 슬라이드인가. jump이 dict이고 dir=prev·label에 '문제'."""
+    j = s.get("jump")
+    return isinstance(j, dict) and j.get("dir") == "prev" and "문제" in j.get("label", "")
+
+
+def solution_steps(slides):
+    """연속으로 같은 문제를 가리키는 풀이 슬라이드를 한 그룹으로 묶어
+    idx -> {"badge": "풀이 N-Y / M", "last": bool} 를 만든다.
+    · 배지: pN→'풀이 N', wN→'워밍업 풀이 N'. 그룹이 2장 이상이면 'N-Y / M'.
+    · last: 그룹의 마지막 장만 True → 그 장에만 ←문제 버튼을 남긴다."""
+    info = {}
+    i, n = 0, len(slides)
+    while i < n:
+        if not _is_soln(slides[i]):
+            i += 1
+            continue
+        tgt = slides[i]["jump"]["to"]
+        j = i
+        while j < n and _is_soln(slides[j]) and slides[j]["jump"]["to"] == tgt:
+            j += 1
+        group = list(range(i, j))
+        size = len(group)
+        m = re.match(r"([a-z]+)(\d+)", tgt)
+        prefix, num = (m.group(1), m.group(2)) if m else ("", "")
+        base = "워밍업 풀이" if prefix == "w" else "풀이"
+        for pos, idx in enumerate(group, start=1):
+            badge = f"{base} {num}-{pos} / {size}" if size > 1 else f"{base} {num}"
+            info[idx] = {"badge": badge, "last": pos == size}
+        i = j
+    return info
 
 
 # ---------- 아키타입 렌더러 (모두 shell 사용) ----------
@@ -307,9 +362,12 @@ def build(week_json: Path):
     meta = {"week": data["week"], "phase": data["phase"],
             "title": data["title"], "subtitle": data.get("subtitle", "")}
 
+    slides = data["slides"]
+    step_info = solution_steps(slides)   # idx -> {"badge":..,"last":bool}
+
     sections = []
-    total = len(data["slides"])
-    for i, s in enumerate(data["slides"]):
+    total = len(slides)
+    for i, s in enumerate(slides):
         meta["idx"], meta["n"] = i + 1, total
         fn = RENDER.get(s["type"])
         if not fn:
@@ -321,9 +379,16 @@ def build(week_json: Path):
             sec = sec.replace("<section", '<section class="dense"', 1) \
                 if 'class="' not in sec.split(">", 1)[0] else \
                 sec.replace('class="', 'class="dense ', 1)
-        if s.get("jump"):                    # 점프 링크를 캔버스 안(band 뒤)에 삽입 → 캔버스 기준 우상단
+        info = step_info.get(i)
+        if info:                             # 풀이 페이지: 좌상단 "풀이 N-Y / M" 배지
             sec = sec.replace('<div class="slide-band"></div>',
-                              '<div class="slide-band"></div>' + jump_link(s["jump"]), 1)
+                              f'<div class="slide-band"></div>'
+                              f'<span class="soln-step">{esc(info["badge"])}</span>', 1)
+        # 여러 장짜리 풀이 그룹은 마지막 장에만 "←문제" 버튼(중간 장은 억제) → 나머지는 그대로
+        show_jump = s.get("jump") and (info is None or info["last"])
+        if show_jump:                        # 점프 링크를 캔버스 안(band 뒤)에 삽입 → 캔버스 기준 우상단
+            sec = sec.replace('<div class="slide-band"></div>',
+                              '<div class="slide-band"></div>' + jump_links(s["jump"]), 1)
         sections.append(sec)
 
     tokens = read(DS / "tokens.css").replace('url("fonts/', 'url("../_assets/fonts/')
