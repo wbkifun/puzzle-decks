@@ -74,17 +74,17 @@
       "notes": "(c) 주의: “모든 학생이 숙제를 안 해왔다”는 부정이 아님을 꼭 짚기." },
 
     { "type": "raw", "id": "s2", "jump": { "to": "p2", "label": "문제", "dir": "prev" },
-      "kicker": "풀이 2 · ① 마법의 질문 원리", "h": "거짓말쟁이도 진실을 말하게 하는 질문",
+      "kicker": "풀이 2-1 / 3 - 마법의 질문 원리", "h": "거짓말쟁이도 진실을 말하게 하는 질문",
       "html": "<div class='cols wide-right' style='margin-top:.3em'><table class='truth'><tr><th>실제로 X가</th><th>진실가의 답</th><th>거짓가의 답</th></tr><tr><td>참 (O)</td><td style='color:var(--c-conclude);font-weight:800'>예</td><td style='color:var(--c-conclude);font-weight:800'>예</td></tr><tr><td>거짓 (X)</td><td style='color:var(--c-contra);font-weight:800'>아니오</td><td style='color:var(--c-contra);font-weight:800'>아니오</td></tr></table><div class='stack'><p class='lead-q' style='font-size:1em'>그냥 “X?”라 묻지 않고 한 겹 씌운다 —<br>“제가 ‘X?’라고 물으면, 당신은 ‘예’라고 답하시겠습니까?”</p><p><span class='ink-assume'>진실가</span> — X가 참이면 원래도 ‘예’ → 그대로 <b>예</b>.</p><p><span class='ink-contra'>거짓가</span> — X가 참이면 원래 ‘아니오’라 할 것… 그런데 ‘예라 답하겠냐’엔 거짓말로 <b>예</b>.</p><p class='figcap'>두 사람의 답이 항상 똑같다 → 답이 곧 X의 진실. 거짓을 두 번 통과하면 진실이 된다!</p></div></div>",
       "notes": "표의 두 답 열이 완전히 같다는 점을 짚기. 이게 거짓말쟁이를 ‘무력화’하는 장치." },
 
     { "type": "raw", "id": "s2b", "jump": { "to": "p2", "label": "문제", "dir": "prev" },
-      "kicker": "풀이 2 · ② 기분파 아닌 사람 고르기", "h": "1번 질문으로 ‘안전한 한 명’을 찾는다",
+      "kicker": "풀이 2-2 / 3 - 기분파 아닌 사람 고르기", "h": "1번 질문으로 ‘안전한 한 명’을 찾는다",
       "html": "<p class='lead-q' style='font-size:1em;margin-bottom:.45em'>A에게 묻는다 — “당신에게 ‘B가 기분파입니까?’라고 물으면, ‘예’라고 답하십니까?”</p><table class='truth'><tr><th>A의 정체</th><th>A의 답</th><th>뜻</th><th>2번 질문 상대</th><th>안전?</th></tr><tr><td>진실·거짓가</td><td>예</td><td>B가 기분파</td><td>C 선택</td><td class='ok'>안전</td></tr><tr><td>진실·거짓가</td><td>아니오</td><td>B는 기분파 아님</td><td>B 선택</td><td class='ok'>안전</td></tr><tr><td>기분파</td><td>아무거나</td><td>(엉터리)</td><td>규칙대로 B/C</td><td class='ok'>안전</td></tr></table><p class='figcap'>판정 규칙 — ‘예’면 C, ‘아니오’면 B. A가 기분파라 답이 엉터리여도, 그땐 B·C 둘 다 기분파가 아니라 어느 쪽을 골라도 안전!</p>",
       "notes": "목표를 ‘기분파 밝히기’가 아니라 ‘기분파 아닌 한 명 고르기’로 잡으면, A가 기분파인 최악의 경우조차 우리에게 유리하다." },
 
     { "type": "solution", "id": "s2c", "jump": { "to": "p2", "label": "문제", "dir": "prev" },
-      "kicker": "풀이 2 · ③ 천국 문 찾기", "h": "2번 질문: 안전한 사람에게 또 마법의 질문",
+      "kicker": "풀이 2-3 / 3 - 천국 문 찾기", "h": "2번 질문: 안전한 사람에게 또 마법의 질문",
       "body": ["이제 손에 ‘기분파가 아닌’ 문지기가 있다 (진실가 또는 거짓가).",
                "그에게 다시 — “제가 ‘왼쪽이 천국 문?’이라 물으면, ‘예’라 답하시겠습니까?”",
                "→ ‘예’면 왼쪽, ‘아니오’면 오른쪽. 진실가든 거짓가든 똑같이 천국 문을 가리킨다."],
