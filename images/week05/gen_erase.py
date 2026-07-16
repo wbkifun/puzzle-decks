@@ -103,3 +103,50 @@ svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W
        + "\n".join(parts) + "\n</svg>\n")
 open("s6_chain_a.svg", "w", encoding="utf-8").write(svg)
 print("wrote s6_chain_a.svg")
+
+# ---------- 풀이 6-2용: 1을 실제로 만드는 아홉 번 ----------
+parts = []
+yb2, hb2 = 148, 100
+ym2 = yb2 + hb2 / 2 + 8
+
+bx = 20                                              # 판 1: 1~10 + 이웃 쌍 묶기
+bw1 = 316
+parts += chalkboard(bx, yb2, bw1, hb2)
+for k in range(10):
+    cx = bx + 26 + k * 29.5
+    parts += chalk_text(cx, ym2 - 8, str(k + 1), 22)
+for pair in range(5):                                # (2−1)(4−3)(6−5)(8−7)(10−9)
+    x1 = bx + 26 + (2 * pair) * 29.5
+    x2 = x1 + 29.5
+    parts.append(f'<path d="M {x1} {ym2+10} Q {(x1+x2)/2} {ym2+30} {x2} {ym2+10}" '
+                 f'fill="none" stroke="{CHALK}" stroke-width="2"/>')
+parts += arrow(bx + bw1 + 8, ym2, bx + bw1 + 62, "5번")
+
+bx = bx + bw1 + 74                                   # 판 2: 1 1 1 1 1
+bw2 = 168
+parts += chalkboard(bx, yb2, bw2, hb2)
+for k in range(5):
+    parts += chalk_text(bx + 28 + k * 28, ym2, "1", 22)
+parts += arrow(bx + bw2 + 8, ym2, bx + bw2 + 62, "2번")
+
+bx = bx + bw2 + 74                                   # 판 3: 1 0 0
+bw3 = 118
+parts += chalkboard(bx, yb2, bw3, hb2)
+for k, t in enumerate(("1", "0", "0")):
+    parts += chalk_text(bx + 27 + k * 32, ym2, t, 22)
+parts += arrow(bx + bw3 + 8, ym2, bx + bw3 + 62, "2번")
+
+bx = bx + bw3 + 74                                   # 판 4: 1 (완성)
+bw4 = 84
+parts += chalkboard(bx, yb2, bw4, hb2)
+parts += chalk_text(bx + bw4 / 2, ym2, "1", 26)
+parts.append(f'<circle cx="{bx + bw4/2}" cy="{ym2 - 9}" r="22" fill="none" stroke="{CHALK}" stroke-width="2.2"/>')
+
+parts += caption(475, CAP, ["이웃끼리 다섯 쌍을 빼면 1이 다섯 개 → 둘씩 지워 0으로 → 마지막 (1−0)=1",
+                            "다섯 번 + 두 번 + 두 번 = 아홉 번 — ‘된다’는 이 실행 한 판이 증명"])
+
+W = 950
+svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
+       + "\n".join(parts) + "\n</svg>\n")
+open("s6b_run_a.svg", "w", encoding="utf-8").write(svg)
+print("wrote s6b_run_a.svg")
