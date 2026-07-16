@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 396" width="790" height="396">
+<text x="330" y="74" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" fill="#111111"><tspan x="330" dy="0">지우기 전 a + b,  적은 후 a − b  —  차이는 (a+b) − (a−b) = 2b</tspan><tspan x="330" dy="28">→ 합은 언제나 ‘짝수만큼’ 줄어든다</tspan></text>
+<rect x="24" y="168" width="128" height="74" rx="9" fill="none" stroke="#111111" stroke-width="2.8"/>
+<text x="88.0" y="195.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" fill="#111111">합 55</text>
+<text x="88.0" y="223.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" fill="#111111">홀수</text>
+<line x1="160" y1="205.0" x2="214" y2="205.0" stroke="#111111" stroke-width="3"/>
+<polygon points="224,205.0 211,198.5 211,211.5" fill="#111111"/>
+<text x="192.0" y="193.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">−짝수</text>
+<rect x="232" y="168" width="96" height="74" rx="9" fill="none" stroke="#111111" stroke-width="2.8"/>
+<text x="280.0" y="213.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" fill="#111111">홀수</text>
+<line x1="336" y1="205.0" x2="390" y2="205.0" stroke="#111111" stroke-width="3"/>
+<polygon points="400,205.0 387,198.5 387,211.5" fill="#111111"/>
+<text x="368.0" y="193.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">−짝수</text>
+<rect x="408" y="168" width="96" height="74" rx="9" fill="none" stroke="#111111" stroke-width="2.8"/>
+<text x="456.0" y="213.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" fill="#111111">홀수</text>
+<text x="536" y="213.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" fill="#111111">⋯</text>
+<line x1="566" y1="205.0" x2="596" y2="205.0" stroke="#111111" stroke-width="3"/>
+<polygon points="606,205.0 593,198.5 593,211.5" fill="#111111"/>
+<rect x="614" y="160" width="150" height="90" rx="9" fill="none" stroke="#111111" stroke-width="2.8"/>
+<text x="689.0" y="195.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" fill="#111111">마지막 수</text>
+<text x="689.0" y="223.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" fill="#111111">반드시 홀수</text>
+<text x="394" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="394" dy="0">아홉 번을 지나도 홀짝은 그대로 — 0(짝수)은 절대 될 수 없다</tspan><tspan x="394" dy="26">(1은 짝지어 빼기로 실제로 만들 수 있다 — 다음 장)</tspan></text>
+</svg>
