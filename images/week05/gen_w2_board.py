@@ -41,7 +41,8 @@ def caption(cx, y, lines, size=21):
     return ["".join(t)]
 
 
-def figure(captions):
+def figure(captions, with_pair):
+    """with_pair=False → 판 두 개만(문제용: ‘이웃 두 칸’ 강조는 풀이의 실마리라 미노출)."""
     parts = []
     BOT = 296                                # 모든 판의 아래 변
     CAP = BOT + 34                           # 캡션 기준선
@@ -54,14 +55,17 @@ def figure(captions):
     parts += board(x2, BOT - 7 * c1, 7, c1)
     parts += caption(x2 + 3.5 * c1, CAP, captions[1])
 
-    c3, x3 = 46, 668                         # 패널 3: 4×4 확대 + 이웃 두 칸 강조
-    y3 = BOT - 4 * c3
-    parts += board(x3, y3, 4, c3)
-    parts += pair_outline(x3 + 0.03 * c3, y3 + 1.03 * c3, 1.94 * c3, 0.94 * c3)   # 가로: 검+흰
-    parts += pair_outline(x3 + 2.03 * c3, y3 + 2.03 * c3, 0.94 * c3, 1.94 * c3)   # 세로: 흰+검
-    parts += caption(x3 + 2 * c3, CAP, captions[2])
+    W = 620
+    if with_pair:
+        c3, x3 = 46, 668                     # 패널 3: 4×4 확대 + 이웃 두 칸 강조
+        y3 = BOT - 4 * c3
+        parts += board(x3, y3, 4, c3)
+        parts += pair_outline(x3 + 0.03 * c3, y3 + 1.03 * c3, 1.94 * c3, 0.94 * c3)   # 가로: 검+흰
+        parts += pair_outline(x3 + 2.03 * c3, y3 + 2.03 * c3, 0.94 * c3, 1.94 * c3)   # 세로: 흰+검
+        parts += caption(x3 + 2 * c3, CAP, captions[2])
+        W = 880
 
-    W, H = 880, 396
+    H = 396
     # 배경 사각형 없음(투명) → 슬라이드에 인라인해도 배경색과 자연스럽게 어울림
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" '
             f'width="{W}" height="{H}">\n'
@@ -69,16 +73,15 @@ def figure(captions):
 
 
 VARIANTS = {
-    # 문제 슬라이드용 — 정답 미노출, 질문형 캡션
-    "w2_board_q.svg": [["8×8 — 검과 흰, 어느 쪽이 많을까?"],
-                       ["7×7이라면?"],
-                       ["이웃 두 칸의 색은", "어떤 관계?"]],
-    # 풀이 슬라이드용 — 정답 캡션
-    "w2_board_a.svg": [["8×8 — 검 32 · 흰 32"],
-                       ["7×7 — 검 25 · 흰 24"],
-                       ["이웃 두 칸은 언제나", "검 1 + 흰 1"]],
+    # 문제 슬라이드용 — 판 두 개만(문제 상황만 제시), 질문형 캡션
+    "w2_board_q.svg": (False, [["8×8 — 검과 흰, 어느 쪽이 많을까?"],
+                               ["7×7이라면?"]]),
+    # 풀이 슬라이드용 — ‘이웃 두 칸’ 패널 포함, 정답 캡션
+    "w2_board_a.svg": (True, [["8×8 — 검 32 · 흰 32"],
+                              ["7×7 — 검 25 · 흰 24"],
+                              ["이웃 두 칸은 언제나", "검 1 + 흰 1"]]),
 }
 
-for name, caps in VARIANTS.items():
-    open(name, "w", encoding="utf-8").write(figure(caps))
+for name, (with_pair, caps) in VARIANTS.items():
+    open(name, "w", encoding="utf-8").write(figure(caps, with_pair))
     print("wrote", name)
