@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 396" width="700" height="396">
+<circle cx="64" cy="150" r="22" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<text x="64" y="157.56" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111">앞</text>
+<circle cx="116" cy="150" r="22" fill="#111111" stroke="#111111" stroke-width="2.4"/>
+<text x="116" y="157.56" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#ffffff">뒤</text>
+<rect x="160" y="196" width="17" height="17" fill="#111111"/>
+<rect x="160" y="230" width="17" height="17" fill="#111111"/>
+<rect x="177" y="213" width="17" height="17" fill="#111111"/>
+<rect x="177" y="247" width="17" height="17" fill="#111111"/>
+<rect x="194" y="196" width="17" height="17" fill="#111111"/>
+<rect x="194" y="230" width="17" height="17" fill="#111111"/>
+<rect x="211" y="213" width="17" height="17" fill="#111111"/>
+<rect x="211" y="247" width="17" height="17" fill="#111111"/>
+<rect x="160" y="196" width="68" height="68" fill="none" stroke="#111111" stroke-width="2"/>
+<rect x="40" y="196" width="104" height="68" rx="6" fill="#3d3d3d" stroke="#111111" stroke-width="2.6"/>
+<text x="92" y="238" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#ffffff">1 2 3</text>
+<text x="140" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="140" dy="0">재료: 동전 · 판 · 수 — 무엇이든</tspan></text>
+<line x1="268" y1="190" x2="330" y2="190" stroke="#111111" stroke-width="3.5"/>
+<polygon points="344,190 328,182 328,198" fill="#111111"/>
+<rect x="360" y="92" width="300" height="196" rx="12" fill="none" stroke="#111111" stroke-width="3.2"/>
+<text x="510.0" y="144" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="27" fill="#111111">나만의 ‘안 되는’ 퍼즐</text>
+<text x="510.0" y="188" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111">조작 규칙: ______</text>
+<rect x="398" y="216" width="224" height="46" rx="8" fill="none" stroke="#111111" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="510.0" y="246" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" fill="#111111">몰래 심은 불변량 (비밀!)</text>
+<text x="510.0" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="510.0" dy="0">규칙은 단순하게, 불변량은 깊숙이</tspan><tspan x="510.0" dy="26">— 친구가 충분히 고생해야 좋은 문제</tspan></text>
+</svg>
