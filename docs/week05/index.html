@@ -635,7 +635,83 @@ ol.reason li.key::before {           /* 핵심 단계는 채워서 강조 */
 <section class="slide"><div class="canvas"><div class="slide-band"></div><div class="smain"><span class="kicker">무대 설정</span><h2>체스판과 도미노</h2><div class="stack"><p>8×8 체스판은 64칸. 도미노 한 개는 ‘변을 맞댄 이웃 두 칸’(가로든 세로든)을 정확히 덮는 1×2 타일이다.</p><p>규칙: 도미노끼리 겹치지 않고, 판 밖으로 나가지 않고, 판을 빈틈없이 덮는다.</p><p>오늘의 질문은 하나 — ‘덮을 수 있을까?’ 된다면 방법 하나를 보이면 끝. 그런데 ‘안 된다’는?</p><p class="lead-q">‘안 된다’는 몇 가지 배치를 실패해 봐야 증명이 될까 — 백 가지? 만 가지?</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">5 / 31</span></div></div><aside class="notes">존재 증명과 불가능 증명의 비대칭을 무대에 올린다. 가능한 배치는 유한하지만 천만 개 이상 — 전수 조사는 사실상 불가. ‘한 방에 전부를 막는 논리’가 필요함을 예감하게.</aside></section>
 <section id="p2" class="slide"><div class="canvas"><div class="slide-band"></div><a class="slide-link" href="#/s2">풀이<span class="ar">→</span></a><div class="smain"><span class="kicker">본 문제 2 · 메인 ①</span><h2>온전한 체스판 — 도미노 32개</h2><div class="stack"><p>온전한 8×8 체스판(64칸)을 도미노 32개로 빈틈없이, 겹침 없이 덮을 수 있을까?</p><p>된다면 방법을 실제로 보여라. 방법은 대략 몇 가지나 있을까?</p><p class="lead-q">‘된다’를 증명하는 데 필요한 것은 단 하나다 — 무엇일까?</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">6 / 31</span></div></div><aside class="notes">가장 쉬운 단계. 벽돌쌓기 한 그림이면 증명 끝(존재 증명). 학생들이 각자 다른 배치를 그려 보게 — ‘방법은 많지만 증명엔 하나면 충분’이 포인트.</aside></section>
 <section id="p3" class="slide"><div class="canvas"><div class="slide-band"></div><a class="slide-link" href="#/s3">풀이<span class="ar">→</span></a><div class="smain"><span class="kicker">본 문제 3 · 메인 ②</span><h2>모서리 한 칸을 떼면 — 63칸</h2><div class="stack"><p>이번엔 오른쪽 위 모서리 한 칸을 잘라낸 63칸 판이다. 도미노로 빈틈없이 덮을 수 있을까?</p><p>덮는다면 도미노가 몇 개 필요한지부터 따져 보라.</p><p class="lead-q">도미노 한 개는 몇 칸을 덮나 — 그럼 도미노 여러 개가 덮는 칸의 총수는 늘 어떤 수인가?</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">7 / 31</span></div></div><aside class="notes">개수(홀짝) 불변량 단계. 2×(도미노 수)는 짝수인데 63은 홀수 → 즉사. 그려 보지 않고도 끝나는 첫 경험. ‘어디를 뗐는지조차 안 쓴다’는 논증의 힘을 음미.</aside></section>
-<section id="p4" class="slide"><div class="canvas"><div class="slide-band"></div><a class="slide-link" href="#/s4">풀이<span class="ar">→</span></a><div class="smain"><span class="kicker">본 문제 4 · 메인 ③ (오늘의 정점)</span><h2>마주 보는 두 모서리를 떼면 — 62칸</h2><div class="stack"><p>이번엔 ‘마주 보는 두 모서리’(왼쪽 아래와 오른쪽 위)를 떼어낸 62칸 판이다. 도미노 31개 — 개수는 정확히 맞는다.</p><p>그런데 아무리 해도 안 된다. 개수가 딱 맞는데, 대체 무엇이 막고 있을까?</p><p>힌트: 워밍업 2에서 세어 본 ‘두 색’.</p><p class="lead-q">개수 말고 — 도미노 한 개가 ‘어쩔 수 없이 지키는 것’은 무엇인가?</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">8 / 31</span></div></div><aside class="notes">정점. 홀짝 논증이 무력해지는 지점(62는 짝수)에서 더 깊은 불변량(색)이 필요해진다. 충분히 실패하게 둘 것 — 좌절이 클수록 색칠 논증의 충격이 크다.</aside></section>
+<section id="p4" class="slide"><div class="canvas"><div class="slide-band"></div><a class="slide-link" href="#/s4">풀이<span class="ar">→</span></a><div class="smain"><span class="kicker">본 문제 4 · 메인 ③ (오늘의 정점)</span><h2>마주 보는 두 모서리를 떼면 — 62칸</h2><div class="stack"><p>이번엔 ‘마주 보는 두 모서리’(왼쪽 아래와 오른쪽 위)를 떼어낸 62칸 판이다. 도미노 31개 — 개수는 정확히 맞는다.</p><p>그런데 아무리 해도 안 된다. 개수가 딱 맞는데, 대체 무엇이 막고 있을까?</p><p>힌트: 워밍업 2에서 세어 본 ‘두 색’.</p><div class="fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 396">
+<rect x="40" y="230" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="40" y="197" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="40" y="164" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="40" y="131" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="40" y="98" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="40" y="65" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="40" y="32" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="73" y="263" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="73" y="230" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="73" y="197" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="73" y="164" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="73" y="131" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="73" y="98" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="73" y="65" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="73" y="32" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="106" y="263" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="106" y="230" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="106" y="197" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="106" y="164" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="106" y="131" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="106" y="98" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="106" y="65" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="106" y="32" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="139" y="263" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="139" y="230" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="139" y="197" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="139" y="164" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="139" y="131" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="139" y="98" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="139" y="65" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="139" y="32" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="172" y="263" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="172" y="230" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="172" y="197" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="172" y="164" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="172" y="131" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="172" y="98" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="172" y="65" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="172" y="32" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="205" y="263" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="205" y="230" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="205" y="197" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="205" y="164" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="205" y="131" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="205" y="98" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="205" y="65" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="205" y="32" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="238" y="263" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="238" y="230" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="238" y="197" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="238" y="164" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="238" y="131" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="238" y="98" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="238" y="65" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="238" y="32" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="271" y="263" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="271" y="230" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="271" y="197" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="271" y="164" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="271" y="131" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="271" y="98" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="271" y="65" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<polygon points="73,296 304,296 304,65 271,65 271,32 40,32 40,263 73,263" fill="none" stroke="#111111" stroke-width="3"/>
+<rect x="273.97" y="34.97" width="27.060000000000002" height="27.060000000000002" fill="none" stroke="#111111" stroke-width="2" stroke-dasharray="5 4"/>
+<line x1="279.58" y1="40.58" x2="295.42" y2="56.42" stroke="#111111" stroke-width="2"/>
+<line x1="279.58" y1="56.42" x2="295.42" y2="40.58" stroke="#111111" stroke-width="2"/>
+<rect x="42.97" y="265.97" width="27.060000000000002" height="27.060000000000002" fill="none" stroke="#111111" stroke-width="2" stroke-dasharray="5 4"/>
+<line x1="48.58" y1="271.58" x2="64.42" y2="287.42" stroke="#111111" stroke-width="2"/>
+<line x1="48.58" y1="287.42" x2="64.42" y2="271.58" stroke="#111111" stroke-width="2"/>
+<text x="172" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="172" dy="0">마주 보는 두 모서리를 뗀 62칸</tspan></text>
+<rect x="452" y="144.20000000000002" width="92" height="46" rx="8" fill="none" stroke="#111111" stroke-width="3.5"/>
+<line x1="498" y1="148.20000000000002" x2="498" y2="186.20000000000002" stroke="#111111" stroke-width="2"/>
+<text x="562" y="175.48000000000002" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="30" fill="#111111">× 31</text>
+<text x="525.6" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="525.6" dy="0">도미노 = 이웃 두 칸을 덮는 타일</tspan><tspan x="525.6" dy="26">62칸 ÷ 2 = 31개, 개수는 딱 맞다</tspan></text>
+</svg>
+</div><p class="lead-q">개수 말고 — 도미노 한 개가 ‘어쩔 수 없이 지키는 것’은 무엇인가?</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">8 / 31</span></div></div><aside class="notes">정점. 홀짝 논증이 무력해지는 지점(62는 짝수)에서 더 깊은 불변량(색)이 필요해진다. 충분히 실패하게 둘 것 — 좌절이 클수록 색칠 논증의 충격이 크다.</aside></section>
 <section id="p5" class="slide"><div class="canvas"><div class="slide-band"></div><a class="slide-link" href="#/s5">풀이<span class="ar">→</span></a><div class="smain"><span class="kicker">본 문제 5 · 서브 ①</span><h2>초콜릿 쪼개기 — 몇 번이면 될까</h2><div class="stack"><p>4×6, 즉 24조각짜리 판초콜릿이 있다. 한 번의 ‘쪼개기’는 한 덩어리를 골라 금을 따라 두 덩어리로 나누는 것.</p><p>24조각으로 완전히 분리하려면 최소 몇 번 쪼개야 할까? 쪼개는 순서를 영리하게 바꾸면 횟수를 줄일 수 있을까?</p><p class="lead-q">‘영리한 순서’가 존재할까 — 아니면 어떻게 해도 똑같을까?</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">9 / 31</span></div></div><aside class="notes">이번 불변량은 ‘안 변하는 수’가 아니라 ‘변하는 방식이 정해진 수’(매번 정확히 +1). 학생들이 절반씩 쪼개기 등 ‘영리한 전략’을 먼저 시도하게 둔다.</aside></section>
 <section id="p6" class="slide"><div class="canvas"><div class="slide-band"></div><div class="slide-links"><a class="slide-link" href="#/s6">풀이<span class="ar">→</span></a><a class="slide-link" href="#/concept">개념<span class="ar">→</span></a></div><div class="smain"><span class="kicker">본 문제 6 · 서브 ②</span><h2>칠판의 수 지우기 게임</h2><div class="stack"><p>칠판에 1부터 10까지 열 개의 수가 적혀 있다. 한 번의 조작 = 아무 두 수 a, b를 지우고 그 차(큰 수 − 작은 수)를 적는다.</p><p>아홉 번 조작하면 수가 하나 남는다. 마지막 수는 0이 될 수 있을까? 1은 될 수 있을까?</p><p>조작 순서는 완전히 자유다 — 우리는 마지막 수를 예언할 수 있을까?</p><p class="lead-q">마지막 수 자체는 예언 못 해도, 마지막 수의 ‘어떤 성질’은 예언할 수 있다.</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">10 / 31</span></div></div><aside class="notes">합의 홀짝 불변량. 합이 (a+b)−(a−b)=2b만큼, 즉 짝수만큼만 줄어듦 → 합 55(홀수)의 홀짝 보존 → 마지막 수는 홀수. 0 불가·1 가능. 직접 여러 판 해 보게 하면 좋다.</aside></section>
 <section class="slide center-v"><div class="canvas"><div class="slide-band"></div><div class="smain"><h1 class="divider-h">풀 이</h1><p class="subtitle">각 풀이의 우상단 ‘문제’ 버튼으로 되돌아갈 수 있다 (여러 장인 풀이는 마지막 장에)</p></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">11 / 31</span></div></div></section>
@@ -766,7 +842,99 @@ ol.reason li.key::before {           /* 핵심 단계는 채워서 강조 */
 <section id="s2" class="slide"><div class="canvas"><div class="slide-band"></div><a class="slide-link" href="#/p2"><span class="ar">←</span>문제</a><div class="smain"><span class="kicker">풀이 2 · 온전한 판 (존재 증명)</span><h2>벽돌처럼 눕히면 끝</h2><div class="stack"><p>각 가로줄(8칸)에 도미노 4개를 나란히 눕히면 한 줄 완성 — 8줄이면 32개로 전체를 덮는다.</p><p>‘된다’의 증명은 이 그림 하나로 끝난다. 사실 서로 다른 방법이 12,988,816가지나 되지만, 증명에는 하나면 충분하다.</p><p>이것이 존재 증명 — 예시 하나가 곧 완전한 증명이다.</p><p class="lead-q">그럼 ‘안 된다’는 무엇으로 증명하나? — 지금부터가 오늘의 진짜 주제.</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">15 / 31</span></div></div><aside class="notes">1,300만 배치라는 수로 ‘전수 조사 불가’를 각인 → 다음 두 문제에서 ‘한 방 논리’의 고마움이 커진다. 12,988,816은 알려진 정확한 값.</aside></section>
 <section id="s3" class="slide"><div class="canvas"><div class="slide-band"></div><a class="slide-link" href="#/p3"><span class="ar">←</span>문제</a><div class="smain"><span class="kicker">풀이 3 · 63칸 (개수 불변량)</span><h2>세어 보기만 해도 끝난다</h2><div class="stack"><p>도미노 1개는 정확히 2칸을 덮는다 — k개면 2k칸, 언제나 짝수 칸이다.</p><p>그런데 판은 63칸, 홀수. 어떤 배치도 홀수 칸을 빈틈없이 덮을 수 없다 → 불가능. 배치를 하나도 안 그리고 끝났다.</p><p>이 논증은 ‘어디를 뗐는지’조차 쓰지 않는다 — 홀수 칸이면 무조건 안 된다.</p><p class="lead-q">그렇다면 ‘짝수 칸이면 늘 된다’일까? 다음 문제(62칸)가 그 환상을 깬다.</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">16 / 31</span></div></div><aside class="notes">첫 ‘한 방’ 불가능 증명. 마지막 q가 다음 단계로 가는 다리 — 짝수는 필요조건일 뿐임을 62칸에서 배운다.</aside></section>
 <section id="s4" class="slide"><div class="canvas"><div class="slide-band"></div><div class="smain"><span class="kicker">풀이 4-1 / 3 - 직접 해보자</span><h2>개수는 맞는데 자꾸 실패한다</h2><div class="stack"><p>62칸 = 도미노 31개 — 홀짝 논증으로는 막히지 않는다(짝수니까).</p><p>직접 채워 보면 이상하게도 늘 마지막에 두 칸이 ‘멀리 떨어진 채’ 남는다. 백 번을 해도 그렇다.</p><p>하지만 ‘실패 100번’은 증명이 아니다. 필요한 것은 — 아무리 애써도 피할 수 없는, ‘모든 배치가 지키는 성질’.</p><p class="lead-q">힌트: 도미노 한 개가 덮는 두 칸을 ‘색’으로 보라 (워밍업 2).</p><div class="trapbox"><span class="trap-label">흔한 함정</span>‘개수가 맞으면 될 것이다’ — 짝수(개수)는 필요조건일 뿐, 충분조건이 아니다.</div></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">17 / 31</span></div></div><aside class="notes">실패 경험을 충분히 쌓게 한 뒤 ‘실패의 공통점’을 묻는다. 남는 두 칸의 색을 확인시키면 스스로 발견하는 학생이 나온다.</aside></section>
-<section class="slide"><div class="canvas"><div class="slide-band"></div><div class="smain"><span class="kicker">풀이 4-2 / 3 - 결정적 통찰</span><h2>도미노는 언제나 ‘검 하나 + 흰 하나’</h2><div class="stack"><p>도미노는 이웃한 두 칸을 덮고, 이웃 칸은 반드시 색이 다르다(워밍업 2).</p><p>그러므로 어떤 도미노든 검 1칸 + 흰 1칸 — 단 하나의 예외도 없다. 도미노 31개가 덮는 것은 정확히 검 31 + 흰 31.</p><p>그런데 떼어낸 ‘마주 보는 두 모서리’는 색이 같다 — 체스판을 보라, 대각선 양 끝은 같은 색(둘 다 검은 칸)이다.</p><p class="lead-q">그럼 남은 62칸의 검·흰 개수는 각각 몇 칸일까?</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">18 / 31</span></div></div><aside class="notes">정점의 한 수. ‘도미노 = 검1+흰1’은 배치와 무관한 불변 성질 — 모든 배치를 한 번에 상대하는 무기. 다음 장에서 세어 마무리.</aside></section>
+<section class="slide"><div class="canvas"><div class="slide-band"></div><div class="smain"><span class="kicker">풀이 4-2 / 3 - 결정적 통찰</span><h2>도미노는 언제나 ‘검 하나 + 흰 하나’</h2><div class="stack"><p>도미노는 이웃한 두 칸을 덮고, 이웃 칸은 반드시 색이 다르다(워밍업 2).</p><p>그러므로 어떤 도미노든 검 1칸 + 흰 1칸 — 단 하나의 예외도 없다. 도미노 31개가 덮는 것은 정확히 검 31 + 흰 31.</p><p>그런데 떼어낸 ‘마주 보는 두 모서리’는 색이 같다 — 체스판을 보라, 대각선 양 끝은 같은 색(둘 다 검은 칸)이다.</p><div class="fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 396">
+<rect x="24" y="250" width="46" height="46" fill="#111111"/>
+<rect x="24" y="158" width="46" height="46" fill="#111111"/>
+<rect x="70" y="204" width="46" height="46" fill="#111111"/>
+<rect x="70" y="112" width="46" height="46" fill="#111111"/>
+<rect x="116" y="250" width="46" height="46" fill="#111111"/>
+<rect x="116" y="158" width="46" height="46" fill="#111111"/>
+<rect x="162" y="204" width="46" height="46" fill="#111111"/>
+<rect x="162" y="112" width="46" height="46" fill="#111111"/>
+<line x1="24" y1="112" x2="24" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="112" x2="208" y2="112" stroke="#111111" stroke-width="1.5"/>
+<line x1="70" y1="112" x2="70" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="158" x2="208" y2="158" stroke="#111111" stroke-width="1.5"/>
+<line x1="116" y1="112" x2="116" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="204" x2="208" y2="204" stroke="#111111" stroke-width="1.5"/>
+<line x1="162" y1="112" x2="162" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="250" x2="208" y2="250" stroke="#111111" stroke-width="1.5"/>
+<line x1="208" y1="112" x2="208" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="296" x2="208" y2="296" stroke="#111111" stroke-width="1.5"/>
+<rect x="24" y="112" width="184" height="184" fill="none" stroke="#111111" stroke-width="3"/>
+<rect x="25.38" y="159.38" width="89.24" height="43.239999999999995" rx="6" fill="none" stroke="#ffffff" stroke-width="7.5"/>
+<rect x="25.38" y="159.38" width="89.24" height="43.239999999999995" rx="6" fill="none" stroke="#111111" stroke-width="4"/>
+<rect x="117.38" y="205.38" width="43.239999999999995" height="89.24" rx="6" fill="none" stroke="#ffffff" stroke-width="7.5"/>
+<rect x="117.38" y="205.38" width="43.239999999999995" height="89.24" rx="6" fill="none" stroke="#111111" stroke-width="4"/>
+<text x="116" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="116" dy="0">도미노는 어디에 놓아도</tspan><tspan x="116" dy="26">검 1 + 흰 1</tspan></text>
+<rect x="330" y="230" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="330" y="197" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="330" y="164" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="330" y="131" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="330" y="98" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="330" y="65" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="330" y="32" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="363" y="263" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="363" y="230" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="363" y="197" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="363" y="164" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="363" y="131" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="363" y="98" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="363" y="65" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="363" y="32" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="396" y="263" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="396" y="230" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="396" y="197" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="396" y="164" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="396" y="131" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="396" y="98" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="396" y="65" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="396" y="32" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="429" y="263" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="429" y="230" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="429" y="197" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="429" y="164" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="429" y="131" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="429" y="98" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="429" y="65" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="429" y="32" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="462" y="263" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="462" y="230" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="462" y="197" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="462" y="164" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="462" y="131" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="462" y="98" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="462" y="65" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="462" y="32" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="495" y="263" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="495" y="230" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="495" y="197" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="495" y="164" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="495" y="131" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="495" y="98" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="495" y="65" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="495" y="32" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="528" y="263" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="528" y="230" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="528" y="197" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="528" y="164" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="528" y="131" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="528" y="98" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="528" y="65" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="528" y="32" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="561" y="263" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="561" y="230" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="561" y="197" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="561" y="164" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="561" y="131" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<rect x="561" y="98" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
+<rect x="561" y="65" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
+<polygon points="363,296 594,296 594,65 561,65 561,32 330,32 330,263 363,263" fill="none" stroke="#111111" stroke-width="3"/>
+<rect x="563.97" y="34.97" width="27.060000000000002" height="27.060000000000002" fill="#9a9a9a" stroke="#111111" stroke-width="2" stroke-dasharray="5 4"/>
+<rect x="332.97" y="265.97" width="27.060000000000002" height="27.060000000000002" fill="#9a9a9a" stroke="#111111" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="462" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="462" dy="0">떼어낸 두 모서리는 같은 색</tspan><tspan x="462" dy="26">— 둘 다 검은 칸</tspan></text>
+</svg>
+</div><p class="lead-q">그럼 남은 62칸의 검·흰 개수는 각각 몇 칸일까?</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">18 / 31</span></div></div><aside class="notes">정점의 한 수. ‘도미노 = 검1+흰1’은 배치와 무관한 불변 성질 — 모든 배치를 한 번에 상대하는 무기. 다음 장에서 세어 마무리.</aside></section>
 <section class="slide"><div class="canvas"><div class="slide-band"></div><a class="slide-link" href="#/p4"><span class="ar">←</span>문제</a><div class="smain"><span class="kicker">풀이 4-3 / 3 - 색을 세어 마무리</span><h2>검 30 · 흰 32 — 그래서 절대 안 된다</h2><table class="truth"><tr><th>판</th><th>검은 칸</th><th>흰 칸</th><th>도미노 31개의 요구</th></tr><tr class=""><td class="">온전한 8×8</td><td class="">32</td><td class="">32</td><td class="">—</td></tr><tr class=""><td class="">떼어낸 두 모서리</td><td class="">−2</td><td class="">−0</td><td class="">(같은 색 두 칸)</td></tr><tr class=""><td class="">남은 62칸</td><td class="ok">30</td><td class="ok">32</td><td class="">검 31 + 흰 31이어야</td></tr><tr class="win"><td class="">결론</td><td class="">30 ≠ 31</td><td class="">32 ≠ 31</td><td class="ok">불가능 — 모든 배치가</td></tr></table><p class="figcap">도미노 31개는 무조건 검 31·흰 31을 덮지만 판에는 검 30·흰 32뿐 → 모순. ‘색’은 보이지 않던 불변량을 눈에 보이게 만든 장치다.</p></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">19 / 31</span></div></div><aside class="notes">완결. 여기서 잠깐 멈춰 ‘우리가 배치를 몇 개나 검사했나? — 0개’를 짚어 주면 불변량의 위력이 각인된다.</aside></section>
 <section id="s5" class="slide"><div class="canvas"><div class="slide-band"></div><div class="smain"><span class="kicker">풀이 5-1 / 2 - 작게 실험</span><h2>순서를 바꿔도 횟수가 안 변한다?</h2><table class="truth"><tr><th>초콜릿</th><th>조각 수</th><th>쪼갠 횟수(어떻게 해도)</th><th>관찰</th></tr><tr class=""><td class="">1×2</td><td class="">2</td><td class="">1번</td><td class="">조각 − 1</td></tr><tr class=""><td class="">2×2</td><td class="">4</td><td class="">3번</td><td class="">조각 − 1</td></tr><tr class=""><td class="">2×3</td><td class="">6</td><td class="">5번</td><td class="">조각 − 1</td></tr><tr class="win"><td class="">4×6</td><td class="">24</td><td class="ok">23번?</td><td class="ok">조각 − 1?</td></tr></table><p class="figcap">작은 판으로 직접 실험해 보면 — 반씩 쪼개든 한 줄씩 뜯든 횟수가 늘 같다. 우연일까, 필연일까?</p></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">20 / 31</span></div></div><aside class="notes">실험 단계. 2×2로 모든 순서를 전수 시연(전부 3번)하게 하면 좋다. ‘조각 수 − 1’ 추측을 학생 입에서 끌어낸 뒤 다음 장.</aside></section>
 <section class="slide"><div class="canvas"><div class="slide-band"></div><a class="slide-link" href="#/p5"><span class="ar">←</span>문제</a><div class="smain"><span class="kicker">풀이 5-2 / 2 - 한 번에 덩어리 하나</span><h2>쪼갤 때마다 덩어리는 ‘정확히 하나’ 늘어난다</h2><div class="stack"><p>한 번의 쪼개기 = 덩어리 1개가 2개로. 어디를 어떻게 쪼개든 덩어리 수는 정확히 +1이다.</p><p>시작은 1덩어리, 목표는 24덩어리 — 그 사이는 무조건 23번. 순서도, 모양도, 솜씨도 끼어들 틈이 없다.</p><p>이번 ‘변하지 않는 것’은 수가 아니라 변하는 방식이다 — 한 걸음마다 꼭 +1 (그래서 답 = 조각 수 − 1).</p><p class="lead-q">‘최소 몇 번?’이라 물었지만 사실 최소도 최대도 23번 — 질문 자체가 함정이었다.</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">21 / 31</span></div></div><aside class="notes">단조 불변량(매 조작마다 일정하게 변하는 양). ‘영리한 전략을 찾던 학생’의 허탈함이 곧 개념의 핵심 — 답이 방법과 무관해지는 순간.</aside></section>
