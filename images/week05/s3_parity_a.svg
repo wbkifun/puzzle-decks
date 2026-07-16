@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 396" width="620" height="396">
+<rect x="46" y="66" width="54" height="27" rx="8" fill="none" stroke="#111111" stroke-width="3.5"/>
+<line x1="73.0" y1="70" x2="73.0" y2="89" stroke="#111111" stroke-width="2"/>
+<text x="118" y="85.44" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" fill="#111111">= 2칸</text>
+<rect x="46" y="128" width="54" height="27" rx="8" fill="none" stroke="#111111" stroke-width="3.5"/>
+<line x1="73.0" y1="132" x2="73.0" y2="151" stroke="#111111" stroke-width="2"/>
+<rect x="110" y="128" width="54" height="27" rx="8" fill="none" stroke="#111111" stroke-width="3.5"/>
+<line x1="137.0" y1="132" x2="137.0" y2="151" stroke="#111111" stroke-width="2"/>
+<text x="182" y="147.44" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" fill="#111111">= 4칸</text>
+<rect x="46" y="190" width="54" height="27" rx="8" fill="none" stroke="#111111" stroke-width="3.5"/>
+<line x1="73.0" y1="194" x2="73.0" y2="213" stroke="#111111" stroke-width="2"/>
+<rect x="110" y="190" width="54" height="27" rx="8" fill="none" stroke="#111111" stroke-width="3.5"/>
+<line x1="137.0" y1="194" x2="137.0" y2="213" stroke="#111111" stroke-width="2"/>
+<rect x="174" y="190" width="54" height="27" rx="8" fill="none" stroke="#111111" stroke-width="3.5"/>
+<line x1="201.0" y1="194" x2="201.0" y2="213" stroke="#111111" stroke-width="2"/>
+<text x="246" y="209.44" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" fill="#111111">= 6칸</text>
+<text x="46" y="268" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" fill="#111111">⋯  k개 = 2k칸 — 언제나 짝수</text>
+<text x="160" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="160" dy="0">도미노가 덮는 칸수는</tspan><tspan x="160" dy="26">무조건 짝수</tspan></text>
+<rect x="360" y="270" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="360" y="244" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="360" y="218" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="360" y="192" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="360" y="166" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="360" y="140" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="360" y="114" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="360" y="88" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="386" y="270" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="386" y="244" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="386" y="218" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="386" y="192" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="386" y="166" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="386" y="140" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="386" y="114" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="386" y="88" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="412" y="270" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="412" y="244" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="412" y="218" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="412" y="192" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="412" y="166" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="412" y="140" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="412" y="114" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="412" y="88" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="438" y="270" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="438" y="244" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="438" y="218" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="438" y="192" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="438" y="166" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="438" y="140" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="438" y="114" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="438" y="88" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="464" y="270" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="464" y="244" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="464" y="218" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="464" y="192" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="464" y="166" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="464" y="140" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="464" y="114" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="464" y="88" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="490" y="270" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="490" y="244" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="490" y="218" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="490" y="192" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="490" y="166" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="490" y="140" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="490" y="114" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="490" y="88" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="516" y="270" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="516" y="244" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="516" y="218" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="516" y="192" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="516" y="166" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="516" y="140" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="516" y="114" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="516" y="88" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="542" y="270" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="542" y="244" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="542" y="218" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="542" y="192" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="542" y="166" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<rect x="542" y="140" width="26" height="26" fill="#111111" stroke="#111111" stroke-width="1.2"/>
+<rect x="542" y="114" width="26" height="26" fill="none" stroke="#111111" stroke-width="1.2"/>
+<polygon points="360,296 568,296 568,114 542,114 542,88 360,88" fill="none" stroke="#111111" stroke-width="2.6"/>
+<rect x="544.6" y="90.6" width="20.8" height="20.8" fill="none" stroke="#111111" stroke-width="1.8" stroke-dasharray="4.5 3.5"/>
+<line x1="549.28" y1="95.28" x2="560.72" y2="106.72" stroke="#111111" stroke-width="1.8"/>
+<line x1="549.28" y1="106.72" x2="560.72" y2="95.28" stroke="#111111" stroke-width="1.8"/>
+<text x="464" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="464" dy="0">그런데 판은 63칸 — 홀수.</tspan><tspan x="464" dy="26">짝수는 결코 63이 되지 못한다</tspan></text>
+</svg>
