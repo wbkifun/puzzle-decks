@@ -224,6 +224,8 @@ def figbox(s):
         return ""
     svg = read(ROOT / f)
     svg = re.sub(r'(<svg[^>]*?)\s+width="[^"]*"\s+height="[^"]*"', r"\1", svg, count=1)
+    if s.get("figH"):                        # 본문이 긴 슬라이드용 높이 축소(기본 285px)
+        svg = svg.replace("<svg", f'<svg style="height:{int(s["figH"])}px"', 1)
     return f'<div class="fig">{svg}</div>'
 
 
