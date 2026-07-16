@@ -512,6 +512,10 @@ ol.reason li.key::before {           /* 핵심 단계는 채워서 강조 */
   display: flex; flex-direction: column; align-items: flex-end; gap: 8px;
 }
 .reveal .slide-links .slide-link { position: static !important; right: auto; top: auto; }
+/* 인라인 SVG 그림(fig 필드): 높이 고정·비율 유지(viewBox), 중앙 정렬.
+   fitSection은 폰트만 줄이므로 그림 높이는 본문이 넉넉히 남는 선에서 보수적으로. */
+.reveal .fig { margin-top: .45em; text-align: center; }
+.reveal .fig svg { height: 285px; max-width: 100%; }
 /* 섹션 구분 슬라이드 큰 제목 */
 .divider-h { color: var(--phase-accent-ink); font-size: 2.6em; }
 /* 드모르간 2×2 격자 그림 */
@@ -529,7 +533,128 @@ ol.reason li.key::before {           /* 핵심 단계는 채워서 강조 */
 <div class="reveal"><div class="slides">
 <section class="slide center-v"><div class="canvas"><div class="slide-band"></div><div class="smain"><span class="kicker">Phase 1 · 5주차</span><h1>덮을 수 있을까</h1><p class="subtitle">워밍업 2 · 회상(동전 뒤집기) · 본 문제 5 · 변하지 않는 것 — 불변량</p></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">1 / 31</span></div></div><aside class="notes">90분 배분 가이드: 워밍업 10분 · 문제 제시(회상~서브) 25분 · 풀이 토론 30분 · 개념 5분 · 열린 도전 20분. 오늘의 척추: ‘된다’는 예시 하나로, ‘안 된다’는 불변량으로.</aside></section>
 <section id="w1" class="slide"><div class="canvas"><div class="slide-band"></div><a class="slide-link" href="#/ws1">풀이<span class="ar">→</span></a><div class="smain"><span class="kicker">워밍업 1 · 짝을 지어라</span><h2>7명이 전원 짝을 이룰 수 있을까</h2><div class="stack"><p>교실에 7명이 있다. 두 명씩 짝을 지어 ‘전원’이 짝을 갖게 할 수 있을까?</p><p>몇 번을 다시 편성해도 안 된다면 — ‘해 봤는데 안 되더라’와 ‘절대 안 된다’는 어떻게 다른가?</p><p class="lead-q">8명이라면? ‘된다’와 ‘안 된다’는 증명하는 방법부터 다르다.</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">2 / 31</span></div></div><aside class="notes">홀짝 점화. 7은 홀수 → 늘 한 명이 남는다. ‘시도 실패’와 ‘불가능 증명’의 구분이 오늘 수업 전체의 예고편. 라벨(불변량)은 아직 붙이지 않는다.</aside></section>
-<section id="w2" class="slide"><div class="canvas"><div class="slide-band"></div><a class="slide-link" href="#/ws2">풀이<span class="ar">→</span></a><div class="smain"><span class="kicker">워밍업 2 · 두 색을 세어 보면</span><h2>체스판의 검은 칸, 흰 칸</h2><div class="stack"><p>8×8 체스판에서 검은 칸과 흰 칸, 어느 쪽이 많을까? 7×7 판이라면?</p><p>그리고 ‘변을 맞댄 이웃 두 칸’의 색은 서로 어떤 관계일까?</p><p class="lead-q">사소해 보이는 이 관찰 하나가 오늘 가장 어려운 문제를 무너뜨린다.</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">3 / 31</span></div></div><aside class="notes">8×8은 32·32 동수. 7×7은 49칸이라 모서리 색이 25로 하나 많음. 핵심 수확: 이웃 칸은 반드시 색이 다르다 → ‘이웃 두 칸 묶음 = 검1+흰1’. 메인 ③의 열쇠.</aside></section>
+<section id="w2" class="slide"><div class="canvas"><div class="slide-band"></div><a class="slide-link" href="#/ws2">풀이<span class="ar">→</span></a><div class="smain"><span class="kicker">워밍업 2 · 두 색을 세어 보면</span><h2>체스판의 검은 칸, 흰 칸</h2><div class="stack"><p>8×8 체스판에서 검은 칸과 흰 칸, 어느 쪽이 많을까? 7×7 판이라면?</p><p>그리고 ‘변을 맞댄 이웃 두 칸’의 색은 서로 어떤 관계일까?</p><div class="fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 396">
+<rect x="24" y="263" width="33" height="33" fill="#111111"/>
+<rect x="24" y="197" width="33" height="33" fill="#111111"/>
+<rect x="24" y="131" width="33" height="33" fill="#111111"/>
+<rect x="24" y="65" width="33" height="33" fill="#111111"/>
+<rect x="57" y="230" width="33" height="33" fill="#111111"/>
+<rect x="57" y="164" width="33" height="33" fill="#111111"/>
+<rect x="57" y="98" width="33" height="33" fill="#111111"/>
+<rect x="57" y="32" width="33" height="33" fill="#111111"/>
+<rect x="90" y="263" width="33" height="33" fill="#111111"/>
+<rect x="90" y="197" width="33" height="33" fill="#111111"/>
+<rect x="90" y="131" width="33" height="33" fill="#111111"/>
+<rect x="90" y="65" width="33" height="33" fill="#111111"/>
+<rect x="123" y="230" width="33" height="33" fill="#111111"/>
+<rect x="123" y="164" width="33" height="33" fill="#111111"/>
+<rect x="123" y="98" width="33" height="33" fill="#111111"/>
+<rect x="123" y="32" width="33" height="33" fill="#111111"/>
+<rect x="156" y="263" width="33" height="33" fill="#111111"/>
+<rect x="156" y="197" width="33" height="33" fill="#111111"/>
+<rect x="156" y="131" width="33" height="33" fill="#111111"/>
+<rect x="156" y="65" width="33" height="33" fill="#111111"/>
+<rect x="189" y="230" width="33" height="33" fill="#111111"/>
+<rect x="189" y="164" width="33" height="33" fill="#111111"/>
+<rect x="189" y="98" width="33" height="33" fill="#111111"/>
+<rect x="189" y="32" width="33" height="33" fill="#111111"/>
+<rect x="222" y="263" width="33" height="33" fill="#111111"/>
+<rect x="222" y="197" width="33" height="33" fill="#111111"/>
+<rect x="222" y="131" width="33" height="33" fill="#111111"/>
+<rect x="222" y="65" width="33" height="33" fill="#111111"/>
+<rect x="255" y="230" width="33" height="33" fill="#111111"/>
+<rect x="255" y="164" width="33" height="33" fill="#111111"/>
+<rect x="255" y="98" width="33" height="33" fill="#111111"/>
+<rect x="255" y="32" width="33" height="33" fill="#111111"/>
+<line x1="24" y1="32" x2="24" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="32" x2="288" y2="32" stroke="#111111" stroke-width="1.5"/>
+<line x1="57" y1="32" x2="57" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="65" x2="288" y2="65" stroke="#111111" stroke-width="1.5"/>
+<line x1="90" y1="32" x2="90" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="98" x2="288" y2="98" stroke="#111111" stroke-width="1.5"/>
+<line x1="123" y1="32" x2="123" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="131" x2="288" y2="131" stroke="#111111" stroke-width="1.5"/>
+<line x1="156" y1="32" x2="156" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="164" x2="288" y2="164" stroke="#111111" stroke-width="1.5"/>
+<line x1="189" y1="32" x2="189" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="197" x2="288" y2="197" stroke="#111111" stroke-width="1.5"/>
+<line x1="222" y1="32" x2="222" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="230" x2="288" y2="230" stroke="#111111" stroke-width="1.5"/>
+<line x1="255" y1="32" x2="255" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="263" x2="288" y2="263" stroke="#111111" stroke-width="1.5"/>
+<line x1="288" y1="32" x2="288" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="296" x2="288" y2="296" stroke="#111111" stroke-width="1.5"/>
+<rect x="24" y="32" width="264" height="264" fill="none" stroke="#111111" stroke-width="3"/>
+<text x="156" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="156" dy="0">8×8 — 검과 흰, 어느 쪽이 많을까?</tspan></text>
+<rect x="356" y="263" width="33" height="33" fill="#111111"/>
+<rect x="356" y="197" width="33" height="33" fill="#111111"/>
+<rect x="356" y="131" width="33" height="33" fill="#111111"/>
+<rect x="356" y="65" width="33" height="33" fill="#111111"/>
+<rect x="389" y="230" width="33" height="33" fill="#111111"/>
+<rect x="389" y="164" width="33" height="33" fill="#111111"/>
+<rect x="389" y="98" width="33" height="33" fill="#111111"/>
+<rect x="422" y="263" width="33" height="33" fill="#111111"/>
+<rect x="422" y="197" width="33" height="33" fill="#111111"/>
+<rect x="422" y="131" width="33" height="33" fill="#111111"/>
+<rect x="422" y="65" width="33" height="33" fill="#111111"/>
+<rect x="455" y="230" width="33" height="33" fill="#111111"/>
+<rect x="455" y="164" width="33" height="33" fill="#111111"/>
+<rect x="455" y="98" width="33" height="33" fill="#111111"/>
+<rect x="488" y="263" width="33" height="33" fill="#111111"/>
+<rect x="488" y="197" width="33" height="33" fill="#111111"/>
+<rect x="488" y="131" width="33" height="33" fill="#111111"/>
+<rect x="488" y="65" width="33" height="33" fill="#111111"/>
+<rect x="521" y="230" width="33" height="33" fill="#111111"/>
+<rect x="521" y="164" width="33" height="33" fill="#111111"/>
+<rect x="521" y="98" width="33" height="33" fill="#111111"/>
+<rect x="554" y="263" width="33" height="33" fill="#111111"/>
+<rect x="554" y="197" width="33" height="33" fill="#111111"/>
+<rect x="554" y="131" width="33" height="33" fill="#111111"/>
+<rect x="554" y="65" width="33" height="33" fill="#111111"/>
+<line x1="356" y1="65" x2="356" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="356" y1="65" x2="587" y2="65" stroke="#111111" stroke-width="1.5"/>
+<line x1="389" y1="65" x2="389" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="356" y1="98" x2="587" y2="98" stroke="#111111" stroke-width="1.5"/>
+<line x1="422" y1="65" x2="422" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="356" y1="131" x2="587" y2="131" stroke="#111111" stroke-width="1.5"/>
+<line x1="455" y1="65" x2="455" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="356" y1="164" x2="587" y2="164" stroke="#111111" stroke-width="1.5"/>
+<line x1="488" y1="65" x2="488" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="356" y1="197" x2="587" y2="197" stroke="#111111" stroke-width="1.5"/>
+<line x1="521" y1="65" x2="521" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="356" y1="230" x2="587" y2="230" stroke="#111111" stroke-width="1.5"/>
+<line x1="554" y1="65" x2="554" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="356" y1="263" x2="587" y2="263" stroke="#111111" stroke-width="1.5"/>
+<line x1="587" y1="65" x2="587" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="356" y1="296" x2="587" y2="296" stroke="#111111" stroke-width="1.5"/>
+<rect x="356" y="65" width="231" height="231" fill="none" stroke="#111111" stroke-width="3"/>
+<text x="471.5" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="471.5" dy="0">7×7이라면?</tspan></text>
+<rect x="668" y="250" width="46" height="46" fill="#111111"/>
+<rect x="668" y="158" width="46" height="46" fill="#111111"/>
+<rect x="714" y="204" width="46" height="46" fill="#111111"/>
+<rect x="714" y="112" width="46" height="46" fill="#111111"/>
+<rect x="760" y="250" width="46" height="46" fill="#111111"/>
+<rect x="760" y="158" width="46" height="46" fill="#111111"/>
+<rect x="806" y="204" width="46" height="46" fill="#111111"/>
+<rect x="806" y="112" width="46" height="46" fill="#111111"/>
+<line x1="668" y1="112" x2="668" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="668" y1="112" x2="852" y2="112" stroke="#111111" stroke-width="1.5"/>
+<line x1="714" y1="112" x2="714" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="668" y1="158" x2="852" y2="158" stroke="#111111" stroke-width="1.5"/>
+<line x1="760" y1="112" x2="760" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="668" y1="204" x2="852" y2="204" stroke="#111111" stroke-width="1.5"/>
+<line x1="806" y1="112" x2="806" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="668" y1="250" x2="852" y2="250" stroke="#111111" stroke-width="1.5"/>
+<line x1="852" y1="112" x2="852" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="668" y1="296" x2="852" y2="296" stroke="#111111" stroke-width="1.5"/>
+<rect x="668" y="112" width="184" height="184" fill="none" stroke="#111111" stroke-width="3"/>
+<rect x="669.38" y="159.38" width="89.24" height="43.239999999999995" rx="6" fill="none" stroke="#ffffff" stroke-width="7.5"/>
+<rect x="669.38" y="159.38" width="89.24" height="43.239999999999995" rx="6" fill="none" stroke="#111111" stroke-width="4"/>
+<rect x="761.38" y="205.38" width="43.239999999999995" height="89.24" rx="6" fill="none" stroke="#ffffff" stroke-width="7.5"/>
+<rect x="761.38" y="205.38" width="43.239999999999995" height="89.24" rx="6" fill="none" stroke="#111111" stroke-width="4"/>
+<text x="760" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="760" dy="0">이웃 두 칸의 색은</tspan><tspan x="760" dy="26">어떤 관계?</tspan></text>
+</svg>
+</div><p class="lead-q">사소해 보이는 이 관찰 하나가 오늘 가장 어려운 문제를 무너뜨린다.</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">3 / 31</span></div></div><aside class="notes">8×8은 32·32 동수. 7×7은 49칸이라 모서리 색이 25로 하나 많음. 핵심 수확: 이웃 칸은 반드시 색이 다르다 → ‘이웃 두 칸 묶음 = 검1+흰1’. 메인 ③의 열쇠.</aside></section>
 <section id="p1" class="slide"><div class="canvas"><div class="slide-band"></div><a class="slide-link" href="#/s1">풀이<span class="ar">→</span></a><div class="smain"><span class="kicker">회상 · 본 문제 1</span><h2>동전 뒤집기 — 이번엔 ‘왜’까지</h2><div class="stack"><p>책상에 동전 9개가 모두 앞면으로 놓여 있다. 한 번에 ‘정확히 2개’를 골라 동시에 뒤집는다(횟수 제한 없음).</p><p>모두 뒷면으로 만들 수 있을까? 예전 A2 퍼즐에선 ‘해 보니 안 되더라’에서 멈췄다 — 오늘은 ‘아무리 해도 안 된다’를 증명한다.</p><p>동전이 10개라면 무엇이 달라질까?</p><p class="lead-q">한 번 뒤집을 때마다 판은 변한다. 그런데 ‘절대 변하지 않는 것’도 있을까?</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">4 / 31</span></div></div><aside class="notes">재방문 구조(A2). 답: 9개 불가(앞면 개수의 홀짝 불변), 10개 가능(5번). ‘변하지 않는 것을 찾아라’라는 오늘의 주문을 여기서 처음 심는다.</aside></section>
 <section class="slide"><div class="canvas"><div class="slide-band"></div><div class="smain"><span class="kicker">무대 설정</span><h2>체스판과 도미노</h2><div class="stack"><p>8×8 체스판은 64칸. 도미노 한 개는 ‘변을 맞댄 이웃 두 칸’(가로든 세로든)을 정확히 덮는 1×2 타일이다.</p><p>규칙: 도미노끼리 겹치지 않고, 판 밖으로 나가지 않고, 판을 빈틈없이 덮는다.</p><p>오늘의 질문은 하나 — ‘덮을 수 있을까?’ 된다면 방법 하나를 보이면 끝. 그런데 ‘안 된다’는?</p><p class="lead-q">‘안 된다’는 몇 가지 배치를 실패해 봐야 증명이 될까 — 백 가지? 만 가지?</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">5 / 31</span></div></div><aside class="notes">존재 증명과 불가능 증명의 비대칭을 무대에 올린다. 가능한 배치는 유한하지만 천만 개 이상 — 전수 조사는 사실상 불가. ‘한 방에 전부를 막는 논리’가 필요함을 예감하게.</aside></section>
 <section id="p2" class="slide"><div class="canvas"><div class="slide-band"></div><a class="slide-link" href="#/s2">풀이<span class="ar">→</span></a><div class="smain"><span class="kicker">본 문제 2 · 메인 ①</span><h2>온전한 체스판 — 도미노 32개</h2><div class="stack"><p>온전한 8×8 체스판(64칸)을 도미노 32개로 빈틈없이, 겹침 없이 덮을 수 있을까?</p><p>된다면 방법을 실제로 보여라. 방법은 대략 몇 가지나 있을까?</p><p class="lead-q">‘된다’를 증명하는 데 필요한 것은 단 하나다 — 무엇일까?</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">6 / 31</span></div></div><aside class="notes">가장 쉬운 단계. 벽돌쌓기 한 그림이면 증명 끝(존재 증명). 학생들이 각자 다른 배치를 그려 보게 — ‘방법은 많지만 증명엔 하나면 충분’이 포인트.</aside></section>
@@ -539,7 +664,128 @@ ol.reason li.key::before {           /* 핵심 단계는 채워서 강조 */
 <section id="p6" class="slide"><div class="canvas"><div class="slide-band"></div><div class="slide-links"><a class="slide-link" href="#/s6">풀이<span class="ar">→</span></a><a class="slide-link" href="#/concept">개념<span class="ar">→</span></a></div><div class="smain"><span class="kicker">본 문제 6 · 서브 ②</span><h2>칠판의 수 지우기 게임</h2><div class="stack"><p>칠판에 1부터 10까지 열 개의 수가 적혀 있다. 한 번의 조작 = 아무 두 수 a, b를 지우고 그 차(큰 수 − 작은 수)를 적는다.</p><p>아홉 번 조작하면 수가 하나 남는다. 마지막 수는 0이 될 수 있을까? 1은 될 수 있을까?</p><p>조작 순서는 완전히 자유다 — 우리는 마지막 수를 예언할 수 있을까?</p><p class="lead-q">마지막 수 자체는 예언 못 해도, 마지막 수의 ‘어떤 성질’은 예언할 수 있다.</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">10 / 31</span></div></div><aside class="notes">합의 홀짝 불변량. 합이 (a+b)−(a−b)=2b만큼, 즉 짝수만큼만 줄어듦 → 합 55(홀수)의 홀짝 보존 → 마지막 수는 홀수. 0 불가·1 가능. 직접 여러 판 해 보게 하면 좋다.</aside></section>
 <section class="slide center-v"><div class="canvas"><div class="slide-band"></div><div class="smain"><h1 class="divider-h">풀 이</h1><p class="subtitle">각 풀이의 우상단 ‘문제’ 버튼으로 되돌아갈 수 있다 (여러 장인 풀이는 마지막 장에)</p></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">11 / 31</span></div></div></section>
 <section id="ws1" class="slide"><div class="canvas"><div class="slide-band"></div><a class="slide-link" href="#/w1"><span class="ar">←</span>문제</a><div class="smain"><span class="kicker">워밍업 풀이 1</span><h2>짝짓기 — 홀수는 절대 안 된다</h2><div class="stack"><p>한 짝은 2명. 짝이 k쌍이면 짝지어진 사람은 2k명 — 반드시 짝수다.</p><p>7은 홀수 → 전원 짝짓기는 불가능. 자리를 바꾸고 밤을 새워 다시 짜도 안 된다.</p><p>8명이면 4쌍으로 가능 — ‘된다’는 예 하나를 보이면 증명 끝.</p><p class="lead-q">‘안 된다’를 증명한 것은 시도 횟수가 아니라 ‘홀짝’이라는 성질이었다.</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">12 / 31</span></div></div><aside class="notes">짝수/홀수라는 가장 원시적인 불변량. ‘도미노 = 두 칸 짝짓기’임을 나중에 되짚으면 체스판 문제와 정확히 같은 뼈대임이 드러난다.</aside></section>
-<section id="ws2" class="slide"><div class="canvas"><div class="slide-band"></div><a class="slide-link" href="#/w2"><span class="ar">←</span>문제</a><div class="smain"><span class="kicker">워밍업 풀이 2</span><h2>두 색 세기 — 이웃은 늘 다른 색</h2><div class="stack"><p>8×8은 검 32 · 흰 32로 똑같다(각 줄에 4·4). 7×7은 49칸 — 모서리 색이 25칸으로 딱 하나 많다.</p><p>체스판 칠의 규칙: 변을 맞댄 이웃 칸은 반드시 색이 다르다.</p><p>그러므로 ‘이웃한 두 칸’ 묶음은 언제나 검 하나 + 흰 하나다.</p><p class="lead-q">‘이웃 두 칸 = 검1 + 흰1’ — 이 한 줄을 기억해 두라. 곧 무기가 된다.</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">13 / 31</span></div></div><aside class="notes">색칠 논증의 재료 준비 완료. 도미노가 덮는 두 칸이 정확히 이 ‘이웃 두 칸’이라는 연결은 풀이 4-2에서 터뜨린다.</aside></section>
+<section id="ws2" class="slide"><div class="canvas"><div class="slide-band"></div><a class="slide-link" href="#/w2"><span class="ar">←</span>문제</a><div class="smain"><span class="kicker">워밍업 풀이 2</span><h2>두 색 세기 — 이웃은 늘 다른 색</h2><div class="stack"><p>8×8은 검 32 · 흰 32로 똑같다(각 줄에 4·4). 7×7은 49칸 — 모서리 색이 25칸으로 딱 하나 많다.</p><p>체스판 칠의 규칙: 변을 맞댄 이웃 칸은 반드시 색이 다르다.</p><p>그러므로 ‘이웃한 두 칸’ 묶음은 언제나 검 하나 + 흰 하나다.</p><div class="fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 396">
+<rect x="24" y="263" width="33" height="33" fill="#111111"/>
+<rect x="24" y="197" width="33" height="33" fill="#111111"/>
+<rect x="24" y="131" width="33" height="33" fill="#111111"/>
+<rect x="24" y="65" width="33" height="33" fill="#111111"/>
+<rect x="57" y="230" width="33" height="33" fill="#111111"/>
+<rect x="57" y="164" width="33" height="33" fill="#111111"/>
+<rect x="57" y="98" width="33" height="33" fill="#111111"/>
+<rect x="57" y="32" width="33" height="33" fill="#111111"/>
+<rect x="90" y="263" width="33" height="33" fill="#111111"/>
+<rect x="90" y="197" width="33" height="33" fill="#111111"/>
+<rect x="90" y="131" width="33" height="33" fill="#111111"/>
+<rect x="90" y="65" width="33" height="33" fill="#111111"/>
+<rect x="123" y="230" width="33" height="33" fill="#111111"/>
+<rect x="123" y="164" width="33" height="33" fill="#111111"/>
+<rect x="123" y="98" width="33" height="33" fill="#111111"/>
+<rect x="123" y="32" width="33" height="33" fill="#111111"/>
+<rect x="156" y="263" width="33" height="33" fill="#111111"/>
+<rect x="156" y="197" width="33" height="33" fill="#111111"/>
+<rect x="156" y="131" width="33" height="33" fill="#111111"/>
+<rect x="156" y="65" width="33" height="33" fill="#111111"/>
+<rect x="189" y="230" width="33" height="33" fill="#111111"/>
+<rect x="189" y="164" width="33" height="33" fill="#111111"/>
+<rect x="189" y="98" width="33" height="33" fill="#111111"/>
+<rect x="189" y="32" width="33" height="33" fill="#111111"/>
+<rect x="222" y="263" width="33" height="33" fill="#111111"/>
+<rect x="222" y="197" width="33" height="33" fill="#111111"/>
+<rect x="222" y="131" width="33" height="33" fill="#111111"/>
+<rect x="222" y="65" width="33" height="33" fill="#111111"/>
+<rect x="255" y="230" width="33" height="33" fill="#111111"/>
+<rect x="255" y="164" width="33" height="33" fill="#111111"/>
+<rect x="255" y="98" width="33" height="33" fill="#111111"/>
+<rect x="255" y="32" width="33" height="33" fill="#111111"/>
+<line x1="24" y1="32" x2="24" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="32" x2="288" y2="32" stroke="#111111" stroke-width="1.5"/>
+<line x1="57" y1="32" x2="57" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="65" x2="288" y2="65" stroke="#111111" stroke-width="1.5"/>
+<line x1="90" y1="32" x2="90" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="98" x2="288" y2="98" stroke="#111111" stroke-width="1.5"/>
+<line x1="123" y1="32" x2="123" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="131" x2="288" y2="131" stroke="#111111" stroke-width="1.5"/>
+<line x1="156" y1="32" x2="156" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="164" x2="288" y2="164" stroke="#111111" stroke-width="1.5"/>
+<line x1="189" y1="32" x2="189" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="197" x2="288" y2="197" stroke="#111111" stroke-width="1.5"/>
+<line x1="222" y1="32" x2="222" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="230" x2="288" y2="230" stroke="#111111" stroke-width="1.5"/>
+<line x1="255" y1="32" x2="255" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="263" x2="288" y2="263" stroke="#111111" stroke-width="1.5"/>
+<line x1="288" y1="32" x2="288" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="24" y1="296" x2="288" y2="296" stroke="#111111" stroke-width="1.5"/>
+<rect x="24" y="32" width="264" height="264" fill="none" stroke="#111111" stroke-width="3"/>
+<text x="156" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="156" dy="0">8×8 — 검 32 · 흰 32</tspan></text>
+<rect x="356" y="263" width="33" height="33" fill="#111111"/>
+<rect x="356" y="197" width="33" height="33" fill="#111111"/>
+<rect x="356" y="131" width="33" height="33" fill="#111111"/>
+<rect x="356" y="65" width="33" height="33" fill="#111111"/>
+<rect x="389" y="230" width="33" height="33" fill="#111111"/>
+<rect x="389" y="164" width="33" height="33" fill="#111111"/>
+<rect x="389" y="98" width="33" height="33" fill="#111111"/>
+<rect x="422" y="263" width="33" height="33" fill="#111111"/>
+<rect x="422" y="197" width="33" height="33" fill="#111111"/>
+<rect x="422" y="131" width="33" height="33" fill="#111111"/>
+<rect x="422" y="65" width="33" height="33" fill="#111111"/>
+<rect x="455" y="230" width="33" height="33" fill="#111111"/>
+<rect x="455" y="164" width="33" height="33" fill="#111111"/>
+<rect x="455" y="98" width="33" height="33" fill="#111111"/>
+<rect x="488" y="263" width="33" height="33" fill="#111111"/>
+<rect x="488" y="197" width="33" height="33" fill="#111111"/>
+<rect x="488" y="131" width="33" height="33" fill="#111111"/>
+<rect x="488" y="65" width="33" height="33" fill="#111111"/>
+<rect x="521" y="230" width="33" height="33" fill="#111111"/>
+<rect x="521" y="164" width="33" height="33" fill="#111111"/>
+<rect x="521" y="98" width="33" height="33" fill="#111111"/>
+<rect x="554" y="263" width="33" height="33" fill="#111111"/>
+<rect x="554" y="197" width="33" height="33" fill="#111111"/>
+<rect x="554" y="131" width="33" height="33" fill="#111111"/>
+<rect x="554" y="65" width="33" height="33" fill="#111111"/>
+<line x1="356" y1="65" x2="356" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="356" y1="65" x2="587" y2="65" stroke="#111111" stroke-width="1.5"/>
+<line x1="389" y1="65" x2="389" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="356" y1="98" x2="587" y2="98" stroke="#111111" stroke-width="1.5"/>
+<line x1="422" y1="65" x2="422" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="356" y1="131" x2="587" y2="131" stroke="#111111" stroke-width="1.5"/>
+<line x1="455" y1="65" x2="455" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="356" y1="164" x2="587" y2="164" stroke="#111111" stroke-width="1.5"/>
+<line x1="488" y1="65" x2="488" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="356" y1="197" x2="587" y2="197" stroke="#111111" stroke-width="1.5"/>
+<line x1="521" y1="65" x2="521" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="356" y1="230" x2="587" y2="230" stroke="#111111" stroke-width="1.5"/>
+<line x1="554" y1="65" x2="554" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="356" y1="263" x2="587" y2="263" stroke="#111111" stroke-width="1.5"/>
+<line x1="587" y1="65" x2="587" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="356" y1="296" x2="587" y2="296" stroke="#111111" stroke-width="1.5"/>
+<rect x="356" y="65" width="231" height="231" fill="none" stroke="#111111" stroke-width="3"/>
+<text x="471.5" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="471.5" dy="0">7×7 — 검 25 · 흰 24</tspan></text>
+<rect x="668" y="250" width="46" height="46" fill="#111111"/>
+<rect x="668" y="158" width="46" height="46" fill="#111111"/>
+<rect x="714" y="204" width="46" height="46" fill="#111111"/>
+<rect x="714" y="112" width="46" height="46" fill="#111111"/>
+<rect x="760" y="250" width="46" height="46" fill="#111111"/>
+<rect x="760" y="158" width="46" height="46" fill="#111111"/>
+<rect x="806" y="204" width="46" height="46" fill="#111111"/>
+<rect x="806" y="112" width="46" height="46" fill="#111111"/>
+<line x1="668" y1="112" x2="668" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="668" y1="112" x2="852" y2="112" stroke="#111111" stroke-width="1.5"/>
+<line x1="714" y1="112" x2="714" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="668" y1="158" x2="852" y2="158" stroke="#111111" stroke-width="1.5"/>
+<line x1="760" y1="112" x2="760" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="668" y1="204" x2="852" y2="204" stroke="#111111" stroke-width="1.5"/>
+<line x1="806" y1="112" x2="806" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="668" y1="250" x2="852" y2="250" stroke="#111111" stroke-width="1.5"/>
+<line x1="852" y1="112" x2="852" y2="296" stroke="#111111" stroke-width="1.5"/>
+<line x1="668" y1="296" x2="852" y2="296" stroke="#111111" stroke-width="1.5"/>
+<rect x="668" y="112" width="184" height="184" fill="none" stroke="#111111" stroke-width="3"/>
+<rect x="669.38" y="159.38" width="89.24" height="43.239999999999995" rx="6" fill="none" stroke="#ffffff" stroke-width="7.5"/>
+<rect x="669.38" y="159.38" width="89.24" height="43.239999999999995" rx="6" fill="none" stroke="#111111" stroke-width="4"/>
+<rect x="761.38" y="205.38" width="43.239999999999995" height="89.24" rx="6" fill="none" stroke="#ffffff" stroke-width="7.5"/>
+<rect x="761.38" y="205.38" width="43.239999999999995" height="89.24" rx="6" fill="none" stroke="#111111" stroke-width="4"/>
+<text x="760" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="760" dy="0">이웃 두 칸은 언제나</tspan><tspan x="760" dy="26">검 1 + 흰 1</tspan></text>
+</svg>
+</div><p class="lead-q">‘이웃 두 칸 = 검1 + 흰1’ — 이 한 줄을 기억해 두라. 곧 무기가 된다.</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">13 / 31</span></div></div><aside class="notes">색칠 논증의 재료 준비 완료. 도미노가 덮는 두 칸이 정확히 이 ‘이웃 두 칸’이라는 연결은 풀이 4-2에서 터뜨린다.</aside></section>
 <section id="s1" class="dense slide"><div class="canvas"><div class="slide-band"></div><a class="slide-link" href="#/p1"><span class="ar">←</span>문제</a><div class="smain"><span class="kicker">풀이 1 · 동전 (홀짝 불변량)</span><h2>앞면 개수의 ‘홀짝’은 절대 바뀌지 않는다</h2><div class="stack"><p>두 개를 뒤집을 때 앞면 개수의 변화는 셋뿐이다: 뒤·뒤를 뒤집으면 +2, 앞·앞이면 −2, 앞·뒤면 0.</p><p>어느 경우든 ‘앞면 개수의 홀짝’은 그대로다. 시작은 앞면 9개 — 홀수.</p><p>목표(모두 뒷면)는 앞면 0개 — 짝수. 홀수에서 짝수로는 몇 만 번을 해도 못 간다 → 불가능.</p><p>10개라면 시작이 짝수라 장벽이 없다 — 실제로 2개씩 5번이면 끝(가능은 예시로 증명).</p><p class="lead-q">매 순간 변하는 판 위에서 ‘변하지 않는 것’ 하나가 가능과 불가능을 가른다.</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">14 / 31</span></div></div><aside class="notes">오늘의 첫 불변량 증명. ‘변화량이 +2/−2/0뿐’ → 홀짝 보존이라는 논증 틀을 칠판에 크게. 칠판 게임(풀이 6)에서 같은 틀이 재등장한다.</aside></section>
 <section id="s2" class="slide"><div class="canvas"><div class="slide-band"></div><a class="slide-link" href="#/p2"><span class="ar">←</span>문제</a><div class="smain"><span class="kicker">풀이 2 · 온전한 판 (존재 증명)</span><h2>벽돌처럼 눕히면 끝</h2><div class="stack"><p>각 가로줄(8칸)에 도미노 4개를 나란히 눕히면 한 줄 완성 — 8줄이면 32개로 전체를 덮는다.</p><p>‘된다’의 증명은 이 그림 하나로 끝난다. 사실 서로 다른 방법이 12,988,816가지나 되지만, 증명에는 하나면 충분하다.</p><p>이것이 존재 증명 — 예시 하나가 곧 완전한 증명이다.</p><p class="lead-q">그럼 ‘안 된다’는 무엇으로 증명하나? — 지금부터가 오늘의 진짜 주제.</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">15 / 31</span></div></div><aside class="notes">1,300만 배치라는 수로 ‘전수 조사 불가’를 각인 → 다음 두 문제에서 ‘한 방 논리’의 고마움이 커진다. 12,988,816은 알려진 정확한 값.</aside></section>
 <section id="s3" class="slide"><div class="canvas"><div class="slide-band"></div><a class="slide-link" href="#/p3"><span class="ar">←</span>문제</a><div class="smain"><span class="kicker">풀이 3 · 63칸 (개수 불변량)</span><h2>세어 보기만 해도 끝난다</h2><div class="stack"><p>도미노 1개는 정확히 2칸을 덮는다 — k개면 2k칸, 언제나 짝수 칸이다.</p><p>그런데 판은 63칸, 홀수. 어떤 배치도 홀수 칸을 빈틈없이 덮을 수 없다 → 불가능. 배치를 하나도 안 그리고 끝났다.</p><p>이 논증은 ‘어디를 뗐는지’조차 쓰지 않는다 — 홀수 칸이면 무조건 안 된다.</p><p class="lead-q">그렇다면 ‘짝수 칸이면 늘 된다’일까? 다음 문제(62칸)가 그 환상을 깬다.</p></div></div><div class="slide-foot"><b>W05</b> · 논리와 추론 · <span class="foot-num">16 / 31</span></div></div><aside class="notes">첫 ‘한 방’ 불가능 증명. 마지막 q가 다음 단계로 가는 다리 — 짝수는 필요조건일 뿐임을 62칸에서 배운다.</aside></section>

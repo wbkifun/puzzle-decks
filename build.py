@@ -147,6 +147,10 @@ DECK_CSS = """
   display: flex; flex-direction: column; align-items: flex-end; gap: 8px;
 }
 .reveal .slide-links .slide-link { position: static !important; right: auto; top: auto; }
+/* 인라인 SVG 그림(fig 필드): 높이 고정·비율 유지(viewBox), 중앙 정렬.
+   fitSection은 폰트만 줄이므로 그림 높이는 본문이 넉넉히 남는 선에서 보수적으로. */
+.reveal .fig { margin-top: .45em; text-align: center; }
+.reveal .fig svg { height: 285px; max-width: 100%; }
 /* 섹션 구분 슬라이드 큰 제목 */
 .divider-h { color: var(--phase-accent-ink); font-size: 2.6em; }
 /* 드모르간 2×2 격자 그림 */
@@ -211,6 +215,18 @@ def trapbox(s):
     return f'<div class="trapbox">{label}{esc(t["text"])}</div>'
 
 
+def figbox(s):
+    """fig 필드(리포 상대 SVG 경로)를 슬라이드에 인라인.
+    자기완결형 단일 HTML 유지 — 파일 참조가 아니라 SVG 본문을 심는다.
+    루트 <svg>의 width/height는 제거해 CSS(.fig svg)가 크기를 결정(viewBox로 비율 유지)."""
+    f = s.get("fig")
+    if not f:
+        return ""
+    svg = read(ROOT / f)
+    svg = re.sub(r'(<svg[^>]*?)\s+width="[^"]*"\s+height="[^"]*"', r"\1", svg, count=1)
+    return f'<div class="fig">{svg}</div>'
+
+
 def jump_link(j):
     """문제↔풀이 점프 링크. dir 'prev'면 ← 왼쪽, 그 외 → 오른쪽."""
     label = esc(j.get("label", ""))
@@ -268,7 +284,7 @@ def r_title(s, meta):
 
 def r_basic(s, meta):
     inner = kh(s) + (f'<div class="stack">{paras(s.get("body",[]))}'
-                     f'{leadq(s)}{trapbox(s)}</div>')
+                     f'{figbox(s)}{leadq(s)}{trapbox(s)}</div>')
     return shell(meta, s, inner)
 
 
