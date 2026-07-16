@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 396" width="700" height="396">
+<circle cx="62" cy="78" r="27" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<text x="62" y="87.36" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" fill="#111111">앞</text>
+<circle cx="136" cy="78" r="27" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<text x="136" y="87.36" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" fill="#111111">앞</text>
+<circle cx="210" cy="78" r="27" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<text x="210" y="87.36" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" fill="#111111">앞</text>
+<circle cx="62" cy="152" r="27" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<text x="62" y="161.36" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" fill="#111111">앞</text>
+<circle cx="136" cy="152" r="27" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<text x="136" y="161.36" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" fill="#111111">앞</text>
+<circle cx="210" cy="152" r="27" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<text x="210" y="161.36" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" fill="#111111">앞</text>
+<circle cx="62" cy="226" r="27" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<text x="62" y="235.36" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" fill="#111111">앞</text>
+<circle cx="136" cy="226" r="27" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<text x="136" y="235.36" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" fill="#111111">앞</text>
+<circle cx="210" cy="226" r="27" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<text x="210" y="235.36" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" fill="#111111">앞</text>
+<text x="136" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="136" dy="0">모두 앞면인 동전 9개</tspan></text>
+<circle cx="380" cy="152" r="27" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<text x="380" y="161.36" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" fill="#111111">앞</text>
+<circle cx="444" cy="152" r="27" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<text x="444" y="161.36" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" fill="#111111">앞</text>
+<line x1="486" y1="152" x2="542" y2="152" stroke="#111111" stroke-width="3"/>
+<polygon points="552,152 539,145.5 539,158.5" fill="#111111"/>
+<text x="519.0" y="138" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">한 번</text>
+<circle cx="594" cy="152" r="27" fill="#111111" stroke="#111111" stroke-width="2.6"/>
+<text x="594" y="161.36" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" fill="#ffffff">뒤</text>
+<circle cx="658" cy="152" r="27" fill="#111111" stroke="#111111" stroke-width="2.6"/>
+<text x="658" y="161.36" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" fill="#ffffff">뒤</text>
+<text x="519" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="519" dy="0">한 번에 ‘정확히 2개’를 골라</tspan><tspan x="519" dy="26">동시에 뒤집는다 (횟수 제한 없음)</tspan></text>
+</svg>

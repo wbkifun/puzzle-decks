@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 396" width="620" height="396">
+<rect x="36" y="138" width="60" height="60" rx="5" fill="#e6e6e6" stroke="#111111" stroke-width="2.8"/>
+<line x1="66" y1="138" x2="66" y2="198" stroke="#111111" stroke-width="1.3"/>
+<line x1="36" y1="168" x2="96" y2="168" stroke="#111111" stroke-width="1.3"/>
+<rect x="41.4" y="143.4" width="19.200000000000003" height="19.200000000000003" rx="3" fill="none" stroke="#111111" stroke-width="0.9" opacity="0.55"/>
+<rect x="41.4" y="173.4" width="19.200000000000003" height="19.200000000000003" rx="3" fill="none" stroke="#111111" stroke-width="0.9" opacity="0.55"/>
+<rect x="71.4" y="143.4" width="19.200000000000003" height="19.200000000000003" rx="3" fill="none" stroke="#111111" stroke-width="0.9" opacity="0.55"/>
+<rect x="71.4" y="173.4" width="19.200000000000003" height="19.200000000000003" rx="3" fill="none" stroke="#111111" stroke-width="0.9" opacity="0.55"/>
+<text x="66" y="296" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" fill="#111111"><tspan x="66" dy="0">1덩어리</tspan></text>
+<line x1="108" y1="168" x2="150" y2="168" stroke="#111111" stroke-width="3"/>
+<polygon points="160,168 147,161.5 147,174.5" fill="#111111"/>
+<text x="134.0" y="154" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">1번</text>
+<rect x="174" y="138" width="30" height="60" rx="5" fill="#e6e6e6" stroke="#111111" stroke-width="2.8"/>
+<line x1="174" y1="168" x2="204" y2="168" stroke="#111111" stroke-width="1.3"/>
+<rect x="179.4" y="143.4" width="19.200000000000003" height="19.200000000000003" rx="3" fill="none" stroke="#111111" stroke-width="0.9" opacity="0.55"/>
+<rect x="179.4" y="173.4" width="19.200000000000003" height="19.200000000000003" rx="3" fill="none" stroke="#111111" stroke-width="0.9" opacity="0.55"/>
+<rect x="216" y="138" width="30" height="60" rx="5" fill="#e6e6e6" stroke="#111111" stroke-width="2.8"/>
+<line x1="216" y1="168" x2="246" y2="168" stroke="#111111" stroke-width="1.3"/>
+<rect x="221.4" y="143.4" width="19.200000000000003" height="19.200000000000003" rx="3" fill="none" stroke="#111111" stroke-width="0.9" opacity="0.55"/>
+<rect x="221.4" y="173.4" width="19.200000000000003" height="19.200000000000003" rx="3" fill="none" stroke="#111111" stroke-width="0.9" opacity="0.55"/>
+<text x="210" y="296" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" fill="#111111"><tspan x="210" dy="0">2덩어리</tspan></text>
+<line x1="258" y1="168" x2="300" y2="168" stroke="#111111" stroke-width="3"/>
+<polygon points="310,168 297,161.5 297,174.5" fill="#111111"/>
+<text x="284.0" y="154" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">2번</text>
+<rect x="324" y="138" width="30" height="30" rx="5" fill="#e6e6e6" stroke="#111111" stroke-width="2.8"/>
+<rect x="329.4" y="143.4" width="19.200000000000003" height="19.200000000000003" rx="3" fill="none" stroke="#111111" stroke-width="0.9" opacity="0.55"/>
+<rect x="324" y="180" width="30" height="30" rx="5" fill="#e6e6e6" stroke="#111111" stroke-width="2.8"/>
+<rect x="329.4" y="185.4" width="19.200000000000003" height="19.200000000000003" rx="3" fill="none" stroke="#111111" stroke-width="0.9" opacity="0.55"/>
+<rect x="366" y="138" width="30" height="60" rx="5" fill="#e6e6e6" stroke="#111111" stroke-width="2.8"/>
+<line x1="366" y1="168" x2="396" y2="168" stroke="#111111" stroke-width="1.3"/>
+<rect x="371.4" y="143.4" width="19.200000000000003" height="19.200000000000003" rx="3" fill="none" stroke="#111111" stroke-width="0.9" opacity="0.55"/>
+<rect x="371.4" y="173.4" width="19.200000000000003" height="19.200000000000003" rx="3" fill="none" stroke="#111111" stroke-width="0.9" opacity="0.55"/>
+<text x="360" y="296" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" fill="#111111"><tspan x="360" dy="0">3덩어리</tspan></text>
+<line x1="408" y1="168" x2="450" y2="168" stroke="#111111" stroke-width="3"/>
+<polygon points="460,168 447,161.5 447,174.5" fill="#111111"/>
+<text x="434.0" y="154" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">3번</text>
+<rect x="474" y="138" width="30" height="30" rx="5" fill="#e6e6e6" stroke="#111111" stroke-width="2.8"/>
+<rect x="479.4" y="143.4" width="19.200000000000003" height="19.200000000000003" rx="3" fill="none" stroke="#111111" stroke-width="0.9" opacity="0.55"/>
+<rect x="474" y="180" width="30" height="30" rx="5" fill="#e6e6e6" stroke="#111111" stroke-width="2.8"/>
+<rect x="479.4" y="185.4" width="19.200000000000003" height="19.200000000000003" rx="3" fill="none" stroke="#111111" stroke-width="0.9" opacity="0.55"/>
+<rect x="516" y="138" width="30" height="30" rx="5" fill="#e6e6e6" stroke="#111111" stroke-width="2.8"/>
+<rect x="521.4" y="143.4" width="19.200000000000003" height="19.200000000000003" rx="3" fill="none" stroke="#111111" stroke-width="0.9" opacity="0.55"/>
+<rect x="516" y="180" width="30" height="30" rx="5" fill="#e6e6e6" stroke="#111111" stroke-width="2.8"/>
+<rect x="521.4" y="185.4" width="19.200000000000003" height="19.200000000000003" rx="3" fill="none" stroke="#111111" stroke-width="0.9" opacity="0.55"/>
+<text x="510" y="296" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" fill="#111111"><tspan x="510" dy="0">4덩어리</tspan></text>
+<text x="310" y="336" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="310" dy="0">쪼갤 때마다 덩어리는 꼭 하나 늘어난다</tspan><tspan x="310" dy="26">— 4조각은 언제나 3번, 24조각은 23번</tspan></text>
+</svg>
