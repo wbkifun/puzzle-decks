@@ -60,7 +60,7 @@ parts += arrow(x0 + 3 * c2 + 16, ym, x0 + 3 * c2 + 74)
 xr = x0 + 3 * c2 + 88
 parts += chunk(xr, ym - c2, 1, 2, c2)
 parts += chunk(xr + c2 + 14, ym - c2, 2, 2, c2)
-parts += caption((x0 + xr + 3 * c2 + 14) / 2, CAP, ["쪼개기 한 번 = 금을 따라", "한 덩어리 → 두 덩어리"])
+parts += caption((x0 + xr + 3 * c2 + 14) / 2, CAP, ["쪼개기 한 번 = 홈을 따라", "한 덩어리 → 두 덩어리"])
 
 W = 700
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'

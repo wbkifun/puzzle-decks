@@ -57,5 +57,5 @@
 <rect x="615.4" y="195.4" width="19.200000000000003" height="19.200000000000003" rx="3" fill="none" stroke="#111111" stroke-width="0.9" opacity="0.55"/>
 <rect x="645.4" y="165.4" width="19.200000000000003" height="19.200000000000003" rx="3" fill="none" stroke="#111111" stroke-width="0.9" opacity="0.55"/>
 <rect x="645.4" y="195.4" width="19.200000000000003" height="19.200000000000003" rx="3" fill="none" stroke="#111111" stroke-width="0.9" opacity="0.55"/>
-<text x="529.0" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="529.0" dy="0">쪼개기 한 번 = 금을 따라</tspan><tspan x="529.0" dy="26">한 덩어리 → 두 덩어리</tspan></text>
+<text x="529.0" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="529.0" dy="0">쪼개기 한 번 = 홈을 따라</tspan><tspan x="529.0" dy="26">한 덩어리 → 두 덩어리</tspan></text>
 </svg>
