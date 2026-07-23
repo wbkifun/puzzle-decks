@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 730 362" width="730" height="362">
+<circle cx="56" cy="72" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="96" cy="72" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="136" cy="72" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="56" cy="112" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="96" cy="112" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="136" cy="112" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="56" cy="152" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="96" cy="152" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="136" cy="152" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="184" cy="72" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="224" cy="72" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="264" cy="72" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="184" cy="112" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="224" cy="112" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="264" cy="112" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="184" cy="152" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="224" cy="152" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="264" cy="152" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="312" cy="72" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="352" cy="72" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="392" cy="72" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="312" cy="112" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="352" cy="112" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="392" cy="112" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="312" cy="152" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="352" cy="152" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="392" cy="152" r="16" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<text x="224" y="310" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="224" dy="0">똑같이 생긴 27개 — 1개만 살짝 가볍다</tspan></text>
+<line x1="560" y1="110" x2="560" y2="168.8" stroke="#111111" stroke-width="4.2"/>
+<line x1="524.3" y1="168.8" x2="595.7" y2="168.8" stroke="#111111" stroke-width="4.2"/>
+<line x1="481.25" y1="110" x2="638.75" y2="110" stroke="#111111" stroke-width="4.2"/>
+<line x1="481.25" y1="110" x2="481.25" y2="156.2" stroke="#111111" stroke-width="2.7300000000000004"/>
+<path d="M 453.95 156.2 A 27.3 21.0 0 0 0 508.55 156.2" fill="none" stroke="#111111" stroke-width="3.1500000000000004"/>
+<line x1="638.75" y1="110" x2="638.75" y2="156.2" stroke="#111111" stroke-width="2.7300000000000004"/>
+<path d="M 611.45 156.2 A 27.3 21.0 0 0 0 666.05 156.2" fill="none" stroke="#111111" stroke-width="3.1500000000000004"/>
+<text x="560" y="248" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="28" font-weight="700" fill="#111111">× 3번</text>
+<text x="560" y="310" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="560" dy="0">3번이면 찾을 수 있을까?</tspan><tspan x="560" dy="26">그리고 2번으로는 왜 안 될까?</tspan></text>
+</svg>

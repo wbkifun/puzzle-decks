@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 910 306" width="910" height="306">
+<rect x="110" y="50" width="480" height="42" rx="21.0" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
+<line x1="158.0" y1="61.760000000000005" x2="158.0" y2="80.24" stroke="#111111" stroke-width="1.6"/>
+<line x1="206.0" y1="61.760000000000005" x2="206.0" y2="80.24" stroke="#111111" stroke-width="1.6"/>
+<line x1="254.0" y1="61.760000000000005" x2="254.0" y2="80.24" stroke="#111111" stroke-width="1.6"/>
+<line x1="302.0" y1="61.760000000000005" x2="302.0" y2="80.24" stroke="#111111" stroke-width="1.6"/>
+<line x1="350.0" y1="61.760000000000005" x2="350.0" y2="80.24" stroke="#111111" stroke-width="1.6"/>
+<line x1="398.0" y1="61.760000000000005" x2="398.0" y2="80.24" stroke="#111111" stroke-width="1.6"/>
+<line x1="446.0" y1="61.760000000000005" x2="446.0" y2="80.24" stroke="#111111" stroke-width="1.6"/>
+<line x1="494.0" y1="61.760000000000005" x2="494.0" y2="80.24" stroke="#111111" stroke-width="1.6"/>
+<line x1="542.0" y1="61.760000000000005" x2="542.0" y2="80.24" stroke="#111111" stroke-width="1.6"/>
+<text x="96" y="80.0" text-anchor="end" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="700" fill="#111111">1</text>
+<text x="604" y="80.0" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="700" fill="#111111">1,000</text>
+<text x="782" y="80" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="700" fill="#111111">— 몇 번?</text>
+<rect x="110" y="150" width="480" height="42" rx="21.0" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
+<line x1="158.0" y1="161.76" x2="158.0" y2="180.24" stroke="#111111" stroke-width="1.6"/>
+<line x1="206.0" y1="161.76" x2="206.0" y2="180.24" stroke="#111111" stroke-width="1.6"/>
+<line x1="254.0" y1="161.76" x2="254.0" y2="180.24" stroke="#111111" stroke-width="1.6"/>
+<line x1="302.0" y1="161.76" x2="302.0" y2="180.24" stroke="#111111" stroke-width="1.6"/>
+<line x1="350.0" y1="161.76" x2="350.0" y2="180.24" stroke="#111111" stroke-width="1.6"/>
+<line x1="398.0" y1="161.76" x2="398.0" y2="180.24" stroke="#111111" stroke-width="1.6"/>
+<line x1="446.0" y1="161.76" x2="446.0" y2="180.24" stroke="#111111" stroke-width="1.6"/>
+<line x1="494.0" y1="161.76" x2="494.0" y2="180.24" stroke="#111111" stroke-width="1.6"/>
+<line x1="542.0" y1="161.76" x2="542.0" y2="180.24" stroke="#111111" stroke-width="1.6"/>
+<text x="96" y="180.0" text-anchor="end" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="700" fill="#111111">1</text>
+<text x="604" y="180.0" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="700" fill="#111111">1,000,000</text>
+<text x="782" y="180" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="700" fill="#111111">— 몇 번?</text>
+<text x="440" y="268" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="440" dy="0">‘두 배의 사다리’로 답하라 — 그리고 하나 적은 횟수로는 왜 안 되는지도</tspan></text>
+</svg>

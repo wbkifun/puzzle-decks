@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 388" width="680" height="388">
+<rect x="30" y="40" width="210" height="84" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<text x="135.0" y="74" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">① 후보 집합</text>
+<text x="135.0" y="104" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111" opacity="0.75">요일 · 친구 · 카드 …</text>
+<rect x="30" y="148" width="210" height="84" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<text x="135.0" y="182" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">② 도구</text>
+<text x="135.0" y="212" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111" opacity="0.75">예/아니오 · 저울 · 사지선다</text>
+<line x1="252" y1="136" x2="316" y2="136" stroke="#111111" stroke-width="3"/>
+<polygon points="330,136 316,129 316,143" fill="#111111"/>
+<rect x="344" y="62" width="300" height="148" rx="12" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+<text x="494" y="112" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">나만의 맞히기 퍼즐</text>
+<text x="494" y="152" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111">“몇 번이면 맞힐 수 있을까?”</text>
+<rect x="344" y="238" width="300" height="66" rx="12" fill="#ffffff" stroke="#111111" stroke-width="2.4" stroke-dasharray="8 6"/>
+<text x="494" y="278" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" fill="#111111">몰래 계산한 정답 횟수 (비밀!)</text>
+<text x="340" y="356" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="340" dy="0">재료를 고르고 — 한계는 세기로 정확하게 심어 둘 것</tspan></text>
+</svg>

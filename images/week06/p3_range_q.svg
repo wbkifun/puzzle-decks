@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 246" width="740" height="246">
+<rect x="80" y="80" width="560" height="46" rx="23.0" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
+<line x1="136.0" y1="92.88" x2="136.0" y2="113.12" stroke="#111111" stroke-width="1.6"/>
+<line x1="192.0" y1="92.88" x2="192.0" y2="113.12" stroke="#111111" stroke-width="1.6"/>
+<line x1="248.0" y1="92.88" x2="248.0" y2="113.12" stroke="#111111" stroke-width="1.6"/>
+<line x1="304.0" y1="92.88" x2="304.0" y2="113.12" stroke="#111111" stroke-width="1.6"/>
+<line x1="360.0" y1="92.88" x2="360.0" y2="113.12" stroke="#111111" stroke-width="1.6"/>
+<line x1="416.0" y1="92.88" x2="416.0" y2="113.12" stroke="#111111" stroke-width="1.6"/>
+<line x1="472.0" y1="92.88" x2="472.0" y2="113.12" stroke="#111111" stroke-width="1.6"/>
+<line x1="528.0" y1="92.88" x2="528.0" y2="113.12" stroke="#111111" stroke-width="1.6"/>
+<line x1="584.0" y1="92.88" x2="584.0" y2="113.12" stroke="#111111" stroke-width="1.6"/>
+<text x="66" y="112.0" text-anchor="end" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="700" fill="#111111">1</text>
+<text x="654" y="112.0" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="700" fill="#111111">100</text>
+<text x="360" y="48" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="27" font-weight="700" fill="#111111">이번엔 후보 100개</text>
+<text x="360" y="190" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="360" dy="0">소문: “7번이면 반드시 맞힐 수 있다” — 정말일까?</tspan><tspan x="360" dy="27">홀수 개가 남으면 어떻게 가르는 게 최선일까?</tspan></text>
+</svg>
