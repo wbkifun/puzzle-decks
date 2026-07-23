@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 340" width="940" height="340">
+<text x="130" y="80" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">카드</text>
+<text x="130" y="156" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">고른다?</text>
+<text x="130" y="216" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">이진법</text>
+<text x="250" y="66" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="28" font-weight="800" fill="#111111">E</text>
+<text x="250" y="96" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111" opacity="0.7">(16)</text>
+<text x="250" y="156" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="30" font-weight="700" fill="#111111">○</text>
+<text x="250" y="216" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="30" font-weight="700" fill="#111111">1</text>
+<text x="346" y="66" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="28" font-weight="800" fill="#111111">D</text>
+<text x="346" y="96" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111" opacity="0.7">(8)</text>
+<text x="346" y="156" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="30" font-weight="400" fill="#111111">×</text>
+<text x="346" y="216" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="30" font-weight="700" fill="#111111">0</text>
+<text x="442" y="66" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="28" font-weight="800" fill="#111111">C</text>
+<text x="442" y="96" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111" opacity="0.7">(4)</text>
+<text x="442" y="156" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="30" font-weight="700" fill="#111111">○</text>
+<text x="442" y="216" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="30" font-weight="700" fill="#111111">1</text>
+<text x="538" y="66" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="28" font-weight="800" fill="#111111">B</text>
+<text x="538" y="96" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111" opacity="0.7">(2)</text>
+<text x="538" y="156" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="30" font-weight="400" fill="#111111">×</text>
+<text x="538" y="216" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="30" font-weight="700" fill="#111111">0</text>
+<text x="634" y="66" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="28" font-weight="800" fill="#111111">A</text>
+<text x="634" y="96" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111" opacity="0.7">(1)</text>
+<text x="634" y="156" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="30" font-weight="700" fill="#111111">○</text>
+<text x="634" y="216" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="30" font-weight="700" fill="#111111">1</text>
+<text x="704" y="156" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" fill="#111111">= 16+4+1 = 21</text>
+<text x="704" y="216" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" fill="#111111">= 10101₂</text>
+<text x="470" y="282" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="470" dy="0">이름표(고른다/안 고른다) = 분해표 = 이진법 표기 - 다섯 글자의 가짓수는 2⁵ = 32 ≥ 31</tspan><tspan x="470" dy="26">1~100 판은 카드 7장(1·2·4·8·16·32·64): 2⁷ = 128 ≥ 100 - 스무고개가 7번인 것과 같은 이유</tspan></text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1062 280" width="1062" height="280">
+<rect x="28" y="120" width="110" height="62" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
+<text x="83.0" y="160" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="25" font-weight="700" fill="#111111">21</text>
+<line x1="148" y1="151" x2="333" y2="151" stroke="#111111" stroke-width="3"/>
+<polygon points="344,151 330,144 330,158" fill="#111111"/>
+<text x="246.0" y="135" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">16은 필수 - 없으면 최대 15</text>
+<rect x="354" y="120" width="130" height="62" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
+<text x="419.0" y="160" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="25" font-weight="400" fill="#111111">남은 5</text>
+<line x1="494" y1="151" x2="671" y2="151" stroke="#111111" stroke-width="3"/>
+<polygon points="682,151 668,144 668,158" fill="#111111"/>
+<text x="588.0" y="135" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">4는 필수 - 없으면 최대 3</text>
+<rect x="692" y="120" width="130" height="62" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
+<text x="757.0" y="160" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="25" font-weight="400" fill="#111111">남은 1</text>
+<line x1="832" y1="151" x2="917" y2="151" stroke="#111111" stroke-width="3"/>
+<polygon points="928,151 914,144 914,158" fill="#111111"/>
+<text x="880.0" y="135" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">1로 마무리</text>
+<rect x="938" y="120" width="96" height="62" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
+<text x="986.0" y="160" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="25" font-weight="700" fill="#111111">0 · 끝</text>
+<text x="530" y="64" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="530" dy="0">큰 수부터 따져 보면 매 걸음 선택의 여지가 없다 (1+2+4+8 = 15 < 16)</tspan></text>
+<text x="530" y="244" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="530" dy="0">그래서 21 = 16 + 4 + 1 - 다른 방법은 없다. 1~31의 모든 수가 이렇게 딱 한 가지로 분해된다</tspan></text>
+</svg>
