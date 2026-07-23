@@ -32,5 +32,5 @@
 <rect x="720" y="90" width="40" height="40" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2"/>
 <text x="740.0" y="116.4" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">16</text>
 <text x="395.0" y="60" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="700" fill="#111111">후보 16개</text>
-<text x="395.0" y="200" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="395.0" dy="0">어떤 대답이 돌아와도 끝까지 통하는 질문 목록 —</tspan><tspan x="395.0" dy="27">몇 번이면 반드시 맞힐 수 있을까?</tspan></text>
+<text x="395.0" y="200" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="395.0" dy="0">어떤 대답이 돌아와도 끝까지 통하는 질문 목록 -</tspan><tspan x="395.0" dy="27">몇 번이면 반드시 맞힐 수 있을까?</tspan></text>
 </svg>

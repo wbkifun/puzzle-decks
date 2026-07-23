@@ -1,32 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 392" width="880" height="392">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 392" width="1080" height="392">
 <rect x="60" y="34" width="416" height="34" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
 <text x="488" y="58.480000000000004" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">16</text>
 <line x1="268.0" y1="70" x2="268.0" y2="82" stroke="#111111" stroke-width="2.6"/>
 <polygon points="268.0,94 261.5,81 274.5,81" fill="#111111"/>
-<text x="282.0" y="88.0" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" fill="#111111">질문 1 — 반으로</text>
+<text x="282.0" y="88.0" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" fill="#111111">질문 1 - 반으로</text>
 <rect x="60" y="94" width="208" height="34" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
 <text x="280" y="118.48" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">8</text>
 <line x1="164.0" y1="130" x2="164.0" y2="142" stroke="#111111" stroke-width="2.6"/>
 <polygon points="164.0,154 157.5,141 170.5,141" fill="#111111"/>
-<text x="178.0" y="148.0" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" fill="#111111">질문 2 — 반으로</text>
+<text x="178.0" y="148.0" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" fill="#111111">질문 2 - 반으로</text>
 <rect x="60" y="154" width="104" height="34" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
 <text x="176" y="178.48" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">4</text>
 <line x1="112.0" y1="190" x2="112.0" y2="202" stroke="#111111" stroke-width="2.6"/>
 <polygon points="112.0,214 105.5,201 118.5,201" fill="#111111"/>
-<text x="126.0" y="208.0" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" fill="#111111">질문 3 — 반으로</text>
+<text x="126.0" y="208.0" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" fill="#111111">질문 3 - 반으로</text>
 <rect x="60" y="214" width="52" height="34" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
 <text x="124" y="238.48" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">2</text>
 <line x1="86.0" y1="250" x2="86.0" y2="262" stroke="#111111" stroke-width="2.6"/>
 <polygon points="86.0,274 79.5,261 92.5,261" fill="#111111"/>
-<text x="100.0" y="268.0" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" fill="#111111">질문 4 — 반으로</text>
+<text x="100.0" y="268.0" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" fill="#111111">질문 4 - 반으로</text>
 <rect x="60" y="274" width="26" height="34" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
 <text x="98" y="298.48" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">1</text>
-<text x="268" y="356" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="268" dy="0">질문마다 최악의 경우 후보가 반으로 — 4번이면 반드시</tspan></text>
-<text x="640" y="52" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">두 배의 사다리</text>
-<text x="660" y="306" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" fill="#111111">1 — 질문 0번</text>
-<text x="660" y="250" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" fill="#111111">2 — 질문 1번</text>
-<text x="660" y="194" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" fill="#111111">4 — 질문 2번</text>
-<text x="660" y="138" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" fill="#111111">8 — 질문 3번</text>
-<text x="660" y="82" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" fill="#111111">16 — 질문 4번</text>
-<text x="730" y="356" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="730" dy="0">후보 ×2 = 질문 +1</tspan></text>
+<text x="268" y="356" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="268" dy="0">질문마다 최악의 경우 후보가 반으로 - 4번이면 반드시</tspan></text>
+<text x="585" y="52" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">두 배의 사다리</text>
+<rect x="585" y="84" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="605" y="84" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="625" y="84" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="645" y="84" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="665" y="84" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="685" y="84" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="705" y="84" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="725" y="84" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="745" y="84" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="765" y="84" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="785" y="84" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="805" y="84" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="825" y="84" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="845" y="84" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="865" y="84" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="885" y="84" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<text x="915" y="99" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111">16개 - 질문 4번</text>
+<rect x="585" y="136" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="605" y="136" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="625" y="136" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="645" y="136" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="665" y="136" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="685" y="136" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="705" y="136" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="725" y="136" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<text x="915" y="151" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111">8개 - 질문 3번</text>
+<rect x="585" y="188" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="605" y="188" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="625" y="188" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="645" y="188" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<text x="915" y="203" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111">4개 - 질문 2번</text>
+<rect x="585" y="240" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<rect x="605" y="240" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<text x="915" y="255" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111">2개 - 질문 1번</text>
+<rect x="585" y="292" width="16" height="16" rx="4" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<text x="915" y="307" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111">1개 - 질문 0번</text>
+<text x="815" y="356" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="815" dy="0">후보 ×2 = 질문 +1</tspan></text>
 </svg>

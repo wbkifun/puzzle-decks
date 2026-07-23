@@ -27,6 +27,6 @@
 <text x="764.0" y="96" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="34" font-weight="700" fill="#111111">64</text>
 <text x="764.0" y="128" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="16" fill="#111111" opacity="0.7">카드의 첫 수</text>
 <text x="764.0" y="196" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="400" fill="#111111">× 아니오</text>
-<text x="430" y="250" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" fill="#111111"><tspan x="430" dy="0">술래의 수가 37이라면 — ‘예’는 1·4·32 카드에서만</tspan></text>
-<text x="430" y="300" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" fill="#111111"><tspan x="430" dy="0">○ 카드의 첫 수만 더하면:  32 + 4 + 1 = 37 — 즉석에서 맞힌다!</tspan></text>
+<text x="430" y="250" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" fill="#111111"><tspan x="430" dy="0">술래의 수가 37이라면 - ‘예’는 1·4·32 카드에서만</tspan></text>
+<text x="430" y="300" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" fill="#111111"><tspan x="430" dy="0">○ 카드의 첫 수만 더하면:  32 + 4 + 1 = 37 - 즉석에서 맞힌다!</tspan></text>
 </svg>

@@ -8,14 +8,14 @@
 <circle cx="85" cy="213" r="25" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
 <circle cx="149" cy="213" r="25" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
 <circle cx="213" cy="213" r="25" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
-<text x="156" y="320" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="156" dy="0">똑같이 생긴 9개 —</tspan><tspan x="156" dy="26">1개만 살짝 가볍다</tspan></text>
-<line x1="470" y1="120" x2="470" y2="184.39999999999998" stroke="#111111" stroke-width="4.6"/>
-<line x1="430.9" y1="184.39999999999998" x2="509.1" y2="184.39999999999998" stroke="#111111" stroke-width="4.6"/>
+<text x="156" y="320" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="156" dy="0">똑같이 생긴 9개 -</tspan><tspan x="156" dy="26">1개만 살짝 가볍다</tspan></text>
+<line x1="470" y1="120" x2="470" y2="179.8" stroke="#111111" stroke-width="4.6"/>
+<line x1="430.9" y1="179.8" x2="509.1" y2="179.8" stroke="#111111" stroke-width="4.6"/>
 <line x1="383.75" y1="120" x2="556.25" y2="120" stroke="#111111" stroke-width="4.6"/>
-<line x1="383.75" y1="120" x2="383.75" y2="170.6" stroke="#111111" stroke-width="2.9899999999999998"/>
-<path d="M 353.85 170.6 A 29.9 23.0 0 0 0 413.65 170.6" fill="none" stroke="#111111" stroke-width="3.4499999999999997"/>
-<line x1="556.25" y1="120" x2="556.25" y2="170.6" stroke="#111111" stroke-width="2.9899999999999998"/>
-<path d="M 526.35 170.6 A 29.9 23.0 0 0 0 586.15 170.6" fill="none" stroke="#111111" stroke-width="3.4499999999999997"/>
+<line x1="383.75" y1="120" x2="383.75" y2="108.5" stroke="#111111" stroke-width="3.2199999999999998"/>
+<path d="M 349.25 99.3 Q 383.75 118.85 418.25 99.3" fill="#ffffff" stroke="#111111" stroke-width="3.4499999999999997"/>
+<line x1="556.25" y1="120" x2="556.25" y2="108.5" stroke="#111111" stroke-width="3.2199999999999998"/>
+<path d="M 521.75 99.3 Q 556.25 118.85 590.75 99.3" fill="#ffffff" stroke="#111111" stroke-width="3.4499999999999997"/>
 <text x="470" y="268" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="30" font-weight="700" fill="#111111">× 2번</text>
-<text x="470" y="320" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="470" dy="0">저울은 딱 2번 —</tspan><tspan x="470" dy="26">어떻게 달아야 찾을 수 있을까?</tspan></text>
+<text x="470" y="320" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="470" dy="0">저울은 딱 2번 -</tspan><tspan x="470" dy="26">어떻게 달아야 찾을 수 있을까?</tspan></text>
 </svg>

@@ -25,17 +25,25 @@ def coin(cx, cy, r):
     return [f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="#ffffff" stroke="{INK}" stroke-width="2.4"/>']
 
 
-def scale(cx, cy, s=1.0):
-    """양팔 저울(수평) 아이콘. s = 배율."""
+def scale(cx, cy, s=1.0, coins=(0, 0), coin_r=10):
+    """윗접시 양팔 저울: 빔 양 끝 위에 접시를 얹고, 접시 위에 동전 coins=(왼, 오)개."""
     p = []
-    bw, ph = 150 * s, 44 * s                          # 빔 폭, 접시 내림 길이
-    p.append(f'<line x1="{cx}" y1="{cy}" x2="{cx}" y2="{cy+56*s}" stroke="{INK}" stroke-width="{4*s}"/>')       # 기둥
-    p.append(f'<line x1="{cx-34*s}" y1="{cy+56*s}" x2="{cx+34*s}" y2="{cy+56*s}" stroke="{INK}" stroke-width="{4*s}"/>')  # 받침
+    bw = 150 * s                                      # 빔 폭
+    p.append(f'<line x1="{cx}" y1="{cy}" x2="{cx}" y2="{cy+52*s}" stroke="{INK}" stroke-width="{4*s}"/>')       # 기둥
+    p.append(f'<line x1="{cx-34*s}" y1="{cy+52*s}" x2="{cx+34*s}" y2="{cy+52*s}" stroke="{INK}" stroke-width="{4*s}"/>')  # 받침
     p.append(f'<line x1="{cx-bw/2}" y1="{cy}" x2="{cx+bw/2}" y2="{cy}" stroke="{INK}" stroke-width="{4*s}"/>')  # 빔
-    for sgn in (-1, 1):
+    for i, sgn in enumerate((-1, 1)):
         px = cx + sgn * bw / 2
-        p.append(f'<line x1="{px}" y1="{cy}" x2="{px}" y2="{cy+ph}" stroke="{INK}" stroke-width="{2.6*s}"/>')
-        p.append(f'<path d="M {px-26*s} {cy+ph} A {26*s} {20*s} 0 0 0 {px+26*s} {cy+ph}" fill="none" stroke="{INK}" stroke-width="{3*s}"/>')
+        py = cy - 10 * s                              # 접시 받침(빔 끝에서 위로)
+        p.append(f'<line x1="{px}" y1="{cy}" x2="{px}" y2="{py}" stroke="{INK}" stroke-width="{2.8*s}"/>')
+        p.append(f'<path d="M {px-30*s} {py-8*s} Q {px} {py+9*s} {px+30*s} {py-8*s}" fill="#ffffff" stroke="{INK}" stroke-width="{3*s}"/>')  # 윗접시
+        n = coins[i]
+        if n:                                         # 접시 위 동전 n개(가로로)
+            total = n * 2 * coin_r + (n - 1) * 3
+            x0 = px - total / 2 + coin_r
+            for k in range(n):
+                p.append(f'<circle cx="{x0 + k*(2*coin_r+3):.1f}" cy="{py - 8*s - coin_r + 2:.1f}" r="{coin_r}" '
+                         f'fill="#ffffff" stroke="{INK}" stroke-width="2.4"/>')
     return p
 
 
@@ -72,28 +80,35 @@ def fan(x1, y, x2, label):
 # ---------- p1 문제: 동전 9개 + 저울 2번 ----------
 parts = []
 parts += coin_grid(60, 60, 9, 3, r=25, gap=14)
-parts += caption(60 + 96, 320, ["똑같이 생긴 9개 —", "1개만 살짝 가볍다"])
+parts += caption(60 + 96, 320, ["똑같이 생긴 9개 -", "1개만 살짝 가볍다"])
 parts += scale(470, 120, 1.15)
 parts.append(f'<text x="470" y="268" text-anchor="middle" font-family="{FONT}" font-size="30" font-weight="700" fill="{INK}">× 2번</text>')
-parts += caption(470, 320, ["저울은 딱 2번 —", "어떻게 달아야 찾을 수 있을까?"])
+parts += caption(470, 320, ["저울은 딱 2번 -", "어떻게 달아야 찾을 수 있을까?"])
 W, H = 660, 372
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")
 open("p1_coins_q.svg", "w", encoding="utf-8").write(svg)
 print("wrote p1_coins_q.svg")
 
-# ---------- s1 풀이: 9 → 3 → 1 (대답 3가지) ----------
+# ---------- s1 풀이: 9 → 3 → 1 (화살표 위 윗접시 저울 + 동전) ----------
+def arrow_r(x1, x2, y):
+    return [f'<line x1="{x1}" y1="{y}" x2="{x2-11}" y2="{y}" stroke="{INK}" stroke-width="3"/>',
+            f'<polygon points="{x2},{y} {x2-14},{y-7} {x2-14},{y+7}" fill="{INK}"/>']
+
+
 parts = []
-y = 150
-parts += box(30, y - 32, 150, 64, "후보 9개", 25, bold=True)
-parts += fan(192, y, 302, "3개 ⚖ 3개")
-parts += box(314, y - 32, 210, 64, "어느 대답이든 3개", 22)
-parts += fan(536, y, 646, "1개 ⚖ 1개")
-parts += box(658, y - 32, 150, 64, "후보 1개!", 25, bold=True)
-parts += caption(300, 78, ["대답은 셋 중 하나 — 왼쪽 가벼움 · 균형 · 오른쪽 가벼움"], 22)
-parts += caption(420, 268, ["한 번의 저울질이 후보를 셋으로 가른다 → 9 → 3 → 1, 두 계단이면 끝",
+parts += caption(470, 44, ["대답은 셋 중 하나 - 왼쪽 가벼움 · 균형 · 오른쪽 가벼움"], 22)
+y = 262
+parts += box(24, y - 32, 160, 64, "후보 9개", 25, bold=True)
+parts += arrow_r(196, 340, y)                        # 화살표 1개 + 그 위 저울(3개씩)
+parts += scale(268, 158, 1.15, coins=(3, 3), coin_r=10)
+parts += box(352, y - 32, 220, 64, "어느 대답이든 3개", 22)
+parts += arrow_r(584, 728, y)                        # 화살표 1개 + 그 위 저울(1개씩)
+parts += scale(656, 158, 1.15, coins=(1, 1), coin_r=10)
+parts += box(740, y - 32, 160, 64, "후보 1개!", 25, bold=True)
+parts += caption(470, 344, ["한 번의 저울질이 후보를 셋으로 가른다 → 9 → 3 → 1, 두 계단이면 끝",
                             "1번이 안 되는 이유: 대답 3가지 < 후보 9개"])
-W, H = 840, 330
+W, H = 930, 400
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")
 open("s1_scale_a.svg", "w", encoding="utf-8").write(svg)
@@ -103,7 +118,7 @@ print("wrote s1_scale_a.svg")
 parts = []
 for g in range(3):                                   # 9개씩 세 덩이
     parts += coin_grid(40 + g * 128, 56, 9, 3, r=16, gap=8)
-parts += caption(40 + 128 + 56, 310, ["똑같이 생긴 27개 — 1개만 살짝 가볍다"])
+parts += caption(40 + 128 + 56, 310, ["똑같이 생긴 27개 - 1개만 살짝 가볍다"])
 parts += scale(560, 110, 1.05)
 parts.append(f'<text x="560" y="248" text-anchor="middle" font-family="{FONT}" font-size="28" font-weight="700" fill="{INK}">× 3번</text>')
 parts += caption(560, 310, ["3번이면 찾을 수 있을까?", "그리고 2번으로는 왜 안 될까?"])
@@ -123,7 +138,7 @@ parts += fan(364, y, 450, "3 ⚖ 3")
 parts += box(460, y - 30, 100, 60, "3개", 25)
 parts += fan(568, y, 654, "1 ⚖ 1")
 parts += box(664, y - 30, 110, 60, "1개!", 25, bold=True)
-parts += caption(400, 230, ["세 계단이면 끝 — 저울 n번은 후보 3ⁿ개까지 (3의 사다리: 3 · 9 · 27)"], 22)
+parts += caption(400, 230, ["세 계단이면 끝 - 저울 n번은 후보 3ⁿ개까지 (3의 사다리: 3 · 9 · 27)"], 22)
 parts += caption(400, 292, ["2번의 기록은 3² = 9가지뿐 < 후보 27개 → 2번으론 절대 안 된다"], 22)
 W, H = 800, 330
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
@@ -134,10 +149,10 @@ print("wrote s5_tree_a.svg")
 # ---------- c2 문제: 동전 12개, 무거운지 가벼운지 모름 ----------
 parts = []
 parts += coin_grid(46, 66, 12, 4, r=20, gap=11)
-parts += caption(46 + 102, 316, ["12개 중 가짜 1개 —", "무거운지 가벼운지도 모른다"])
+parts += caption(46 + 102, 316, ["12개 중 가짜 1개 -", "무거운지 가벼운지도 모른다"])
 parts += scale(520, 112, 1.05)
 parts.append(f'<text x="520" y="250" text-anchor="middle" font-family="{FONT}" font-size="28" font-weight="700" fill="{INK}">× 3번?</text>')
-parts += caption(520, 316, ["전략을 짜기 전에 —", "먼저 ‘경우의 수’를 세어 보라"])
+parts += caption(520, 316, ["전략을 짜기 전에 -", "먼저 ‘경우의 수’를 세어 보라"])
 W, H = 700, 372
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")

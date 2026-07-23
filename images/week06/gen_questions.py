@@ -2,7 +2,7 @@
 """워밍업 2(좋은 질문, 나쁜 질문) 흑백 스케치 SVG.
 
 - w2_questions_q.svg (문제): 후보 1~16 타일 + 질문 카드 ㉮·㉯. 평가(최악의 경우) 실마리 없음.
-- w2_questions_a.svg (풀이): 두 질문의 예/아니오 갈래별 남는 후보 수 — 최악 15 vs 최악 8.
+- w2_questions_a.svg (풀이): 두 질문의 예/아니오 갈래별 남는 후보 수 - 최악 15 vs 최악 8.
 실행: python3 gen_questions.py
 """
 
@@ -74,13 +74,14 @@ def branch_panel(x0, qtext, yes_n, no_n, worst):
     cx = x0 + 150
     p += arrow(cx - 40, 92, x0 + 62, 150, "예", lx=-16, ly=-2)
     p += arrow(cx + 40, 92, x0 + 238, 150, "아니오", lx=22, ly=-2)
-    s, g = 24, 5                                     # 미니 타일
+    s, g = 24, 5                                     # 미니 타일 (‘예’ 쪽은 회색으로 구분)
     for side, n in (("yes", yes_n), ("no", no_n)):
         bx = x0 + (10 if side == "yes" else 158)
+        fill = "#c9c9c9" if side == "yes" else "#ffffff"
         for k in range(n):
             xx = bx + (k % 5) * (s + g)
             yy = 162 + (k // 5) * (s + g)
-            p += tile(xx, yy, s)
+            p += tile(xx, yy, s, fill=fill)
         lab = f"{n}개 남음"
         mark = "  ← 최악!" if n == worst else ""
         p.append(f'<text x="{bx + 2.5*(s+g) - g/2}" y="268" text-anchor="middle" font-family="{FONT}" font-size="20" '
@@ -90,7 +91,7 @@ def branch_panel(x0, qtext, yes_n, no_n, worst):
 
 parts += branch_panel(30, "㉮ “정확히 3이니?”", 1, 15, 15)
 parts += branch_panel(400, "㉯ “8 이하니?”", 8, 8, 8)
-parts += caption(365, 330, ["질문의 실력 = 최악의 답이 남기는 후보 수 — ㉮는 15, ㉯는 8", "반반에 가깝게 가르는 질문일수록 강하다"])
+parts += caption(365, 330, ["질문의 실력 = 최악의 답이 남기는 후보 수 - ㉮는 15, ㉯는 8", "반반에 가깝게 가르는 질문일수록 강하다"])
 
 W, H = 730, 380
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'

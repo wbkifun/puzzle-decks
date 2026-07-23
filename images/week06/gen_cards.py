@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """마술사의 숫자 카드(서브 p6·풀이 s6)와 도전 3(자작 설계) 흑백 스케치 SVG.
 
-- p6_cards_q.svg (문제): 미리 인쇄된 카드 7장(내용은 미공개 — 빼곡한 숫자 암시) + 질문 말풍선.
+- p6_cards_q.svg (문제): 미리 인쇄된 카드 7장(내용은 미공개 - 빼곡한 숫자 암시) + 질문 말풍선.
   1·2·4·… 구성(=풀이)은 노출하지 않는다.
 - s6_cards_a.svg (풀이): 대표 수 1·2·4·8·16·32·64 카드 + 예시 37 = 32+4+1 (○×).
 - c3_design_q.svg (도전): 후보·도구 재료 → 나만의 맞히기 퍼즐 (정답 횟수는 비밀).
@@ -44,7 +44,7 @@ for k in range(7):
     for r in range(4):                               # 빼곡한 숫자 암시(물결선)
         yy = y + 48 + r * 20
         parts.append(f'<path d="M {x+12} {yy} q 9 -7 18 0 t 18 0 t 18 0 t 18 0" fill="none" stroke="{INK}" stroke-width="1.8" opacity="0.55"/>')
-parts += caption(400, 322, ["카드 7장은 대답을 듣기 전에 미리 인쇄되어 있다 — 무엇이 적혀 있을까?"], 22)
+parts += caption(400, 322, ["카드 7장은 대답을 듣기 전에 미리 인쇄되어 있다 - 무엇이 적혀 있을까?"], 22)
 W, H = 800, 356
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")
@@ -64,8 +64,8 @@ for k, rep in enumerate(REPS):
     mark = "○ 예" if on else "× 아니오"
     parts.append(f'<text x="{x+cw/2}" y="{y+ch+34}" text-anchor="middle" font-family="{FONT}" font-size="21" '
                  f'font-weight="{700 if on else 400}" fill="{INK}">{mark}</text>')
-parts += caption(430, 250, ["술래의 수가 37이라면 — ‘예’는 1·4·32 카드에서만"], 23)
-parts += caption(430, 300, ["○ 카드의 첫 수만 더하면:  32 + 4 + 1 = 37 — 즉석에서 맞힌다!"], 23)
+parts += caption(430, 250, ["술래의 수가 37이라면 - ‘예’는 1·4·32 카드에서만"], 23)
+parts += caption(430, 300, ["○ 카드의 첫 수만 더하면:  32 + 4 + 1 = 37 - 즉석에서 맞힌다!"], 23)
 W, H = 860, 336
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")
@@ -91,7 +91,7 @@ parts.append(f'<text x="494" y="112" text-anchor="middle" font-family="{FONT}" f
 parts.append(f'<text x="494" y="152" text-anchor="middle" font-family="{FONT}" font-size="21" fill="{INK}">“몇 번이면 맞힐 수 있을까?”</text>')
 parts.append(f'<rect x="344" y="238" width="300" height="66" rx="12" fill="#ffffff" stroke="{INK}" stroke-width="2.4" stroke-dasharray="8 6"/>')
 parts.append(f'<text x="494" y="278" text-anchor="middle" font-family="{FONT}" font-size="20" fill="{INK}">몰래 계산한 정답 횟수 (비밀!)</text>')
-parts += caption(340, 356, ["재료를 고르고 — 한계는 세기로 정확하게 심어 둘 것"], 21)
+parts += caption(340, 356, ["재료를 고르고 - 한계는 세기로 정확하게 심어 둘 것"], 21)
 W, H = 680, 388
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")

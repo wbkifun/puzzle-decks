@@ -12,5 +12,5 @@
 <text x="494" y="152" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111">“몇 번이면 맞힐 수 있을까?”</text>
 <rect x="344" y="238" width="300" height="66" rx="12" fill="#ffffff" stroke="#111111" stroke-width="2.4" stroke-dasharray="8 6"/>
 <text x="494" y="278" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" fill="#111111">몰래 계산한 정답 횟수 (비밀!)</text>
-<text x="340" y="356" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="340" dy="0">재료를 고르고 — 한계는 세기로 정확하게 심어 둘 것</tspan></text>
+<text x="340" y="356" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="340" dy="0">재료를 고르고 - 한계는 세기로 정확하게 심어 둘 것</tspan></text>
 </svg>

@@ -44,5 +44,5 @@
 <path d="M 694 208 q 9 -7 18 0 t 18 0 t 18 0 t 18 0" fill="none" stroke="#111111" stroke-width="1.8" opacity="0.55"/>
 <path d="M 694 228 q 9 -7 18 0 t 18 0 t 18 0 t 18 0" fill="none" stroke="#111111" stroke-width="1.8" opacity="0.55"/>
 <path d="M 694 248 q 9 -7 18 0 t 18 0 t 18 0 t 18 0" fill="none" stroke="#111111" stroke-width="1.8" opacity="0.55"/>
-<text x="400" y="322" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="400" dy="0">카드 7장은 대답을 듣기 전에 미리 인쇄되어 있다 — 무엇이 적혀 있을까?</tspan></text>
+<text x="400" y="322" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="400" dy="0">카드 7장은 대답을 듣기 전에 미리 인쇄되어 있다 - 무엇이 적혀 있을까?</tspan></text>
 </svg>

@@ -7,7 +7,7 @@
 <line x1="220" y1="92" x2="259.7" y2="140.0" stroke="#111111" stroke-width="2.6"/>
 <polygon points="268,150 263.7,135.4 254.5,143.0" fill="#111111"/>
 <text x="266.0" y="119.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" fill="#111111">아니오</text>
-<rect x="40" y="162" width="24" height="24" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<rect x="40" y="162" width="24" height="24" rx="6" fill="#c9c9c9" stroke="#111111" stroke-width="2.2"/>
 <text x="110.0" y="268" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" fill="#111111" font-weight="400">1개 남음</text>
 <rect x="188" y="162" width="24" height="24" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
 <rect x="217" y="162" width="24" height="24" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
@@ -33,14 +33,14 @@
 <line x1="590" y1="92" x2="629.7" y2="140.0" stroke="#111111" stroke-width="2.6"/>
 <polygon points="638,150 633.7,135.4 624.5,143.0" fill="#111111"/>
 <text x="636.0" y="119.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" fill="#111111">아니오</text>
-<rect x="410" y="162" width="24" height="24" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
-<rect x="439" y="162" width="24" height="24" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
-<rect x="468" y="162" width="24" height="24" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
-<rect x="497" y="162" width="24" height="24" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
-<rect x="526" y="162" width="24" height="24" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
-<rect x="410" y="191" width="24" height="24" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
-<rect x="439" y="191" width="24" height="24" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
-<rect x="468" y="191" width="24" height="24" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<rect x="410" y="162" width="24" height="24" rx="6" fill="#c9c9c9" stroke="#111111" stroke-width="2.2"/>
+<rect x="439" y="162" width="24" height="24" rx="6" fill="#c9c9c9" stroke="#111111" stroke-width="2.2"/>
+<rect x="468" y="162" width="24" height="24" rx="6" fill="#c9c9c9" stroke="#111111" stroke-width="2.2"/>
+<rect x="497" y="162" width="24" height="24" rx="6" fill="#c9c9c9" stroke="#111111" stroke-width="2.2"/>
+<rect x="526" y="162" width="24" height="24" rx="6" fill="#c9c9c9" stroke="#111111" stroke-width="2.2"/>
+<rect x="410" y="191" width="24" height="24" rx="6" fill="#c9c9c9" stroke="#111111" stroke-width="2.2"/>
+<rect x="439" y="191" width="24" height="24" rx="6" fill="#c9c9c9" stroke="#111111" stroke-width="2.2"/>
+<rect x="468" y="191" width="24" height="24" rx="6" fill="#c9c9c9" stroke="#111111" stroke-width="2.2"/>
 <text x="480.0" y="268" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" fill="#111111" font-weight="700">8개 남음  ← 최악!</text>
 <rect x="558" y="162" width="24" height="24" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
 <rect x="587" y="162" width="24" height="24" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
@@ -51,5 +51,5 @@
 <rect x="587" y="191" width="24" height="24" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
 <rect x="616" y="191" width="24" height="24" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
 <text x="628.0" y="268" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" fill="#111111" font-weight="700">8개 남음  ← 최악!</text>
-<text x="365" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="365" dy="0">질문의 실력 = 최악의 답이 남기는 후보 수 — ㉮는 15, ㉯는 8</tspan><tspan x="365" dy="26">반반에 가깝게 가르는 질문일수록 강하다</tspan></text>
+<text x="365" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="365" dy="0">질문의 실력 = 최악의 답이 남기는 후보 수 - ㉮는 15, ㉯는 8</tspan><tspan x="365" dy="26">반반에 가깝게 가르는 질문일수록 강하다</tspan></text>
 </svg>
