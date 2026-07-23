@@ -103,8 +103,8 @@ for i, v in enumerate([16, 8, 4, 2, 1]):
     for k in range(v):
         parts.append(f'<rect x="{lx + k*(ts+tg)}" y="{y}" width="{ts}" height="{ts}" rx="4" fill="#ffffff" stroke="{INK}" stroke-width="1.9"/>')
     parts.append(f'<text x="{lx + 16*(ts+tg) + 12}" y="{y+ts}" font-family="{FONT}" font-size="22" fill="{INK}">{v}개 - 질문 {4-i}번이면 충분</text>')
-parts += caption(lx + 280, 372, ["한 층 오를 때마다 후보는 두 배가 되지만 질문은 한 번만 는다 -",
-                                 "후보가 두 배로 늘어도 질문은 딱 하나 더 (후보 ×2 = 질문 +1)"], 22)
+parts += caption(lx + 280, 372, ["질문 n번 → 최대 2ⁿ개까지 감당 (2⁰=1 · 2¹=2 · 2²=4 · 2³=8 · 2⁴=16)",
+                                 "한 층 오를 때마다 후보는 두 배, 질문은 한 번만 - 후보 ×2 = 질문 +1"], 22)
 W, H = 700, 420
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")
