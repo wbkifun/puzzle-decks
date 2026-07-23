@@ -38,12 +38,18 @@ def scale(cx, cy, s=1.0, coins=(0, 0), coin_r=10):
         p.append(f'<line x1="{px}" y1="{cy}" x2="{px}" y2="{py}" stroke="{INK}" stroke-width="{2.8*s}"/>')
         p.append(f'<path d="M {px-30*s} {py-8*s} Q {px} {py+9*s} {px+30*s} {py-8*s}" fill="#ffffff" stroke="{INK}" stroke-width="{3*s}"/>')  # 윗접시
         n = coins[i]
-        if n:                                         # 접시 위 동전 n개(가로로)
-            total = n * 2 * coin_r + (n - 1) * 3
-            x0 = px - total / 2 + coin_r
-            for k in range(n):
-                p.append(f'<circle cx="{x0 + k*(2*coin_r+3):.1f}" cy="{py - 8*s - coin_r + 2:.1f}" r="{coin_r}" '
-                         f'fill="#ffffff" stroke="{INK}" stroke-width="2.4"/>')
+        if n:                                         # 접시 위 동전 n개(한 줄 최대 3개, 위로 쌓기)
+            rows, rem = [], n
+            while rem > 0:
+                rows.append(min(3, rem))
+                rem -= rows[-1]
+            for ri, cnt in enumerate(rows):
+                total = cnt * 2 * coin_r + (cnt - 1) * 3
+                x0 = px - total / 2 + coin_r
+                cyc = py - 8 * s - coin_r + 2 - ri * (2 * coin_r - 1)
+                for k in range(cnt):
+                    p.append(f'<circle cx="{x0 + k*(2*coin_r+3):.1f}" cy="{cyc:.1f}" r="{coin_r}" '
+                             f'fill="#ffffff" stroke="{INK}" stroke-width="2.2"/>')
     return p
 
 
@@ -128,19 +134,23 @@ svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W
 open("p5_coins27_q.svg", "w", encoding="utf-8").write(svg)
 print("wrote p5_coins27_q.svg")
 
-# ---------- s5 풀이: 27 → 9 → 3 → 1 + 3의 사다리 ----------
+# ---------- s5 풀이: 27 → 9 → 3 → 1 (화살표 위 윗접시 저울 + 동전) ----------
 parts = []
-y = 120
-parts += box(24, y - 30, 128, 60, "27개", 25, bold=True)
-parts += fan(160, y, 246, "9 ⚖ 9")
-parts += box(256, y - 30, 100, 60, "9개", 25)
-parts += fan(364, y, 450, "3 ⚖ 3")
-parts += box(460, y - 30, 100, 60, "3개", 25)
-parts += fan(568, y, 654, "1 ⚖ 1")
-parts += box(664, y - 30, 110, 60, "1개!", 25, bold=True)
-parts += caption(400, 230, ["세 계단이면 끝 - 저울 n번은 후보 3ⁿ개까지 (3의 사다리: 3 · 9 · 27)"], 22)
-parts += caption(400, 292, ["2번의 기록은 3² = 9가지뿐 < 후보 27개 → 2번으론 절대 안 된다"], 22)
-W, H = 800, 330
+y = 268
+parts += box(24, y - 32, 130, 64, "27개", 25, bold=True)
+parts += arrow_r(166, 316, y)                        # 9개씩 달기
+parts += scale(241, 176, 1.1, coins=(9, 9), coin_r=6.5)
+parts += box(328, y - 32, 100, 64, "9개", 25)
+parts += arrow_r(440, 590, y)                        # 3개씩 달기
+parts += scale(515, 176, 1.1, coins=(3, 3), coin_r=6.5)
+parts += box(602, y - 32, 100, 64, "3개", 25)
+parts += arrow_r(714, 864, y)                        # 1개씩 달기
+parts += scale(789, 176, 1.1, coins=(1, 1), coin_r=6.5)
+parts += box(876, y - 32, 130, 64, "1개!", 25, bold=True)
+parts += caption(515, 46, ["9개씩 → 3개씩 → 1개씩 - 어느 대답이 와도 후보는 3분의 1로"], 22)
+parts += caption(515, 354, ["세 계단이면 끝 - 저울 n번은 후보 3ⁿ개까지 (3의 사다리: 3 · 9 · 27)",
+                            "2번의 기록은 3² = 9가지뿐 < 후보 27개 → 2번으론 절대 안 된다"], 22)
+W, H = 1030, 410
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")
 open("s5_tree_a.svg", "w", encoding="utf-8").write(svg)

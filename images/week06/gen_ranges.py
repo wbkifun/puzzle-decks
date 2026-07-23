@@ -93,27 +93,19 @@ svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W
 open("p2_range_q.svg", "w", encoding="utf-8").write(svg)
 print("wrote p2_range_q.svg")
 
-# ---------- s2: 16→8→4→2→1 반감 막대 + 두 배의 사다리(조각 개수로) ----------
+# ---------- s2: 두 배의 사다리(층마다 조각 개수) 단일 그림 ----------
 parts = []
-x0, unit, bh = 60, 26, 34
-labels = [16, 8, 4, 2, 1]
-for i, n in enumerate(labels):
-    y = 34 + i * (bh + 26)
-    parts.append(f'<rect x="{x0}" y="{y}" width="{n*unit}" height="{bh}" rx="7" fill="#ffffff" stroke="{INK}" stroke-width="2.6"/>')
-    parts.append(f'<text x="{x0+n*unit+12}" y="{y+bh*0.72}" font-family="{FONT}" font-size="24" font-weight="700" fill="{INK}">{n}</text>')
-    if i < 4:
-        parts += arrow_d(x0 + n * unit / 2, y + bh + 2, y + bh + 26, f"질문 {i+1} - 반으로")
-parts += caption(x0 + 8 * unit, 356, ["질문마다 최악의 경우 후보가 반으로 - 4번이면 반드시"], 22)
-lx = 585
-parts.append(f'<text x="{lx}" y="52" font-family="{FONT}" font-size="24" font-weight="700" fill="{INK}">두 배의 사다리</text>')
-ts, tg = 16, 4                                       # 층마다 후보를 작은 조각 개수로
+lx = 48
+parts.append(f'<text x="{lx + 176}" y="46" text-anchor="middle" font-family="{FONT}" font-size="25" font-weight="700" fill="{INK}">두 배의 사다리</text>')
+ts, tg = 18, 4                                       # 층마다 후보를 작은 조각 개수로
 for i, v in enumerate([16, 8, 4, 2, 1]):
-    y = 84 + i * 52
+    y = 76 + i * 54
     for k in range(v):
-        parts.append(f'<rect x="{lx + k*(ts+tg)}" y="{y}" width="{ts}" height="{ts}" rx="4" fill="#ffffff" stroke="{INK}" stroke-width="1.8"/>')
-    parts.append(f'<text x="{lx + 16*(ts+tg) + 10}" y="{y+ts-1}" font-family="{FONT}" font-size="21" fill="{INK}">{v}개 - 질문 {4-i}번</text>')
-parts += caption(lx + 230, 356, ["후보 ×2 = 질문 +1"], 22)
-W, H = 1080, 392
+        parts.append(f'<rect x="{lx + k*(ts+tg)}" y="{y}" width="{ts}" height="{ts}" rx="4" fill="#ffffff" stroke="{INK}" stroke-width="1.9"/>')
+    parts.append(f'<text x="{lx + 16*(ts+tg) + 12}" y="{y+ts}" font-family="{FONT}" font-size="22" fill="{INK}">{v}개 - 질문 {4-i}번이면 충분</text>')
+parts += caption(lx + 280, 372, ["한 층 오를 때마다 후보는 두 배가 되지만 질문은 한 번만 는다 -",
+                                 "후보가 두 배로 늘어도 질문은 딱 하나 더 (후보 ×2 = 질문 +1)"], 22)
+W, H = 700, 420
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")
 open("s2_halving_a.svg", "w", encoding="utf-8").write(svg)
