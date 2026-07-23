@@ -150,7 +150,7 @@ DECK_CSS = """
 /* 인라인 SVG 그림(fig 필드): 높이 고정·비율 유지(viewBox), 중앙 정렬.
    fitSection은 폰트만 줄이므로 그림 높이는 본문이 넉넉히 남는 선에서 보수적으로. */
 .reveal .fig { margin-top: .45em; text-align: center; }
-.reveal .fig svg { height: 285px; max-width: 100%; }
+.reveal .fig svg { height: var(--figh, 285px); max-width: 100%; }
 /* 섹션 구분 슬라이드 큰 제목 */
 .divider-h { color: var(--phase-accent-ink); font-size: 2.6em; }
 /* 드모르간 2×2 격자 그림 */
@@ -224,8 +224,10 @@ def figbox(s):
         return ""
     svg = read(ROOT / f)
     svg = re.sub(r'(<svg[^>]*?)\s+width="[^"]*"\s+height="[^"]*"', r"\1", svg, count=1)
-    if s.get("figH"):                        # 본문이 긴 슬라이드용 높이 축소(기본 285px)
-        svg = svg.replace("<svg", f'<svg style="height:{int(s["figH"])}px"', 1)
+    if s.get("figH"):
+        # 높이 조절은 CSS 변수로만 전달 - svg에 인라인 height를 직접 주면 CSS 높이 규칙과
+        # 충돌해 크로미움이 일부 SVG의 텍스트를 도형과 다른 배율로 그린다(5·6주차 사례).
+        return f'<div class="fig" style="--figh:{int(s["figH"])}px">{svg}</div>'
     return f'<div class="fig">{svg}</div>'
 
 

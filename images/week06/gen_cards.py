@@ -32,20 +32,20 @@ def caption(cx, y, lines, size=21):
     return ["".join(t)]
 
 
-# ---------- p6 문제: 생일 카드 5장 (수 전부 표기) ----------
+# ---------- p6 문제: 생일 카드 5장 (수 전부 표기, 슬라이드를 채우는 큰 판형) ----------
 # 카드마다 <g transform>으로 지역좌표를 쓴다 - 큰 절대좌표의 텍스트가 덱 안에서
 # 도형과 다른 배율로 그려지는 크로미움 렌더 버그(5주차 figH 사례와 동류) 우회.
 parts = []
-cw, ch, gap = 172, 252, 18
+cw, ch, gap = 200, 356, 18
 for k, (letter, nums) in enumerate(zip(LETTERS, CARDS)):
-    g = [f'<text x="{cw/2}" y="38" text-anchor="middle" font-family="{FONT}" font-size="34" font-weight="800" fill="{INK}">{letter}</text>',
-         f'<rect x="0" y="54" width="{cw}" height="{ch}" rx="12" fill="#ffffff" stroke="{INK}" stroke-width="2.8"/>']
-    for i, n in enumerate(nums):                     # 4×4 숫자 배열
-        cx = 32 + (i % 4) * 37
-        cy = 100 + (i // 4) * 56
-        g.append(f'<text x="{cx}" y="{cy}" text-anchor="middle" font-family="{FONT}" font-size="22" fill="{INK}">{n}</text>')
+    g = [f'<text x="{cw/2}" y="46" text-anchor="middle" font-family="{FONT}" font-size="42" font-weight="800" fill="{INK}">{letter}</text>',
+         f'<rect x="0" y="64" width="{cw}" height="{ch}" rx="14" fill="#ffffff" stroke="{INK}" stroke-width="3.2"/>']
+    for r_ in range(4):                              # 4×4 숫자 배열 - 행도 g translate로(큰 y좌표 텍스트 회피)
+        row = [f'<text x="{36 + c_*44}" y="0" text-anchor="middle" font-family="{FONT}" font-size="30" fill="{INK}">{nums[r_*4+c_]}</text>'
+               for c_ in range(4)]
+        g.append(f'<g transform="translate(0,{138 + r_*82})">' + "".join(row) + "</g>")
     parts.append(f'<g transform="translate({28 + k * (cw + gap)},0)">' + "".join(g) + "</g>")
-W, H = 28 * 2 + 5 * cw + 4 * gap, 330
+W, H = 28 * 2 + 5 * cw + 4 * gap, 434
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")
 open("p6_bday_q.svg", "w", encoding="utf-8").write(svg)
@@ -134,28 +134,49 @@ svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W
 open("s6c_binary_a.svg", "w", encoding="utf-8").write(svg)
 print("wrote s6c_binary_a.svg")
 
-# ---------- c3 도전: 나만의 맞히기 퍼즐 설계 ----------
+# ---------- c3 도전: 1~15 마법사 카드 만들기 (빈 카드 A~D) ----------
+LETTERS4 = ["A", "B", "C", "D"]
+REPS4 = [1, 2, 4, 8]
+CARDS4 = [[n for n in range(1, 16) if n & r] for r in REPS4]
+for r, nums in zip(REPS4, CARDS4):
+    assert len(nums) == 8 and nums[0] == r
+
 parts = []
-
-
-def ing(x, y, w, h, title, sub):
-    return [f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="10" fill="#ffffff" stroke="{INK}" stroke-width="2.6"/>',
-            f'<text x="{x+w/2}" y="{y+34}" text-anchor="middle" font-family="{FONT}" font-size="22" font-weight="700" fill="{INK}">{title}</text>',
-            f'<text x="{x+w/2}" y="{y+64}" text-anchor="middle" font-family="{FONT}" font-size="18" fill="{INK}" opacity="0.75">{sub}</text>']
-
-
-parts += ing(30, 40, 210, 84, "① 후보 집합", "요일 · 친구 · 카드 …")
-parts += ing(30, 148, 210, 84, "② 도구", "예/아니오 · 저울 · 사지선다")
-parts.append(f'<line x1="252" y1="136" x2="316" y2="136" stroke="{INK}" stroke-width="3"/>')
-parts.append(f'<polygon points="330,136 316,129 316,143" fill="{INK}"/>')
-parts.append(f'<rect x="344" y="62" width="300" height="148" rx="12" fill="#ffffff" stroke="{INK}" stroke-width="3"/>')
-parts.append(f'<text x="494" y="112" text-anchor="middle" font-family="{FONT}" font-size="24" font-weight="700" fill="{INK}">나만의 맞히기 퍼즐</text>')
-parts.append(f'<text x="494" y="152" text-anchor="middle" font-family="{FONT}" font-size="21" fill="{INK}">“몇 번이면 맞힐 수 있을까?”</text>')
-parts.append(f'<rect x="344" y="238" width="300" height="66" rx="12" fill="#ffffff" stroke="{INK}" stroke-width="2.4" stroke-dasharray="8 6"/>')
-parts.append(f'<text x="494" y="278" text-anchor="middle" font-family="{FONT}" font-size="20" fill="{INK}">몰래 계산한 정답 횟수 (비밀!)</text>')
-parts += caption(340, 356, ["재료를 고르고 - 한계는 세기로 정확하게 심어 둘 것"], 21)
-W, H = 680, 388
+cw, ch, gap = 182, 210, 22
+for k, letter in enumerate(LETTERS4):
+    g = [f'<text x="{cw/2}" y="40" text-anchor="middle" font-family="{FONT}" font-size="34" font-weight="800" fill="{INK}">{letter}</text>',
+         f'<rect x="0" y="56" width="{cw}" height="{ch}" rx="12" fill="#ffffff" stroke="{INK}" stroke-width="2.8"/>']
+    for r_ in range(2):                              # 빈 기입란(점선) 4×2
+        for c_ in range(4):
+            g.append(f'<rect x="{16 + c_*38}" y="{92 + r_*62}" width="30" height="34" rx="6" '
+                     f'fill="none" stroke="{INK}" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.55"/>')
+    g.append(f'<text x="{cw/2}" y="238" text-anchor="middle" font-family="{FONT}" font-size="19" fill="{INK}" opacity="0.75">어떤 수들을 적을까?</text>')
+    parts.append(f'<g transform="translate({30 + k * (cw + gap)},0)">' + "".join(g) + "</g>")
+cx = 30 + (4 * cw + 3 * gap) / 2
+parts += caption(cx, 322, ["1~15의 수를 맞히는 카드 4장 - 각 칸에 들어갈 수를 직접 정하라"], 22)
+W, H = int(cx * 2), 348
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")
-open("c3_design_q.svg", "w", encoding="utf-8").write(svg)
-print("wrote c3_design_q.svg")
+open("c3_cards_q.svg", "w", encoding="utf-8").write(svg)
+print("wrote c3_cards_q.svg")
+
+# ---------- sc3 예시 풀이: 완성된 카드 A~D ----------
+parts = []
+for k, (letter, rep, nums) in enumerate(zip(LETTERS4, REPS4, CARDS4)):
+    g = [f'<text x="{cw/2}" y="40" text-anchor="middle" font-family="{FONT}" font-size="32" font-weight="800" fill="{INK}">{letter}</text>',
+         f'<rect x="0" y="56" width="{cw}" height="176" rx="12" fill="#ffffff" stroke="{INK}" stroke-width="2.8"/>']
+    for i, n in enumerate(nums):                     # 4×2 숫자 배열, 첫 수는 굵게
+        cx_ = 33 + (i % 4) * 40
+        cy_ = 112 + (i // 4) * 62
+        g.append(f'<text x="{cx_}" y="{cy_}" text-anchor="middle" font-family="{FONT}" font-size="25" '
+                 f'font-weight="{700 if i == 0 else 400}" fill="{INK}">{n}</text>')
+    g.append(f'<text x="{cw/2}" y="262" text-anchor="middle" font-family="{FONT}" font-size="19" fill="{INK}">첫 수 = {rep}</text>')
+    parts.append(f'<g transform="translate({30 + k * (cw + gap)},0)">' + "".join(g) + "</g>")
+cx = 30 + (4 * cw + 3 * gap) / 2
+parts += caption(cx, 312, ["카드 X = ‘분해에 X를 쓰는 수들의 목록’ - 첫 수는 1 · 2 · 4 · 8",
+                           "검산: 13 = 8+4+1 → D·C·A에만 있다 ✓ · 가짓수: 2⁴ = 16 ≥ 15 (3장은 2³ = 8 < 15라 부족)"], 21)
+W, H = int(cx * 2), 350
+svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
+       + "\n".join(parts) + "\n</svg>\n")
+open("sc3_cards_a.svg", "w", encoding="utf-8").write(svg)
+print("wrote sc3_cards_a.svg")
