@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""릴레이 3 · 아홉 점을 직선 4개로 흑백 스케치 SVG.
+"""릴레이 4 · 아홉 점을 직선 4개로 흑백 스케치 SVG.
 
-- r3_dots_q.svg (문제): 3×3 점만(경계 실마리 미노출).
-- r3_dots_a.svg (풀이): 상자 밖 두 점을 도는 4직선 경로(①~④) - 코드로 전 점 통과 검증.
+- r4_dots_q.svg (문제): 3×3 점만(경계 실마리 미노출).
+- r4_dots_a.svg (풀이): 상자 밖 두 점을 도는 4직선 경로(①~④) - 코드로 전 점 통과 검증.
 실행: python3 gen_dots.py
 """
 
@@ -29,10 +29,12 @@ assert len(PATH) - 1 == 4
 
 
 def caption(cx, y, lines, size=21):
-    t = [f'<text x="{cx}" y="{y}" text-anchor="middle" font-family="{FONT}" font-size="{size}" fill="{INK}">']
+    # 텍스트는 g translate 지역좌표로 - 큰 절대좌표 텍스트가 도형과 다른 배율로
+    # 그려지는 크로미움 버그 회피(6주차 확립 규칙)
+    t = [f'<g transform="translate({cx},{y})"><text x="0" y="0" text-anchor="middle" font-family="{FONT}" font-size="{size}" fill="{INK}">']
     for k, ln in enumerate(lines):
-        t.append(f'<tspan x="{cx}" dy="{0 if k == 0 else size + 5}">{ln}</tspan>')
-    t.append("</text>")
+        t.append(f'<tspan x="0" dy="{0 if k == 0 else size + 5}">{ln}</tspan>')
+    t.append("</text></g>")
     return ["".join(t)]
 
 
@@ -55,8 +57,8 @@ parts += caption(OX + S, 370, ["펜을 떼지 않고 - 이어진 직선 4개로 
 W, H = 680, 398
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")
-open("r3_dots_q.svg", "w", encoding="utf-8").write(svg)
-print("wrote r3_dots_q.svg")
+open("r4_dots_q.svg", "w", encoding="utf-8").write(svg)
+print("wrote r4_dots_q.svg")
 
 # ---------- a: 경로 + 번호 ----------
 parts = []
@@ -81,5 +83,5 @@ parts += caption(OX + S, 384, ["상자 밖 두 점을 빌린다 - 경계는 우�
 W, H = 680, 412
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")
-open("r3_dots_a.svg", "w", encoding="utf-8").write(svg)
-print("wrote r3_dots_a.svg")
+open("r4_dots_a.svg", "w", encoding="utf-8").write(svg)
+print("wrote r4_dots_a.svg")

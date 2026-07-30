@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 430" width="820" height="430">
+<g transform="translate(60,40)"><rect x="0" y="0" width="216" height="46" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/><g transform="translate(108,30)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" fill="#111111">① 1번 켜고 10분</text></g></g>
+<line x1="284" y1="63" x2="300" y2="63" stroke="#111111" stroke-width="2.6"/>
+<polygon points="310,63 297,56.5 297,69.5" fill="#111111"/>
+<g transform="translate(310,40)"><rect x="0" y="0" width="216" height="46" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/><g transform="translate(108,30)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" fill="#111111">② 1번 끄고 2번 켜기</text></g></g>
+<line x1="534" y1="63" x2="550" y2="63" stroke="#111111" stroke-width="2.6"/>
+<polygon points="560,63 547,56.5 547,69.5" fill="#111111"/>
+<g transform="translate(560,40)"><rect x="0" y="0" width="216" height="46" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/><g transform="translate(108,30)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" fill="#111111">③ 입장 - 눈과 손으로</text></g></g>
+<g transform="translate(160,210)">
+<line x1="-38" y1="-38" x2="-26" y2="-26" stroke="#111111" stroke-width="2.4"/>
+<line x1="0" y1="-52" x2="0" y2="-37" stroke="#111111" stroke-width="2.4"/>
+<line x1="38" y1="-38" x2="26" y2="-26" stroke="#111111" stroke-width="2.4"/>
+<line x1="-52" y1="0" x2="-37" y2="0" stroke="#111111" stroke-width="2.4"/>
+<line x1="52" y1="0" x2="37" y2="0" stroke="#111111" stroke-width="2.4"/>
+<circle cx="0" cy="0" r="26" fill="#d7d7d7" stroke="#111111" stroke-width="2.6"/>
+<rect x="-10" y="24" width="20" height="14" rx="3" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(0,70)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">켜져 있다</text></g>
+<g transform="translate(0,98)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">→ 2번</text></g>
+</g>
+<g transform="translate(410,210)">
+<circle cx="0" cy="0" r="26" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<rect x="-10" y="24" width="20" height="14" rx="3" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<path d="M -18 -48 q 6 -7 0 -14 q -6 -7 0 -14" fill="none" stroke="#111111" stroke-width="2.2"/>
+<path d="M -4 -48 q 6 -7 0 -14 q -6 -7 0 -14" fill="none" stroke="#111111" stroke-width="2.2"/>
+<path d="M 10 -48 q 6 -7 0 -14 q -6 -7 0 -14" fill="none" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(0,70)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">꺼짐 + 따뜻함</text></g>
+<g transform="translate(0,98)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">→ 1번</text></g>
+</g>
+<g transform="translate(660,210)">
+<circle cx="0" cy="0" r="26" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<rect x="-10" y="24" width="20" height="14" rx="3" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(0,70)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">꺼짐 + 차가움</text></g>
+<g transform="translate(0,98)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">→ 3번</text></g>
+</g>
+<g transform="translate(410,372)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">빛만 보면 상태는 켜짐/꺼짐 2가지 - 셋 중 둘은 반드시 같은 상태(비둘기집)</tspan><tspan x="0" dy="27">열을 더하면 상태 3가지 ≥ 스위치 3개 - 셋 모두 다른 이름표</tspan></text></g>
+</svg>

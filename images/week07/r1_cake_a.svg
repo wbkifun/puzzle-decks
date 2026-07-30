@@ -2,15 +2,15 @@
 <circle cx="140" cy="140" r="88" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
 <line x1="52" y1="140" x2="228" y2="140" stroke="#111111" stroke-width="2.2"/>
 <line x1="140" y1="52" x2="140" y2="228" stroke="#111111" stroke-width="2.2"/>
-<text x="140" y="272" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="140" dy="0">위에서 십자 - 칼질 두 번</tspan></text>
-<text x="300" y="150" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="30" font-weight="700" fill="#111111">＋</text>
+<g transform="translate(140,272)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="0" dy="0">위에서 십자 - 칼질 두 번</tspan></text></g>
+<g transform="translate(300,150)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="30" font-weight="700" fill="#111111">＋</text></g>
 <ellipse cx="480" cy="88" rx="92" ry="20" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
 <path d="M 388 88 L 388 204 A 92 20 0 0 0 572 204 L 572 88" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
 <ellipse cx="480" cy="88" rx="92" ry="20" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
 <path d="M 388 146.0 A 92 20 0 0 0 572 146.0" fill="none" stroke="#111111" stroke-width="2.4" stroke-dasharray="9 7"/>
 <line x1="612" y1="146" x2="586" y2="146" stroke="#111111" stroke-width="2.8"/>
 <polygon points="578,146 592,139 592,153" fill="#111111"/>
-<text x="622" y="153" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">옆에서 수평으로 한 칼</text>
-<text x="480" y="272" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="480" dy="0">높이 절반을 가른다 - 칼질 한 번</tspan></text>
-<text x="410" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="410" dy="0">4조각이 각각 위아래로 - 4 × 2 = 8조각 · 칼의 방향은 문제가 정하지 않았다</tspan></text>
+<g transform="translate(622,153)"><text x="0" y="0" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">옆에서 수평으로 한 칼</text></g>
+<g transform="translate(480,272)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="0" dy="0">높이 절반을 가른다 - 칼질 한 번</tspan></text></g>
+<g transform="translate(410,330)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">4조각이 각각 위아래로 - 4 × 2 = 8조각 · 칼의 방향은 문제가 정하지 않았다</tspan></text></g>
 </svg>

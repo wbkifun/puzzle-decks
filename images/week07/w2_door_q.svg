@@ -9,7 +9,7 @@
 <polygon points="382,195.20000000000002 368,188.20000000000002 368,202.20000000000002" fill="#111111"/>
 <line x1="304" y1="236.8" x2="370" y2="236.8" stroke="#111111" stroke-width="2.6"/>
 <polygon points="382,236.8 368,229.8 368,243.8" fill="#111111"/>
-<text x="420" y="200.4" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111">아무리 당겨도</text>
-<text x="420" y="230.4" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111">꿈쩍도 안 한다</text>
-<text x="330" y="380" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="330" dy="0">열쇠도, 창문도 없다 - 어떻게 나갈까?</tspan></text>
+<g transform="translate(420,200.4)"><text x="0" y="0" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111">아무리 당겨도</text></g>
+<g transform="translate(420,230.4)"><text x="0" y="0" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111">꿈쩍도 안 한다</text></g>
+<g transform="translate(330,380)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">열쇠도, 창문도 없다 - 어떻게 나갈까?</tspan></text></g>
 </svg>

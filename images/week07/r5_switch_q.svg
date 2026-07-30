@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 448" width="820" height="448">
+<g transform="translate(70,120)"><rect x="0" y="0" width="44" height="64" rx="8" fill="#ffffff" stroke="#111111" stroke-width="2.6"/><rect x="14" y="34" width="16" height="16" rx="3" fill="#111111"/><g transform="translate(22,92)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">1</text></g></g>
+<g transform="translate(144,120)"><rect x="0" y="0" width="44" height="64" rx="8" fill="#ffffff" stroke="#111111" stroke-width="2.6"/><rect x="14" y="34" width="16" height="16" rx="3" fill="#111111"/><g transform="translate(22,92)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">2</text></g></g>
+<g transform="translate(218,120)"><rect x="0" y="0" width="44" height="64" rx="8" fill="#ffffff" stroke="#111111" stroke-width="2.6"/><rect x="14" y="34" width="16" height="16" rx="3" fill="#111111"/><g transform="translate(22,92)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">3</text></g></g>
+<g transform="translate(180,80)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">방 밖 - 스위치 3개</text></g>
+<rect x="352" y="66" width="116" height="220" fill="none" stroke="#111111" stroke-width="3"/>
+<rect x="362" y="76" width="96" height="210" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<circle cx="442" cy="186" r="7" fill="none" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(410,320)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" fill="#111111">안이 안 보인다</text></g>
+<g transform="translate(546,150)">
+<circle cx="0" cy="0" r="26" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<rect x="-10" y="24" width="20" height="14" rx="3" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(0,70)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">?</text></g>
+</g>
+<g transform="translate(638,150)">
+<circle cx="0" cy="0" r="26" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<rect x="-10" y="24" width="20" height="14" rx="3" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(0,70)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">?</text></g>
+</g>
+<g transform="translate(730,150)">
+<circle cx="0" cy="0" r="26" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<rect x="-10" y="24" width="20" height="14" rx="3" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(0,70)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">?</text></g>
+</g>
+<g transform="translate(638,80)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">방 안 - 전구 3개</text></g>
+<g transform="translate(410,386)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">스위치는 밖에서 얼마든지 - 입장은 딱 한 번</tspan><tspan x="0" dy="27">어느 스위치가 어느 전구와 연결됐을까?</tspan></text></g>
+</svg>

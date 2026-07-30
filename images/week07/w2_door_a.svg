@@ -5,6 +5,6 @@
 <circle cx="269.4" cy="195.20000000000002" r="8" fill="none" stroke="#111111" stroke-width="2.4"/>
 <line x1="416" y1="195.20000000000002" x2="350" y2="195.20000000000002" stroke="#111111" stroke-width="3.4"/>
 <polygon points="338,195.20000000000002 352,188.20000000000002 352,202.20000000000002" fill="#111111"/>
-<text x="448" y="164.0" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">밀면 열린다</text>
-<text x="340" y="380" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="340" dy="0">'잠겼다'는 말은 문제 어디에도 없었다</tspan></text>
+<g transform="translate(448,164.0)"><text x="0" y="0" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">밀면 열린다</text></g>
+<g transform="translate(340,380)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">'잠겼다'는 말은 문제 어디에도 없었다</tspan></text></g>
 </svg>

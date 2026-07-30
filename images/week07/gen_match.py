@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""릴레이 2 · 성냥 6개로 정삼각형 4개 흑백 스케치 SVG.
+"""릴레이 3 · 성냥 6개로 정삼각형 4개 흑백 스케치 SVG.
 
-- r2_match_q.svg (문제): 성냥 3개=삼각형 1개 예시 + 성냥 6개 나열(입체 실마리 미노출).
-- r2_match_a.svg (풀이): 정사면체 + 변 세기(4×3=12 = 성냥 6개 × 2몫).
+- r3_match_q.svg (문제): 성냥 3개=삼각형 1개 예시 + 성냥 6개 나열(입체 실마리 미노출).
+- r3_match_a.svg (풀이): 정사면체 + 변 세기(4×3=12 = 성냥 6개 × 2몫).
 실행: python3 gen_match.py
 """
 import math
@@ -15,10 +15,12 @@ assert 4 * 3 == 12 and 12 // 6 == 2
 
 
 def caption(cx, y, lines, size=21):
-    t = [f'<text x="{cx}" y="{y}" text-anchor="middle" font-family="{FONT}" font-size="{size}" fill="{INK}">']
+    # 텍스트는 g translate 지역좌표로 - 큰 절대좌표 텍스트가 도형과 다른 배율로
+    # 그려지는 크로미움 버그 회피(6주차 확립 규칙)
+    t = [f'<g transform="translate({cx},{y})"><text x="0" y="0" text-anchor="middle" font-family="{FONT}" font-size="{size}" fill="{INK}">']
     for k, ln in enumerate(lines):
-        t.append(f'<tspan x="{cx}" dy="{0 if k == 0 else size + 5}">{ln}</tspan>')
-    t.append("</text>")
+        t.append(f'<tspan x="0" dy="{0 if k == 0 else size + 5}">{ln}</tspan>')
+    t.append("</text></g>")
     return ["".join(t)]
 
 
@@ -49,8 +51,8 @@ parts += caption(330, 318, ["부러뜨리기 · 겹치기 금지 - 한 변 = 성
 W, H = 660, 346
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")
-open("r2_match_q.svg", "w", encoding="utf-8").write(svg)
-print("wrote r2_match_q.svg")
+open("r3_match_q.svg", "w", encoding="utf-8").write(svg)
+print("wrote r3_match_q.svg")
 
 # ---------- a: 정사면체 ----------
 parts = []
@@ -71,12 +73,12 @@ parts += line(A, D)
 parts += line(B, D)
 for p in (A, B, C, D):
     parts.append(f'<circle cx="{p[0]}" cy="{p[1]}" r="6" fill="{INK}"/>')
-parts.append(f'<text x="470" y="140" font-family="{FONT}" font-size="24" font-weight="700" fill="{INK}">정사면체</text>')
-parts.append(f'<text x="470" y="176" font-family="{FONT}" font-size="21" fill="{INK}">변 6개 · 면 4개</text>')
-parts.append(f'<text x="470" y="206" font-family="{FONT}" font-size="21" fill="{INK}">네 면이 모두 정삼각형</text>')
+parts.append(f'<g transform="translate(470,140)"><text x="0" y="0" font-family="{FONT}" font-size="24" font-weight="700" fill="{INK}">정사면체</text></g>')
+parts.append(f'<g transform="translate(470,176)"><text x="0" y="0" font-family="{FONT}" font-size="21" fill="{INK}">변 6개 · 면 4개</text></g>')
+parts.append(f'<g transform="translate(470,206)"><text x="0" y="0" font-family="{FONT}" font-size="21" fill="{INK}">네 면이 모두 정삼각형</text></g>')
 parts += caption(330, 330, ["세기로 확인: 변 자리 4 × 3 = 12 - 성냥 6개가 두 몫씩,", "모든 변이 정확히 두 면에 속한다"], 22)
 W, H = 700, 388
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")
-open("r2_match_a.svg", "w", encoding="utf-8").write(svg)
-print("wrote r2_match_a.svg")
+open("r3_match_a.svg", "w", encoding="utf-8").write(svg)
+print("wrote r3_match_a.svg")

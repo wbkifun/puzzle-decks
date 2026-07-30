@@ -14,10 +14,12 @@ assert 4 * 2 == 8
 
 
 def caption(cx, y, lines, size=21):
-    t = [f'<text x="{cx}" y="{y}" text-anchor="middle" font-family="{FONT}" font-size="{size}" fill="{INK}">']
+    # 텍스트는 g translate 지역좌표로 - 큰 절대좌표 텍스트가 도형과 다른 배율로
+    # 그려지는 크로미움 버그 회피(6주차 확립 규칙)
+    t = [f'<g transform="translate({cx},{y})"><text x="0" y="0" text-anchor="middle" font-family="{FONT}" font-size="{size}" fill="{INK}">']
     for k, ln in enumerate(lines):
-        t.append(f'<tspan x="{cx}" dy="{0 if k == 0 else size + 5}">{ln}</tspan>')
-    t.append("</text>")
+        t.append(f'<tspan x="0" dy="{0 if k == 0 else size + 5}">{ln}</tspan>')
+    t.append("</text></g>")
     return ["".join(t)]
 
 
@@ -49,7 +51,7 @@ def side_cake(cx, cy, rw, rh, h, hcut=False):
 parts = []
 parts += top_cake(150, 150, 92, cross=True)
 parts += caption(150, 290, ["칼질 두 번 = 네 조각"], 21)
-parts.append(f'<text x="330" y="160" text-anchor="middle" font-family="{FONT}" font-size="30" font-weight="700" fill="{INK}">→</text>')
+parts.append(f'<g transform="translate(330,160)"><text x="0" y="0" text-anchor="middle" font-family="{FONT}" font-size="30" font-weight="700" fill="{INK}">→</text></g>')
 parts += top_cake(510, 150, 92, cross=False)
 parts += caption(510, 290, ["세 번째 칼은 어디에?"], 21)
 parts += caption(330, 348, ["크기가 똑같은 여덟 조각 - 칼질은 딱 세 번"], 22)
@@ -63,12 +65,12 @@ print("wrote r1_cake_q.svg")
 parts = []
 parts += top_cake(140, 140, 88, cross=True)
 parts += caption(140, 272, ["위에서 십자 - 칼질 두 번"], 21)
-parts.append(f'<text x="300" y="150" text-anchor="middle" font-family="{FONT}" font-size="30" font-weight="700" fill="{INK}">＋</text>')
+parts.append(f'<g transform="translate(300,150)"><text x="0" y="0" text-anchor="middle" font-family="{FONT}" font-size="30" font-weight="700" fill="{INK}">＋</text></g>')
 parts += side_cake(480, 88, 92, 20, 116, hcut=True)
 # 수평 절단을 가리키는 화살표
 parts.append(f'<line x1="612" y1="146" x2="586" y2="146" stroke="{INK}" stroke-width="2.8"/>')
 parts.append(f'<polygon points="578,146 592,139 592,153" fill="{INK}"/>')
-parts.append(f'<text x="622" y="153" font-family="{FONT}" font-size="21" font-weight="700" fill="{INK}">옆에서 수평으로 한 칼</text>')
+parts.append(f'<g transform="translate(622,153)"><text x="0" y="0" font-family="{FONT}" font-size="21" font-weight="700" fill="{INK}">옆에서 수평으로 한 칼</text></g>')
 parts += caption(480, 272, ["높이 절반을 가른다 - 칼질 한 번"], 21)
 parts += caption(410, 330, ["4조각이 각각 위아래로 - 4 × 2 = 8조각 · 칼의 방향은 문제가 정하지 않았다"], 22)
 W, H = 860, 358

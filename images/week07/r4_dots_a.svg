@@ -15,5 +15,5 @@
 <text x="403.0" y="191.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">②</text>
 <text x="377.0" y="334.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">③</text>
 <text x="366.0" y="236.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">④</text>
-<text x="340" y="384" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="340" dy="0">상자 밖 두 점을 빌린다 - 경계는 우리 눈이 만든 것</tspan></text>
+<g transform="translate(340,384)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">상자 밖 두 점을 빌린다 - 경계는 우리 눈이 만든 것</tspan></text></g>
 </svg>

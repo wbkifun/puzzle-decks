@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""릴레이 4 · 물컵 6개(컵 하나만 만져서 번갈아) 흑백 스케치 SVG.
+"""릴레이 2 · 물컵 6개(컵 하나만 만져서 번갈아) 흑백 스케치 SVG.
 
-- r4_cups_q.svg (문제): 지금 배열(참참참빈빈빈) + 목표 배열(붓기 실마리 미노출).
-- r4_cups_a.svg (풀이): 2번 컵의 물을 5번 컵에 붓는 화살표 + 결과 배열.
+- r2_cups_q.svg (문제): 지금 배열(참참참빈빈빈) + 목표 배열(붓기 실마리 미노출).
+- r2_cups_a.svg (풀이): 2번 컵의 물을 5번 컵에 붓는 화살표 + 결과 배열.
 컵은 g transform 지역좌표로 저작(큰 절대좌표 텍스트 버그 회피).
 실행: python3 gen_cups.py
 """
@@ -18,10 +18,12 @@ assert arr == [1, 0, 1, 0, 1, 0], arr
 
 
 def caption(cx, y, lines, size=21):
-    t = [f'<text x="{cx}" y="{y}" text-anchor="middle" font-family="{FONT}" font-size="{size}" fill="{INK}">']
+    # 텍스트는 g translate 지역좌표로 - 큰 절대좌표 텍스트가 도형과 다른 배율로
+    # 그려지는 크로미움 버그 회피(6주차 확립 규칙)
+    t = [f'<g transform="translate({cx},{y})"><text x="0" y="0" text-anchor="middle" font-family="{FONT}" font-size="{size}" fill="{INK}">']
     for k, ln in enumerate(lines):
-        t.append(f'<tspan x="{cx}" dy="{0 if k == 0 else size + 5}">{ln}</tspan>')
-    t.append("</text>")
+        t.append(f'<tspan x="0" dy="{0 if k == 0 else size + 5}">{ln}</tspan>')
+    t.append("</text></g>")
     return ["".join(t)]
 
 
@@ -59,8 +61,8 @@ parts += caption(330, 300, ["컵은 딱 한 개만 만질 수 있다 - 어떻게
 W, H = 620, 330
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")
-open("r4_cups_q.svg", "w", encoding="utf-8").write(svg)
-print("wrote r4_cups_q.svg")
+open("r2_cups_q.svg", "w", encoding="utf-8").write(svg)
+print("wrote r2_cups_q.svg")
 
 # ---------- a: 붓기 화살표 + 결과 ----------
 parts = []
@@ -76,5 +78,5 @@ parts += caption(340, 372, ["만진 컵은 2번 하나 - 배열은 찬·빈·찬
 W, H = 640, 402
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")
-open("r4_cups_a.svg", "w", encoding="utf-8").write(svg)
-print("wrote r4_cups_a.svg")
+open("r2_cups_a.svg", "w", encoding="utf-8").write(svg)
+print("wrote r2_cups_a.svg")

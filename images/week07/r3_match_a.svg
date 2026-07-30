@@ -9,8 +9,8 @@
 <circle cx="356" cy="268" r="6" fill="#111111"/>
 <circle cx="296" cy="196" r="6" fill="#111111"/>
 <circle cx="222" cy="74" r="6" fill="#111111"/>
-<text x="470" y="140" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">정사면체</text>
-<text x="470" y="176" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111">변 6개 · 면 4개</text>
-<text x="470" y="206" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111">네 면이 모두 정삼각형</text>
-<text x="330" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="330" dy="0">세기로 확인: 변 자리 4 × 3 = 12 - 성냥 6개가 두 몫씩,</tspan><tspan x="330" dy="27">모든 변이 정확히 두 면에 속한다</tspan></text>
+<g transform="translate(470,140)"><text x="0" y="0" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">정사면체</text></g>
+<g transform="translate(470,176)"><text x="0" y="0" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111">변 6개 · 면 4개</text></g>
+<g transform="translate(470,206)"><text x="0" y="0" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111">네 면이 모두 정삼각형</text></g>
+<g transform="translate(330,330)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">세기로 확인: 변 자리 4 × 3 = 12 - 성냥 6개가 두 몫씩,</tspan><tspan x="0" dy="27">모든 변이 정확히 두 면에 속한다</tspan></text></g>
 </svg>
