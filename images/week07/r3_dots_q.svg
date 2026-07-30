@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 398" width="680" height="398">
+<circle cx="266" cy="300" r="8" fill="#111111"/>
+<circle cx="266" cy="226" r="8" fill="#111111"/>
+<circle cx="266" cy="152" r="8" fill="#111111"/>
+<circle cx="340" cy="300" r="8" fill="#111111"/>
+<circle cx="340" cy="226" r="8" fill="#111111"/>
+<circle cx="340" cy="152" r="8" fill="#111111"/>
+<circle cx="414" cy="300" r="8" fill="#111111"/>
+<circle cx="414" cy="226" r="8" fill="#111111"/>
+<circle cx="414" cy="152" r="8" fill="#111111"/>
+<text x="340" y="370" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="340" dy="0">펜을 떼지 않고 - 이어진 직선 4개로 아홉 점을 모두 지나라</tspan></text>
+</svg>

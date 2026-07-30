@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 408" width="660" height="408">
+<rect x="108" y="48" width="194" height="272" fill="none" stroke="#111111" stroke-width="3"/>
+<rect x="120" y="60" width="170" height="260" fill="none" stroke="#111111" stroke-width="1.6"/>
+<rect x="120" y="60" width="170" height="260" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
+<circle cx="264" cy="195.20000000000002" r="9" fill="none" stroke="#111111" stroke-width="2.6"/>
+<line x1="304" y1="153.6" x2="370" y2="153.6" stroke="#111111" stroke-width="2.6"/>
+<polygon points="382,153.6 368,146.6 368,160.6" fill="#111111"/>
+<line x1="304" y1="195.20000000000002" x2="370" y2="195.20000000000002" stroke="#111111" stroke-width="2.6"/>
+<polygon points="382,195.20000000000002 368,188.20000000000002 368,202.20000000000002" fill="#111111"/>
+<line x1="304" y1="236.8" x2="370" y2="236.8" stroke="#111111" stroke-width="2.6"/>
+<polygon points="382,236.8 368,229.8 368,243.8" fill="#111111"/>
+<text x="420" y="200.4" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111">아무리 당겨도</text>
+<text x="420" y="230.4" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111">꿈쩍도 안 한다</text>
+<text x="330" y="380" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="330" dy="0">열쇠도, 창문도 없다 - 어떻게 나갈까?</tspan></text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 376" width="660" height="376">
+<circle cx="150" cy="150" r="92" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
+<line x1="58" y1="150" x2="242" y2="150" stroke="#111111" stroke-width="2.2"/>
+<line x1="150" y1="58" x2="150" y2="242" stroke="#111111" stroke-width="2.2"/>
+<text x="150" y="290" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="150" dy="0">칼질 두 번 = 네 조각</tspan></text>
+<text x="330" y="160" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="30" font-weight="700" fill="#111111">→</text>
+<circle cx="510" cy="150" r="92" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
+<text x="510" y="290" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="510" dy="0">세 번째 칼은 어디에?</tspan></text>
+<text x="330" y="348" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="330" dy="0">크기가 똑같은 여덟 조각 - 칼질은 딱 세 번</tspan></text>
+</svg>

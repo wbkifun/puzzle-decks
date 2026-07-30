@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 330" width="620" height="330">
+<text x="102" y="82.44" text-anchor="end" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">지금</text>
+<g transform="translate(120,44)">
+<polygon points="4,12 48,12 44,62 8,62" fill="#d7d7d7"/>
+<polygon points="0,0 52,0 43,62 9,62" fill="none" stroke="#111111" stroke-width="2.8"/>
+<line x1="4" y1="12" x2="48" y2="12" stroke="#111111" stroke-width="1.8"/>
+<text x="26.0" y="88" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" fill="#111111">1</text>
+</g>
+<g transform="translate(194,44)">
+<polygon points="4,12 48,12 44,62 8,62" fill="#d7d7d7"/>
+<polygon points="0,0 52,0 43,62 9,62" fill="none" stroke="#111111" stroke-width="2.8"/>
+<line x1="4" y1="12" x2="48" y2="12" stroke="#111111" stroke-width="1.8"/>
+<text x="26.0" y="88" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" fill="#111111">2</text>
+</g>
+<g transform="translate(268,44)">
+<polygon points="4,12 48,12 44,62 8,62" fill="#d7d7d7"/>
+<polygon points="0,0 52,0 43,62 9,62" fill="none" stroke="#111111" stroke-width="2.8"/>
+<line x1="4" y1="12" x2="48" y2="12" stroke="#111111" stroke-width="1.8"/>
+<text x="26.0" y="88" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" fill="#111111">3</text>
+</g>
+<g transform="translate(342,44)">
+<polygon points="0,0 52,0 43,62 9,62" fill="none" stroke="#111111" stroke-width="2.8"/>
+<text x="26.0" y="88" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" fill="#111111">4</text>
+</g>
+<g transform="translate(416,44)">
+<polygon points="0,0 52,0 43,62 9,62" fill="none" stroke="#111111" stroke-width="2.8"/>
+<text x="26.0" y="88" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" fill="#111111">5</text>
+</g>
+<g transform="translate(490,44)">
+<polygon points="0,0 52,0 43,62 9,62" fill="none" stroke="#111111" stroke-width="2.8"/>
+<text x="26.0" y="88" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" fill="#111111">6</text>
+</g>
+<text x="102" y="216.44" text-anchor="end" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">목표</text>
+<g transform="translate(120,178)">
+<polygon points="4,12 48,12 44,62 8,62" fill="#d7d7d7"/>
+<polygon points="0,0 52,0 43,62 9,62" fill="none" stroke="#111111" stroke-width="2.8"/>
+<line x1="4" y1="12" x2="48" y2="12" stroke="#111111" stroke-width="1.8"/>
+</g>
+<g transform="translate(194,178)">
+<polygon points="0,0 52,0 43,62 9,62" fill="none" stroke="#111111" stroke-width="2.8"/>
+</g>
+<g transform="translate(268,178)">
+<polygon points="4,12 48,12 44,62 8,62" fill="#d7d7d7"/>
+<polygon points="0,0 52,0 43,62 9,62" fill="none" stroke="#111111" stroke-width="2.8"/>
+<line x1="4" y1="12" x2="48" y2="12" stroke="#111111" stroke-width="1.8"/>
+</g>
+<g transform="translate(342,178)">
+<polygon points="0,0 52,0 43,62 9,62" fill="none" stroke="#111111" stroke-width="2.8"/>
+</g>
+<g transform="translate(416,178)">
+<polygon points="4,12 48,12 44,62 8,62" fill="#d7d7d7"/>
+<polygon points="0,0 52,0 43,62 9,62" fill="none" stroke="#111111" stroke-width="2.8"/>
+<line x1="4" y1="12" x2="48" y2="12" stroke="#111111" stroke-width="1.8"/>
+</g>
+<g transform="translate(490,178)">
+<polygon points="0,0 52,0 43,62 9,62" fill="none" stroke="#111111" stroke-width="2.8"/>
+</g>
+<text x="330" y="300" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="330" dy="0">컵은 딱 한 개만 만질 수 있다 - 어떻게 할까?</tspan></text>
+</svg>

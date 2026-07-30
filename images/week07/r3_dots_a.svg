@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 412" width="680" height="412">
+<rect x="266" y="152" width="148" height="148" fill="none" stroke="#111111" stroke-width="1.2" stroke-dasharray="5 6" opacity="0.45"/>
+<polyline points="266,300 266,78 488,300 266,300 414,152" fill="none" stroke="#111111" stroke-width="3.4" stroke-linejoin="round"/>
+<polygon points="422,144 400,150 412,166" fill="#111111"/>
+<circle cx="266" cy="300" r="8" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+<circle cx="266" cy="226" r="8" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+<circle cx="266" cy="152" r="8" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+<circle cx="340" cy="300" r="8" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+<circle cx="340" cy="226" r="8" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+<circle cx="340" cy="152" r="8" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+<circle cx="414" cy="300" r="8" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+<circle cx="414" cy="226" r="8" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+<circle cx="414" cy="152" r="8" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+<text x="242.0" y="197.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">①</text>
+<text x="403.0" y="191.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">②</text>
+<text x="377.0" y="334.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">③</text>
+<text x="366.0" y="236.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">④</text>
+<text x="340" y="384" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="340" dy="0">상자 밖 두 점을 빌린다 - 경계는 우리 눈이 만든 것</tspan></text>
+</svg>

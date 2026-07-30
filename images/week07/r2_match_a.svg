@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 388" width="700" height="388">
+<line x1="120" y1="268" x2="296" y2="196" stroke="#111111" stroke-width="4" stroke-dasharray="9 7" stroke-linecap="round"/>
+<line x1="356" y1="268" x2="296" y2="196" stroke="#111111" stroke-width="4" stroke-dasharray="9 7" stroke-linecap="round"/>
+<line x1="296" y1="196" x2="222" y2="74" stroke="#111111" stroke-width="4" stroke-dasharray="9 7" stroke-linecap="round"/>
+<line x1="120" y1="268" x2="356" y2="268" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+<line x1="120" y1="268" x2="222" y2="74" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+<line x1="356" y1="268" x2="222" y2="74" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+<circle cx="120" cy="268" r="6" fill="#111111"/>
+<circle cx="356" cy="268" r="6" fill="#111111"/>
+<circle cx="296" cy="196" r="6" fill="#111111"/>
+<circle cx="222" cy="74" r="6" fill="#111111"/>
+<text x="470" y="140" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">정사면체</text>
+<text x="470" y="176" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111">변 6개 · 면 4개</text>
+<text x="470" y="206" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111">네 면이 모두 정삼각형</text>
+<text x="330" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="330" dy="0">세기로 확인: 변 자리 4 × 3 = 12 - 성냥 6개가 두 몫씩,</tspan><tspan x="330" dy="27">모든 변이 정확히 두 면에 속한다</tspan></text>
+</svg>

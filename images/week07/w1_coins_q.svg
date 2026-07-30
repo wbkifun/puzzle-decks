@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 260" width="660" height="260">
+<circle cx="150" cy="120" r="42" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
+<circle cx="150" cy="120" r="35" fill="none" stroke="#111111" stroke-width="1.3"/>
+<text x="150" y="131.56" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="34" font-weight="700" fill="#111111">?</text>
+<text x="240" y="132" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="34" font-weight="700" fill="#111111">+</text>
+<circle cx="330" cy="120" r="42" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
+<circle cx="330" cy="120" r="35" fill="none" stroke="#111111" stroke-width="1.3"/>
+<text x="330" y="131.56" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="34" font-weight="700" fill="#111111">?</text>
+<text x="420" y="132" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="34" font-weight="700" fill="#111111">=</text>
+<text x="510" y="132" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="32" font-weight="700" fill="#111111">600원</text>
+<text x="330" y="230" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="330" dy="0">하나는 500원짜리가 아니다 - 무슨 동전 두 개일까?</tspan></text>
+</svg>
