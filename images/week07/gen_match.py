@@ -54,30 +54,33 @@ svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W
 open("r3_match_q.svg", "w", encoding="utf-8").write(svg)
 print("wrote r3_match_q.svg")
 
-# ---------- a: 정사면체 ----------
+# ---------- a: 정사면체 (위-오른쪽 시점: 앞면 + 오른쪽 면 두 개가 보여 입체감) ----------
 parts = []
-# 꼭짓점: A·B 앞바닥, C 뒤바닥(위쪽으로 살짝), D 꼭대기
-A = (120, 268)
-B = (356, 268)
-C = (296, 196)
-D = (222, 74)
+# 꼭짓점: A 앞왼쪽 바닥, B 앞오른쪽 바닥(가장 가깝고 낮음), C 뒤오른쪽 바닥(실루엣 위), D 꼭대기
+A = (100, 258)
+B = (300, 296)
+C = (352, 170)
+D = (178, 64)
 def line(p1, p2, dashed=False):
     dash = ' stroke-dasharray="9 7"' if dashed else ""
     return [f'<line x1="{p1[0]}" y1="{p1[1]}" x2="{p2[0]}" y2="{p2[1]}" stroke="{INK}" stroke-width="4"{dash} stroke-linecap="round"/>']
-# 뒤로 가는 변(점선) 먼저, 앞 변은 실선으로 위에
+def face(pts, fill):
+    s = " ".join(f"{x},{y}" for x, y in pts)
+    return [f'<polygon points="{s}" fill="{fill}"/>']
+# 보이는 면 두 개: 앞면 A-B-D(흰색) + 오른쪽 면 B-C-D(옅은 회색 음영)
+parts += face((A, B, D), "#ffffff")
+parts += face((B, C, D), "#e4e4e4")
+# 숨은 변(점선)이 면 위로 비쳐 보이게 - 그다음 실선 변
 parts += line(A, C, dashed=True)
-parts += line(B, C, dashed=True)
-parts += line(C, D, dashed=True)
-parts += line(A, B)
-parts += line(A, D)
-parts += line(B, D)
+for e in ((A, B), (A, D), (B, D), (B, C), (C, D)):
+    parts += line(*e)
 for p in (A, B, C, D):
     parts.append(f'<circle cx="{p[0]}" cy="{p[1]}" r="6" fill="{INK}"/>')
 parts.append(f'<g transform="translate(470,140)"><text x="0" y="0" font-family="{FONT}" font-size="24" font-weight="700" fill="{INK}">정사면체</text></g>')
 parts.append(f'<g transform="translate(470,176)"><text x="0" y="0" font-family="{FONT}" font-size="21" fill="{INK}">변 6개 · 면 4개</text></g>')
 parts.append(f'<g transform="translate(470,206)"><text x="0" y="0" font-family="{FONT}" font-size="21" fill="{INK}">네 면이 모두 정삼각형</text></g>')
-parts += caption(330, 330, ["세기로 확인: 변 자리 4 × 3 = 12 - 성냥 6개가 두 몫씩,", "모든 변이 정확히 두 면에 속한다"], 22)
-W, H = 700, 388
+parts += caption(330, 352, ["세기로 확인: 변 자리 4 × 3 = 12 - 성냥 6개가 두 몫씩,", "모든 변이 정확히 두 면에 속한다"], 22)
+W, H = 700, 410
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")
 open("r3_match_a.svg", "w", encoding="utf-8").write(svg)

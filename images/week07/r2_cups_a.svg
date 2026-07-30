@@ -58,5 +58,5 @@
 <g transform="translate(490,250)">
 <polygon points="0,0 52,0 43,62 9,62" fill="none" stroke="#111111" stroke-width="2.8"/>
 </g>
-<g transform="translate(340,372)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">만진 컵은 2번 하나 - 배열은 찬·빈·찬·빈·찬·빈</tspan></text></g>
+<g transform="translate(340,372)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">움직인 컵은 2번 하나 - 배열은 찬·빈·찬·빈·찬·빈</tspan></text></g>
 </svg>

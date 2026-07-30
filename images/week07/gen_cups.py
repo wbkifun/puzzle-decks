@@ -57,7 +57,7 @@ def row(x0, y0, states, label=None, nums=False):
 parts = []
 parts += row(120, 44, [1, 1, 1, 0, 0, 0], "지금", nums=True)
 parts += row(120, 178, [1, 0, 1, 0, 1, 0], "목표")
-parts += caption(330, 300, ["컵은 딱 한 개만 만질 수 있다 - 어떻게 할까?"], 22)
+parts += caption(330, 300, ["컵은 딱 한 개만 움직일 수 있다 - 어떻게 할까?"], 22)
 W, H = 620, 330
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")
@@ -74,7 +74,7 @@ parts.append(f'<path d="M {x2} 88 Q {(x2+x5)/2} 18 {x5-8} 82" fill="none" stroke
 parts.append(f'<polygon points="{x5},{92} {x5-15},{78} {x5-2},{72}" fill="{INK}"/>')
 parts.append(f'<text x="{(x2+x5)/2}" y="34" text-anchor="middle" font-family="{FONT}" font-size="21" font-weight="700" fill="{INK}">물만 붓는다</text>')
 parts += row(120, 250, [1, 0, 1, 0, 1, 0], "결과")
-parts += caption(340, 372, ["만진 컵은 2번 하나 - 배열은 찬·빈·찬·빈·찬·빈"], 22)
+parts += caption(340, 372, ["움직인 컵은 2번 하나 - 배열은 찬·빈·찬·빈·찬·빈"], 22)
 W, H = 640, 402
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")

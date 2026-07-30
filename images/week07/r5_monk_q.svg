@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 372" width="740" height="372">
+<g transform="translate(40,40)">
+<text x="150" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">첫째 날 - 절에서 정상으로</text>
+<line x1="0" y1="210" x2="300" y2="210" stroke="#111111" stroke-width="2.6"/>
+<path d="M 30 210 L 210 40 L 290 210" fill="#ffffff" stroke="#111111" stroke-width="3" stroke-linejoin="round"/>
+<rect x="6" y="182" width="34" height="28" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<path d="M 0 182 L 23 164 L 46 182 Z" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<text x="23" y="238" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">절</text>
+<line x1="210" y1="40" x2="210" y2="12" stroke="#111111" stroke-width="2.4"/>
+<polygon points="210,12 236,20 210,28" fill="#111111"/>
+<text x="252" y="46" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">정상</text>
+<line x1="96" y1="158" x2="143.3" y2="113.2" stroke="#111111" stroke-width="3.4"/>
+<polygon points="152.0,105.0 145.9,120.4 136.3,110.2" fill="#111111"/>
+</g>
+<g transform="translate(400,40)">
+<text x="150" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">둘째 날 - 같은 길로 내려온다</text>
+<line x1="0" y1="210" x2="300" y2="210" stroke="#111111" stroke-width="2.6"/>
+<path d="M 30 210 L 210 40 L 290 210" fill="#ffffff" stroke="#111111" stroke-width="3" stroke-linejoin="round"/>
+<rect x="6" y="182" width="34" height="28" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<path d="M 0 182 L 23 164 L 46 182 Z" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<text x="23" y="238" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">절</text>
+<line x1="210" y1="40" x2="210" y2="12" stroke="#111111" stroke-width="2.4"/>
+<polygon points="210,12 236,20 210,28" fill="#111111"/>
+<text x="252" y="46" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">정상</text>
+<line x1="152" y1="105" x2="104.7" y2="149.8" stroke="#111111" stroke-width="3.4"/>
+<polygon points="96.0,158.0 102.1,142.6 111.7,152.8" fill="#111111"/>
+</g>
+<g transform="translate(370,332)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">둘 다 새벽 6시 출발 - 속도는 제멋대로, 쉬는 것도 자유</tspan><tspan x="0" dy="27">'같은 시각, 같은 지점'인 순간이 반드시 있을까?</tspan></text></g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 386" width="740" height="386">
+<g transform="translate(40,40)">
+<text x="150" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">두 날을 한 무대에</text>
+<line x1="0" y1="210" x2="300" y2="210" stroke="#111111" stroke-width="2.6"/>
+<path d="M 30 210 L 210 40 L 290 210" fill="#ffffff" stroke="#111111" stroke-width="3" stroke-linejoin="round"/>
+<rect x="6" y="182" width="34" height="28" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<path d="M 0 182 L 23 164 L 46 182 Z" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<line x1="210" y1="40" x2="210" y2="12" stroke="#111111" stroke-width="2.4"/>
+<polygon points="210,12 236,20 210,28" fill="#111111"/>
+</g>
+<g transform="translate(142.0,182.0)"><circle cx="0" cy="-34" r="7" fill="#ffffff" stroke="#111111" stroke-width="2.4"/><line x1="0" y1="-27" x2="0" y2="-12" stroke="#111111" stroke-width="2.4"/><line x1="0" y1="-22" x2="8" y2="-16" stroke="#111111" stroke-width="2.2"/><line x1="0" y1="-12" x2="-6" y2="0" stroke="#111111" stroke-width="2.2"/><line x1="0" y1="-12" x2="7" y2="0" stroke="#111111" stroke-width="2.2"/></g>
+<g transform="translate(178.0,148.0)"><circle cx="0" cy="-34" r="7" fill="#ffffff" stroke="#111111" stroke-width="2.4"/><line x1="0" y1="-27" x2="0" y2="-12" stroke="#111111" stroke-width="2.4"/><line x1="0" y1="-22" x2="-8" y2="-16" stroke="#111111" stroke-width="2.2"/><line x1="0" y1="-12" x2="6" y2="0" stroke="#111111" stroke-width="2.2"/><line x1="0" y1="-12" x2="-7" y2="0" stroke="#111111" stroke-width="2.2"/></g>
+<g transform="translate(160,165)"><circle cx="0" cy="-8" r="13" fill="none" stroke="#111111" stroke-width="2.6" stroke-dasharray="4 4"/><text x="4" y="34" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">반드시 마주친다</text></g>
+<g transform="translate(430,270)">
+<text x="130.0" y="-210" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">시간-높이 그래프로 보면</text>
+<line x1="0" y1="0" x2="274" y2="0" stroke="#111111" stroke-width="2.6"/>
+<line x1="0" y1="0" x2="0" y2="-204" stroke="#111111" stroke-width="2.6"/>
+<text x="268" y="24" text-anchor="end" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">시간 (새벽→저녁)</text>
+<text x="-12" y="-192" text-anchor="end" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">정상</text>
+<text x="-12" y="-2" text-anchor="end" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">절</text>
+<path d="M 0 0 Q 88.4 -11.4 130.0 -95.0 Q 161.2 -163.4 260 -190" fill="none" stroke="#111111" stroke-width="3"/>
+<path d="M 0 -190 Q 78.0 -178.6 130.0 -95.0 Q 187.2 -22.8 260 0" fill="none" stroke="#111111" stroke-width="3" stroke-dasharray="8 6"/>
+<circle cx="130.0" cy="-95.0" r="8" fill="#111111"/>
+</g>
+<g transform="translate(370,336)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="0" dy="0">오르는 곡선(실선)과 내리는 곡선(점선)은 아무리 구불거려도 반드시 한 번은 만난다</tspan><tspan x="0" dy="26">마주친 시각·지점을 몰라도 - '반드시 있다'는 보장된다 (존재 증명)</tspan></text></g>
+</svg>
