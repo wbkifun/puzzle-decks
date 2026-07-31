@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+<circle cx="190" cy="190" r="44" fill="#e4e4e4" stroke="#111111" stroke-width="2.8"/>
+<circle cx="190" cy="190" r="37" fill="none" stroke="#111111" stroke-width="1.2"/>
+<circle cx="278.0" cy="190.0" r="44" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
+<circle cx="278.0" cy="190.0" r="37" fill="none" stroke="#111111" stroke-width="1.2"/>
+<line x1="278.0" y1="190.0" x2="247.0" y2="190.0" stroke="#111111" stroke-width="3.4"/>
+<polygon points="239.0,190.0 251.0,184.0 251.0,196.0" fill="#111111"/>
+<circle cx="190.0" cy="278.0" r="44" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
+<circle cx="190.0" cy="278.0" r="37" fill="none" stroke="#111111" stroke-width="1.2"/>
+<line x1="190.0" y1="278.0" x2="190.0" y2="247.0" stroke="#111111" stroke-width="3.4"/>
+<polygon points="190.0,239.0 196.0,251.0 184.0,251.0" fill="#111111"/>
+<circle cx="102.0" cy="190.0" r="44" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
+<circle cx="102.0" cy="190.0" r="37" fill="none" stroke="#111111" stroke-width="1.2"/>
+<line x1="102.0" y1="190.0" x2="133.0" y2="190.0" stroke="#111111" stroke-width="3.4"/>
+<polygon points="141.0,190.0 129.0,196.0 129.0,184.0" fill="#111111"/>
+<circle cx="190.0" cy="102.0" r="44" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
+<circle cx="190.0" cy="102.0" r="37" fill="none" stroke="#111111" stroke-width="1.2"/>
+<line x1="190.0" y1="102.0" x2="190.0" y2="133.0" stroke="#111111" stroke-width="3.4"/>
+<polygon points="190.0,141.0 184.0,129.0 196.0,129.0" fill="#111111"/>
+<circle cx="190" cy="190" r="88" fill="none" stroke="#111111" stroke-width="1.6" stroke-dasharray="6 8"/>
+<g transform="translate(190,386)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" fill="#111111"><tspan x="0" dy="0">굴리지 않고 미끄러뜨려도(같은 면이 안쪽)</tspan><tspan x="0" dy="25">공전만으로 그림은 1바퀴 돈다</tspan></text></g>
+<circle cx="600" cy="195" r="105" fill="#e4e4e4" stroke="#111111" stroke-width="2.8"/>
+<circle cx="600" cy="195" r="98" fill="none" stroke="#111111" stroke-width="1.2"/>
+<g transform="translate(600,202)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">반지름 3배</text></g>
+<circle cx="740" cy="195" r="35" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
+<circle cx="740" cy="195" r="28" fill="none" stroke="#111111" stroke-width="1.2"/>
+<line x1="740" y1="195" x2="740.0" y2="173.0" stroke="#111111" stroke-width="3.4"/>
+<polygon points="740.0,165.0 746.0,177.0 734.0,177.0" fill="#111111"/>
+<path d="M 759.5 223.1 A 162 162 0 0 1 459.7 276.0" fill="none" stroke="#111111" stroke-width="2.4" stroke-dasharray="7 7"/>
+<polygon points="459.7,276.0 472.8,284.6 460.6,291.6" fill="#111111"/>
+<g transform="translate(600,386)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" fill="#111111"><tspan x="0" dy="0">거리÷둘레가 말하는 3바퀴가 아니라</tspan><tspan x="0" dy="25">3 + 1 = 4바퀴</tspan></text></g>
+<g transform="translate(400,452)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">자전(구름) + 공전(궤도 한 바퀴) - 회전수 = R/r + 1</tspan></text></g>
+</svg>
