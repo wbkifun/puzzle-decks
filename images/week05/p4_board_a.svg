@@ -22,7 +22,7 @@
 <rect x="25.38" y="159.38" width="89.24" height="43.239999999999995" rx="6" fill="none" stroke="#111111" stroke-width="4"/>
 <rect x="117.38" y="205.38" width="43.239999999999995" height="89.24" rx="6" fill="none" stroke="#ffffff" stroke-width="7.5"/>
 <rect x="117.38" y="205.38" width="43.239999999999995" height="89.24" rx="6" fill="none" stroke="#111111" stroke-width="4"/>
-<text x="116" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="116" dy="0">도미노는 어디에 놓아도</tspan><tspan x="116" dy="26">검 1 + 흰 1</tspan></text>
+<g transform="translate(116,330)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="0" dy="0">도미노는 어디에 놓아도</tspan><tspan x="0" dy="26">검 1 + 흰 1</tspan></text></g>
 <rect x="330" y="230" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
 <rect x="330" y="197" width="33" height="33" fill="#111111" stroke="#111111" stroke-width="1.4"/>
 <rect x="330" y="164" width="33" height="33" fill="none" stroke="#111111" stroke-width="1.4"/>
@@ -88,5 +88,5 @@
 <polygon points="363,296 594,296 594,65 561,65 561,32 330,32 330,263 363,263" fill="none" stroke="#111111" stroke-width="3"/>
 <rect x="563.97" y="34.97" width="27.060000000000002" height="27.060000000000002" fill="#9a9a9a" stroke="#111111" stroke-width="2" stroke-dasharray="5 4"/>
 <rect x="332.97" y="265.97" width="27.060000000000002" height="27.060000000000002" fill="#9a9a9a" stroke="#111111" stroke-width="2" stroke-dasharray="5 4"/>
-<text x="462" y="330" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="462" dy="0">떼어낸 두 모서리는 같은 색</tspan><tspan x="462" dy="26">— 둘 다 검은 칸</tspan></text>
+<g transform="translate(462,330)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="0" dy="0">떼어낸 두 모서리는 같은 색</tspan><tspan x="0" dy="26">— 둘 다 검은 칸</tspan></text></g>
 </svg>

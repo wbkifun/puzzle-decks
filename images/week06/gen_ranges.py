@@ -22,10 +22,12 @@ assert len(chain) - 1 == 7
 
 
 def caption(cx, y, lines, size=21):
-    t = [f'<text x="{cx}" y="{y}" text-anchor="middle" font-family="{FONT}" font-size="{size}" fill="{INK}">']
+    # 텍스트는 g translate 지역좌표로 - 큰 절대좌표 텍스트가 도형과 다른 배율로
+    # 그려지는 크로미움 버그 회피(7주차에서 규칙화, 8주차 재사용 시 소급 적용)
+    t = [f'<g transform="translate({cx},{y})"><text x="0" y="0" text-anchor="middle" font-family="{FONT}" font-size="{size}" fill="{INK}">']
     for k, ln in enumerate(lines):
-        t.append(f'<tspan x="{cx}" dy="{0 if k == 0 else size + 5}">{ln}</tspan>')
-    t.append("</text>")
+        t.append(f'<tspan x="0" dy="{0 if k == 0 else size + 5}">{ln}</tspan>')
+    t.append("</text></g>")
     return ["".join(t)]
 
 
@@ -35,8 +37,8 @@ def strip(x, y, w, h, left, right, ticks=9):
     for k in range(1, ticks + 1):
         tx = x + w * k / (ticks + 1)
         p.append(f'<line x1="{tx:.1f}" y1="{y+h*0.28}" x2="{tx:.1f}" y2="{y+h*0.72}" stroke="{INK}" stroke-width="1.6"/>')
-    p.append(f'<text x="{x-14}" y="{y+h/2+9}" text-anchor="end" font-family="{FONT}" font-size="26" font-weight="700" fill="{INK}">{left}</text>')
-    p.append(f'<text x="{x+w+14}" y="{y+h/2+9}" font-family="{FONT}" font-size="26" font-weight="700" fill="{INK}">{right}</text>')
+    p.append(f'<g transform="translate({x-14},{y+h/2+9})"><text x="0" y="0" text-anchor="end" font-family="{FONT}" font-size="26" font-weight="700" fill="{INK}">{left}</text></g>')
+    p.append(f'<g transform="translate({x+w+14},{y+h/2+9})"><text x="0" y="0" font-family="{FONT}" font-size="26" font-weight="700" fill="{INK}">{right}</text></g>')
     return p
 
 
@@ -45,7 +47,7 @@ def bubble(x, y, w, h, text, size=23, tail="down"):
     p = [f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="14" fill="#ffffff" stroke="{INK}" stroke-width="2.6"/>']
     if tail == "down":
         p.append(f'<polygon points="{x+w*0.22},{ty} {x+w*0.32},{ty} {x+w*0.2},{ty+16}" fill="#ffffff" stroke="{INK}" stroke-width="2.2"/>')
-    p.append(f'<text x="{x+w/2}" y="{y+h/2+size*0.34}" text-anchor="middle" font-family="{FONT}" font-size="{size}" fill="{INK}">{text}</text>')
+    p.append(f'<g transform="translate({x+w/2},{y+h/2+size*0.34})"><text x="0" y="0" text-anchor="middle" font-family="{FONT}" font-size="{size}" fill="{INK}">{text}</text></g>')
     return p
 
 
@@ -53,7 +55,7 @@ def arrow_d(x, y1, y2, label=None):
     p = [f'<line x1="{x}" y1="{y1}" x2="{x}" y2="{y2-12}" stroke="{INK}" stroke-width="2.6"/>',
          f'<polygon points="{x},{y2} {x-6.5},{y2-13} {x+6.5},{y2-13}" fill="{INK}"/>']
     if label:
-        p.append(f'<text x="{x+14}" y="{(y1+y2)/2+6}" font-family="{FONT}" font-size="19" fill="{INK}">{label}</text>')
+        p.append(f'<g transform="translate({x+14},{(y1+y2)/2+6})"><text x="0" y="0" font-family="{FONT}" font-size="19" fill="{INK}">{label}</text></g>')
     return p
 
 
@@ -61,7 +63,7 @@ def arrow_r(x1, x2, y, label=None):
     p = [f'<line x1="{x1}" y1="{y}" x2="{x2-11}" y2="{y}" stroke="{INK}" stroke-width="2.6"/>',
          f'<polygon points="{x2},{y} {x2-13},{y-6.5} {x2-13},{y+6.5}" fill="{INK}"/>']
     if label:
-        p.append(f'<text x="{(x1+x2)/2}" y="{y-12}" text-anchor="middle" font-family="{FONT}" font-size="18" fill="{INK}">{label}</text>')
+        p.append(f'<g transform="translate({(x1+x2)/2},{y-12})"><text x="0" y="0" text-anchor="middle" font-family="{FONT}" font-size="18" fill="{INK}">{label}</text></g>')
     return p
 
 
@@ -84,8 +86,8 @@ S, G = 40, 6
 for k in range(16):
     x = 30 + k * (S + G)
     parts.append(f'<rect x="{x}" y="90" width="{S}" height="{S}" rx="6" fill="#ffffff" stroke="{INK}" stroke-width="2"/>')
-    parts.append(f'<text x="{x+S/2}" y="{90+S*0.66}" text-anchor="middle" font-family="{FONT}" font-size="17" fill="{INK}">{k+1}</text>')
-parts.append(f'<text x="{30 + 8*(S+G) - G/2}" y="60" text-anchor="middle" font-family="{FONT}" font-size="26" font-weight="700" fill="{INK}">후보 16개</text>')
+    parts.append(f'<g transform="translate({x+S/2},{90+S*0.66})"><text x="0" y="0" text-anchor="middle" font-family="{FONT}" font-size="17" fill="{INK}">{k+1}</text></g>')
+parts.append(f'<g transform="translate({30 + 8*(S+G) - G/2},60)"><text x="0" y="0" text-anchor="middle" font-family="{FONT}" font-size="26" font-weight="700" fill="{INK}">후보 16개</text></g>')
 parts += caption(30 + 8 * (S + G) - G / 2, 200, ["어떤 대답이 돌아와도 끝까지 통하는 질문 목록 -", "몇 번이면 반드시 맞힐 수 있을까?"], 22)
 W, H = 800, 250
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
@@ -96,13 +98,13 @@ print("wrote p2_range_q.svg")
 # ---------- s2: 두 배의 사다리(층마다 조각 개수) 단일 그림 ----------
 parts = []
 lx = 48
-parts.append(f'<text x="{lx + 176}" y="46" text-anchor="middle" font-family="{FONT}" font-size="25" font-weight="700" fill="{INK}">두 배의 사다리</text>')
+parts.append(f'<g transform="translate({lx + 176},46)"><text x="0" y="0" text-anchor="middle" font-family="{FONT}" font-size="25" font-weight="700" fill="{INK}">두 배의 사다리</text></g>')
 ts, tg = 18, 4                                       # 층마다 후보를 작은 조각 개수로
 for i, v in enumerate([16, 8, 4, 2, 1]):
     y = 76 + i * 54
     for k in range(v):
         parts.append(f'<rect x="{lx + k*(ts+tg)}" y="{y}" width="{ts}" height="{ts}" rx="4" fill="#ffffff" stroke="{INK}" stroke-width="1.9"/>')
-    parts.append(f'<text x="{lx + 16*(ts+tg) + 12}" y="{y+ts}" font-family="{FONT}" font-size="22" fill="{INK}">{v}개 - 질문 {4-i}번이면 충분</text>')
+    parts.append(f'<g transform="translate({lx + 16*(ts+tg) + 12},{y+ts})"><text x="0" y="0" font-family="{FONT}" font-size="22" fill="{INK}">{v}개 - 질문 {4-i}번이면 충분</text></g>')
 parts += caption(lx + 280, 372, ["질문 n번 → 최대 2ⁿ개까지 감당 (2⁰=1 · 2¹=2 · 2²=4 · 2³=8 · 2⁴=16)",
                                  "한 층 오를 때마다 후보는 두 배, 질문은 한 번만 - 후보 ×2 = 질문 +1"], 22)
 W, H = 700, 420
@@ -119,14 +121,14 @@ x = 40
 mid = 0
 for c in cells:
     if c == "…":
-        parts.append(f'<text x="{x+22}" y="{90+S*0.62}" text-anchor="middle" font-family="{FONT}" font-size="30" font-weight="700" fill="{INK}">⋯</text>')
+        parts.append(f'<g transform="translate({x+22},{90+S*0.62})"><text x="0" y="0" text-anchor="middle" font-family="{FONT}" font-size="30" font-weight="700" fill="{INK}">⋯</text></g>')
         x += 44 + G
         continue
     parts.append(f'<rect x="{x}" y="90" width="{S}" height="{S}" rx="7" fill="#ffffff" stroke="{INK}" stroke-width="2.2"/>')
-    parts.append(f'<text x="{x+S/2}" y="{90+S*0.64}" text-anchor="middle" font-family="{FONT}" font-size="21" fill="{INK}">{c}</text>')
+    parts.append(f'<g transform="translate({x+S/2},{90+S*0.64})"><text x="0" y="0" text-anchor="middle" font-family="{FONT}" font-size="21" fill="{INK}">{c}</text></g>')
     x += S + G
 mid = (40 + x - G) / 2
-parts.append(f'<text x="{mid}" y="56" text-anchor="middle" font-family="{FONT}" font-size="27" font-weight="700" fill="{INK}">이번엔 후보 100개</text>')
+parts.append(f'<g transform="translate({mid},56)"><text x="0" y="0" text-anchor="middle" font-family="{FONT}" font-size="27" font-weight="700" fill="{INK}">이번엔 후보 100개</text></g>')
 parts += caption(mid, 196, ["소문: “7번이면 반드시 맞힐 수 있다” - 정말일까?", "홀수 개가 남으면 어떻게 가르는 게 최선일까?"], 22)
 W, H = int(x + 36), 252
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
@@ -142,7 +144,7 @@ for i, n in enumerate(chain):
     x = xs + i * (bw + gap)
     bold = 700 if i in (0, len(chain) - 1) else 400
     parts.append(f'<rect x="{x}" y="{y}" width="{bw}" height="{bh}" rx="10" fill="#ffffff" stroke="{INK}" stroke-width="2.8"/>')
-    parts.append(f'<text x="{x+bw/2}" y="{y+bh*0.64}" text-anchor="middle" font-family="{FONT}" font-size="26" font-weight="{bold}" fill="{INK}">{n}</text>')
+    parts.append(f'<g transform="translate({x+bw/2},{y+bh*0.64})"><text x="0" y="0" text-anchor="middle" font-family="{FONT}" font-size="26" font-weight="{bold}" fill="{INK}">{n}</text></g>')
     if i < len(chain) - 1:
         parts += arrow_r(x + bw + 4, x + bw + gap - 4, y + bh / 2, f"{i+1}회")
 cx = xs + (len(chain) * bw + (len(chain) - 1) * gap) / 2
@@ -158,9 +160,9 @@ print("wrote s3_chain_a.svg")
 # ---------- c1: 1~1000 · 1~백만 띠 ----------
 parts = []
 parts += strip(110, 50, 480, 42, "1", "1,000")
-parts.append(f'<text x="782" y="80" font-family="{FONT}" font-size="26" font-weight="700" fill="{INK}">- 몇 번?</text>')
+parts.append(f'<g transform="translate(782,80)"><text x="0" y="0" font-family="{FONT}" font-size="26" font-weight="700" fill="{INK}">- 몇 번?</text></g>')
 parts += strip(110, 150, 480, 42, "1", "1,000,000")
-parts.append(f'<text x="782" y="180" font-family="{FONT}" font-size="26" font-weight="700" fill="{INK}">- 몇 번?</text>')
+parts.append(f'<g transform="translate(782,180)"><text x="0" y="0" font-family="{FONT}" font-size="26" font-weight="700" fill="{INK}">- 몇 번?</text></g>')
 parts += caption(440, 268, ["‘두 배의 사다리’로 답하라 - 그리고 하나 적은 횟수로는 왜 안 되는지도"], 22)
 W, H = 910, 306
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'

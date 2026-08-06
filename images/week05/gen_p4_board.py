@@ -72,10 +72,12 @@ def pair_outline(x, y, w, h):
 
 
 def caption(cx, y, lines, size=21):
-    t = [f'<text x="{cx}" y="{y}" text-anchor="middle" font-family="{FONT}" font-size="{size}" fill="{INK}">']
+    # 텍스트는 g translate 지역좌표로 - 큰 절대좌표 텍스트가 도형과 다른 배율로
+    # 그려지는 크로미움 버그 회피(7주차에서 규칙화, 8주차 재사용 시 소급 적용)
+    t = [f'<g transform="translate({cx},{y})"><text x="0" y="0" text-anchor="middle" font-family="{FONT}" font-size="{size}" fill="{INK}">']
     for k, ln in enumerate(lines):
-        t.append(f'<tspan x="{cx}" dy="{0 if k == 0 else size + 5}">{ln}</tspan>')
-    t.append("</text>")
+        t.append(f'<tspan x="0" dy="{0 if k == 0 else size + 5}">{ln}</tspan>')
+    t.append("</text></g>")
     return ["".join(t)]
 
 
@@ -95,7 +97,7 @@ def fig_q():
     parts += [
         f'<rect x="{dx}" y="{dy}" width="{2*dc}" height="{dc}" rx="8" fill="none" stroke="{INK}" stroke-width="3.5"/>',
         f'<line x1="{dx+dc}" y1="{dy+4}" x2="{dx+dc}" y2="{dy+dc-4}" stroke="{INK}" stroke-width="2"/>',
-        f'<text x="{dx + 2*dc + 18}" y="{dy + dc*0.68}" font-family="{FONT}" font-size="30" fill="{INK}">× 31</text>',
+        f'<g transform="translate({dx + 2*dc + 18},{dy + dc*0.68})"><text x="0" y="0" font-family="{FONT}" font-size="30" fill="{INK}">× 31</text></g>',
     ]
     parts += caption(dx + 1.6 * dc, CAP, ["도미노 = 이웃 두 칸을 덮는 타일", "62칸 ÷ 2 = 31개, 개수는 딱 맞다"])
     return parts, 700

@@ -1,36 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="800" height="250">
 <rect x="30" y="90" width="40" height="40" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2"/>
-<text x="50.0" y="116.4" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">1</text>
+<g transform="translate(50.0,116.4)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">1</text></g>
 <rect x="76" y="90" width="40" height="40" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2"/>
-<text x="96.0" y="116.4" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">2</text>
+<g transform="translate(96.0,116.4)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">2</text></g>
 <rect x="122" y="90" width="40" height="40" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2"/>
-<text x="142.0" y="116.4" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">3</text>
+<g transform="translate(142.0,116.4)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">3</text></g>
 <rect x="168" y="90" width="40" height="40" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2"/>
-<text x="188.0" y="116.4" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">4</text>
+<g transform="translate(188.0,116.4)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">4</text></g>
 <rect x="214" y="90" width="40" height="40" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2"/>
-<text x="234.0" y="116.4" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">5</text>
+<g transform="translate(234.0,116.4)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">5</text></g>
 <rect x="260" y="90" width="40" height="40" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2"/>
-<text x="280.0" y="116.4" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">6</text>
+<g transform="translate(280.0,116.4)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">6</text></g>
 <rect x="306" y="90" width="40" height="40" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2"/>
-<text x="326.0" y="116.4" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">7</text>
+<g transform="translate(326.0,116.4)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">7</text></g>
 <rect x="352" y="90" width="40" height="40" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2"/>
-<text x="372.0" y="116.4" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">8</text>
+<g transform="translate(372.0,116.4)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">8</text></g>
 <rect x="398" y="90" width="40" height="40" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2"/>
-<text x="418.0" y="116.4" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">9</text>
+<g transform="translate(418.0,116.4)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">9</text></g>
 <rect x="444" y="90" width="40" height="40" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2"/>
-<text x="464.0" y="116.4" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">10</text>
+<g transform="translate(464.0,116.4)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">10</text></g>
 <rect x="490" y="90" width="40" height="40" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2"/>
-<text x="510.0" y="116.4" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">11</text>
+<g transform="translate(510.0,116.4)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">11</text></g>
 <rect x="536" y="90" width="40" height="40" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2"/>
-<text x="556.0" y="116.4" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">12</text>
+<g transform="translate(556.0,116.4)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">12</text></g>
 <rect x="582" y="90" width="40" height="40" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2"/>
-<text x="602.0" y="116.4" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">13</text>
+<g transform="translate(602.0,116.4)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">13</text></g>
 <rect x="628" y="90" width="40" height="40" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2"/>
-<text x="648.0" y="116.4" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">14</text>
+<g transform="translate(648.0,116.4)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">14</text></g>
 <rect x="674" y="90" width="40" height="40" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2"/>
-<text x="694.0" y="116.4" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">15</text>
+<g transform="translate(694.0,116.4)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">15</text></g>
 <rect x="720" y="90" width="40" height="40" rx="6" fill="#ffffff" stroke="#111111" stroke-width="2"/>
-<text x="740.0" y="116.4" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">16</text>
-<text x="395.0" y="60" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="700" fill="#111111">후보 16개</text>
-<text x="395.0" y="200" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="395.0" dy="0">어떤 대답이 돌아와도 끝까지 통하는 질문 목록 -</tspan><tspan x="395.0" dy="27">몇 번이면 반드시 맞힐 수 있을까?</tspan></text>
+<g transform="translate(740.0,116.4)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" fill="#111111">16</text></g>
+<g transform="translate(395.0,60)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="700" fill="#111111">후보 16개</text></g>
+<g transform="translate(395.0,200)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">어떤 대답이 돌아와도 끝까지 통하는 질문 목록 -</tspan><tspan x="0" dy="27">몇 번이면 반드시 맞힐 수 있을까?</tspan></text></g>
 </svg>

@@ -1,41 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1114 274" width="1114" height="274">
 <rect x="26" y="96" width="84" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
-<text x="68.0" y="131.84" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="700" fill="#111111">100</text>
+<g transform="translate(68.0,131.84)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="700" fill="#111111">100</text></g>
 <line x1="114" y1="124.0" x2="147" y2="124.0" stroke="#111111" stroke-width="2.6"/>
 <polygon points="158,124.0 145,117.5 145,130.5" fill="#111111"/>
-<text x="136.0" y="112.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">1회</text>
+<g transform="translate(136.0,112.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">1회</text></g>
 <rect x="162" y="96" width="84" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
-<text x="204.0" y="131.84" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="400" fill="#111111">50</text>
+<g transform="translate(204.0,131.84)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="400" fill="#111111">50</text></g>
 <line x1="250" y1="124.0" x2="283" y2="124.0" stroke="#111111" stroke-width="2.6"/>
 <polygon points="294,124.0 281,117.5 281,130.5" fill="#111111"/>
-<text x="272.0" y="112.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">2회</text>
+<g transform="translate(272.0,112.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">2회</text></g>
 <rect x="298" y="96" width="84" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
-<text x="340.0" y="131.84" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="400" fill="#111111">25</text>
+<g transform="translate(340.0,131.84)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="400" fill="#111111">25</text></g>
 <line x1="386" y1="124.0" x2="419" y2="124.0" stroke="#111111" stroke-width="2.6"/>
 <polygon points="430,124.0 417,117.5 417,130.5" fill="#111111"/>
-<text x="408.0" y="112.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">3회</text>
+<g transform="translate(408.0,112.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">3회</text></g>
 <rect x="434" y="96" width="84" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
-<text x="476.0" y="131.84" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="400" fill="#111111">13</text>
+<g transform="translate(476.0,131.84)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="400" fill="#111111">13</text></g>
 <line x1="522" y1="124.0" x2="555" y2="124.0" stroke="#111111" stroke-width="2.6"/>
 <polygon points="566,124.0 553,117.5 553,130.5" fill="#111111"/>
-<text x="544.0" y="112.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">4회</text>
+<g transform="translate(544.0,112.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">4회</text></g>
 <rect x="570" y="96" width="84" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
-<text x="612.0" y="131.84" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="400" fill="#111111">7</text>
+<g transform="translate(612.0,131.84)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="400" fill="#111111">7</text></g>
 <line x1="658" y1="124.0" x2="691" y2="124.0" stroke="#111111" stroke-width="2.6"/>
 <polygon points="702,124.0 689,117.5 689,130.5" fill="#111111"/>
-<text x="680.0" y="112.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">5회</text>
+<g transform="translate(680.0,112.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">5회</text></g>
 <rect x="706" y="96" width="84" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
-<text x="748.0" y="131.84" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="400" fill="#111111">4</text>
+<g transform="translate(748.0,131.84)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="400" fill="#111111">4</text></g>
 <line x1="794" y1="124.0" x2="827" y2="124.0" stroke="#111111" stroke-width="2.6"/>
 <polygon points="838,124.0 825,117.5 825,130.5" fill="#111111"/>
-<text x="816.0" y="112.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">6회</text>
+<g transform="translate(816.0,112.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">6회</text></g>
 <rect x="842" y="96" width="84" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
-<text x="884.0" y="131.84" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="400" fill="#111111">2</text>
+<g transform="translate(884.0,131.84)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="400" fill="#111111">2</text></g>
 <line x1="930" y1="124.0" x2="963" y2="124.0" stroke="#111111" stroke-width="2.6"/>
 <polygon points="974,124.0 961,117.5 961,130.5" fill="#111111"/>
-<text x="952.0" y="112.0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">7회</text>
+<g transform="translate(952.0,112.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" fill="#111111">7회</text></g>
 <rect x="978" y="96" width="84" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
-<text x="1020.0" y="131.84" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="700" fill="#111111">1</text>
-<text x="544.0" y="62" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" fill="#111111"><tspan x="544.0" dy="0">최악의 경우 후보 수 - 일곱 계단이면 1</tspan></text>
-<text x="544.0" y="216" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" fill="#111111"><tspan x="544.0" dy="0">거꾸로 두 배의 사다리: 2 · 4 · 8 · 16 · 32 · 64 · 128</tspan><tspan x="544.0" dy="28">2⁷ = 128 ≥ 100 - 그래서 7번이면 충분하다</tspan></text>
+<g transform="translate(1020.0,131.84)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="700" fill="#111111">1</text></g>
+<g transform="translate(544.0,62)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" fill="#111111"><tspan x="0" dy="0">최악의 경우 후보 수 - 일곱 계단이면 1</tspan></text></g>
+<g transform="translate(544.0,216)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" fill="#111111"><tspan x="0" dy="0">거꾸로 두 배의 사다리: 2 · 4 · 8 · 16 · 32 · 64 · 128</tspan><tspan x="0" dy="28">2⁷ = 128 ≥ 100 - 그래서 7번이면 충분하다</tspan></text></g>
 </svg>
