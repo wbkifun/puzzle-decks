@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" width="920" height="420">
+<g transform="translate(60,80)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">말리기 전 - 100kg</text></g>
+<rect x="60" y="96" width="4.8" height="56" fill="#111111"/>
+<rect x="64.8" y="96" width="475.2" height="56" fill="#e4e4e4" stroke="#111111" stroke-width="2"/>
+<g transform="translate(300,132)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="400" fill="#111111">물 99kg (99%)</text></g>
+<g transform="translate(60,230)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">말린 뒤 - ? kg</text></g>
+<rect x="60" y="246" width="4.8" height="56" fill="#111111"/>
+<rect x="64.8" y="246" width="235.2" height="56" fill="#e4e4e4" stroke="#111111" stroke-width="2"/>
+<g transform="translate(185,282)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="400" fill="#111111">물 49kg (98%)</text></g>
+<line x1="62.4" y1="158" x2="62.4" y2="222" stroke="#111111" stroke-width="1.6" stroke-dasharray="5 6"/>
+<g transform="translate(74,196)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">과육 1kg - 변하지 않는 본체</text></g>
+<g transform="translate(590,130)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">과육 1kg이 이제 2%</text></g>
+<g transform="translate(590,168)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="400" fill="#111111">전체 = 1kg ÷ 2% = 50kg</text></g>
+<g transform="translate(590,206)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="400" fill="#111111">물은 99kg → 49kg</text></g>
+<g transform="translate(590,244)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="400" fill="#111111">- 50kg이 증발했다</text></g>
+<g transform="translate(460,392)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">%를 버리고 본체(kg)로 내려가라 - 기준량(전체)이 반 토막 났다</tspan></text></g>
+</svg>

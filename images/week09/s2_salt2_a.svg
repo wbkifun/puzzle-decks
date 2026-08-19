@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 350" width="900" height="350">
+<g transform="translate(210,60)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">소금 40g을 넣으면</text></g>
+<g transform="translate(210,124)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">소금 40 + 40 = 80</text></g>
+<line x1="125.0" y1="150" x2="295.0" y2="150" stroke="#111111" stroke-width="2.6"/>
+<g transform="translate(210,188)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="400" fill="#111111">전체 400 + 40 = 440</text></g>
+<g transform="translate(210,246)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">= 18.2% - 모자란다!</text></g>
+<line x1="430" y1="150" x2="430" y2="230" stroke="#111111" stroke-width="1.6" stroke-dasharray="6 7"/>
+<g transform="translate(680,60)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">20%가 되려면 - 50g</text></g>
+<g transform="translate(680,124)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">소금 40 + 50 = 90</text></g>
+<line x1="595.0" y1="150" x2="765.0" y2="150" stroke="#111111" stroke-width="2.6"/>
+<g transform="translate(680,188)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="400" fill="#111111">전체 400 + 50 = 450</text></g>
+<g transform="translate(680,246)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">= 20% - 검산 완료</text></g>
+<g transform="translate(450,320)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">넣은 소금은 분자에도, 분모(기준량)에도 들어간다 - 마른 사과의 거울상</tspan></text></g>
+</svg>

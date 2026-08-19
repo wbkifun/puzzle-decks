@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 430" width="740" height="430">
+<rect x="98.0" y="183.0" width="44" height="44" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<polygon points="90.0,183.0 150.0,183.0 120,153.0" fill="#e4e4e4" stroke="#111111" stroke-width="2.6"/>
+<rect x="112" y="205.0" width="16" height="22" fill="#111111"/>
+<g transform="translate(120,263)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">집</text></g>
+<path d="M 576 191 q 11 -10 22 0 q 11 10 22 0 q 11 -10 22 0" fill="none" stroke="#111111" stroke-width="2.4"/>
+<path d="M 576 205 q 11 -10 22 0 q 11 10 22 0 q 11 -10 22 0" fill="none" stroke="#111111" stroke-width="2.4"/>
+<path d="M 576 219 q 11 -10 22 0 q 11 10 22 0 q 11 -10 22 0" fill="none" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(620,263)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">바닷가</text></g>
+<line x1="170" y1="199" x2="560" y2="199" stroke="#111111" stroke-width="1.4"/>
+<line x1="170" y1="213" x2="560" y2="213" stroke="#111111" stroke-width="1.4"/>
+<g transform="translate(370.0,185)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">60km</text></g>
+<line x1="180" y1="117" x2="538" y2="117" stroke="#111111" stroke-width="2.6"/>
+<polygon points="550,117 534,109 534,125" fill="#111111"/>
+<g transform="translate(370.0,101)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="400" fill="#111111">갈 때 - 시속 30km (길이 막혔다)</text></g>
+<line x1="550" y1="301" x2="192" y2="301" stroke="#111111" stroke-width="2.6"/>
+<polygon points="180,301 196,293 196,309" fill="#111111"/>
+<g transform="translate(370.0,337)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="400" fill="#111111">올 때 - 시속 60km (뻥 뚫렸다)</text></g>
+<g transform="translate(370,400)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">왕복 전체의 평균 속도는 시속 몇 km일까?</tspan></text></g>
+</svg>

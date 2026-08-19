@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380">
+<circle cx="165" cy="215" r="88" fill="#ffffff" stroke="#111111" stroke-width="2.8"/>
+<path d="M 165 127 q 4 -18 14 -26" fill="none" stroke="#111111" stroke-width="2.6"/>
+<path d="M 179 101 q 26 -10 40 6 q -22 12 -40 -6 z" fill="#e4e4e4" stroke="#111111" stroke-width="1.6"/>
+<g transform="translate(165,208)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">수분 99%</text></g>
+<g transform="translate(165,244)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="400" fill="#111111">100kg</text></g>
+<line x1="290" y1="205" x2="428" y2="205" stroke="#111111" stroke-width="2.6"/>
+<polygon points="440,205 424,197 424,213" fill="#111111"/>
+<g transform="translate(365,178)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="400" fill="#111111">햇볕에 말리면</text></g>
+<circle cx="575" cy="215" r="88" fill="#ffffff" stroke="#111111" stroke-width="2.8" stroke-dasharray="9 8"/>
+<path d="M 575 127 q 4 -18 14 -26" fill="none" stroke="#111111" stroke-width="2.6"/>
+<path d="M 589 101 q 26 -10 40 6 q -22 12 -40 -6 z" fill="#e4e4e4" stroke="#111111" stroke-width="1.6"/>
+<g transform="translate(575,208)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">수분 98%</text></g>
+<g transform="translate(575,244)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="700" fill="#111111">? kg</text></g>
+</svg>

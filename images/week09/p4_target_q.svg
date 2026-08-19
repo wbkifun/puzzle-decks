@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 452" width="740" height="452">
+<rect x="220" y="42" width="300" height="52" rx="26" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(370,76)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">목표 - 왕복 평균 시속 60km</text></g>
+<rect x="98.0" y="213.0" width="44" height="44" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<polygon points="90.0,213.0 150.0,213.0 120,183.0" fill="#e4e4e4" stroke="#111111" stroke-width="2.6"/>
+<rect x="112" y="235.0" width="16" height="22" fill="#111111"/>
+<g transform="translate(120,293)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">집</text></g>
+<path d="M 576 221 q 11 -10 22 0 q 11 10 22 0 q 11 -10 22 0" fill="none" stroke="#111111" stroke-width="2.4"/>
+<path d="M 576 235 q 11 -10 22 0 q 11 10 22 0 q 11 -10 22 0" fill="none" stroke="#111111" stroke-width="2.4"/>
+<path d="M 576 249 q 11 -10 22 0 q 11 10 22 0 q 11 -10 22 0" fill="none" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(620,293)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">바닷가</text></g>
+<line x1="170" y1="229" x2="560" y2="229" stroke="#111111" stroke-width="1.4"/>
+<line x1="170" y1="243" x2="560" y2="243" stroke="#111111" stroke-width="1.4"/>
+<g transform="translate(370.0,215)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">60km</text></g>
+<line x1="180" y1="157" x2="538" y2="157" stroke="#111111" stroke-width="2.6"/>
+<polygon points="550,157 534,149 534,165" fill="#111111"/>
+<g transform="translate(370.0,141)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="400" fill="#111111">갈 때 - 시속 30km (이미 확정)</text></g>
+<line x1="550" y1="331" x2="192" y2="331" stroke="#111111" stroke-width="2.6"/>
+<polygon points="180,331 196,323 196,339" fill="#111111"/>
+<g transform="translate(370.0,367)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">올 때 - 시속 ? km</text></g>
+<g transform="translate(370,424)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">올 때 시속 몇 km로 달려야 왕복 평균이 시속 60km가 될까?</tspan></text></g>
+</svg>

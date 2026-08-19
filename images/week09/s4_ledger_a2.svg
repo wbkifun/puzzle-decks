@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 386" width="800" height="386">
+<g transform="translate(90,80)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">허락된 시간 - 120km를 평균 시속 60으로: 2시간</text></g>
+<rect x="90" y="96" width="420" height="58" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<g transform="translate(300,133)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">2시간</text></g>
+<g transform="translate(90,202)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">갈 때 쓴 시간 - 60km를 시속 30으로: 2시간</text></g>
+<rect x="90" y="218" width="420" height="58" fill="#e4e4e4" stroke="#111111" stroke-width="2.6"/>
+<g transform="translate(300,255)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">2시간 - 전부 소진</text></g>
+<line x1="510" y1="62" x2="510" y2="294" stroke="#111111" stroke-width="1.8" stroke-dasharray="6 7"/>
+<g transform="translate(534,255)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">올 때 몫 - 0시간</text></g>
+<g transform="translate(400,350)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">올 때 무슨 속도로 달려도 시간은 0보다 크다 - 평균 60은 불가능</tspan></text></g>
+</svg>

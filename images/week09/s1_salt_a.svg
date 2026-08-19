@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 414" width="1000" height="414">
+<g transform="translate(135,84)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">300g의 10%</text></g>
+<rect x="80" y="130" width="110" height="108" fill="#e4e4e4"/>
+<rect x="80" y="238" width="110" height="12" fill="#111111"/>
+<path d="M 80 100 L 80 250 L 190 250 L 190 100" fill="none" stroke="#111111" stroke-width="2.8"/>
+<g transform="translate(135,284)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">소금 30g</text></g>
+<g transform="translate(245,200)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="34" font-weight="700" fill="#111111">+</text></g>
+<g transform="translate(355,84)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">100g의 40%</text></g>
+<rect x="300" y="210" width="110" height="24" fill="#e4e4e4"/>
+<rect x="300" y="234" width="110" height="16" fill="#111111"/>
+<path d="M 300 100 L 300 250 L 410 250 L 410 100" fill="none" stroke="#111111" stroke-width="2.8"/>
+<g transform="translate(355,284)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">소금 40g</text></g>
+<line x1="450" y1="192" x2="520.0" y2="192.0" stroke="#111111" stroke-width="2.4"/>
+<polygon points="530,192 515.0,199.0 515.0,185.0" fill="#111111"/>
+<rect x="545" y="152" width="170" height="106" fill="#e4e4e4"/>
+<rect x="545" y="258" width="170" height="22" fill="#111111"/>
+<path d="M 545 120 L 545 280 L 715 280 L 715 120" fill="none" stroke="#111111" stroke-width="2.8"/>
+<g transform="translate(630,90)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">소금물 400g</text></g>
+<g transform="translate(630,314)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">소금 70g</text></g>
+<g transform="translate(760,180)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">농도 = 70 ÷ 400</text></g>
+<g transform="translate(760,216)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">= 17.5%</text></g>
+<g transform="translate(760,262)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="400" fill="#111111">(10+40)÷2 = 25%는</text></g>
+<g transform="translate(760,288)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="400" fill="#111111">양이 같을 때만 맞는다</text></g>
+<g transform="translate(500,386)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">%는 더하거나 평균 낼 수 없다 - 본체(소금 g)는 더할 수 있다</tspan></text></g>
+</svg>

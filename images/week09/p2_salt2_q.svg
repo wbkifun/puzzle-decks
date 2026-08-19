@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 370" width="720" height="370">
+<g transform="translate(190,84)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">농도 10% - 400g</text></g>
+<rect x="120" y="130" width="140" height="130" fill="#e4e4e4"/>
+<path d="M 120 100 L 120 260 L 260 260 L 260 100" fill="none" stroke="#111111" stroke-width="2.8"/>
+<path d="M 386 160 Q 380 118 410 108 L 430 108 Q 460 118 454 160 Q 420 174 386 160 Z" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<line x1="408" y1="108" x2="413" y2="96" stroke="#111111" stroke-width="2"/>
+<line x1="432" y1="108" x2="427" y2="96" stroke="#111111" stroke-width="2"/>
+<g transform="translate(420,82)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">소금 40g</text></g>
+<line x1="420" y1="178" x2="309.0" y2="230.7" stroke="#111111" stroke-width="2.4"/>
+<polygon points="300,235 310.5,222.2 316.6,234.9" fill="#111111"/>
+<g transform="translate(430,230)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="400" fill="#111111">(든 소금과 같은 양을</text></g>
+<g transform="translate(430,256)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="400" fill="#111111">한 번 더 넣는다)</text></g>
+<g transform="translate(360,340)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">소금이 두 배가 되면 - 농도도 두 배(20%)가 될까?</tspan></text></g>
+</svg>

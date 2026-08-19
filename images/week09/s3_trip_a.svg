@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 400" width="740" height="400">
+<g transform="translate(90,80)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">걸린 시간으로 그려 보면 (1칸 = 1시간)</text></g>
+<rect x="90" y="120" width="360" height="64" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<rect x="450" y="120" width="180" height="64" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(270,160)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">갈 때 - 시속 30으로 2시간</text></g>
+<g transform="translate(540.0,160)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="400" fill="#111111">올 때 - 1시간</text></g>
+<line x1="90" y1="184" x2="90" y2="196" stroke="#111111" stroke-width="2"/>
+<g transform="translate(90,220)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="400" fill="#111111">0시간</text></g>
+<line x1="270" y1="184" x2="270" y2="196" stroke="#111111" stroke-width="2"/>
+<g transform="translate(270,220)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="400" fill="#111111">1시간</text></g>
+<line x1="450" y1="184" x2="450" y2="196" stroke="#111111" stroke-width="2"/>
+<g transform="translate(450,220)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="400" fill="#111111">2시간</text></g>
+<line x1="630" y1="184" x2="630" y2="196" stroke="#111111" stroke-width="2"/>
+<g transform="translate(630,220)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="400" fill="#111111">3시간</text></g>
+<g transform="translate(90,280)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="24" font-weight="700" fill="#111111">왕복 거리 120km ÷ 총 3시간 = 시속 40km</text></g>
+<g transform="translate(370,344)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">평균은 시간을 많이 먹은 쪽(느린 쪽)으로 끌려간다 - 45가 아니다</tspan></text></g>
+</svg>
