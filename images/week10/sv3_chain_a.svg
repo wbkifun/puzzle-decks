@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 730 170" width="730" height="170">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 170" width="840" height="170">
 <rect x="60" y="57.0" width="56" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
 <g transform="translate(88.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">x</tspan></text></g>
 <line x1="122" y1="85" x2="163" y2="85" stroke="#111111" stroke-width="2.2"/>
@@ -14,11 +14,11 @@
 <line x1="400" y1="85" x2="441" y2="85" stroke="#111111" stroke-width="2.2"/>
 <polygon points="450,85 437,78 437,92" fill="#111111"/>
 <g transform="translate(425.0,69)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">÷2</text></g>
-<rect x="456" y="57.0" width="56" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4" stroke-dasharray="7 6"/>
-<g transform="translate(484.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">?</text></g>
-<line x1="518" y1="85" x2="599" y2="85" stroke="#111111" stroke-width="2.2"/>
-<polygon points="608,85 595,78 595,92" fill="#111111"/>
-<g transform="translate(563.0,69)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">−처음 수</text></g>
-<rect x="614" y="57.0" width="56" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4" stroke-dasharray="7 6"/>
-<g transform="translate(642.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">?</text></g>
+<rect x="456" y="57.0" width="111" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(511.5,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">1.5<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">x</tspan>+5</text></g>
+<line x1="573" y1="85" x2="654" y2="85" stroke="#111111" stroke-width="2.2"/>
+<polygon points="663,85 650,78 650,92" fill="#111111"/>
+<g transform="translate(618.0,69)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">−처음 수</text></g>
+<rect x="669" y="57.0" width="111" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(724.5,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#c62828">0.5<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">x</tspan>+5</text></g>
 </svg>

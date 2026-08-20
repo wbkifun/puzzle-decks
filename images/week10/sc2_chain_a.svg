@@ -1,32 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 554 250" width="554" height="250">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 250" width="496" height="250">
 <g transform="translate(116,77)"><text x="0" y="0" text-anchor="end" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">간 길</text></g>
-<rect x="130" y="42.0" width="58" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
-<g transform="translate(159.0,79)"><text x="0" y="0" text-anchor="middle" font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-size="28" fill="#111111">x</text></g>
-<line x1="194" y1="70" x2="213" y2="70" stroke="#111111" stroke-width="2.2"/>
-<polygon points="222,70 209,63 209,77" fill="#111111"/>
-<rect x="228" y="42.0" width="64" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
-<g transform="translate(260.0,78)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">×2</text></g>
-<line x1="298" y1="70" x2="317" y2="70" stroke="#111111" stroke-width="2.2"/>
-<polygon points="326,70 313,63 313,77" fill="#111111"/>
-<rect x="332" y="42.0" width="64" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
-<g transform="translate(364.0,78)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">+8</text></g>
-<line x1="402" y1="70" x2="421" y2="70" stroke="#111111" stroke-width="2.2"/>
-<polygon points="430,70 417,63 417,77" fill="#111111"/>
-<rect x="436" y="42.0" width="58" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
-<g transform="translate(465.0,79)"><text x="0" y="0" text-anchor="middle" font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-size="28" fill="#111111">r</text></g>
+<rect x="130" y="42.0" width="56" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(158.0,78)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">x</tspan></text></g>
+<line x1="192" y1="70" x2="233" y2="70" stroke="#111111" stroke-width="2.2"/>
+<polygon points="242,70 229,63 229,77" fill="#111111"/>
+<g transform="translate(217.0,54)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">×2</text></g>
+<rect x="248" y="42.0" width="57" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(276.5,78)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">2<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">x</tspan></text></g>
+<line x1="311" y1="70" x2="352" y2="70" stroke="#111111" stroke-width="2.2"/>
+<polygon points="361,70 348,63 348,77" fill="#111111"/>
+<g transform="translate(336.0,54)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">+8</text></g>
+<rect x="367" y="42.0" width="56" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(395.0,78)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">r</tspan></text></g>
 <g transform="translate(116,187)"><text x="0" y="0" text-anchor="end" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">되감기</text></g>
-<rect x="130" y="152.0" width="58" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
-<g transform="translate(159.0,189)"><text x="0" y="0" text-anchor="middle" font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-size="28" fill="#111111">r</text></g>
-<line x1="194" y1="180" x2="213" y2="180" stroke="#111111" stroke-width="2.2"/>
-<polygon points="222,180 209,173 209,187" fill="#111111"/>
-<rect x="228" y="152.0" width="64" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
-<g transform="translate(260.0,188)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">−8</text></g>
-<line x1="298" y1="180" x2="317" y2="180" stroke="#111111" stroke-width="2.2"/>
-<polygon points="326,180 313,173 313,187" fill="#111111"/>
-<rect x="332" y="152.0" width="64" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
-<g transform="translate(364.0,188)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">÷2</text></g>
-<line x1="402" y1="180" x2="421" y2="180" stroke="#111111" stroke-width="2.2"/>
-<polygon points="430,180 417,173 417,187" fill="#111111"/>
-<rect x="436" y="152.0" width="58" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
-<g transform="translate(465.0,189)"><text x="0" y="0" text-anchor="middle" font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-size="28" fill="#111111">x</text></g>
+<rect x="130" y="152.0" width="56" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(158.0,188)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">r</tspan></text></g>
+<line x1="192" y1="180" x2="233" y2="180" stroke="#111111" stroke-width="2.2"/>
+<polygon points="242,180 229,173 229,187" fill="#111111"/>
+<g transform="translate(217.0,164)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">−8</text></g>
+<rect x="248" y="152.0" width="70" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(283.0,188)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">r</tspan>−8</text></g>
+<line x1="324" y1="180" x2="365" y2="180" stroke="#111111" stroke-width="2.2"/>
+<polygon points="374,180 361,173 361,187" fill="#111111"/>
+<g transform="translate(349.0,164)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">÷2</text></g>
+<rect x="380" y="152.0" width="56" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(408.0,188)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">x</tspan></text></g>
 </svg>
