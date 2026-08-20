@@ -34,12 +34,12 @@ def label(x, y, text, size=20, weight=400, anchor="middle"):
             f'font-family="{FONT}" font-size="{size}" font-weight="{weight}" fill="{INK}">{text}</text></g>']
 
 
-def math_term(cx, y, text, size=24):
+def math_term(cx, y, text, size=24, color=INK, weight=700):
     """그림 아래 문자식 항: 'x'만 KaTeX 이탤릭으로."""
     body = text.replace("x", f'<tspan font-family="{MATH_FONT}" font-style="italic" '
-                             f'font-weight="400" font-size="{size + 3}">x</tspan>')
+                             f'font-size="{size + 3}">x</tspan>')
     return [f'<g transform="translate({cx},{y})"><text x="0" y="0" text-anchor="middle" '
-            f'font-family="{FONT}" font-size="{size}" font-weight="700" fill="{INK}">{body}</text></g>']
+            f'font-family="{FONT}" font-size="{size}" font-weight="{weight}" fill="{color}">{body}</text></g>']
 
 
 def box(x, y, s=40, crossed=False):
@@ -165,8 +165,9 @@ parts += caption((75 + xe) / 2, 250, ["무엇이 들어 있었든 상자는 지�
 write_svg("sr4_gone_a.svg", parts, xe + 40, 282)
 
 # ---------- 개념: 전체 절차 그림 + 문자식 일대일 대응 ----------
-parts, xe, cs = pipeline(100, upto=3, final="gone", label_top=False)
+# 위 여백 최소화(cy 45), 문자식은 크고 굵은 빨강으로 강조
+parts, xe, cs = pipeline(45, upto=3, final="gone", label_top=False)
 assert len(cs) == 5
 for c, t in zip(cs, ["x", "2x", "2x+10", "x+5", "5"]):
-    parts += math_term(c, 196, t)
-write_svg("concept_map_a.svg", parts, xe + 40, 220)
+    parts += math_term(c, 128, t, size=31, color="#c62828", weight=800)
+write_svg("concept_map_a.svg", parts, xe + 40, 148)
