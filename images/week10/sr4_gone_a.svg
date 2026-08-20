@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 292" width="720" height="292">
+<rect x="80" y="120" width="40" height="40" fill="#e4e4e4" stroke="#111111" stroke-width="2.6"/>
+<g transform="translate(100.0,148.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">?</text></g>
+<circle cx="149" cy="130" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<circle cx="171" cy="130" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<circle cx="193" cy="130" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<circle cx="215" cy="130" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<circle cx="237" cy="130" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(140,204)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="400" fill="#111111">상자 1 + 구슬 5</text></g>
+<line x1="270" y1="140" x2="325" y2="140" stroke="#111111" stroke-width="2.4"/>
+<polygon points="335,140 321,133 321,147" fill="#111111"/>
+<g transform="translate(302,114)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">−처음 수</text></g>
+<rect x="355" y="120" width="40" height="40" fill="#e4e4e4" stroke="#111111" stroke-width="2.6"/>
+<g transform="translate(375.0,148.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">?</text></g>
+<line x1="350" y1="115" x2="400" y2="165" stroke="#111111" stroke-width="3"/>
+<line x1="400" y1="115" x2="350" y2="165" stroke="#111111" stroke-width="3"/>
+<circle cx="444" cy="130" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<circle cx="466" cy="130" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<circle cx="488" cy="130" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<circle cx="510" cy="130" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<circle cx="532" cy="130" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(430,204)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="400" fill="#111111">상자가 지워진다</text></g>
+<g transform="translate(600,154)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="34" font-weight="700" fill="#111111">= 5</text></g>
+<g transform="translate(360,262)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">무엇이 들어 있었든 - 상자는 반드시 지워지도록 설계되어 있었다</tspan></text></g>
+</svg>
