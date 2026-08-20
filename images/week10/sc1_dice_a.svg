@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 973 170" width="973" height="170">
+<rect x="60" y="57.0" width="56" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(88.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">a</tspan></text></g>
+<line x1="122" y1="85" x2="163" y2="85" stroke="#111111" stroke-width="2.2"/>
+<polygon points="172,85 159,78 159,92" fill="#111111"/>
+<g transform="translate(147.0,69)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">×5</text></g>
+<rect x="178" y="57.0" width="57" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(206.5,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">5<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">a</tspan></text></g>
+<line x1="241" y1="85" x2="282" y2="85" stroke="#111111" stroke-width="2.2"/>
+<polygon points="291,85 278,78 278,92" fill="#111111"/>
+<g transform="translate(266.0,69)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">+7</text></g>
+<rect x="297" y="57.0" width="84" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(339.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">5<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">a</tspan>+7</text></g>
+<line x1="387" y1="85" x2="428" y2="85" stroke="#111111" stroke-width="2.2"/>
+<polygon points="437,85 424,78 424,92" fill="#111111"/>
+<g transform="translate(412.0,69)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">×2</text></g>
+<rect x="443" y="57.0" width="111" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(498.5,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">10<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">a</tspan>+14</text></g>
+<line x1="560" y1="85" x2="601" y2="85" stroke="#111111" stroke-width="2.2"/>
+<polygon points="610,85 597,78 597,92" fill="#111111"/>
+<g transform="translate(585.0,69)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">+<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="22">b</tspan></text></g>
+<rect x="616" y="57.0" width="138" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(685.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">10<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">a</tspan>+14+<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">b</tspan></text></g>
+<line x1="760" y1="85" x2="801" y2="85" stroke="#111111" stroke-width="2.2"/>
+<polygon points="810,85 797,78 797,92" fill="#111111"/>
+<g transform="translate(785.0,69)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">−14</text></g>
+<rect x="816" y="57.0" width="97" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(864.5,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">10<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">a</tspan>+<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">b</tspan></text></g>
+</svg>

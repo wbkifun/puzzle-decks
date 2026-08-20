@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 764 170" width="764" height="170">
+<rect x="60" y="57.0" width="112" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(116.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">첫째 눈</text></g>
+<line x1="178" y1="85" x2="219" y2="85" stroke="#111111" stroke-width="2.2"/>
+<polygon points="228,85 215,78 215,92" fill="#111111"/>
+<g transform="translate(203.0,69)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">×5</text></g>
+<rect x="234" y="57.0" width="56" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4" stroke-dasharray="7 6"/>
+<g transform="translate(262.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">?</text></g>
+<line x1="296" y1="85" x2="337" y2="85" stroke="#111111" stroke-width="2.2"/>
+<polygon points="346,85 333,78 333,92" fill="#111111"/>
+<g transform="translate(321.0,69)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">+7</text></g>
+<rect x="352" y="57.0" width="56" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4" stroke-dasharray="7 6"/>
+<g transform="translate(380.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">?</text></g>
+<line x1="414" y1="85" x2="455" y2="85" stroke="#111111" stroke-width="2.2"/>
+<polygon points="464,85 451,78 451,92" fill="#111111"/>
+<g transform="translate(439.0,69)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">×2</text></g>
+<rect x="470" y="57.0" width="56" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4" stroke-dasharray="7 6"/>
+<g transform="translate(498.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">?</text></g>
+<line x1="532" y1="85" x2="613" y2="85" stroke="#111111" stroke-width="2.2"/>
+<polygon points="622,85 609,78 609,92" fill="#111111"/>
+<g transform="translate(577.0,69)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">+둘째 눈</text></g>
+<rect x="628" y="57.0" width="76" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(666.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">결과</text></g>
+</svg>

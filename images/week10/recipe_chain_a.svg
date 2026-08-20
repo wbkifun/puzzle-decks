@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 772 170" width="772" height="170">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 732 170" width="732" height="170">
 <rect x="60" y="57.0" width="56" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
 <g transform="translate(88.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">x</tspan></text></g>
 <line x1="122" y1="85" x2="163" y2="85" stroke="#111111" stroke-width="2.2"/>
@@ -16,9 +16,9 @@
 <g transform="translate(412.0,69)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">÷<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="22">a</tspan></text></g>
 <rect x="443" y="57.0" width="97" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
 <g transform="translate(491.5,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">x</tspan>+<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">b</tspan>÷<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">a</tspan></text></g>
-<line x1="546" y1="85" x2="627" y2="85" stroke="#111111" stroke-width="2.2"/>
-<polygon points="636,85 623,78 623,92" fill="#111111"/>
-<g transform="translate(591.0,69)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">−처음 수</text></g>
-<rect x="642" y="57.0" width="70" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
-<g transform="translate(677.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#c62828"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">b</tspan>÷<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">a</tspan></text></g>
+<line x1="546" y1="85" x2="587" y2="85" stroke="#111111" stroke-width="2.2"/>
+<polygon points="596,85 583,78 583,92" fill="#111111"/>
+<g transform="translate(571.0,69)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">−<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="22">x</tspan></text></g>
+<rect x="602" y="57.0" width="70" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(637.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#c62828"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">b</tspan>÷<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">a</tspan></text></g>
 </svg>
