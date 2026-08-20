@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """사다리 스텝 3·4 · 상자 그림(수를 모르는 채 따라가기) 흑백 스케치 SVG.
 
-- r3_boxes_q.svg  (문제): 상자 파이프라인 - ×2, +10까지 그림으로, ÷2는 물음표.
-- sr3_half_a.svg  (확인): 상자 2 + 구슬 10을 반으로 - 상자 1 + 구슬 5.
-- sr4_gone_a.svg  (확인): -처음 수에서 상자가 사라진다 - 구슬 5개만 남는다.
+같은 파이프라인이 단계마다 자라난다(사용자 피드백 - 절차 전체가 그림으로 이어지게):
+- r3_boxes_q.svg  (문제):  [□]→×2→[□□]→+10→[□□+●10]→÷2→[?]
+- sr3_half_a.svg  (확인3): [□]→×2→[□□]→+10→[□□+●10]→÷2→[□+●5]→−처음 수→[?]
+- sr4_gone_a.svg  (확인4): 전체 절차 완성 - 마지막에 상자가 지워지고 구슬 5 = 5.
 텍스트는 g transform 지역좌표(크로미움 배율 버그 회피).
 실행: python3 gen_boxes.py
 """
@@ -55,65 +56,88 @@ def arrow_r(x1, x2, y, sw=2.4):
             f'<polygon points="{x2},{y} {x2 - 14},{y - 7} {x2 - 14},{y + 7}" fill="{INK}"/>']
 
 
-# ---------- q: ×2, +10까지 - ÷2는 물음표 ----------
-parts = []
-Y = 130
-parts += label(95, 84, "고른 수 = 상자", 19, 700)
-parts += box(75, Y)
-parts += arrow_r(140, 190, Y + 20)
-parts += label(165, Y - 6, "×2", 19, 700)
-parts += box(200, Y)
-parts += box(248, Y)
-parts += arrow_r(315, 365, Y + 20)
-parts += label(340, Y - 6, "+10", 19, 700)
-parts += box(375, Y)
-parts += box(423, Y)
-parts += beads(492, Y + 10, 10)
-parts += arrow_r(608, 658, Y + 20)
-parts += label(633, Y - 6, "÷2", 19, 700)
-parts += label(700, Y + 28, "?", 40, 700)
-parts += caption(400, 268, ["상자 두 개와 구슬 열 개 - 반으로 나누면 어떤 그림이 될까?"], 22)
-W, H = 800, 300
-svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
-       + "\n".join(parts) + "\n</svg>\n")
-open("r3_boxes_q.svg", "w", encoding="utf-8").write(svg)
-print("wrote r3_boxes_q.svg")
+def stage(x, cy, nboxes=0, nbeads=0, crossed=False):
+    """상자 nboxes개 + 구슬 nbeads개 묶음. (x = 왼쪽 끝, cy = 세로 중심). 오른쪽 끝 x 반환."""
+    p = []
+    s = 40
+    for k in range(nboxes):
+        p += box(x, cy - s / 2, s, crossed=crossed)
+        x += s + 8
+    if nbeads:
+        x += 6
+        rows = (nbeads + 4) // 5
+        y0 = cy - (rows - 1) * 11
+        p += beads(x + 8, y0, nbeads)
+        x += 8 + 4 * 22 + 8 + 2
+    return p, x
 
-# ---------- a: 반으로 나누기 ----------
-parts = []
-Y = 120
-parts += box(80, Y)
-parts += box(128, Y)
-parts += beads(197, Y + 10, 10)
-parts += label(190, Y + 84, "상자 2 + 구슬 10", 19)
-# 가운데 절단선 + 화살표
-parts += arrow_r(320, 385, Y + 20)
-parts += label(352, Y - 6, "÷2", 20, 700)
-parts += box(405, Y)
-parts += beads(474, Y + 10, 5)
-parts += label(490, Y + 84, "상자 1 + 구슬 5", 19)
-parts += caption(330, 262, ["반으로 나누면 - 상자 하나와 구슬 다섯: '고른 수 + 5'"], 22)
-W, H = 660, 292
-svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
-       + "\n".join(parts) + "\n</svg>\n")
-open("sr3_half_a.svg", "w", encoding="utf-8").write(svg)
-print("wrote sr3_half_a.svg")
 
-# ---------- a: 상자가 사라진다 ----------
-parts = []
-Y = 120
-parts += box(80, Y)
-parts += beads(149, Y + 10, 5)
-parts += label(140, Y + 84, "상자 1 + 구슬 5", 19)
-parts += arrow_r(270, 335, Y + 20)
-parts += label(302, Y - 6, "−처음 수", 19, 700)
-parts += box(355, Y, crossed=True)
-parts += beads(444, Y + 10, 5)
-parts += label(430, Y + 84, "상자가 지워진다", 19)
-parts += label(600, Y + 34, "= 5", 34, 700)
-parts += caption(360, 262, ["무엇이 들어 있었든 - 상자는 반드시 지워지도록 설계되어 있었다"], 22)
-W, H = 720, 292
-svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
-       + "\n".join(parts) + "\n</svg>\n")
-open("sr4_gone_a.svg", "w", encoding="utf-8").write(svg)
-print("wrote sr4_gone_a.svg")
+def qbox(x, cy):
+    """물음표 점선 카드."""
+    s = 44
+    p = [f'<rect x="{x}" y="{cy - s / 2}" width="{s}" height="{s}" rx="8" fill="#ffffff" '
+         f'stroke="{INK}" stroke-width="2.4" stroke-dasharray="7 6"/>']
+    p += label(x + s / 2, cy + 8, "?", 26, 700)
+    return p, x + s
+
+
+def op_arrow(parts, x, cy, name, wide=False):
+    """연산 라벨이 붙은 화살표. 오른쪽 끝 x 반환."""
+    w = 88 if wide else 46
+    parts += arrow_r(x + 6, x + 6 + w, cy)
+    parts += label(x + 6 + w / 2, cy - 16, name, 19, 700)
+    return x + 12 + w
+
+
+def pipeline(cy, upto, final=None):
+    """upto: 몇 단계까지 그리나(2=+10 결과까지, 3=÷2 결과까지). final: 'q'(물음표) 또는 'gone'(상자 소거)."""
+    parts = []
+    parts += label(95, cy - 52, "고른 수 = 상자", 19, 700)
+    p, x = stage(75, cy, nboxes=1)
+    parts += p
+    x = op_arrow(parts, x, cy, "×2")
+    p, x = stage(x, cy, nboxes=2)
+    parts += p
+    x = op_arrow(parts, x, cy, "+10")
+    p, x = stage(x, cy, nboxes=2, nbeads=10)
+    parts += p
+    x = op_arrow(parts, x, cy, "÷2")
+    if upto == 2:
+        p, x = qbox(x + 4, cy)
+        parts += p
+        return parts, x
+    p, x = stage(x, cy, nboxes=1, nbeads=5)
+    parts += p
+    x = op_arrow(parts, x, cy, "−처음 수", wide=True)
+    if final == "q":
+        p, x = qbox(x + 4, cy)
+        parts += p
+    else:
+        p, x = stage(x, cy, nboxes=1, nbeads=5, crossed=True)
+        parts += p
+        parts += label(x + 14, cy + 9, "= 5", 28, 700, "start")
+        x += 82
+    return parts, x
+
+
+def write_svg(name, parts, w, h):
+    svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}">\n'
+           + "\n".join(parts) + "\n</svg>\n")
+    open(name, "w", encoding="utf-8").write(svg)
+    print(f"wrote {name}")
+
+
+# ---------- q: ÷2까지, 결과는 물음표 ----------
+parts, xe = pipeline(130, upto=2)
+parts += caption((75 + xe) / 2, 250, ["상자 두 개와 구슬 열 개 - 반으로 나누면 어떤 그림이 될까?"], 21)
+write_svg("r3_boxes_q.svg", parts, xe + 60, 282)
+
+# ---------- 확인 3: ÷2 결과 + 마지막 카드 예고 ----------
+parts, xe = pipeline(130, upto=3, final="q")
+parts += caption((75 + xe) / 2, 250, ["반으로 나누면 상자 하나와 구슬 다섯 - 마지막 카드 −처음 수를 지나면?"], 21)
+write_svg("sr3_half_a.svg", parts, xe + 60, 282)
+
+# ---------- 확인 4: 전체 절차 완성 - 상자 소거 ----------
+parts, xe = pipeline(130, upto=3, final="gone")
+parts += caption((75 + xe) / 2, 250, ["무엇이 들어 있었든 상자는 지워진다 - 남는 것은 언제나 구슬 다섯"], 21)
+write_svg("sr4_gone_a.svg", parts, xe + 40, 282)

@@ -1,34 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
-<g transform="translate(95,84)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">고른 수 = 상자</text></g>
-<rect x="75" y="130" width="40" height="40" fill="#e4e4e4" stroke="#111111" stroke-width="2.6"/>
-<g transform="translate(95.0,158.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">?</text></g>
-<line x1="140" y1="150" x2="180" y2="150" stroke="#111111" stroke-width="2.4"/>
-<polygon points="190,150 176,143 176,157" fill="#111111"/>
-<g transform="translate(165,124)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">×2</text></g>
-<rect x="200" y="130" width="40" height="40" fill="#e4e4e4" stroke="#111111" stroke-width="2.6"/>
-<g transform="translate(220.0,158.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">?</text></g>
-<rect x="248" y="130" width="40" height="40" fill="#e4e4e4" stroke="#111111" stroke-width="2.6"/>
-<g transform="translate(268.0,158.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">?</text></g>
-<line x1="315" y1="150" x2="355" y2="150" stroke="#111111" stroke-width="2.4"/>
-<polygon points="365,150 351,143 351,157" fill="#111111"/>
-<g transform="translate(340,124)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">+10</text></g>
-<rect x="375" y="130" width="40" height="40" fill="#e4e4e4" stroke="#111111" stroke-width="2.6"/>
-<g transform="translate(395.0,158.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">?</text></g>
-<rect x="423" y="130" width="40" height="40" fill="#e4e4e4" stroke="#111111" stroke-width="2.6"/>
-<g transform="translate(443.0,158.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">?</text></g>
-<circle cx="492" cy="140" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
-<circle cx="514" cy="140" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
-<circle cx="536" cy="140" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
-<circle cx="558" cy="140" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
-<circle cx="580" cy="140" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
-<circle cx="492" cy="162" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
-<circle cx="514" cy="162" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
-<circle cx="536" cy="162" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
-<circle cx="558" cy="162" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
-<circle cx="580" cy="162" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
-<line x1="608" y1="150" x2="648" y2="150" stroke="#111111" stroke-width="2.4"/>
-<polygon points="658,150 644,143 644,157" fill="#111111"/>
-<g transform="translate(633,124)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">÷2</text></g>
-<g transform="translate(700,158)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="40" font-weight="700" fill="#111111">?</text></g>
-<g transform="translate(400,268)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">상자 두 개와 구슬 열 개 - 반으로 나누면 어떤 그림이 될까?</tspan></text></g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 709 282" width="709" height="282">
+<g transform="translate(95,78)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">고른 수 = 상자</text></g>
+<rect x="75" y="110.0" width="40" height="40" fill="#e4e4e4" stroke="#111111" stroke-width="2.6"/>
+<g transform="translate(95.0,138.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">?</text></g>
+<line x1="129" y1="130" x2="165" y2="130" stroke="#111111" stroke-width="2.4"/>
+<polygon points="175,130 161,123 161,137" fill="#111111"/>
+<g transform="translate(152.0,114)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">×2</text></g>
+<rect x="181" y="110.0" width="40" height="40" fill="#e4e4e4" stroke="#111111" stroke-width="2.6"/>
+<g transform="translate(201.0,138.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">?</text></g>
+<rect x="229" y="110.0" width="40" height="40" fill="#e4e4e4" stroke="#111111" stroke-width="2.6"/>
+<g transform="translate(249.0,138.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">?</text></g>
+<line x1="283" y1="130" x2="319" y2="130" stroke="#111111" stroke-width="2.4"/>
+<polygon points="329,130 315,123 315,137" fill="#111111"/>
+<g transform="translate(306.0,114)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">+10</text></g>
+<rect x="335" y="110.0" width="40" height="40" fill="#e4e4e4" stroke="#111111" stroke-width="2.6"/>
+<g transform="translate(355.0,138.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">?</text></g>
+<rect x="383" y="110.0" width="40" height="40" fill="#e4e4e4" stroke="#111111" stroke-width="2.6"/>
+<g transform="translate(403.0,138.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">?</text></g>
+<circle cx="445" cy="119" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<circle cx="467" cy="119" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<circle cx="489" cy="119" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<circle cx="511" cy="119" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<circle cx="533" cy="119" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<circle cx="445" cy="141" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<circle cx="467" cy="141" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<circle cx="489" cy="141" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<circle cx="511" cy="141" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<circle cx="533" cy="141" r="8" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<line x1="549" y1="130" x2="585" y2="130" stroke="#111111" stroke-width="2.4"/>
+<polygon points="595,130 581,123 581,137" fill="#111111"/>
+<g transform="translate(572.0,114)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">÷2</text></g>
+<rect x="605" y="108.0" width="44" height="44" rx="8" fill="#ffffff" stroke="#111111" stroke-width="2.4" stroke-dasharray="7 6"/>
+<g transform="translate(627.0,138)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="700" fill="#111111">?</text></g>
+<g transform="translate(362.0,250)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" fill="#111111"><tspan x="0" dy="0">상자 두 개와 구슬 열 개 - 반으로 나누면 어떤 그림이 될까?</tspan></text></g>
 </svg>
