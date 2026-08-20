@@ -43,10 +43,10 @@ def arrow_r(x1, x2, y, sw=2.2):
 
 
 def mathify(text, size):
-    """x·r만 KaTeX 이탤릭 tspan으로(단일 패스 - 삽입된 마크업을 재치환하지 않도록)."""
+    """변수(x·r·a·b)만 KaTeX 이탤릭 tspan으로(단일 패스 - 삽입된 마크업을 재치환하지 않도록)."""
     import re
-    return re.sub(r"[xr]", lambda m: (f'<tspan font-family="{MATH_FONT}" font-style="italic" '
-                                      f'font-weight="400" font-size="{size + 3}">{m.group(0)}</tspan>'),
+    return re.sub(r"[xrab]", lambda m: (f'<tspan font-family="{MATH_FONT}" font-style="italic" '
+                                        f'font-weight="400" font-size="{size + 3}">{m.group(0)}</tspan>'),
                   text)
 
 
@@ -75,7 +75,9 @@ def term_chain(cy, boxes, ops, x0=60, head=None):
             op = ops[k - 1]
             w = 50 + (40 if any(ord(c) > 0x3000 for c in op) else 0)
             parts += arrow_r(x + 6, x + 6 + w, cy)
-            parts += label(x + 6 + w / 2, cy - 16, op, 19, 700)
+            parts.append(f'<g transform="translate({x + 6 + w / 2},{cy - 16})"><text x="0" y="0" '
+                         f'text-anchor="middle" font-family="{FONT}" font-size="19" font-weight="700" '
+                         f'fill="{INK}">{mathify(op, 19)}</text></g>')
             x += 12 + w
         p, x = term_box(x, cy, text, **opts)
         parts += p
@@ -147,6 +149,22 @@ p, xe2 = term_chain(180, [("x", {}), ("2x", {}), ("2x+8", {}), ("x+4", {}), ("x"
                     ["×2", "+8", "÷2", "−4", "−처음 수"])
 parts += p
 write_svg("sv4_chain_a.svg", parts, max(xe1, xe2) + 60, 250)
+
+# ---------- 변형 2 확인 + 변형 3(고장) 문제: 두 줄 통합 ----------
+parts = []
+p, xe1 = term_chain(70, [("x", {}), ("3x", G), ("3x+12", G), ("x+4", G), ("4", G)],
+                    ["×3", "+12", "÷3", "−처음 수"], x0=150, head="변형 2")
+parts += p
+p, xe2 = term_chain(180, [("x", {}), ("3x", G), ("3x+10", {}), Q, Q],
+                    ["×3", "+10", "÷2", "−처음 수"], x0=150, head="고장?")
+parts += p
+write_svg("sv2v3_chain_a.svg", parts, max(xe1, xe2) + 60, 250)
+
+# ---------- 레시피 일반화: ×a, +b, ÷a ----------
+parts, xe = term_chain(85, [("x", {}), ("ax", {}), ("ax+b", {}), ("x+b÷a", {}),
+                            ("b÷a", {"gray": True, "color": RED})],
+                       ["×a", "+b", "÷a", "−처음 수"])
+write_svg("recipe_chain_a.svg", parts, xe + 60, 170)
 
 # ---------- 거꾸로 마술: 간 길 / 되감기 ----------
 parts = []
