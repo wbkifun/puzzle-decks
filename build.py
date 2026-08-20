@@ -334,8 +334,10 @@ def r_concept(s, meta):
     sub = f'<span class="sub">{esc(s["sub"])}</span>' if s.get("sub") else ""
     body = (f'<div class="stack" style="margin-top:1em">{paras(s["body"])}</div>'
             if s.get("body") else "")
+    # fig·q도 지원(없으면 빈 문자열) - 10주차 개념 슬라이드의 그림-문자식 대응용
     inner = (kh(s) + f'<div class="reveal-box">{rk}'
-             f'<span class="concept">{esc(s["concept"])}</span>{sub}</div>' + body)
+             f'<span class="concept">{esc(s["concept"])}</span>{sub}</div>'
+             + body + figbox(s) + leadq(s))
     return shell(meta, s, inner, center=True)
 
 

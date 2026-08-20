@@ -12,6 +12,8 @@
 INK = "#111111"
 GRAY = "#e4e4e4"
 FONT = "Pretendard, 'NanumSquareRound', sans-serif"
+# 변수 x는 LaTeX 이탤릭 - 덱에 인라인된 KaTeX_Math 웹폰트 사용(단독 열람 시 serif italic 폴백)
+MATH_FONT = "KaTeX_Math, 'Times New Roman', serif"
 
 # 검증: (2x+10)/2 = x+5, (x+5)-x = 5
 assert (2 * 7 + 10) / 2 == 7 + 5
@@ -30,6 +32,14 @@ def caption(cx, y, lines, size=21):
 def label(x, y, text, size=20, weight=400, anchor="middle"):
     return [f'<g transform="translate({x},{y})"><text x="0" y="0" text-anchor="{anchor}" '
             f'font-family="{FONT}" font-size="{size}" font-weight="{weight}" fill="{INK}">{text}</text></g>']
+
+
+def math_term(cx, y, text, size=24):
+    """그림 아래 문자식 항: 'x'만 KaTeX 이탤릭으로."""
+    body = text.replace("x", f'<tspan font-family="{MATH_FONT}" font-style="italic" '
+                             f'font-weight="400" font-size="{size + 3}">x</tspan>')
+    return [f'<g transform="translate({cx},{y})"><text x="0" y="0" text-anchor="middle" '
+            f'font-family="{FONT}" font-size="{size}" font-weight="700" fill="{INK}">{body}</text></g>']
 
 
 def box(x, y, s=40, crossed=False):
@@ -89,35 +99,47 @@ def op_arrow(parts, x, cy, name, wide=False):
     return x + 12 + w
 
 
-def pipeline(cy, upto, final=None):
-    """upto: 몇 단계까지 그리나(2=+10 결과까지, 3=÷2 결과까지). final: 'q'(물음표) 또는 'gone'(상자 소거)."""
-    parts = []
-    parts += label(95, cy - 52, "고른 수 = 상자", 19, 700)
-    p, x = stage(75, cy, nboxes=1)
+def pipeline(cy, upto, final=None, label_top=True):
+    """upto: 몇 단계까지 그리나(2=+10 결과까지, 3=÷2 결과까지). final: 'q'(물음표) 또는 'gone'(상자 소거).
+    반환: (parts, 오른쪽 끝 x, 단계별 중심 x 목록)."""
+    parts, centers = [], []
+    if label_top:
+        parts += label(95, cy - 52, "고른 수 = 상자", 19, 700)
+    sx = 75
+    p, x = stage(sx, cy, nboxes=1)
     parts += p
+    centers.append((sx + x) / 2)
     x = op_arrow(parts, x, cy, "×2")
+    sx = x
     p, x = stage(x, cy, nboxes=2)
     parts += p
+    centers.append((sx + x) / 2)
     x = op_arrow(parts, x, cy, "+10")
+    sx = x
     p, x = stage(x, cy, nboxes=2, nbeads=10)
     parts += p
+    centers.append((sx + x) / 2)
     x = op_arrow(parts, x, cy, "÷2")
     if upto == 2:
         p, x = qbox(x + 4, cy)
         parts += p
-        return parts, x
+        return parts, x, centers
+    sx = x
     p, x = stage(x, cy, nboxes=1, nbeads=5)
     parts += p
+    centers.append((sx + x) / 2)
     x = op_arrow(parts, x, cy, "−처음 수", wide=True)
     if final == "q":
         p, x = qbox(x + 4, cy)
         parts += p
     else:
+        sx = x
         p, x = stage(x, cy, nboxes=1, nbeads=5, crossed=True)
         parts += p
+        centers.append((sx + x) / 2)
         parts += label(x + 14, cy + 9, "= 5", 28, 700, "start")
         x += 82
-    return parts, x
+    return parts, x, centers
 
 
 def write_svg(name, parts, w, h):
@@ -128,16 +150,23 @@ def write_svg(name, parts, w, h):
 
 
 # ---------- q: ÷2까지, 결과는 물음표 ----------
-parts, xe = pipeline(130, upto=2)
+parts, xe, _ = pipeline(130, upto=2)
 parts += caption((75 + xe) / 2, 250, ["상자 두 개와 구슬 열 개 - 반으로 나누면 어떤 그림이 될까?"], 21)
 write_svg("r3_boxes_q.svg", parts, xe + 60, 282)
 
 # ---------- 확인 3: ÷2 결과 + 마지막 카드 예고 ----------
-parts, xe = pipeline(130, upto=3, final="q")
+parts, xe, _ = pipeline(130, upto=3, final="q")
 parts += caption((75 + xe) / 2, 250, ["반으로 나누면 상자 하나와 구슬 다섯 - 마지막 카드 −처음 수를 지나면?"], 21)
 write_svg("sr3_half_a.svg", parts, xe + 60, 282)
 
 # ---------- 확인 4: 전체 절차 완성 - 상자 소거 ----------
-parts, xe = pipeline(130, upto=3, final="gone")
+parts, xe, _ = pipeline(130, upto=3, final="gone")
 parts += caption((75 + xe) / 2, 250, ["무엇이 들어 있었든 상자는 지워진다 - 남는 것은 언제나 구슬 다섯"], 21)
 write_svg("sr4_gone_a.svg", parts, xe + 40, 282)
+
+# ---------- 개념: 전체 절차 그림 + 문자식 일대일 대응 ----------
+parts, xe, cs = pipeline(100, upto=3, final="gone", label_top=False)
+assert len(cs) == 5
+for c, t in zip(cs, ["x", "2x", "2x+10", "x+5", "5"]):
+    parts += math_term(c, 196, t)
+write_svg("concept_map_a.svg", parts, xe + 40, 220)
