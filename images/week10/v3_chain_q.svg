@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 662 170" width="662" height="170">
+<rect x="60" y="57.0" width="64" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(92.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">×3</text></g>
+<line x1="130" y1="85" x2="149" y2="85" stroke="#111111" stroke-width="2.2"/>
+<polygon points="158,85 145,78 145,92" fill="#111111"/>
+<rect x="164" y="57.0" width="78" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(203.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">+10</text></g>
+<line x1="248" y1="85" x2="267" y2="85" stroke="#111111" stroke-width="2.2"/>
+<polygon points="276,85 263,78 263,92" fill="#111111"/>
+<rect x="282" y="57.0" width="64" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(314.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">÷2</text></g>
+<line x1="352" y1="85" x2="371" y2="85" stroke="#111111" stroke-width="2.2"/>
+<polygon points="380,85 367,78 367,92" fill="#111111"/>
+<rect x="386" y="57.0" width="118" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(445.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">−처음 수</text></g>
+<line x1="510" y1="85" x2="529" y2="85" stroke="#111111" stroke-width="2.2"/>
+<polygon points="538,85 525,78 525,92" fill="#111111"/>
+<rect x="544" y="57.0" width="58" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4" stroke-dasharray="7 6"/>
+<g transform="translate(573.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">?</text></g>
+</svg>
