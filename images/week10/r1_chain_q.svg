@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" width="760" height="250">
+<rect x="60" y="42.0" width="58" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(89.0,78)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">3</text></g>
+<line x1="124" y1="70" x2="143" y2="70" stroke="#111111" stroke-width="2.2"/>
+<polygon points="152,70 139,63 139,77" fill="#111111"/>
+<rect x="158" y="42.0" width="64" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(190.0,78)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">×2</text></g>
+<line x1="228" y1="70" x2="247" y2="70" stroke="#111111" stroke-width="2.2"/>
+<polygon points="256,70 243,63 243,77" fill="#111111"/>
+<rect x="262" y="42.0" width="78" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(301.0,78)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">+10</text></g>
+<line x1="346" y1="70" x2="365" y2="70" stroke="#111111" stroke-width="2.2"/>
+<polygon points="374,70 361,63 361,77" fill="#111111"/>
+<rect x="380" y="42.0" width="64" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(412.0,78)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">÷2</text></g>
+<line x1="450" y1="70" x2="469" y2="70" stroke="#111111" stroke-width="2.2"/>
+<polygon points="478,70 465,63 465,77" fill="#111111"/>
+<rect x="484" y="42.0" width="118" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(543.0,78)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">−처음 수</text></g>
+<line x1="608" y1="70" x2="627" y2="70" stroke="#111111" stroke-width="2.2"/>
+<polygon points="636,70 623,63 623,77" fill="#111111"/>
+<rect x="642" y="42.0" width="58" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4" stroke-dasharray="7 6"/>
+<g transform="translate(671.0,78)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">?</text></g>
+<rect x="60" y="152.0" width="58" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(89.0,188)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">10</text></g>
+<line x1="124" y1="180" x2="143" y2="180" stroke="#111111" stroke-width="2.2"/>
+<polygon points="152,180 139,173 139,187" fill="#111111"/>
+<rect x="158" y="152.0" width="64" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(190.0,188)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">×2</text></g>
+<line x1="228" y1="180" x2="247" y2="180" stroke="#111111" stroke-width="2.2"/>
+<polygon points="256,180 243,173 243,187" fill="#111111"/>
+<rect x="262" y="152.0" width="78" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(301.0,188)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">+10</text></g>
+<line x1="346" y1="180" x2="365" y2="180" stroke="#111111" stroke-width="2.2"/>
+<polygon points="374,180 361,173 361,187" fill="#111111"/>
+<rect x="380" y="152.0" width="64" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(412.0,188)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">÷2</text></g>
+<line x1="450" y1="180" x2="469" y2="180" stroke="#111111" stroke-width="2.2"/>
+<polygon points="478,180 465,173 465,187" fill="#111111"/>
+<rect x="484" y="152.0" width="118" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(543.0,188)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">−처음 수</text></g>
+<line x1="608" y1="180" x2="627" y2="180" stroke="#111111" stroke-width="2.2"/>
+<polygon points="636,180 623,173 623,187" fill="#111111"/>
+<rect x="642" y="152.0" width="58" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4" stroke-dasharray="7 6"/>
+<g transform="translate(671.0,188)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">?</text></g>
+</svg>
