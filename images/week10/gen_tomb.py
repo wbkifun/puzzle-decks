@@ -10,6 +10,8 @@
 INK = "#111111"
 GRAY = "#e4e4e4"
 FONT = "Pretendard, 'NanumSquareRound', sans-serif"
+# 변수 x는 LaTeX 이탤릭 - 덱에 인라인된 KaTeX_Math 웹폰트 사용(단독 열람 시 serif italic 폴백)
+MATH_FONT = "KaTeX_Math, 'Times New Roman', serif"
 
 # 검증: x/6 + x/12 + x/7 + 5 + x/2 + 4 = x -> x = 84
 x = 84
@@ -29,6 +31,14 @@ def caption(cx, y, lines, size=21):
 def label(x_, y, text, size=20, weight=400, anchor="middle"):
     return [f'<g transform="translate({x_},{y})"><text x="0" y="0" text-anchor="{anchor}" '
             f'font-family="{FONT}" font-size="{size}" font-weight="{weight}" fill="{INK}">{text}</text></g>']
+
+
+def math_label(x_, y, text, size=20, weight=400, anchor="middle"):
+    """'x'만 KaTeX 이탤릭으로 감싼 수식 라벨."""
+    body = text.replace("x", f'<tspan font-family="{MATH_FONT}" font-style="italic" '
+                             f'font-weight="400" font-size="{size + 2}">x</tspan>')
+    return [f'<g transform="translate({x_},{y})"><text x="0" y="0" text-anchor="{anchor}" '
+            f'font-family="{FONT}" font-size="{size}" font-weight="{weight}" fill="{INK}">{body}</text></g>']
 
 
 # ---------- q: 묘비 ----------
@@ -75,9 +85,9 @@ for k, (n, yrs, f) in enumerate(zip(names, seg, fills)):
     else:
         parts += label(xx + w / 2, BY + BH + 26, n, 17)
     xx += w
-parts += label(BX, BY - 52, "x/6 + x/12 + x/7 + 5 + x/2 + 4 = x", 23, 700, "start")
+parts += math_label(BX, BY - 52, "x/6 + x/12 + x/7 + 5 + x/2 + 4 = x", 23, 700, "start")
 parts += label(xx + 16, BY + 38, "= 84년", 23, 700, "start")
-parts += caption((BX + xx) / 2, BY + BH + 84, ["x는 6·12·7로 나누어져야 - 84의 배수. 사람의 수명에서 후보는 84 하나뿐"], 21)
+parts += caption((BX + xx) / 2, BY + BH + 84, ["나이는 6·12·7로 나누어져야 - 84의 배수. 사람의 수명에서 후보는 84 하나뿐"], 21)
 W, H = 860, 300
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")

@@ -14,6 +14,8 @@
 INK = "#111111"
 GRAY = "#e4e4e4"
 FONT = "Pretendard, 'NanumSquareRound', sans-serif"
+# 변수(x·r)는 LaTeX 이탤릭 - 덱에 인라인된 KaTeX_Math 웹폰트 사용(단독 열람 시 serif italic 폴백)
+MATH_FONT = "KaTeX_Math, 'Times New Roman', serif"
 
 # 검증
 assert ((3 * 2 + 10) / 2) - 3 == 5 and ((10 * 2 + 10) / 2) - 10 == 5
@@ -28,13 +30,18 @@ def label(x, y, text, size=20, weight=400, anchor="middle"):
             f'font-family="{FONT}" font-size="{size}" font-weight="{weight}" fill="{INK}">{text}</text></g>']
 
 
-def mini_card(x, cy, w, text, size=23, dashed=False, fill="#ffffff"):
-    """1단 미니 카드: 연산자·숫자만. (x = 왼쪽 끝, cy = 세로 중심). 오른쪽 끝 x를 반환."""
+def mini_card(x, cy, w, text, size=23, dashed=False, fill="#ffffff", math=False):
+    """1단 미니 카드: 연산자·숫자만. (x = 왼쪽 끝, cy = 세로 중심). 오른쪽 끝 x를 반환.
+    math=True면 변수 카드 - KaTeX 이탤릭 폰트로."""
     h = 56
     dash = ' stroke-dasharray="7 6"' if dashed else ""
     p = [f'<rect x="{x}" y="{cy - h / 2}" width="{w}" height="{h}" rx="10" '
          f'fill="{fill}" stroke="{INK}" stroke-width="2.4"{dash}/>']
-    p += label(x + w / 2, cy + 8, text, size, 700)
+    if math:
+        p.append(f'<g transform="translate({x + w / 2},{cy + 9})"><text x="0" y="0" text-anchor="middle" '
+                 f'font-family="{MATH_FONT}" font-style="italic" font-size="{size + 5}" fill="{INK}">{text}</text></g>')
+    else:
+        p += label(x + w / 2, cy + 8, text, size, 700)
     return p, x + w
 
 
@@ -44,16 +51,18 @@ def arrow_r(x1, x2, y, sw=2.2):
 
 
 def chain_row(cy, specs, x0=60, head=None):
-    """specs = [(w, text, fill, dashed)] 를 화살표로 이은 한 줄. head는 줄 왼쪽 라벨."""
+    """specs = [(w, text, fill, dashed[, math])] 를 화살표로 이은 한 줄. head는 줄 왼쪽 라벨."""
     parts = []
     x = x0
     if head:
         parts += label(x0 - 14, cy + 7, head, 19, 700, "end")
-    for k, (w, t, f, d) in enumerate(specs):
+    for k, spec in enumerate(specs):
+        w, t, f, d = spec[:4]
+        m = spec[4] if len(spec) > 4 else False
         if k:
             parts += arrow_r(x + 6, x + 34, cy)
             x += 40
-        p, x = mini_card(x, cy, w, t, size=22 if len(t) > 3 else 23, fill=f, dashed=d)
+        p, x = mini_card(x, cy, w, t, size=22 if len(t) > 3 else 23, fill=f, dashed=d, math=m)
         parts += p
     return parts, x
 
@@ -102,10 +111,10 @@ write_svg("v3_chain_q.svg", parts, xe + 60, 170)
 
 # ---------- sc2: 간 길 / 되감기 ----------
 parts = []
-p, xe = chain_row(70, [(58, "x", GRAY, False), (64, "×2", W_, False),
-                       (64, "+8", W_, False), (58, "r", GRAY, False)], x0=130, head="간 길")
+p, xe = chain_row(70, [(58, "x", GRAY, False, True), (64, "×2", W_, False),
+                       (64, "+8", W_, False), (58, "r", GRAY, False, True)], x0=130, head="간 길")
 parts += p
-p, _ = chain_row(180, [(58, "r", GRAY, False), (64, "−8", W_, False),
-                       (64, "÷2", W_, False), (58, "x", GRAY, False)], x0=130, head="되감기")
+p, _ = chain_row(180, [(58, "r", GRAY, False, True), (64, "−8", W_, False),
+                       (64, "÷2", W_, False), (58, "x", GRAY, False, True)], x0=130, head="되감기")
 parts += p
 write_svg("sc2_chain_a.svg", parts, xe + 60, 250)
