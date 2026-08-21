@@ -288,8 +288,12 @@ def r_title(s, meta):
 
 
 def r_basic(s, meta):
-    inner = kh(s) + (f'<div class="stack">{paras(s.get("body",[]))}'
-                     f'{figbox(s)}{leadq(s)}{trapbox(s)}</div>')
+    # figTop: 그림을 본문 위에 배치(기본은 본문 아래)
+    if s.get("figTop"):
+        stack = f'{figbox(s)}{paras(s.get("body",[]))}{leadq(s)}{trapbox(s)}'
+    else:
+        stack = f'{paras(s.get("body",[]))}{figbox(s)}{leadq(s)}{trapbox(s)}'
+    inner = kh(s) + f'<div class="stack">{stack}</div>'
     return shell(meta, s, inner)
 
 
