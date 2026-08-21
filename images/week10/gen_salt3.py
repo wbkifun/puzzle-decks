@@ -49,12 +49,11 @@ parts += label(BX + 460 * S, Y2 + 35, "소금 ?g", 17, 400, "start", )
 parts.append(f'<line x1="{BX + 360 * S:.0f}" y1="{Y1 + BH + 8}" x2="{BX + 360 * S:.0f}" y2="{Y2 - 24}" '
              f'stroke="{INK}" stroke-width="1.6" stroke-dasharray="5 6"/>')
 # 오른쪽 계산
-parts += label(640, 150, "물 360g이 전체의 80%", 21, 700, "start")
-parts += label(640, 186, "→ 전체 = 360 ÷ 0.8 = 450g", 21, 400, "start")
-parts += label(640, 222, "→ 소금 = 450 − 360 = 90g", 21, 400, "start")
-parts += label(640, 258, "→ 더 넣은 소금 = 50g", 22, 700, "start")
+parts += label(640, 160, "물 360g이 전체의 80%", 21, 700, "start")
+parts += label(640, 200, "→ 전체 = 360 ÷ 0.8 = 450g", 21, 400, "start")
+parts += label(640, 240, "→ 더 넣은 소금 = 450 − 400 = 50g", 22, 700, "start")
 parts += caption(480, 366, ["소금을 넣어도 물은 변하지 않는다 - 마른 사과의 과육처럼"], 22)
-W, H = 960, 396
+W, H = 1030, 396
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">\n'
        + "\n".join(parts) + "\n</svg>\n")
 open("s5_water_a.svg", "w", encoding="utf-8").write(svg)

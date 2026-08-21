@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 396" width="960" height="396">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1030 396" width="1030" height="396">
 <g transform="translate(70,76)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">넣기 전 - 400g (소금 10%)</text></g>
 <rect x="70" y="92" width="396" height="54" fill="#e4e4e4" stroke="#111111" stroke-width="2.2"/>
 <rect x="466" y="92" width="44" height="54" fill="#111111"/>
@@ -10,9 +10,8 @@
 <g transform="translate(268.0,267)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="400" fill="#111111">물 360g - 그대로!</text></g>
 <g transform="translate(576.0,267)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="17" font-weight="400" fill="#111111">소금 ?g</text></g>
 <line x1="466" y1="154" x2="466" y2="208" stroke="#111111" stroke-width="1.6" stroke-dasharray="5 6"/>
-<g transform="translate(640,150)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">물 360g이 전체의 80%</text></g>
-<g transform="translate(640,186)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="400" fill="#111111">→ 전체 = 360 ÷ 0.8 = 450g</text></g>
-<g transform="translate(640,222)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="400" fill="#111111">→ 소금 = 450 − 360 = 90g</text></g>
-<g transform="translate(640,258)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">→ 더 넣은 소금 = 50g</text></g>
+<g transform="translate(640,160)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">물 360g이 전체의 80%</text></g>
+<g transform="translate(640,200)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="400" fill="#111111">→ 전체 = 360 ÷ 0.8 = 450g</text></g>
+<g transform="translate(640,240)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">→ 더 넣은 소금 = 450 − 400 = 50g</text></g>
 <g transform="translate(480,366)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" fill="#111111"><tspan x="0" dy="0">소금을 넣어도 물은 변하지 않는다 - 마른 사과의 과육처럼</tspan></text></g>
 </svg>
