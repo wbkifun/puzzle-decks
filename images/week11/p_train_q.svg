@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 420" width="840" height="420">
+<line x1="40" y1="120" x2="800" y2="120" stroke="#111111" stroke-width="2"/>
+<rect x="300" y="114" width="300" height="12" fill="#e4e4e4" stroke="#111111" stroke-width="2"/>
+<path d="M300,126 L300,160 M600,126 L600,160" stroke="#111111" stroke-width="2.4"/>
+<path d="M300,160 Q450,90 600,160" fill="none" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(450,188)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">다리 200m</text></g>
+<rect x="150" y="60" width="150" height="40" rx="8" fill="#cfe3f5" stroke="#111111" stroke-width="2.4"/>
+<rect x="164" y="69" width="26" height="16" rx="3" fill="#fff" stroke="#111111" stroke-width="1.6"/>
+<rect x="208" y="69" width="26" height="16" rx="3" fill="#fff" stroke="#111111" stroke-width="1.6"/>
+<rect x="252" y="69" width="26" height="16" rx="3" fill="#fff" stroke="#111111" stroke-width="1.6"/>
+<circle cx="175" cy="106" r="8" fill="#111111"/>
+<circle cx="275" cy="106" r="8" fill="#111111"/>
+<g transform="translate(450,32)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">들어서는 순간</text></g>
+<line x1="40" y1="330" x2="800" y2="330" stroke="#111111" stroke-width="2"/>
+<rect x="300" y="324" width="300" height="12" fill="#e4e4e4" stroke="#111111" stroke-width="2"/>
+<path d="M300,336 L300,370 M600,336 L600,370" stroke="#111111" stroke-width="2.4"/>
+<path d="M300,370 Q450,300 600,370" fill="none" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(450,398)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">다리 200m</text></g>
+<rect x="600" y="270" width="150" height="40" rx="8" fill="#cfe3f5" stroke="#111111" stroke-width="2.4"/>
+<rect x="614" y="279" width="26" height="16" rx="3" fill="#fff" stroke="#111111" stroke-width="1.6"/>
+<rect x="658" y="279" width="26" height="16" rx="3" fill="#fff" stroke="#111111" stroke-width="1.6"/>
+<rect x="702" y="279" width="26" height="16" rx="3" fill="#fff" stroke="#111111" stroke-width="1.6"/>
+<circle cx="625" cy="316" r="8" fill="#111111"/>
+<circle cx="725" cy="316" r="8" fill="#111111"/>
+<g transform="translate(450,242)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">완전히 빠져나온 순간</text></g>
+<g transform="translate(700,140)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="400" fill="#111111">→ 시속 72km</text></g>
+</svg>
