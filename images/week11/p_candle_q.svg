@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" width="680" height="400">
+<line x1="40" y1="330" x2="640" y2="330" stroke="#111111" stroke-width="3"/>
+<rect x="152.0" y="75.0" width="36" height="255.0" rx="4" fill="#fff4d6" stroke="#111111" stroke-width="2.4"/>
+<line x1="170" y1="75.0" x2="170" y2="61.0" stroke="#111111" stroke-width="2"/>
+<path d="M170,31.0 C184,45.0 182,59.0 170,63.0 C158,59.0 156,45.0 170,31.0 Z" fill="#f6b73c" stroke="#d98b12" stroke-width="2"/>
+<line x1="210.0" y1="330" x2="210.0" y2="75.0" stroke="#111111" stroke-width="1.5"/>
+<line x1="202.0" y1="330" x2="218.0" y2="330" stroke="#111111" stroke-width="1.5"/>
+<line x1="202.0" y1="75.0" x2="218.0" y2="75.0" stroke="#111111" stroke-width="1.5"/>
+<g transform="translate(226.0,209.5)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">30cm</text></g>
+<g transform="translate(170,360)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">가는 양초</text></g>
+<g transform="translate(170,386)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="400" fill="#111111">1시간에 4cm씩 탄다</text></g>
+<rect x="405.0" y="160.0" width="90" height="170.0" rx="4" fill="#f3e3c8" stroke="#111111" stroke-width="2.4"/>
+<line x1="450" y1="160.0" x2="450" y2="146.0" stroke="#111111" stroke-width="2"/>
+<path d="M450,116.0 C464,130.0 462,144.0 450,148.0 C438,144.0 436,130.0 450,116.0 Z" fill="#f6b73c" stroke="#d98b12" stroke-width="2"/>
+<line x1="517.0" y1="330" x2="517.0" y2="160.0" stroke="#111111" stroke-width="1.5"/>
+<line x1="509.0" y1="330" x2="525.0" y2="330" stroke="#111111" stroke-width="1.5"/>
+<line x1="509.0" y1="160.0" x2="525.0" y2="160.0" stroke="#111111" stroke-width="1.5"/>
+<g transform="translate(533.0,252.0)"><text x="0" y="0" text-anchor="start" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">20cm</text></g>
+<g transform="translate(450,360)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">굵은 양초</text></g>
+<g transform="translate(450,386)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="400" fill="#111111">1시간에 1cm씩 탄다</text></g>
+<g transform="translate(340,60)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="700" fill="#111111">동시에 불을 붙인다</text></g>
+</svg>

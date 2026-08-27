@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1030 215" width="1030" height="215">
+<polygon points="190,170 270,170 230,140" fill="#111111"/>
+<line x1="230" y1="140" x2="230" y2="50" stroke="#111111" stroke-width="5"/>
+<line x1="80" y1="50" x2="380" y2="50" stroke="#111111" stroke-width="4"/>
+<line x1="80" y1="50" x2="80" y2="100" stroke="#111111" stroke-width="2.5"/>
+<path d="M-10,100 L170,100 L150,122 L10,122 Z" fill="#fff" stroke="#111111" stroke-width="2.5"/>
+<g><rect x="-5.0" y="62" width="34" height="34" rx="6" fill="#fff" stroke="#111111" stroke-width="2.2"/><g transform="translate(12.0,87)"><text x="0" y="0" text-anchor="middle" font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-size="24" font-weight="400" fill="#111111">x</text></g></g>
+<g><rect x="35.0" y="62" width="34" height="34" rx="6" fill="#fff" stroke="#111111" stroke-width="2.2"/><g transform="translate(52.0,87)"><text x="0" y="0" text-anchor="middle" font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-size="24" font-weight="400" fill="#111111">x</text></g></g>
+<g opacity="0.25"><rect x="75.0" y="62" width="34" height="34" rx="6" fill="#fff" stroke="#111111" stroke-width="2.2"/><g transform="translate(92.0,87)"><text x="0" y="0" text-anchor="middle" font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-size="24" font-weight="400" fill="#111111">x</text></g></g>
+<rect x="117.0" y="62" width="44" height="34" rx="4" fill="#e4e4e4" stroke="#111111" stroke-width="2.2"/><g transform="translate(139.0,87)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">4</text></g>
+<line x1="380" y1="50" x2="380" y2="100" stroke="#111111" stroke-width="2.5"/>
+<path d="M290,100 L470,100 L450,122 L310,122 Z" fill="#fff" stroke="#111111" stroke-width="2.5"/>
+<g opacity="0.25"><rect x="335.0" y="62" width="34" height="34" rx="6" fill="#fff" stroke="#111111" stroke-width="2.2"/><g transform="translate(352.0,87)"><text x="0" y="0" text-anchor="middle" font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-size="24" font-weight="400" fill="#111111">x</text></g></g>
+<rect x="377.0" y="62" width="44" height="34" rx="4" fill="#e4e4e4" stroke="#111111" stroke-width="2.2"/><g transform="translate(399.0,87)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">16</text></g>
+<g transform="translate(230,204)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">양쪽에서 x를 하나씩 내린다</text></g>
+<line x1="470" y1="110" x2="530" y2="110" stroke="#111111" stroke-width="3"/>
+<polygon points="545,110 530,102 530,118" fill="#111111"/>
+<polygon points="740,170 820,170 780,140" fill="#111111"/>
+<line x1="780" y1="140" x2="780" y2="50" stroke="#111111" stroke-width="5"/>
+<line x1="630" y1="50" x2="930" y2="50" stroke="#111111" stroke-width="4"/>
+<line x1="630" y1="50" x2="630" y2="100" stroke="#111111" stroke-width="2.5"/>
+<path d="M540,100 L720,100 L700,122 L560,122 Z" fill="#fff" stroke="#111111" stroke-width="2.5"/>
+<g><rect x="565.0" y="62" width="34" height="34" rx="6" fill="#fff" stroke="#111111" stroke-width="2.2"/><g transform="translate(582.0,87)"><text x="0" y="0" text-anchor="middle" font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-size="24" font-weight="400" fill="#111111">x</text></g></g>
+<g><rect x="605.0" y="62" width="34" height="34" rx="6" fill="#fff" stroke="#111111" stroke-width="2.2"/><g transform="translate(622.0,87)"><text x="0" y="0" text-anchor="middle" font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-size="24" font-weight="400" fill="#111111">x</text></g></g>
+<rect x="647.0" y="62" width="44" height="34" rx="4" fill="#e4e4e4" stroke="#111111" stroke-width="2.2"/><g transform="translate(669.0,87)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">4</text></g>
+<line x1="930" y1="50" x2="930" y2="100" stroke="#111111" stroke-width="2.5"/>
+<path d="M840,100 L1020,100 L1000,122 L860,122 Z" fill="#fff" stroke="#111111" stroke-width="2.5"/>
+<rect x="907.0" y="62" width="44" height="34" rx="4" fill="#e4e4e4" stroke="#111111" stroke-width="2.2"/><g transform="translate(929.0,87)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">16</text></g>
+<g transform="translate(780,204)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">균형은 그대로 - 2x + 4 = 16</text></g>
+</svg>

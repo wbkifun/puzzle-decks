@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 215" width="520" height="215">
+<polygon points="220,170 300,170 260,140" fill="#111111"/>
+<line x1="260" y1="140" x2="260" y2="50" stroke="#111111" stroke-width="5"/>
+<line x1="110" y1="50" x2="410" y2="50" stroke="#111111" stroke-width="4"/>
+<line x1="110" y1="50" x2="110" y2="100" stroke="#111111" stroke-width="2.5"/>
+<path d="M20,100 L200,100 L180,122 L40,122 Z" fill="#fff" stroke="#111111" stroke-width="2.5"/>
+<g><rect x="25.0" y="62" width="34" height="34" rx="6" fill="#fff" stroke="#111111" stroke-width="2.2"/><g transform="translate(42.0,87)"><text x="0" y="0" text-anchor="middle" font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-size="24" font-weight="400" fill="#111111">x</text></g></g>
+<g><rect x="65.0" y="62" width="34" height="34" rx="6" fill="#fff" stroke="#111111" stroke-width="2.2"/><g transform="translate(82.0,87)"><text x="0" y="0" text-anchor="middle" font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-size="24" font-weight="400" fill="#111111">x</text></g></g>
+<g><rect x="105.0" y="62" width="34" height="34" rx="6" fill="#fff" stroke="#111111" stroke-width="2.2"/><g transform="translate(122.0,87)"><text x="0" y="0" text-anchor="middle" font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-size="24" font-weight="400" fill="#111111">x</text></g></g>
+<rect x="147.0" y="62" width="44" height="34" rx="4" fill="#e4e4e4" stroke="#111111" stroke-width="2.2"/><g transform="translate(169.0,87)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">4</text></g>
+<line x1="410" y1="50" x2="410" y2="100" stroke="#111111" stroke-width="2.5"/>
+<path d="M320,100 L500,100 L480,122 L340,122 Z" fill="#fff" stroke="#111111" stroke-width="2.5"/>
+<g><rect x="365.0" y="62" width="34" height="34" rx="6" fill="#fff" stroke="#111111" stroke-width="2.2"/><g transform="translate(382.0,87)"><text x="0" y="0" text-anchor="middle" font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-size="24" font-weight="400" fill="#111111">x</text></g></g>
+<rect x="407.0" y="62" width="44" height="34" rx="4" fill="#e4e4e4" stroke="#111111" stroke-width="2.2"/><g transform="translate(429.0,87)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">16</text></g>
+<g transform="translate(260,204)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">3x + 4 = x + 16 - 저울은 균형이다</text></g>
+</svg>
