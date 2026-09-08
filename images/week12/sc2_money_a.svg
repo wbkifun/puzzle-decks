@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 943 250" width="943" height="250">
+<g transform="translate(116,77)"><text x="0" y="0" text-anchor="end" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">식 ①</text></g>
+<rect x="130" y="42.0" width="151" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(205.5,78)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">x</tspan>−10=<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">y</tspan>+10</text></g>
+<line x1="287" y1="70" x2="368" y2="70" stroke="#111111" stroke-width="2.2"/>
+<polygon points="377,70 364,63 364,77" fill="#111111"/>
+<g transform="translate(332.0,54)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">정리</text></g>
+<rect x="383" y="42.0" width="111" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(438.5,78)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">x</tspan>=<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">y</tspan>+20</text></g>
+<g transform="translate(116,187)"><text x="0" y="0" text-anchor="end" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">식 ②</text></g>
+<rect x="130" y="152.0" width="192" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(226.0,188)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">x</tspan>+10=2(<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">y</tspan>−10)</text></g>
+<line x1="328" y1="180" x2="436" y2="180" stroke="#111111" stroke-width="2.2"/>
+<polygon points="445,180 432,173 432,187" fill="#111111"/>
+<g transform="translate(386.5,164)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">①의 <tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="22">x</tspan> 대입</text></g>
+<rect x="451" y="152.0" width="165" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(533.5,188)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">y</tspan>+30=2<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">y</tspan>−20</text></g>
+<line x1="622" y1="180" x2="703" y2="180" stroke="#111111" stroke-width="2.2"/>
+<polygon points="712,180 699,173 699,187" fill="#111111"/>
+<g transform="translate(667.0,164)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">저울</text></g>
+<rect x="718" y="152.0" width="165" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(800.5,188)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#c62828"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">y</tspan>=50, <tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">x</tspan>=70</text></g>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1268 250" width="1268" height="250">
+<g transform="translate(116,77)"><text x="0" y="0" text-anchor="end" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">내려가기</text></g>
+<rect x="130" y="42.0" width="216" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(238.0,78)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">미지수 3 · 식 3</text></g>
+<line x1="352" y1="70" x2="460" y2="70" stroke="#111111" stroke-width="2.2"/>
+<polygon points="469,70 456,63 456,77" fill="#111111"/>
+<g transform="translate(410.5,54)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="22">y</tspan>=2<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="22">z</tspan> 대입</text></g>
+<rect x="475" y="42.0" width="216" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(583.0,78)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">미지수 2 · 식 2</text></g>
+<line x1="697" y1="70" x2="805" y2="70" stroke="#111111" stroke-width="2.2"/>
+<polygon points="814,70 801,63 801,77" fill="#111111"/>
+<g transform="translate(755.5,54)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">머리 식 대입</text></g>
+<rect x="820" y="42.0" width="216" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(928.0,78)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">미지수 1 · 식 1</text></g>
+<line x1="1042" y1="70" x2="1123" y2="70" stroke="#111111" stroke-width="2.2"/>
+<polygon points="1132,70 1119,63 1119,77" fill="#111111"/>
+<g transform="translate(1087.0,54)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">저울</text></g>
+<rect x="1138" y="42.0" width="70" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(1173.0,78)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#c62828"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">z</tspan>=2</text></g>
+<g transform="translate(116,187)"><text x="0" y="0" text-anchor="end" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">올라오기</text></g>
+<rect x="130" y="152.0" width="70" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(165.0,188)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#c62828"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">z</tspan>=2</text></g>
+<line x1="206" y1="180" x2="287" y2="180" stroke="#111111" stroke-width="2.2"/>
+<polygon points="296,180 283,173 283,187" fill="#111111"/>
+<g transform="translate(251.0,164)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">거슬러</text></g>
+<rect x="302" y="152.0" width="111" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(357.5,188)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">y</tspan>=2<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">z</tspan>=4</text></g>
+<line x1="419" y1="180" x2="500" y2="180" stroke="#111111" stroke-width="2.2"/>
+<polygon points="509,180 496,173 496,187" fill="#111111"/>
+<g transform="translate(464.0,164)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">거슬러</text></g>
+<rect x="515" y="152.0" width="165" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(597.5,188)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">x</tspan>=10−<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">y</tspan>−<tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">z</tspan>=4</text></g>
+</svg>

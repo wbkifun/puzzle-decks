@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" width="960" height="460">
+<rect x="30" y="30" width="900" height="330" rx="18" fill="none" stroke="#111111" stroke-width="3" stroke-dasharray="12 9"/>
+<ellipse cx="160" cy="150" rx="34" ry="22" fill="#fff" stroke="#111111" stroke-width="2.4"/>
+<path d="M188,140 Q212,112 204,94" fill="none" stroke="#111111" stroke-width="2.4"/>
+<circle cx="204" cy="90" r="7" fill="#fff" stroke="#111111" stroke-width="2.2"/>
+<path d="M211,90 l14,3 l-14,3 Z" fill="#111111"/>
+<line x1="150" y1="170" x2="148" y2="206" stroke="#111111" stroke-width="2.4"/>
+<line x1="170" y1="170" x2="172" y2="206" stroke="#111111" stroke-width="2.4"/>
+<path d="M392,164 A38,30 0 0 1 468,164 Z" fill="#d9ead3" stroke="#111111" stroke-width="2.4"/>
+<circle cx="476" cy="156" r="8" fill="#fff" stroke="#111111" stroke-width="2.2"/>
+<line x1="402" y1="164" x2="402" y2="184" stroke="#111111" stroke-width="2.4"/>
+<line x1="420" y1="164" x2="420" y2="184" stroke="#111111" stroke-width="2.4"/>
+<line x1="440" y1="164" x2="440" y2="184" stroke="#111111" stroke-width="2.4"/>
+<line x1="458" y1="164" x2="458" y2="184" stroke="#111111" stroke-width="2.4"/>
+<circle cx="720" cy="140" r="24" fill="#f4cccc" stroke="#111111" stroke-width="2.4"/>
+<circle cx="712" cy="136" r="2.6" fill="#111111"/>
+<circle cx="728" cy="136" r="2.6" fill="#111111"/>
+<path d="M692,158 q-6,22 -3,34" fill="none" stroke="#111111" stroke-width="2.4"/>
+<path d="M700,158 q10,22 5,34" fill="none" stroke="#111111" stroke-width="2.4"/>
+<path d="M708,158 q-6,22 -3,34" fill="none" stroke="#111111" stroke-width="2.4"/>
+<path d="M716,158 q10,22 5,34" fill="none" stroke="#111111" stroke-width="2.4"/>
+<path d="M724,158 q-6,22 -3,34" fill="none" stroke="#111111" stroke-width="2.4"/>
+<path d="M732,158 q10,22 5,34" fill="none" stroke="#111111" stroke-width="2.4"/>
+<path d="M740,158 q-6,22 -3,34" fill="none" stroke="#111111" stroke-width="2.4"/>
+<path d="M748,158 q10,22 5,34" fill="none" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(160,240)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">학 - 다리 2</text></g>
+<g transform="translate(430,240)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">거북 - 다리 4</text></g>
+<g transform="translate(720,240)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="700" fill="#111111">문어 - 다리 8</text></g>
+<g transform="translate(480,320)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="400" fill="#111111">몇 마리씩인지는 보이지 않는다 - 어두운 수조</text></g>
+<g transform="translate(480,420)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="26" font-weight="800" fill="#111111">머리를 세니 10개, 다리를 세니 40개</text></g>
+</svg>

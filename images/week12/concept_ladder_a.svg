@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1079 170" width="1079" height="170">
+<rect x="60" y="57.0" width="216" height="56" rx="10" fill="#ffffff" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(168.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">미지수 2 · 식 2</text></g>
+<line x1="282" y1="85" x2="408" y2="85" stroke="#111111" stroke-width="2.2"/>
+<polygon points="417,85 404,78 404,92" fill="#111111"/>
+<g transform="translate(349.5,69)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">문자 하나 지우기</text></g>
+<rect x="423" y="57.0" width="216" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(531.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#111111">미지수 1 · 식 1</text></g>
+<line x1="645" y1="85" x2="744" y2="85" stroke="#111111" stroke-width="2.2"/>
+<polygon points="753,85 740,78 740,92" fill="#111111"/>
+<g transform="translate(699.0,69)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">지난주 저울</text></g>
+<rect x="759" y="57.0" width="70" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(794.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#c62828"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">x</tspan>=6</text></g>
+<line x1="835" y1="85" x2="934" y2="85" stroke="#111111" stroke-width="2.2"/>
+<polygon points="943,85 930,78 930,92" fill="#111111"/>
+<g transform="translate(889.0,69)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="700" fill="#111111">거슬러 대입</text></g>
+<rect x="949" y="57.0" width="70" height="56" rx="10" fill="#e4e4e4" stroke="#111111" stroke-width="2.4"/>
+<g transform="translate(984.0,93)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="23" font-weight="700" fill="#c62828"><tspan font-family="KaTeX_Math, 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="26">y</tspan>=4</text></g>
+</svg>
