@@ -328,7 +328,9 @@ def r_truth(s, meta):
                       for c, m in zip(row["cells"], marks))
         rows.append(f'<tr class="{"win" if row.get("win") else ""}">{tds}</tr>')
     cap = f'<p class="figcap">{esc(s["caption"])}</p>' if s.get("caption") else ""
-    inner = kh(s) + f'<table class="truth">{"".join(rows)}</table>' + cap
+    # body도 지원(표 앞의 도입 문단·수식) - 12주차 백계 풀이에서 연립을 먼저 제시하는 용도
+    lead = f'<div class="stack">{paras(s["body"])}</div>' if s.get("body") else ""
+    inner = kh(s) + lead + f'<table class="truth">{"".join(rows)}</table>' + cap
     return shell(meta, s, inner)
 
 
