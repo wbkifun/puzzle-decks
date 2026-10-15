@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 270" width="1060" height="270">
+<g transform="translate(205,62)"><text x="0" y="0" text-anchor="end" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">3의 배수</text></g>
+<rect x="220" y="30" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(241.0,61.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">0</text></g>
+<rect x="268" y="30" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(289.0,61.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">3</text></g>
+<rect x="316" y="30" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(337.0,61.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">6</text></g>
+<rect x="364" y="30" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(385.0,61.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">9</text></g>
+<rect x="412" y="30" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(433.0,61.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">12</text></g>
+<rect x="460" y="30" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(481.0,61.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">15</text></g>
+<rect x="508" y="30" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(529.0,61.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">18</text></g>
+<rect x="556" y="30" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(577.0,61.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">21</text></g>
+<rect x="604" y="30" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(625.0,61.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">24</text></g>
+<rect x="652" y="30" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(673.0,61.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">27</text></g>
+<rect x="700" y="30" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(721.0,61.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">30</text></g>
+<rect x="748" y="30" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(769.0,61.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">33</text></g>
+<rect x="796" y="30" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(817.0,61.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">36</text></g>
+<rect x="844" y="30" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(865.0,61.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">39</text></g>
+<rect x="892" y="30" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(913.0,61.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">42</text></g>
+<rect x="940" y="30" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(961.0,61.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">45</text></g>
+<rect x="988" y="30" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(1009.0,61.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">48</text></g>
+<g transform="translate(205,128)"><text x="0" y="0" text-anchor="end" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">3으로 나누면 1 남음</text></g>
+<rect x="220" y="96" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(241.0,127.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">1</text></g>
+<rect x="268" y="96" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(289.0,127.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">4</text></g>
+<rect x="316" y="96" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(337.0,127.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">7</text></g>
+<rect x="364" y="96" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(385.0,127.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">10</text></g>
+<rect x="412" y="96" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(433.0,127.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">13</text></g>
+<rect x="460" y="96" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(481.0,127.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">16</text></g>
+<rect x="508" y="96" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(529.0,127.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">19</text></g>
+<rect x="556" y="96" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(577.0,127.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">22</text></g>
+<rect x="604" y="96" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(625.0,127.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">25</text></g>
+<rect x="652" y="96" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(673.0,127.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">28</text></g>
+<rect x="700" y="96" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(721.0,127.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">31</text></g>
+<rect x="748" y="96" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(769.0,127.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">34</text></g>
+<rect x="796" y="96" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(817.0,127.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">37</text></g>
+<rect x="844" y="96" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(865.0,127.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">40</text></g>
+<rect x="892" y="96" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(913.0,127.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">43</text></g>
+<rect x="940" y="96" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(961.0,127.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">46</text></g>
+<rect x="988" y="96" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(1009.0,127.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">49</text></g>
+<g transform="translate(205,194)"><text x="0" y="0" text-anchor="end" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">3으로 나누면 2 남음</text></g>
+<rect x="220" y="162" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(241.0,193.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">2</text></g>
+<rect x="268" y="162" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(289.0,193.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">5</text></g>
+<rect x="316" y="162" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(337.0,193.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">8</text></g>
+<rect x="364" y="162" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(385.0,193.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">11</text></g>
+<rect x="412" y="162" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(433.0,193.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">14</text></g>
+<rect x="460" y="162" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(481.0,193.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">17</text></g>
+<rect x="508" y="162" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(529.0,193.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">20</text></g>
+<rect x="556" y="162" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(577.0,193.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">23</text></g>
+<rect x="604" y="162" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(625.0,193.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">26</text></g>
+<rect x="652" y="162" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(673.0,193.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">29</text></g>
+<rect x="700" y="162" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(721.0,193.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">32</text></g>
+<rect x="748" y="162" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(769.0,193.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">35</text></g>
+<rect x="796" y="162" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(817.0,193.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">38</text></g>
+<rect x="844" y="162" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(865.0,193.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">41</text></g>
+<rect x="892" y="162" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(913.0,193.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">44</text></g>
+<rect x="940" y="162" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(961.0,193.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">47</text></g>
+<rect x="988" y="162" width="42" height="48" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(1009.0,193.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="18" font-weight="700" fill="#111111">50</text></g>
+<g transform="translate(630,250)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="19" font-weight="400" fill="#111111">0부터 50까지 - 살 수 있는 개수의 칸을 칠하라</text></g>
+</svg>

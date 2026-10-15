@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 300" width="950" height="300">
+<path d="M110,60 L220,60 L210,150 L120,150 Z" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<path d="M110,60 L132.0,34 L198.0,34 L220,60" fill="none" stroke="#111111" stroke-width="2.2"/>
+<ellipse cx="145.0" cy="82" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="165.0" cy="82" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="185.0" cy="82" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="145.0" cy="100" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="165.0" cy="100" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="185.0" cy="100" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<g transform="translate(165.0,184)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="800" fill="#111111">6개 상자</text></g>
+<path d="M360,60 L470,60 L460,150 L370,150 Z" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<path d="M360,60 L382.0,34 L448.0,34 L470,60" fill="none" stroke="#111111" stroke-width="2.2"/>
+<ellipse cx="395.0" cy="82" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="415.0" cy="82" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="435.0" cy="82" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="395.0" cy="100" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="415.0" cy="100" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="435.0" cy="100" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="395.0" cy="118" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="415.0" cy="118" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="435.0" cy="118" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<g transform="translate(415.0,184)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="800" fill="#111111">9개 상자</text></g>
+<path d="M620,60 L790,60 L780,170 L630,170 Z" fill="#ffffff" stroke="#111111" stroke-width="2.6"/>
+<path d="M620,60 L654.0,34 L756.0,34 L790,60" fill="none" stroke="#111111" stroke-width="2.2"/>
+<ellipse cx="665.0" cy="82" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="685.0" cy="82" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="705.0" cy="82" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="725.0" cy="82" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="745.0" cy="82" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="665.0" cy="100" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="685.0" cy="100" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="705.0" cy="100" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="725.0" cy="100" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="745.0" cy="100" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="665.0" cy="118" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="685.0" cy="118" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="705.0" cy="118" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="725.0" cy="118" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="745.0" cy="118" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="665.0" cy="136" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="685.0" cy="136" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="705.0" cy="136" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="725.0" cy="136" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<ellipse cx="745.0" cy="136" rx="8" ry="6" fill="#d9d9d9" stroke="#111111" stroke-width="1.4"/>
+<g transform="translate(705.0,204)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="22" font-weight="800" fill="#111111">20개 상자</text></g>
+<g transform="translate(475,275)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="20" font-weight="400" fill="#111111">가게는 이 세 가지 상자만 판다 - 낱개 판매 없음</text></g>
+</svg>

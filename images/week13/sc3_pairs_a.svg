@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 250" width="950" height="250">
+<rect x="120" y="120" width="56" height="56" rx="7" fill="#d9d9d9" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(148.0,155.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">0</text></g>
+<rect x="210" y="120" width="56" height="56" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(238.0,155.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">1</text></g>
+<rect x="300" y="120" width="56" height="56" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(328.0,155.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">2</text></g>
+<rect x="390" y="120" width="56" height="56" rx="7" fill="#d9d9d9" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(418.0,155.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">3</text></g>
+<rect x="480" y="120" width="56" height="56" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(508.0,155.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">4</text></g>
+<rect x="570" y="120" width="56" height="56" rx="7" fill="#d9d9d9" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(598.0,155.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">5</text></g>
+<rect x="660" y="120" width="56" height="56" rx="7" fill="#d9d9d9" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(688.0,155.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">6</text></g>
+<rect x="750" y="120" width="56" height="56" rx="7" fill="#ffffff" stroke="#111111" stroke-width="2.2"/>
+<g transform="translate(778.0,155.0)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="700" fill="#111111">7</text></g>
+<path d="M148,112 C148,-2 778,-2 778,112" fill="none" stroke="#c62828" stroke-width="2.4"/>
+<path d="M238,112 C238,22 688,22 688,112" fill="none" stroke="#c62828" stroke-width="2.4"/>
+<path d="M328,112 C328,46 598,46 598,112" fill="none" stroke="#c62828" stroke-width="2.4"/>
+<path d="M418,112 C418,70 508,70 508,112" fill="none" stroke="#c62828" stroke-width="2.4"/>
+<g transform="translate(475,225)"><text x="0" y="0" text-anchor="middle" font-family="Pretendard, 'NanumSquareRound', sans-serif" font-size="21" font-weight="800" fill="#c62828">짝(합이 7)마다 정확히 하나만 칠해진다</text></g>
+</svg>
